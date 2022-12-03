@@ -47,6 +47,7 @@ type WhalingSession struct {
 	lootBox          *LootBox
 	CollectableItems []Item
 	ContainerOpened  uint64
+	PityCounter      uint64
 	Items            map[string]uint64
 }
 
@@ -62,6 +63,7 @@ func NewWhalingSession(lb *LootBox, collectable []string) (*WhalingSession, erro
 		return nil, common.ErrCastCopyLB
 	}
 	wlSess.ContainerOpened = 0
+	wlSess.PityCounter = 0
 	wlSess.Items = make(map[string]uint64)
 	wlSess.lootBox.Init()
 	wlSess.lootBox.RefreshDrawTree()
@@ -70,7 +72,13 @@ func NewWhalingSession(lb *LootBox, collectable []string) (*WhalingSession, erro
 
 func (ws *WhalingSession) Draw() error {
 
-	usePity := (ws.ContainerOpened % ws.lootBox.Pity) == 0
+	usePity := (ws.PityCounter == ws.lootBox.Pity)
+	// If we reach pity, reset the counter, otherwise increment it
+	if usePity {
+		ws.PityCounter = 0
+	} else {
+		ws.PityCounter++
+	}
 	results, err := ws.lootBox.Draw(usePity)
 
 	if err != nil {
@@ -82,6 +90,10 @@ func (ws *WhalingSession) Draw() error {
 			ws.Items[res.Item.Name] = 0
 		}
 		ws.Items[res.Item.Name] += res.Item.Quantity
+		// If we drop a pity item, we need to reset the Pity Counter
+		if res.Category.Pitiable {
+			ws.PityCounter = 0
+		}
 	}
 	return nil
 }
