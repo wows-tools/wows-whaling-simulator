@@ -15,23 +15,17 @@ func main() {
 		os.Exit(1)
 	}
 
-	err = lootBox.RefreshDrawTree()
-
-	lootBox.Init()
-
+	ws, err := lootbox.NewWhalingSession(lootBox, []string{})
 	if err != nil {
-		fmt.Printf("Error building the interval tree: %s\n", err.Error())
+		fmt.Printf("Error Initializing the whaling Session: %s\n", err.Error())
 		os.Exit(1)
 	}
 
-	for i := 0; i < 10000; i++ {
-		results, err := lootBox.Draw(false)
-		for _, res := range results {
-			if err != nil {
-				fmt.Printf("Error drawing: %s\n", err.Error())
-				os.Exit(1)
-			}
-			fmt.Printf("%s | %s\n", res.Category.Name, res.Item.Name)
-		}
+	for i := 0; i < 1000; i++ {
+		ws.Draw()
+
+	}
+	for k, v := range ws.Items {
+		fmt.Println("Quantity:", v, "Item:", k)
 	}
 }

@@ -1,6 +1,7 @@
 package lootbox
 
 import (
+	"github.com/barkimedes/go-deepcopy"
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/kakwa/wows-whaling-simulator/common"
 	"github.com/rdleal/intervalst/interval"
@@ -43,9 +44,46 @@ type DrawResult struct {
 }
 
 type WhalingSession struct {
-	LootBox          LootBox
+	lootBox          *LootBox
 	CollectableItems []Item
 	ContainerOpened  uint64
+	Items            map[string]uint64
+}
+
+func NewWhalingSession(lb *LootBox, collectable []string) (*WhalingSession, error) {
+	var ok bool
+	dataLb, err := deepcopy.Anything(lb)
+	if err != nil {
+		return nil, err
+	}
+	var wlSess WhalingSession
+	wlSess.lootBox, ok = dataLb.(*LootBox)
+	if !ok {
+		return nil, common.ErrCastCopyLB
+	}
+	wlSess.ContainerOpened = 0
+	wlSess.Items = make(map[string]uint64)
+	wlSess.lootBox.Init()
+	wlSess.lootBox.RefreshDrawTree()
+	return &wlSess, nil
+}
+
+func (ws *WhalingSession) Draw() error {
+
+	usePity := (ws.ContainerOpened % ws.lootBox.Pity) == 0
+	results, err := ws.lootBox.Draw(usePity)
+
+	if err != nil {
+		return err
+	}
+	ws.ContainerOpened++
+	for _, res := range results {
+		if _, ok := ws.Items[res.Item.Name]; !ok {
+			ws.Items[res.Item.Name] = 0
+		}
+		ws.Items[res.Item.Name] += res.Item.Quantity
+	}
+	return nil
 }
 
 func cdrCmp(cumDroprate1, cumItemCategory2 float64) int {
@@ -112,7 +150,7 @@ func (lb *LootBox) RefreshDrawTree() error {
 }
 
 func (lb *LootBox) Draw(isPity bool) (drawResult []DrawResult, err error) {
-	FakeItem := Item{Name: "Fake Item"}
+	FakeItem := Item{Name: "Fake Item", Quantity: 1}
 	var ok bool
 	for i, _ := range lb.drawTrees {
 		var result DrawResult
