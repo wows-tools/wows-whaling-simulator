@@ -51,12 +51,14 @@ func NewLootBoxFromCSVs(filePaths []string, name string, price float64, compensa
 				pitiable = true
 			}
 
-			items := item_parsing.Split(line[5], -1)
+			transferTo := item_parsing.Split(line[5], -1)
+			items := item_parsing.Split(line[6], -1)
 			dr := ItemCategory{
-				Name:        category,
-				DropRate:    rate,
-				Pitiable:    pitiable,
-				Collectable: pitiable,
+				Name:                category,
+				DropRate:            rate,
+				Pitiable:            pitiable,
+				DropRateTransfersTo: transferTo,
+				Collectable:         pitiable,
 			}
 
 			for _, itemName := range items {
@@ -66,7 +68,7 @@ func NewLootBoxFromCSVs(filePaths []string, name string, price float64, compensa
 					ID:           "undefined",
 					Compensation: compensation,
 				}
-				dr.Items = append(dr.Items, item)
+				dr.Items = append(dr.Items, &item)
 			}
 			drop[category] = &dr
 		}
