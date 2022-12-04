@@ -2,17 +2,17 @@ package wows
 
 import (
 	"context"
-	"time"
 	"errors"
-	"net/http"
 	"github.com/IceflowRE/go-wargaming/v3/wargaming"
 	"github.com/IceflowRE/go-wargaming/v3/wargaming/wows"
+	"net/http"
+	"time"
 )
 
 var (
-	EURealm = wargaming.RealmEu
-	NARealm = wargaming.RealmNa
-	AsiaRealm =  wargaming.RealmAsia
+	EURealm   = wargaming.RealmEu
+	NARealm   = wargaming.RealmNa
+	AsiaRealm = wargaming.RealmAsia
 )
 
 var (
@@ -36,8 +36,9 @@ func (wowsAPI *WowsAPI) FillShipMapping() error {
 	respSize := 9999
 	pageNo := 1
 	for respSize != 0 {
+		// TODO rework to actually do something with the tier
 		res, err := client.Wows.EncyclopediaShips(context.Background(), wargaming.RealmEu, &wows.EncyclopediaShipsOptions{
-			Fields: []string{"name", "ship_id"},
+			Fields: []string{"name", "ship_id", "tier"},
 			PageNo: &pageNo,
 		})
 		if err != nil {
@@ -61,8 +62,8 @@ func (wowsAPI *WowsAPI) SearchPlayer(realm wargaming.Realm, nick string, mode st
 	limit := 5
 	res, err := client.Wows.AccountList(context.Background(), realm, nick, &wows.AccountListOptions{
 		Fields: []string{"account_id", "nickname"},
-		Type:  wargaming.String(mode),
-		Limit: &limit,
+		Type:   wargaming.String(mode),
+		Limit:  &limit,
 	})
 	if err != nil {
 		return nil, err
@@ -76,7 +77,7 @@ func (wowsAPI *WowsAPI) GetPlayerShips(realm wargaming.Realm, playerId int) ([]s
 	var ret []string
 	inGarage := "1"
 	res, err := client.Wows.ShipsStats(context.Background(), realm, playerId, &wows.ShipsStatsOptions{
-		Fields: []string{"ship_id"},
+		Fields:   []string{"ship_id"},
 		InGarage: &inGarage,
 	})
 	if err != nil {
