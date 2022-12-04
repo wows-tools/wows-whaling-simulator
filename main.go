@@ -1,62 +1,34 @@
 package main
 
 import (
-	"fmt"
-	"os"
-	"github.com/kakwa/wows-whaling-simulator/lootbox"
-	"github.com/kakwa/wows-whaling-simulator/wows"
+	"github.com/kakwa/wows-whaling-simulator/api"
+	"github.com/kakwa/wows-whaling-simulator/config"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 func main() {
-	fmt.Printf("Launching\n")
-	api_key := os.Getenv("WG_API_KEY")
-	wowsApi := wows.NewWowsAPI(api_key)
-	err := wowsApi.FillShipMapping()
-	if err != nil {
-		fmt.Printf("Error Prefilling the Ship Mapping: %s\n", err.Error())
-		os.Exit(1)
-	}
-	players, err := wowsApi.SearchPlayer(wows.EURealm, "kakwa", "exact")
-	if err != nil {
-		fmt.Printf("Error Searching the player: %s\n", err.Error())
-		os.Exit(1)
-	}
+	e := echo.New()
+	e.Use(middleware.Logger())
+	// TODO properly set log level
+	e.HideBanner = true
 
-	for _, player := range players {
-                fmt.Printf("id %d nick: %s\n", *player.AccountId, *player.Nickname)
-        }
-	ships, err := wowsApi.GetPlayerShips(wows.EURealm, *players[0].AccountId)
-	if err != nil {
-		fmt.Printf("Error getting the player's ships: %s\n", err.Error())
-		os.Exit(1)
-	}
-	//for _, ship := range ships {
-	//	fmt.Printf("%s\n", ship)
-	//}
-
-
-	lb, err := lootbox.NewLootBoxFromJson("./rates/santa_mega_2021.json")
+	cfg, err := config.ParseConfig("./config/example.yml")
 
 	if err != nil {
-		fmt.Printf("Error parsing file: %s\n", err.Error())
-		os.Exit(1)
+		e.Logger.Fatalf("failed to parse configuration: %w", err)
 	}
-
-	ws, err := lootbox.NewWhalingSession(lb, ships)
+	logLevel, err := cfg.ConvertLogLevel()
 	if err != nil {
-		fmt.Printf("Error Initializing the whaling Session: %s\n", err.Error())
-		os.Exit(1)
+		e.Logger.Fatalf("failed to parse LogLevel: %s", err)
 	}
 
-	for i := 0; i < 120; i++ {
-		err := ws.Draw()
-		if err != nil {
-			fmt.Printf("Error Drawing item: %s\n", err.Error())
-			os.Exit(1)
+	e.Logger.SetLevel(logLevel)
 
-		}
+	_, err = api.NewAPI(e, cfg)
+	if err != nil {
+		e.Logger.Fatalf("failed to init API: %s", err)
 	}
-	for k, v := range ws.Items {
-		fmt.Printf("%6d Item: %s\n", v, k)
-	}
+
+	e.Logger.Fatal(e.Start(":" + cfg.ListenPort))
 }

@@ -5,4 +5,4 @@ test:
 	go test
 
 clean:
-	rm -f matapan
+	rm -f wows-whaling-simulator
