@@ -51,7 +51,7 @@ type WhalingSession struct {
 	Items            map[string]uint64
 }
 
-func NewWhalingSession(lb *LootBox, collectable []string) (*WhalingSession, error) {
+func NewWhalingSession(lb *LootBox, collectables []string) (*WhalingSession, error) {
 	var ok bool
 	dataLb, err := deepcopy.Anything(lb)
 	if err != nil {
@@ -66,6 +66,10 @@ func NewWhalingSession(lb *LootBox, collectable []string) (*WhalingSession, erro
 	wlSess.PityCounter = 0
 	wlSess.Items = make(map[string]uint64)
 	wlSess.lootBox.Init()
+	for _, collectable := range collectables {
+		wlSess.lootBox.AddCollectable(collectable)
+	}
+	wlSess.lootBox.RemoveOwnedCollectablesFromDropableItems()
 	wlSess.lootBox.RefreshDrawTree()
 	return &wlSess, nil
 }
@@ -115,6 +119,32 @@ func (lb *LootBox) AddCollectable(collectable string) {
 func (lb *LootBox) Init() {
 	lb.collectable = mapset.NewSet[string]()
 	lb.randSeed = rand.New(rand.NewSource(time.Now().UnixNano()))
+}
+
+func (lb *LootBox) RemoveOwnedCollectablesFromDropableItems() {
+	for i, drop := range lb.Drops {
+
+		for _, itemCategory := range drop {
+			// If the item is not collectable, skip it
+			if !itemCategory.Collectable {
+				continue
+			}
+			var cleanedItems []*Item
+			var item *Item
+			for _, item = range itemCategory.Items {
+				// If the item is not in the collectable set, append it
+				if !lb.collectable.Contains(item.Name) {
+					cleanedItems = append(cleanedItems, item)
+				}
+			}
+			// if there is no items, then redistribute the drop rate
+			if len(cleanedItems) == 0 {
+				lb.Transfer(i, itemCategory, item.Compensation)
+			} else {
+				itemCategory.Items = cleanedItems
+			}
+		}
+	}
 }
 
 func (lb *LootBox) RefreshDrawTree() error {

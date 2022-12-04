@@ -15,7 +15,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	ws, err := lootbox.NewWhalingSession(lootBox, []string{})
+	ws, err := lootbox.NewWhalingSession(lootBox, []string{"Warspite", "Poltava"})
 	if err != nil {
 		fmt.Printf("Error Initializing the whaling Session: %s\n", err.Error())
 		os.Exit(1)
