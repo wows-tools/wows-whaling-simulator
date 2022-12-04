@@ -15,3 +15,5 @@
 # vendor/
 
 wows-whaling-simulator
+
+.*.sw*
