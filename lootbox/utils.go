@@ -2,10 +2,35 @@ package lootbox
 
 import (
 	"encoding/csv"
+	"encoding/json"
+	"io/ioutil"
 	"os"
 	"regexp"
 	"strconv"
 )
+
+func NewLootBoxFromJson(filePath string) (*LootBox, error) {
+	var lb LootBox
+	jsonFile, err := os.Open(filePath)
+	// if we os.Open returns an error then handle it
+	if err != nil {
+		return nil, err
+	}
+	// defer the closing of our jsonFile so that we can parse it later on
+	defer jsonFile.Close()
+
+	byteValue, err := ioutil.ReadAll(jsonFile)
+	if err != nil {
+		return nil, err
+	}
+
+	err = json.Unmarshal(byteValue, &lb)
+	if err != nil {
+		return nil, err
+	}
+
+	return &lb, nil
+}
 
 func NewLootBoxFromCSVs(filePaths []string, name string, price float64, compensation *Item) (*LootBox, error) {
 	item_parsing := regexp.MustCompile(` *\| *`)

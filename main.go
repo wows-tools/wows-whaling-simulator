@@ -7,8 +7,7 @@ import (
 )
 
 func main() {
-	steel := lootbox.Item{Name: "Steel", Quantity: 1250}
-	lootBox, err := lootbox.NewLootBoxFromCSVs([]string{"./rates/droprate-2021-megagift.csv"}, "Santa Mega Gift Containers 2021", 1250, &steel)
+	lootBox, err := lootbox.NewLootBoxFromJson("./rates/santa_mega_2021.json")
 
 	if err != nil {
 		fmt.Printf("Error parsing file: %s\n", err.Error())
