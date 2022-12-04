@@ -10,10 +10,11 @@ import (
 )
 
 type Item struct {
-	Quantity     uint64 `json:"quantity"`     // Quantity dropped
-	Name         string `json:"name"`         // Name of the item
-	ID           string `json:"id"`           // Iternal ID
-	Compensation *Item  `json:"compensation"` // Compensation in case the player already have the item
+	Quantity     uint64            `json:"quantity"`     // Quantity dropped
+	Name         string            `json:"name"`         // Name of the item
+	ID           string            `json:"id"`           // Iternal ID
+	Compensation *Item             `json:"compensation"` // Compensation in case the player already have the item
+	Attributes   map[string]string `json:"attributes"`   // map of attributes (ex: {"tier": "X"})
 }
 
 type ItemCategory struct {
@@ -225,7 +226,6 @@ func (lb *LootBox) Transfer(index int, cat *ItemCategory, substitute *Item) {
 			}
 		}
 	}
-
 }
 
 func (lb *LootBox) Draw(isPity bool) (drawResult []DrawResult, err error) {

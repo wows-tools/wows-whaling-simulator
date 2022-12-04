@@ -66,7 +66,11 @@ func NewLootBoxFromCSVs(filePaths []string, name string, price float64, compensa
 					Quantity:     quantity,
 					Name:         itemName,
 					ID:           "undefined",
+					Attributes:   make(map[string]string),
 					Compensation: compensation,
+				}
+				if pitiable {
+					item.Attributes["tier"] = "V"
 				}
 				dr.Items = append(dr.Items, &item)
 			}
