@@ -26,10 +26,10 @@ type ItemCategory struct {
 }
 
 type LootBox struct {
-	Name             string            `json:"name"`
-	Drops            [][]*ItemCategory `json:"drops"`
-	Pity             uint64            `json:"pity"`
-	Price            float64           `json:"price"`
+	Name             string                     `json:"name"`
+	Drops            []map[string]*ItemCategory `json:"drops"`
+	Pity             uint64                     `json:"pity"`
+	Price            float64                    `json:"price"`
 	drawTrees        []*interval.SearchTree[*ItemCategory, float64]
 	drawTreesMax     []float64
 	drawTreesPity    []*interval.SearchTree[*ItemCategory, float64]

@@ -14,7 +14,7 @@ func NewLootBoxFromCSVs(filePaths []string, name string, price float64, compensa
 	lb.Price = price
 
 	for _, filePath := range filePaths {
-		var drop []*ItemCategory
+		drop := make(map[string]*ItemCategory)
 		csvFile, err := os.Open(filePath)
 		if err != nil {
 			return nil, err
@@ -68,7 +68,7 @@ func NewLootBoxFromCSVs(filePaths []string, name string, price float64, compensa
 				}
 				dr.Items = append(dr.Items, item)
 			}
-			drop = append(drop, &dr)
+			drop[category] = &dr
 		}
 		lb.Drops = append(lb.Drops, drop)
 	}
