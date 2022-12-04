@@ -22,7 +22,7 @@ type ItemCategory struct {
 	Collectable         bool     `json:"collectable"`            // If true, If the player already have one of the items, it will be removed from the list of items which can drop
 	Pitiable            bool     `json:"pitiable"`               // If true, this item is part of the pity mechanic
 	DropRateTransfersTo []string `json:"drop_rate_transfers_to"` // List of Categories the drop rate transfers to if player already has all items
-	Items               []Item   `json:"items"`                  // List of items to get
+	Items               []*Item  `json:"items"`                  // List of items to get
 }
 
 type LootBox struct {
@@ -118,7 +118,12 @@ func (lb *LootBox) Init() {
 }
 
 func (lb *LootBox) RefreshDrawTree() error {
-	// TODO handle Collectables
+	// Empty the Draw trees and associated Max boundaries
+	lb.drawTrees = nil
+	lb.drawTreesMax = nil
+	lb.drawTreesPity = nil
+	lb.drawTreesPityMax = nil
+
 	for _, drop := range lb.Drops {
 		var start float64
 		var end float64
@@ -161,8 +166,39 @@ func (lb *LootBox) RefreshDrawTree() error {
 	return nil
 }
 
+func (lb *LootBox) Transfer(index int, cat *ItemCategory, substitute *Item) {
+	// remove the entry from the list
+	delete(lb.Drops[index], cat.Name)
+	spread := 0.0
+	// check if the target category is still present
+	for _, name := range cat.DropRateTransfersTo {
+		if _, ok := lb.Drops[index][name]; ok {
+			spread += 1.0
+		}
+	}
+
+	// If we have nowhere to put our drop rate, then replace the item by the substitute with the original Drop Rate
+	if spread == 0 {
+		name := "Substitute: " + substitute.Name
+		lb.Drops[index][name] = &ItemCategory{
+			Name:        name,
+			DropRate:    cat.DropRate,
+			Collectable: false,
+			Pitiable:    true,
+			Items:       []*Item{substitute},
+		}
+	} else {
+		// Otherwise, spread the drop
+		for _, name := range cat.DropRateTransfersTo {
+			if targCat, ok := lb.Drops[index][name]; ok {
+				targCat.DropRate += cat.DropRate / spread
+			}
+		}
+	}
+
+}
+
 func (lb *LootBox) Draw(isPity bool) (drawResult []DrawResult, err error) {
-	FakeItem := Item{Name: "Fake Item", Quantity: 1}
 	var ok bool
 	for i, _ := range lb.drawTrees {
 		var result DrawResult
@@ -176,19 +212,28 @@ func (lb *LootBox) Draw(isPity bool) (drawResult []DrawResult, err error) {
 		if !ok {
 			return nil, common.ErrDraw
 		}
+		// If it's a collectable, get the first item from the "queue"
 		if result.Category.Collectable {
-			// TODO FIXME, recompute and dispatch drop rate in case the last item of this category has dropped
 			if len(result.Category.Items) > 0 {
-				result.Item = &result.Category.Items[0]
+				result.Item = result.Category.Items[0]
 				// Remove the dropped item from the slice
 				result.Category.Items = result.Category.Items[1:]
+				lb.AddCollectable(result.Item.Name)
+
+				// If there is no more items, then transfer the drop rate to other Collectables
+				if len(result.Category.Items) == 0 {
+					lb.Transfer(i, result.Category, result.Item.Compensation)
+					// Refresh the Draw tree after that
+					lb.RefreshDrawTree()
+				}
 			} else {
-				result.Item = &FakeItem
+				// This should never happen, the category should be transfered or replaced by the substitute before reaching this state
+				return nil, common.ErrNoMoreItem
 			}
-			lb.AddCollectable(result.Item.Name)
 		} else {
+			// If it's not a collectable, get one random item from the list
 			draw := lb.randSeed.Intn(len(result.Category.Items))
-			result.Item = &result.Category.Items[draw]
+			result.Item = result.Category.Items[draw]
 		}
 		drawResult = append(drawResult, result)
 	}

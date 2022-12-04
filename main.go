@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	steel := lootbox.Item{Name: "steel", Quantity: 1250}
+	steel := lootbox.Item{Name: "Steel", Quantity: 1250}
 	lootBox, err := lootbox.NewLootBoxFromCSVs([]string{"./rates/droprate-2021-megagift.csv"}, "Santa Mega Gift Containers 2021", 1250, &steel)
 
 	if err != nil {
@@ -22,10 +22,14 @@ func main() {
 	}
 
 	for i := 0; i < 1000; i++ {
-		ws.Draw()
+		err := ws.Draw()
+		if err != nil {
+			fmt.Printf("Error Drawing item: %s\n", err.Error())
+			os.Exit(1)
 
+		}
 	}
 	for k, v := range ws.Items {
-		fmt.Println("Quantity:", v, "Item:", k)
+		fmt.Printf("%6d Item: %s\n", v, k)
 	}
 }
