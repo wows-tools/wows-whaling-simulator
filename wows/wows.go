@@ -16,8 +16,22 @@ var (
 )
 
 var (
-	ErrShipReturnInvalid = errors.New("Invalide return size for ship listing")
+	ErrShipReturnInvalid = errors.New("Invalid return size for ship listing")
+	ErrUnknownRealm      = errors.New("Unknown Wows realm/server")
 )
+
+func WowsRealm(realmStr string) (wargaming.Realm, error) {
+	switch realmStr {
+	case "eu":
+		return EURealm, nil
+	case "na":
+		return NARealm, nil
+	case "asia":
+		return AsiaRealm, nil
+	default:
+		return nil, ErrUnknownRealm
+	}
+}
 
 type WowsAPI struct {
 	client      *wargaming.Client
