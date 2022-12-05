@@ -17,6 +17,12 @@ type Item struct {
 	Attributes   map[string]string `json:"attributes"`   // map of attributes (ex: {"tier": "X"})
 }
 
+type ItemShort struct {
+	Name       string            `json:"name"`       // Name of the item
+	ID         string            `json:"id"`         // Iternal ID
+	Attributes map[string]string `json:"attributes"` // map of attributes (ex: {"tier": "X"})
+}
+
 type ItemCategory struct {
 	Name                string   `json:"name"`                   // Name of the drop category
 	ID                  string   `json:"id"`                     // Iternal ID
@@ -270,4 +276,25 @@ func (lb *LootBox) Draw(isPity bool) (drawResult []DrawResult, err error) {
 		drawResult = append(drawResult, result)
 	}
 	return drawResult, nil
+}
+
+func (lb *LootBox) ListCollectables() (ret []*ItemShort) {
+	for _, drop := range lb.Drops {
+		for _, itemCategory := range drop {
+			// If the item is not collectable, skip it
+			if !itemCategory.Collectable {
+				continue
+			}
+			for _, item := range itemCategory.Items {
+				itemShort := ItemShort{
+					ID:         item.ID,
+					Name:       item.Name,
+					Attributes: item.Attributes,
+				}
+
+				ret = append(ret, &itemShort)
+			}
+		}
+	}
+	return ret
 }

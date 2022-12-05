@@ -1,7 +1,9 @@
 package api
 
 import (
+	"github.com/kakwa/wows-whaling-simulator/lootbox"
 	"github.com/labstack/echo/v4"
+
 	"net/http"
 )
 
@@ -12,6 +14,10 @@ type lootboxShort struct {
 
 type lootboxCollection struct {
 	Lootboxes []*lootboxShort `json:"lootboxes"`
+}
+
+type itemCollection struct {
+	Items []*lootbox.ItemShort `json:"items"`
 }
 
 func (a *API) listLootboxes(c echo.Context) error {
@@ -37,5 +43,13 @@ func (a *API) getLootbox(c echo.Context) error {
 }
 
 func (a *API) listLootboxCollectables(c echo.Context) error {
-	return echo.NewHTTPError(http.StatusNotImplemented, "Not implemented yet")
+	lbID := c.Param("lootbox_id")
+	lb, ok := a.lootboxCollection[lbID]
+	if !ok {
+		return echo.NewHTTPError(http.StatusNotFound, "Lootbox id unknown")
+	}
+	ret := itemCollection{
+		Items: lb.ListCollectables(),
+	}
+	return c.JSON(http.StatusOK, ret)
 }
