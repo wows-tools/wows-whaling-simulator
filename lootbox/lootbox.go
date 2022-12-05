@@ -19,6 +19,7 @@ type Item struct {
 
 type ItemCategory struct {
 	Name                string   `json:"name"`                   // Name of the drop category
+	ID                  string   `json:"id"`                     // Iternal ID
 	DropRate            float64  `json:"drop_rate"`              // Drop Rate (percentage)
 	Collectable         bool     `json:"collectable"`            // If true, If the player already have one of the items, it will be removed from the list of items which can drop
 	Pitiable            bool     `json:"pitiable"`               // If true, this item is part of the pity mechanic
@@ -28,6 +29,7 @@ type ItemCategory struct {
 
 type LootBox struct {
 	Name             string                     `json:"name"`
+	ID               string                     `json:"id"`
 	Drops            []map[string]*ItemCategory `json:"drops"`
 	Pity             uint64                     `json:"pity"`
 	Price            float64                    `json:"price"`
@@ -52,7 +54,7 @@ type WhalingSession struct {
 	Items            map[string]uint64
 }
 
-func NewWhalingSession(lb *LootBox, collectables []string) (*WhalingSession, error) {
+func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, error) {
 	var ok bool
 	dataLb, err := deepcopy.Anything(lb)
 	if err != nil {

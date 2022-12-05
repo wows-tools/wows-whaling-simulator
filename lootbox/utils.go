@@ -5,9 +5,31 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strconv"
 )
+
+func NewLootBoxCollection(dirPath string) (map[string]*LootBox, error) {
+	ret := make(map[string]*LootBox)
+	files, err := ioutil.ReadDir(dirPath)
+	if err != nil {
+		return nil, err
+	}
+
+	for _, file := range files {
+		fileName := filepath.Join(dirPath, file.Name())
+		if file.IsDir() || filepath.Ext(fileName) != ".json" {
+			continue
+		}
+		lb, err := NewLootBoxFromJson(fileName)
+		if err != nil {
+			return nil, err
+		}
+		ret[lb.ID] = lb
+	}
+	return ret, nil
+}
 
 func NewLootBoxFromJson(filePath string) (*LootBox, error) {
 	var lb LootBox

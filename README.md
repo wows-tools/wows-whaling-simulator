@@ -29,24 +29,27 @@ Usage of /tmp/go-build4003606908/b001/exe/main:
     	Wows realm (eu, na, asia) (default "eu")
 
 
-go run misc/cli/main.go -n 20 -nick "kakwa" -realm eu | sort -n
+go run misc/cli/main.go -n 20 -nick "kakwa" -realm eu -lootbox santa_mega_2022 | sort -n
 ```
 
 It will output something similar to:
 
 ```
-     1 Item: Cossack
-     1 Item: Mikhail Kutuzov
-     5 Item: Spring Sky
-    20 Item: New Year Streamer
-    25 Item: Type 3 — New Year
-    30 Item: Basilisk
-    30 Item: Leviathan
-    30 Item: Ouroboros
-    30 Item: Red Dragon
-    30 Item: Wyvern
-    60 Item: New Year Sky camouflages
-    60 Item: Scylla
-  5000 Item: Doubloons
+     1 Item: Béarn
+     1 Item: Collingwood
+     1 Item: FR25
+     1 Item: Karl von Schönberg
+     1 Item: Rio de Janeiro
+     1 Item: Toulon
+     5 Item: Free XP Red Economic Bonus
+    20 Item: Ship XP Blue Economic Bonus
+    40 Item: Free XP Blue Economic Bonus
+    60 Item: Commander XP Blue Economic Bonus
+   120 Item: Commander XP Green Economic Bonus
+   120 Item: Credits Green Economic Bonus
+   180 Item: Free XP Green Economic Bonus
+   180 Item: Premium Days
+   300 Item: Ship XP Green Economic Bonus
+  2500 Item: Doubloons
  37500 Item: Coal
 ```
