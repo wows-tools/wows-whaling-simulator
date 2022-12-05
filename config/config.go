@@ -13,6 +13,7 @@ type AppConfig struct {
 	WowsApiKey   string
 	LogLevel     string
 	StaticAssets string
+	Rates        string
 }
 
 func (a AppConfig) ConvertLogLevel() (log.Lvl, error) {

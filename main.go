@@ -25,10 +25,11 @@ func main() {
 
 	e.Logger.SetLevel(logLevel)
 
-	_, err = api.NewAPI(e, cfg)
+	apiv1, err := api.NewAPI(e, cfg)
 	if err != nil {
 		e.Logger.Fatalf("failed to init API: %s", err)
 	}
+	apiv1.RegisterRoutes()
 
 	e.Logger.Fatal(e.Start(":" + cfg.ListenPort))
 }

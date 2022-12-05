@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 )
 
-func (a *API) registerRoutes() {
+func (a *API) RegisterRoutes() {
 	a.echo.GET("/ping", pingHandler)
 	a.echo.GET("/api/v1/players", a.searchPlayer)
 	a.echo.GET("/api/v1/players/:player_id/ships", a.listPlayerShips)

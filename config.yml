@@ -2,3 +2,4 @@ ListenPort: 8080
 RedisURI: localhost
 LogLevel: DEBUG
 StaticAssets: ./static/
+Rates: ./rates
