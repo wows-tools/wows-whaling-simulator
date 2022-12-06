@@ -23,6 +23,14 @@ type ItemShort struct {
 	Attributes map[string]string `json:"attributes"` // map of attributes (ex: {"tier": "X"})
 }
 
+type ItemShortQuantity struct {
+	Quantity   uint64            `json:"quantity"`   // Quantity of this item dropped
+	Name       string            `json:"name"`       // Name of the item
+	ID         string            `json:"id"`         // Iternal ID
+	Attributes map[string]string `json:"attributes"` // map of attributes (ex: {"tier": "X"})
+
+}
+
 type ItemCategory struct {
 	Name                string   `json:"name"`                   // Name of the drop category
 	ID                  string   `json:"id"`                     // Iternal ID
@@ -54,10 +62,13 @@ type DrawResult struct {
 
 type WhalingSession struct {
 	lootBox          *LootBox
-	CollectableItems []Item
-	ContainerOpened  uint64
-	PityCounter      uint64
-	Items            map[string]uint64
+	pityCounter      uint64
+	otherItems       map[string]*ItemShortQuantity `json:"other_items"`
+	ContainerOpened  uint64                        `json:"container_opened"`
+	Pities           uint64                        `json:"pities"`
+	Spent            float64                       `json:"money_spent"`
+	CollectableItems []*ItemShort                  `json:"collectables_items"`
+	OtherItems       []*ItemShortQuantity          `json:"other_items"`
 }
 
 func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, error) {
@@ -72,8 +83,9 @@ func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, er
 		return nil, common.ErrCastCopyLB
 	}
 	wlSess.ContainerOpened = 0
-	wlSess.PityCounter = 0
-	wlSess.Items = make(map[string]uint64)
+	wlSess.pityCounter = 0
+	wlSess.Pities = 0
+	wlSess.otherItems = make(map[string]*ItemShortQuantity)
 	wlSess.lootBox.Init()
 	for _, collectable := range collectables {
 		wlSess.lootBox.AddCollectable(collectable)
@@ -85,12 +97,13 @@ func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, er
 
 func (ws *WhalingSession) Draw() error {
 
-	usePity := (ws.PityCounter == ws.lootBox.Pity)
+	usePity := (ws.pityCounter == ws.lootBox.Pity)
 	// If we reach pity, reset the counter, otherwise increment it
 	if usePity {
-		ws.PityCounter = 0
+		ws.pityCounter = 0
+		ws.Pities++
 	} else {
-		ws.PityCounter++
+		ws.pityCounter++
 	}
 	results, err := ws.lootBox.Draw(usePity)
 
@@ -99,16 +112,40 @@ func (ws *WhalingSession) Draw() error {
 	}
 	ws.ContainerOpened++
 	for _, res := range results {
-		if _, ok := ws.Items[res.Item.Name]; !ok {
-			ws.Items[res.Item.Name] = 0
+		if res.Category.Collectable {
+			itemShort := ItemShort{
+				ID:         res.Item.ID,
+				Name:       res.Item.Name,
+				Attributes: res.Item.Attributes,
+			}
+			ws.CollectableItems = append(ws.CollectableItems, &itemShort)
+		} else {
+			itemShort := ItemShortQuantity{
+				ID:         res.Item.ID,
+				Name:       res.Item.Name,
+				Attributes: res.Item.Attributes,
+				Quantity:   res.Item.Quantity,
+			}
+			if _, ok := ws.otherItems[res.Item.Name]; !ok {
+				ws.otherItems[res.Item.Name] = &itemShort
+			} else {
+				ws.otherItems[res.Item.Name].Quantity += res.Item.Quantity
+			}
+
 		}
-		ws.Items[res.Item.Name] += res.Item.Quantity
 		// If we drop a pity item, we need to reset the Pity Counter
 		if res.Category.Pitiable {
-			ws.PityCounter = 0
+			ws.pityCounter = 0
 		}
 	}
 	return nil
+}
+
+func (ws *WhalingSession) Finalize() {
+	for _, otherItem := range ws.otherItems {
+		ws.OtherItems = append(ws.OtherItems, otherItem)
+		ws.Spent = float64(ws.ContainerOpened) * ws.lootBox.Price
+	}
 }
 
 func cdrCmp(cumDroprate1, cumItemCategory2 float64) int {
