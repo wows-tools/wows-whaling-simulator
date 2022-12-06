@@ -39,6 +39,9 @@ func (a *API) searchPlayer(c echo.Context) error {
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
+	if len(user.NickStart) < 4 {
+		return echo.NewHTTPError(http.StatusBadRequest, "please specify '?nick_start=<NICK>' param with a nick start at least 3 characters long")
+	}
 
 	accountList := make([]*wgwows.AccountList, 0)
 	err = a.cache.Once(&cache.Item{
