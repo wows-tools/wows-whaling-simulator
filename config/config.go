@@ -8,7 +8,7 @@ import (
 )
 
 type AppConfig struct {
-	ListenPort   string
+	Listen       string
 	RedisURI     string
 	WowsApiKey   string
 	LogLevel     string
@@ -46,7 +46,7 @@ func ParseConfig(cfgfile string) (*AppConfig, error) {
 		panic(fmt.Errorf("Fatal error config file: %w \n", err))
 	}
 	viper.SetEnvPrefix("WOWS")
-	viper.BindEnv("ListenPort")
+	viper.BindEnv("Listen")
 	viper.BindEnv("RedisURI")
 	viper.BindEnv("DBURI")
 	viper.BindEnv("LogLevel")

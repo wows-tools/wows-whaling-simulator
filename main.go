@@ -31,5 +31,5 @@ func main() {
 	}
 	apiv1.RegisterRoutes()
 
-	e.Logger.Fatal(e.Start(":" + cfg.ListenPort))
+	e.Logger.Fatal(e.Start(cfg.Listen))
 }
