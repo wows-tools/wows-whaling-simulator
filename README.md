@@ -8,6 +8,16 @@ Work in Progress
 
 ## API
 
+build
+```
+make
+```
+
+launch:
+```
+export WOWS_WOWSAPIKEY=zzzzzzzzzzzzzzzzzzzzz
+./wows-whaling-simulator
+```
 TODO
 
 ## CLI tool

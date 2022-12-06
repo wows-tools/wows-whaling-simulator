@@ -1,5 +1,6 @@
 ListenPort: 8080
-RedisURI: localhost
+RedisURI: redis://localhost:6379/
+WowsApiKey: Nope
 LogLevel: DEBUG
 StaticAssets: ./static/
 Rates: ./rates

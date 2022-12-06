@@ -45,12 +45,13 @@ func ParseConfig(cfgfile string) (*AppConfig, error) {
 	if err := viper.ReadInConfig(); err != nil { // Handle errors reading the config file
 		panic(fmt.Errorf("Fatal error config file: %w \n", err))
 	}
-	viper.SetEnvPrefix("WOWSWHALING")
+	viper.SetEnvPrefix("WOWS")
 	viper.BindEnv("ListenPort")
 	viper.BindEnv("RedisURI")
 	viper.BindEnv("DBURI")
 	viper.BindEnv("LogLevel")
 	viper.BindEnv("StaticAssets")
+	viper.BindEnv("WowsApiKey")
 	viper.AutomaticEnv()
 	if err := viper.Unmarshal(&cfg); err != nil {
 		fmt.Printf("unable to decode into struct, %v", err)

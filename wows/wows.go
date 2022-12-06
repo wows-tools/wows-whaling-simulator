@@ -35,13 +35,13 @@ func WowsRealm(realmStr string) (wargaming.Realm, error) {
 
 type WowsAPI struct {
 	client      *wargaming.Client
-	shipMapping map[int]string
+	ShipMapping map[int]string
 }
 
 func NewWowsAPI(key string) *WowsAPI {
 	return &WowsAPI{
 		client:      wargaming.NewClient(key, &wargaming.ClientOptions{HTTPClient: &http.Client{Timeout: 10 * time.Second}}),
-		shipMapping: make(map[int]string),
+		ShipMapping: make(map[int]string),
 	}
 }
 
@@ -55,6 +55,9 @@ func (wowsAPI *WowsAPI) FillShipMapping() error {
 			Fields: []string{"name", "ship_id", "tier"},
 			PageNo: &pageNo,
 		})
+		if err != nil && pageNo == 1 {
+			return err
+		}
 		if err != nil {
 			// FIXME the go-wargaming library doesn't provide the "meta" part of the response
 			// (containing the number of pages and number of ships)
@@ -64,7 +67,7 @@ func (wowsAPI *WowsAPI) FillShipMapping() error {
 		respSize = len(res)
 		pageNo++
 		for _, ship := range res {
-			wowsAPI.shipMapping[*ship.ShipId] = *ship.Name
+			wowsAPI.ShipMapping[*ship.ShipId] = *ship.Name
 		}
 	}
 	return nil
@@ -106,7 +109,7 @@ func (wowsAPI *WowsAPI) GetPlayerShips(realm wargaming.Realm, playerId int) ([]s
 		return nil, ErrShipReturnInvalid
 	}
 	for _, ship := range shipList {
-		shipName, ok := wowsAPI.shipMapping[*ship.ShipId]
+		shipName, ok := wowsAPI.ShipMapping[*ship.ShipId]
 		if !ok {
 			continue
 		}
