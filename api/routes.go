@@ -6,6 +6,7 @@ import (
 
 func (a *API) RegisterRoutes() {
 	a.echo.GET("/ping", pingHandler)
+	a.echo.GET("/api/v1/stats", a.getStats)
 	a.echo.GET("/api/v1/realm/:realm_id/players", a.searchPlayer)
 	a.echo.GET("/api/v1/realm/:realm_id/players/:player_id/ships", a.listPlayerShips)
 	a.echo.GET("/api/v1/lootboxes", a.listLootboxes)

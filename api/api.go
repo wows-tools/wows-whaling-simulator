@@ -15,6 +15,14 @@ var (
 	ErrNoLootbox = errors.New("No Lootbox description found")
 )
 
+type Stats struct {
+	SimpleWhalingQuantity uint64 `json:"simple_whaling_quantity"`
+	SimpleWhalingStats    uint64 `json:"simple_whaling_stats"`
+	TargetWhalingQuantity uint64 `json:"target_whaling_quantity"`
+	TargetWhalingStats    uint64 `json:"target_whaling_status"`
+	OpenedContainers      uint64 `json:"opened_counters"`
+}
+
 type API struct {
 	echo              *echo.Echo
 	cfg               *config.AppConfig
@@ -22,6 +30,7 @@ type API struct {
 	redis             *redis.Client
 	cache             *cache.Cache
 	wowsAPI           *wows.WowsAPI
+	stats             *Stats
 }
 
 func NewAPI(echo *echo.Echo, cfg *config.AppConfig) (*API, error) {
@@ -29,6 +38,7 @@ func NewAPI(echo *echo.Echo, cfg *config.AppConfig) (*API, error) {
 	var err error
 	a.echo = echo
 	a.cfg = cfg
+	a.stats = &Stats{}
 	a.lootboxCollection, err = lootbox.NewLootBoxCollection(a.cfg.Rates)
 	if err != nil {
 		return nil, err

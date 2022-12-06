@@ -68,6 +68,8 @@ func (a *API) simpleWhalingQuantity(c echo.Context) error {
 		}
 	}
 	ws.Finalize()
+	a.stats.OpenedContainers += uint64(whaling.Quantity)
+	a.stats.SimpleWhalingQuantity++
 
 	return c.JSON(http.StatusOK, ws)
 }
