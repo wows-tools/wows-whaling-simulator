@@ -2,9 +2,13 @@ package api
 
 import (
 	wgwows "github.com/IceflowRE/go-wargaming/v3/wargaming/wows"
+	"github.com/go-redis/cache/v8"
 	"github.com/kakwa/wows-whaling-simulator/wows"
 	"github.com/labstack/echo/v4"
+
 	"net/http"
+	"strconv"
+	"time"
 )
 
 type UserSearch struct {
@@ -36,8 +40,21 @@ func (a *API) searchPlayer(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 
-	// TODO Caching
-	accountList, err := a.wowsAPI.SearchPlayer(realm, user.NickStart, "startswith")
+	accountList := make([]*wgwows.AccountList, 0)
+	err = a.cache.Once(&cache.Item{
+		TTL:   time.Hour,
+		SetNX: true,
+		Key:   "wows:searchPlayer:" + user.Realm + ":" + user.NickStart,
+		Value: &accountList, // destination
+		Do: func(*cache.Item) (interface{}, error) {
+			accountList, err := a.wowsAPI.SearchPlayer(realm, user.NickStart, "startswith")
+			if err != nil {
+				return nil, err
+			}
+			return accountList, nil
+		},
+	})
+
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
@@ -59,8 +76,21 @@ func (a *API) listPlayerShips(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 
-	// TODO Caching
-	shipList, err := a.wowsAPI.GetPlayerShips(realm, user.PlayerID)
+	shipList := make([]string, 0)
+	err = a.cache.Once(&cache.Item{
+		TTL:   time.Hour,
+		SetNX: true,
+		Key:   "wows:searchShip:" + user.Realm + ":" + strconv.Itoa(user.PlayerID),
+		Value: &shipList, // destination
+		Do: func(*cache.Item) (interface{}, error) {
+			shipList, err := a.wowsAPI.GetPlayerShips(realm, user.PlayerID)
+			if err != nil {
+				return nil, err
+			}
+			return shipList, nil
+		},
+	})
+
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
