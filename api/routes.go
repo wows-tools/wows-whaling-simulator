@@ -18,5 +18,6 @@ func (a *API) RegisterRoutes() {
 	a.echo.GET("/api/v1/lootboxes/:lootbox_id/realm/:realm_id/players/:player_id/stats_whaling_target", a.statsWhalingTarget)
 	a.echo.File("/favicon.ico", filepath.Join(a.cfg.StaticAssets, "favicon.ico"))
 	a.echo.Static("/static", filepath.Join(a.cfg.StaticAssets, "static"))
+	a.echo.Static("/resources", filepath.Join(a.cfg.StaticAssets, "resources"))
 	a.echo.File("/", filepath.Join(a.cfg.StaticAssets, "index.html"))
 }

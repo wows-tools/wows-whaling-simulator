@@ -10,6 +10,7 @@ import (
 type lootboxShort struct {
 	ID   string `json:"id"`
 	Name string `json:"name"`
+	Img  string `json:"img"`
 }
 
 type lootboxCollection struct {
@@ -27,6 +28,7 @@ func (a *API) listLootboxes(c echo.Context) error {
 		lb := lootboxShort{
 			Name: lbfull.Name,
 			ID:   lbfull.ID,
+			Img:   lbfull.Img,
 		}
 		ret.Lootboxes = append(ret.Lootboxes, &lb)
 	}
