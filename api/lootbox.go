@@ -28,7 +28,7 @@ func (a *API) listLootboxes(c echo.Context) error {
 		lb := lootboxShort{
 			Name: lbfull.Name,
 			ID:   lbfull.ID,
-			Img:   lbfull.Img,
+			Img:  lbfull.Img,
 		}
 		ret.Lootboxes = append(ret.Lootboxes, &lb)
 	}
