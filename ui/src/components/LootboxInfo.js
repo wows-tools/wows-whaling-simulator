@@ -40,6 +40,7 @@ class LootboxInfo extends React.Component {
         	<Image height="200px" objectFit="scale-down" src={API_ROOT + this.state.lootbox.img} alt={this.state.lootbox.name} />
         	<Content>{this.state.lootbox.name}</Content>
         	</IllustratedMessage>
+
 		)
 	} else {
 		lootboxContent = (

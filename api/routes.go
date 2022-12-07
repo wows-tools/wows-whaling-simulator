@@ -19,5 +19,5 @@ func (a *API) RegisterRoutes() {
 	a.echo.File("/favicon.ico", filepath.Join(a.cfg.StaticAssets, "favicon.ico"))
 	a.echo.Static("/static", filepath.Join(a.cfg.StaticAssets, "static"))
 	a.echo.Static("/resources", filepath.Join(a.cfg.StaticAssets, "resources"))
-	a.echo.File("/", filepath.Join(a.cfg.StaticAssets, "index.html"))
+	a.echo.File("*", filepath.Join(a.cfg.StaticAssets, "index.html"))
 }

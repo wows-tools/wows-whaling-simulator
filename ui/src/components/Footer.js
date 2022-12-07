@@ -1,12 +1,12 @@
 import '../css/custom.css'
 
 // Render it in your app!
-function Footer() {
+function AppFooter() {
   return (
-      <div id="footer" height="size-6000">
+      <Footer> 
           <a href="https://github.com/kakwa/wows-whaling-simulator">WoWs Whaling Simulator</a> • © 2022 • Kakwa • Released under the MIT License<p></p>
-      </div>
+      </Footer>
   );
 }
 
-export default Footer;
+export default AppFooter;
