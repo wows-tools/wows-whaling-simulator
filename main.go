@@ -30,6 +30,10 @@ func main() {
 		e.Logger.Fatalf("failed to init API: %s", err)
 	}
 	apiv1.RegisterRoutes()
+	//e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+  	//	AllowOrigins: []string{"http://localhost:8080", "http://localhost:3000"},
+  	//	AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
+	//}))
 
 	e.Logger.Fatal(e.Start(cfg.Listen))
 }
