@@ -1,5 +1,6 @@
 import {Flex, View, Provider, defaultTheme} from '@adobe/react-spectrum';
 import Footer from './components/Footer';
+import LootboxList from './components/LootboxList';
 import './css/custom.css'
 import './App.css'
 
@@ -13,6 +14,7 @@ function App(props) {
   		<View backgroundColor="gray-400"  width="calc(max(80%, size-6000)" 
 		  height="100%"
 	  alignSelf="center" flex="true" borderWidth="thin" borderColor="dark" borderRadius="medium"><h1>Hello, {props.mode}</h1>
+	        <LootboxList />
 	        </View>
 	</Flex>
 	<Footer/>
