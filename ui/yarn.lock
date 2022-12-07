@@ -3660,6 +3660,15 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@spectrum-icons/illustrations@^3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@spectrum-icons/illustrations/-/illustrations-3.5.1.tgz#609159d3a54f30df167419585cf467c7d9ceb3d7"
+  integrity sha512-T7hPo2p7nH8Y1gf9uujVW1rOVdKqF+rxH/fVR0SgH8sFjdmblxdbUii4anRptwqr8an77SvsFLu6kYQiqZ+2Fw==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/utils" "^3.14.1"
+    "@react-spectrum/icon" "^3.6.2"
+
 "@spectrum-icons/ui@^3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@spectrum-icons/ui/-/ui-3.4.0.tgz#bf6ff3d644898638a8b0871ad7b4eacea446afc4"

@@ -8,16 +8,25 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import LootboxList from './components/LootboxList';
+import LootboxInfo from './components/LootboxInfo';
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App mode="lblist"/>,
-  },
-  {
-    path: "/lootboxes/:lootboxId",
-    element: <App mode="lbwhaling"/>,
+    element: <App />,
+    children: [
+	{
+    	path: "",
+    	element: <LootboxList/>,
+  	},
+  	{
+    	path: "lootboxes/:lootboxId",
+    	element: <LootboxInfo/>,
+  	},
+    ]
   },
 ]);
 
