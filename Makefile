@@ -1,7 +1,7 @@
 build:
 	go build
 	$(MAKE) -C ui
-	rsync -Pizza ui/ static/
+	rsync -Pizza ui/build/ static/
 
 test:
 	go test
