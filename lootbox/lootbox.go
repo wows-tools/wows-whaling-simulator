@@ -5,6 +5,7 @@ import (
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/kakwa/wows-whaling-simulator/common"
 	"github.com/rdleal/intervalst/interval"
+	"math"
 	"math/rand"
 	"time"
 )
@@ -67,7 +68,9 @@ type WhalingSession struct {
 	otherItems       map[string]*ItemShortQuantity `json:"other_items"`
 	ContainerOpened  uint64                        `json:"container_opened"`
 	Pities           uint64                        `json:"pities"`
-	Spent            float64                       `json:"money_spent"`
+	Spent            float64                       `json:"game_money_spent"`
+	SpentEuro        float64                       `json:"euro_spent"`
+	SpentDollar      float64                       `json:"dollar_spent"`
 	CollectableItems []*ItemShort                  `json:"collectables_items"`
 	OtherItems       []*ItemShortQuantity          `json:"other_items"`
 }
@@ -146,6 +149,9 @@ func (ws *WhalingSession) Finalize() {
 	for _, otherItem := range ws.otherItems {
 		ws.OtherItems = append(ws.OtherItems, otherItem)
 		ws.Spent = float64(ws.ContainerOpened) * ws.lootBox.Price
+		// FIXME Should not hardcode conversion rates here
+		ws.SpentEuro = math.Round(ws.Spent/308.641975309*100) / 100
+		ws.SpentDollar = math.Round(ws.Spent/280.583613917*100) / 100
 	}
 }
 
