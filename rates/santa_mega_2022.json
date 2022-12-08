@@ -1,9 +1,63 @@
 {
  "name": "Santa Mega Gift Containers 2022",
- "img":"/resources/4f692026-01c0-11ed-98c9-8cdcd4b147d4.png",
+ "img":"/resources/PCL008_SantaBig_66c27149933df73403c7f98fc8087e44b4fe3851c7fa5789cffac9027801273a.png",
  "id": "santa_mega_2022", 
  "drops": [
   {
+   "Elite Commander XP": {
+    "name": "Elite Commander XP",
+    "id": "elite_commander_xp",
+    "drop_rate": 10,
+    "collectable": false,
+    "pitiable": false,
+    "drop_rate_transfers_to": [],
+    "items": [
+     {
+      "quantity": 100000,
+      "name": "Elite Commander XP",
+      "id": "elite_commander_xp",
+      "attributes": {
+	      "type": "resource"
+      }
+     }
+    ]
+   },
+   "Credits": {
+    "name": "Credits",
+    "id": "credits",
+    "drop_rate": 10,
+    "collectable": false,
+    "pitiable": false,
+    "drop_rate_transfers_to": [],
+    "items": [
+     {
+      "quantity": 2250000,
+      "name": "Credits",
+      "id": "credits",
+      "attributes": {
+	      "type": "resource"
+      }
+     }
+    ]
+   },
+   "New Year Sky camouflages": {
+    "name": "New Year Sky camouflage",
+    "id": "new_year_sky_camo",
+    "drop_rate": 5,
+    "collectable": false,
+    "pitiable": false,
+    "drop_rate_transfers_to": [],
+    "items": [
+     {
+      "quantity": 25,
+      "name": "New Year Sky camouflage",
+      "id": "camo_new_year_sky",
+      "attributes": {
+	      "type": "camo"
+      }
+     }
+    ]
+   },
    "Coal": {
     "name": "Coal",
     "id": "coal",
@@ -43,7 +97,7 @@
    "Red Economic Bonuses": {
     "name": "Red Economic Bonuses",
     "id": "red_economic_bonus",
-    "drop_rate": 6,
+    "drop_rate": 8,
     "collectable": false,
     "pitiable": false,
     "drop_rate_transfers_to": [],
@@ -73,7 +127,7 @@
       }
      },
      {
-      "quantity": 5,
+      "quantity": 7,
       "name": "Free XP Red Economic Bonus",
       "id": "freexp_red_economic_bonus",
       "attributes": {
@@ -85,7 +139,7 @@
    "Blue Economic Bonuses": {
     "name": "Blue Economic Bonuses",
     "id": "blue_economic_bonus",
-    "drop_rate": 28,
+    "drop_rate": 38,
     "collectable": false,
     "pitiable": false,
     "drop_rate_transfers_to": [],
@@ -118,48 +172,6 @@
       "quantity": 20,
       "name": "Free XP Blue Economic Bonus",
       "id": "freexp_blue_economic_bonus",
-      "attributes": {
-	      "type": "economic bonus"
-      }
-     }
-    ]
-   },
-   "Green Economic Bonuses": {
-    "name": "Green Economic Bonuses",
-    "id": "green_economic_bonus",
-    "drop_rate": 37,
-    "collectable": false,
-    "pitiable": false,
-    "drop_rate_transfers_to": [],
-    "items": [
-     {
-      "quantity": 60,
-      "name": "Credits Green Economic Bonus",
-      "id": "credit_green_economic_bonus",
-      "attributes": {
-	      "type": "economic bonus"
-      }
-     },
-     {
-      "quantity": 60,
-      "name": "Ship XP Green Economic Bonus",
-      "id": "shipxp_green_economic_bonus",
-      "attributes": {
-	      "type": "economic bonus"
-      }
-     },
-     {
-      "quantity": 60,
-      "name": "Commander XP Green Economic Bonus",
-      "id": "commanderxp_green_economic_bonus",
-      "attributes": {
-	      "type": "economic bonus"
-      }
-     },
-     {
-      "quantity": 60,
-      "name": "Free XP Green Economic Bonus",
-      "id": "freexp_green_economic_bonus",
       "attributes": {
 	      "type": "economic bonus"
       }
