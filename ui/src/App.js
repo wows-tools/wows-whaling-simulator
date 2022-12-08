@@ -16,7 +16,7 @@ function App(props) {
           colorMode = "light";
   }
   return (
-    <Provider theme={defaultTheme} height="100%" colorScheme={colorMode} margin="size-100">
+    <Provider theme={defaultTheme} height="100%" colorScheme={colorMode}>
 	<Flex direction="column" width="calc(100%)" gap="size-100" borderWidth="thin" borderColor="dark" height="calc(100%)">
   		<View backgroundColor="gray-200" height="size-600">
 	  	<Flex direction="row">
