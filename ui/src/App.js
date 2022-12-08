@@ -1,5 +1,6 @@
-import {Flex, View, Provider, defaultTheme} from '@adobe/react-spectrum';
-import Footer from './components/Footer';
+import {Flex, View, Provider, defaultTheme, Switch, Text} from '@adobe/react-spectrum';
+import React, { useState } from 'react';
+import AppFooter from './components/Footer';
 import LootboxList from './components/LootboxList';
 import { Outlet } from "react-router-dom";
 import './css/custom.css'
@@ -7,18 +8,37 @@ import './App.css'
 
 // Render it in your app!
 function App(props) {
+  const [selected, setSelection] = useState(false);
+  let colorMode = "light"
+  if (selected) {
+          colorMode = "dark";
+  } else {
+          colorMode = "light";
+  }
   return (
-    <Provider theme={defaultTheme} height="100%" colorScheme="dark">
-	<Flex direction="column" width="calc(100%)" gap="size-100" borderWidth="thin" borderColor="dark" height="calc(100% - size-600)">
+    <Provider theme={defaultTheme} height="100%" colorScheme={colorMode} margin="size-100">
+	<Flex direction="column" width="calc(100%)" gap="size-100" borderWidth="thin" borderColor="dark" height="calc(100%)">
   		<View backgroundColor="gray-200" height="size-600">
-	  	<h2>WoWs Whaling Simulator (version alpha.alpha.alpha)</h2>
+	  	<Flex direction="row">
+	  	<Flex  width="50%"  alignContent="left" justifyContent="left">
+	  	<Text>WoWs Whaling Simulator (version alpha.alpha.alpha)</Text>
+	        </Flex>
+	  	<Flex width="50%" alignContent="right" justifyContent="right">
+	        <Switch onChange={setSelection}>
+        		Switch Dark Mode
+      		</Switch>
+	        </Flex>
+	  	</Flex>
 	        </View>
-  		<View backgroundColor="gray-400"  width="calc(max(80%, size-6000)" 
+  		<View backgroundColor="gray-50"  width="calc(max(80%, size-6000)" 
 		  height="100%" alignSelf="center" marging="size-100" flex="true" borderWidth="thin" borderColor="dark" borderRadius="medium">
 	        <Outlet />
 	        </View>
+  	<View backgroundColor="gray-200" height="size-400">
+	<AppFooter/>
+	</View>
+
 	</Flex>
-	<Footer/>
     </Provider>
   );
 }

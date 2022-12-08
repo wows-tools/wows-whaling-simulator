@@ -37,7 +37,7 @@ export default class LootboxList extends React.Component {
       marginStart="size-800"
       gap="size-400">
       {this.state.lootboxes.map(lb =>
-	<View>
+	<View backgroundColor="gray-200" borderColor="dark" borderRadius="small">
 	<Link>
 	<RouterLink to={"/lootboxes/" + lb.id}>
 	<IllustratedMessage>

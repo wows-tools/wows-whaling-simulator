@@ -1,10 +1,16 @@
 import '../css/custom.css'
+import {Content,Flex, View, Footer, Link} from '@adobe/react-spectrum';
 
 // Render it in your app!
 function AppFooter() {
   return (
       <Footer> 
-          <a href="https://github.com/kakwa/wows-whaling-simulator">WoWs Whaling Simulator</a> • © 2022 • Kakwa • Released under the MIT License<p></p>
+        <Flex alignContent="center" justifyContent="center">
+                <View backgroundColor="gray-200" height="size-400">
+		<Content><a href="https://github.com/kakwa/wows-whaling-simulator">WoWs Whaling Simulator (Source Code)</a> • © 2022 • Kakwa • Released under the MIT License</Content>
+                </View>
+        </Flex>
+
       </Footer>
   );
 }
