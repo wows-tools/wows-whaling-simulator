@@ -1,6 +1,7 @@
 import {Flex, View, Provider, defaultTheme, Switch, Text} from '@adobe/react-spectrum';
 import React, { useState } from 'react';
 import AppFooter from './components/Footer';
+import AppHeader from './components/Header';
 import LootboxList from './components/LootboxList';
 import { Outlet } from "react-router-dom";
 import './css/custom.css'
@@ -19,25 +20,15 @@ function App(props) {
     <Provider theme={defaultTheme} height="100%" colorScheme={colorMode}>
 	<Flex direction="column" width="calc(100%)" gap="size-100" borderWidth="thin" borderColor="dark" height="calc(100%)">
   		<View backgroundColor="gray-200" height="size-600">
-	  	<Flex direction="row">
-	  	<Flex  width="50%"  alignContent="left" justifyContent="left">
-	  	<Text>WoWs Whaling Simulator (version alpha.alpha.alpha)</Text>
-	        </Flex>
-	  	<Flex width="50%" alignContent="right" justifyContent="right">
-	        <Switch onChange={setSelection}>
-        		Switch Dark Mode
-      		</Switch>
-	        </Flex>
-	  	</Flex>
+	  	<AppHeader setSelection={setSelection}/>
 	        </View>
   		<View backgroundColor="gray-50"  width="calc(max(80%, size-6000)" 
-		  height="100%" alignSelf="center" marging="size-100" flex="true" borderWidth="thin" borderColor="dark" borderRadius="medium">
+		  height="100%" alignSelf="center" marging="size-400" flex="true" borderWidth="thin" borderColor="dark" borderRadius="medium">
 	        <Outlet />
 	        </View>
   	<View backgroundColor="gray-200" height="size-400">
 	<AppFooter/>
 	</View>
-
 	</Flex>
     </Provider>
   );
