@@ -21,11 +21,15 @@ import {useAsyncList} from 'react-stately';
 
 import { API_ROOT } from '../api-config';
 
+function checkUnset(props) {
+        return ((props === undefined) || props === null || (props.length === 0))
+}
+
 function WhaleBox(props) {
   const [isOpen, setOpen] = React.useState(false);
   const [whaling, setWhaling] = React.useState(false);
-  const [realm, setRealm] = React.useState("");
-  const [player, setPlayer] = React.useState("");
+  const [realm, setRealm] = React.useState();
+  const [player, setPlayer] = React.useState();
   const [numlootbox, setNumlootbox] = React.useState(25);
 
   let realmOptions = [
@@ -63,7 +67,6 @@ function WhaleBox(props) {
       list.setFilterText("")
   }
 
-
   return (
     <>
     <ActionButton onPress={() => setOpen(true)}>	
@@ -77,7 +80,7 @@ function WhaleBox(props) {
       primaryActionLabel="Start Whaling"
       cancelLabel="Cancel"
       onPrimaryAction={triggerWhaling}
-      isPrimaryActionDisabled={player.length === 0}
+      isPrimaryActionDisabled={checkUnset(player)}
       >
 
       <Form maxWidth="size-3600">
@@ -90,18 +93,18 @@ function WhaleBox(props) {
       {(item) => <Item>{item.name}</Item>}
       </Picker>
       <ComboBox
-      label="Player"
+      label="Player Search"
       items={list.items}
       inputValue={list.filterText}
       onInputChange={list.setFilterText}
       loadingState={list.loadingState}
-      isDisabled={realm.length === 0}
+      isDisabled={checkUnset(realm)}
       onSelectionChange={(selected) => setPlayer(selected)}
       >
       {(item) => <Item key={item.account_id}>{item.nickname}</Item>}
       </ComboBox>
 
-      <Slider label="Containers" defaultValue="25" maxValue="1000" onChange={setNumlootbox}/>
+      <Slider label="Containers Quantity" defaultValue="25" maxValue="1000" onChange={setNumlootbox}/>
       </Form>
 
       </AlertDialog>
