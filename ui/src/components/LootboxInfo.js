@@ -63,15 +63,16 @@ function WhaleBox(props) {
 	const stats = res.data;
 	props.setStats(stats);
       })
-      setPlayer("")
+      setPlayer()
+      setRealm()
       list.setFilterText("")
   }
 
   return (
     <>
-    <ActionButton onPress={() => setOpen(true)}>	
+    <Button variant="accent" style="fill" onPress={() => setOpen(true)}>	
     <Money /><Text>Start Whaling!</Text>
-    </ActionButton>
+    </Button>
     <DialogContainer onDismiss={() => setOpen(false)}>
     {isOpen &&
       <AlertDialog
