@@ -9607,6 +9607,34 @@ react-scripts@^5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-stately@^3.19.0:
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/react-stately/-/react-stately-3.19.0.tgz#b911d7320a32bf396b56cbf0292331e945d44c43"
+  integrity sha512-jatLPljb5uGxAqMqK3VfVyjYh39itJBcTDPpxQGPLvfiMF6bmxcCtVt7058CSOG+DtWR/fSu+lKB/A0obxWPlg==
+  dependencies:
+    "@react-stately/calendar" "^3.0.4"
+    "@react-stately/checkbox" "^3.3.1"
+    "@react-stately/collections" "^3.5.0"
+    "@react-stately/combobox" "^3.3.0"
+    "@react-stately/data" "^3.8.0"
+    "@react-stately/datepicker" "^3.2.0"
+    "@react-stately/dnd" "^3.0.0"
+    "@react-stately/list" "^3.6.0"
+    "@react-stately/menu" "^3.4.3"
+    "@react-stately/numberfield" "^3.3.0"
+    "@react-stately/overlays" "^3.4.3"
+    "@react-stately/radio" "^3.6.1"
+    "@react-stately/searchfield" "^3.3.3"
+    "@react-stately/select" "^3.3.3"
+    "@react-stately/selection" "^3.11.1"
+    "@react-stately/slider" "^3.2.3"
+    "@react-stately/table" "^3.6.0"
+    "@react-stately/tabs" "^3.2.3"
+    "@react-stately/toggle" "^3.4.3"
+    "@react-stately/tooltip" "^3.2.3"
+    "@react-stately/tree" "^3.4.0"
+    "@react-types/shared" "^3.16.0"
+
 react-transition-group@^2.2.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
