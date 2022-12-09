@@ -14,3 +14,5 @@ test:
 clean:
 	rm -f wows-whaling-simulator
 	$(MAKE) -C ui
+
+.PHONY: build clean build-static test
