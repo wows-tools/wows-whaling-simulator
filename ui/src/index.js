@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Lootbox />,
       },
     ],
-  }
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

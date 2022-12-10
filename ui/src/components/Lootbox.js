@@ -38,6 +38,7 @@ import {
   Cell,
 } from "@adobe/react-spectrum";
 import { ListBox } from "@adobe/react-spectrum";
+import { useNavigate } from "react-router-dom";
 import { Section } from "@adobe/react-spectrum";
 import { Link as RouterLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -46,7 +47,7 @@ import Money from "@spectrum-icons/workflow/Money";
 import User from "@spectrum-icons/workflow/User";
 import Star from "@spectrum-icons/workflow/Star";
 import { useAsyncList } from "react-stately";
-import GenericTile from "./GenericTile"
+import GenericTile from "./GenericTile";
 
 import { API_ROOT } from "../api-config";
 
@@ -195,25 +196,34 @@ function WhalingResult(props) {
   return (
     <Flex direction="column" gap="size-100">
       <Flex gap="size-100" wrap>
- 	<GenericTile header="Doubloons"
-	  subheader="Doubloons (and real money spent)"
-	  scale="Doubloons"
-	  number={props.whalingData.game_money_spent}
-	  footer={"(ie: €" + props.whalingData.euro_spent + " or $" + props.whalingData.dollar_spent + ")"}
-	  minWidth="size-3600"
-      /> 
-      <GenericTile header="Opened"
-	  subheader="Container Opened"
-	  scale="Container(s)"
-	  number={props.whalingData.container_opened}
-	  minWidth="size-3600"
-      /> 
-      <GenericTile header="Pities"
-	  subheader="Pity trigger count"
-	  scale="Pities"
-	  number={props.whalingData.pities}
-	  minWidth="size-3600"
-      /> 
+        <GenericTile
+          header="Doubloons"
+          subheader="Doubloons (and real money spent)"
+          scale="Doubloons"
+          number={props.whalingData.game_money_spent}
+          footer={
+            "(ie: €" +
+            props.whalingData.euro_spent +
+            " or $" +
+            props.whalingData.dollar_spent +
+            ")"
+          }
+          minWidth="size-3600"
+        />
+        <GenericTile
+          header="Opened"
+          subheader="Container Opened"
+          scale="Container(s)"
+          number={props.whalingData.container_opened}
+          minWidth="size-3600"
+        />
+        <GenericTile
+          header="Pities"
+          subheader="Pity trigger count"
+          scale="Pities"
+          number={props.whalingData.pities}
+          minWidth="size-3600"
+        />
       </Flex>
       <View>
         <Flex direction="row" gap="size-100">
@@ -239,12 +249,17 @@ function WhaleBox(props) {
   const [realm, setRealm] = React.useState();
   const [player, setPlayer] = React.useState();
   const [numlootbox, setNumlootbox] = React.useState(20);
+  const navigate = useNavigate();
 
   let realmOptions = [
     { id: "eu", name: "EU" },
     { id: "na", name: "NA" },
     { id: "asia", name: "Asia" },
   ];
+
+  const GoHome = () => {
+    navigate("/");
+  };
 
   let list = useAsyncList({
     async load({ signal, cursor, filterText }) {
@@ -284,10 +299,16 @@ function WhaleBox(props) {
 
   return (
     <>
-      <Button variant="accent" style="fill" onPress={() => setOpen(true)}>
-        <Money />
-        <Text>Start Whaling!</Text>
-      </Button>
+      <Flex direction="row" gap="size-400">
+        <Button variant="accent" style="fill" onPress={() => setOpen(true)}>
+          <Money />
+          <Text>Start Whaling!</Text>
+        </Button>
+        <Button variant="secondary" style="outline" onPress={GoHome}>
+          <Text>Back to Containers</Text>
+        </Button>
+      </Flex>
+
       <DialogContainer onDismiss={() => setOpen(false)}>
         {isOpen && (
           <AlertDialog
@@ -394,9 +415,7 @@ function Lootbox() {
         borderColor="dark"
         borderRadius="small"
         width="size-2400"
-      >
-        {lootboxContent}
-      </View>
+      ></View>
       <View>
         <WhaleBox
           lootboxId={lootboxId}
@@ -416,7 +435,10 @@ function Lootbox() {
           <Item key="whaling">Whaling Session</Item>
         </TabList>
         <TabPanels>
-          <Item key="container">Placeholder Container Drop Rates</Item>
+          <Item key="container">
+            {lootboxContent}
+            Displaying of drop rate in a future version
+          </Item>
           {stats && (
             <Item key="whaling">
               <View>

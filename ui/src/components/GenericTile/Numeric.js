@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const NumericContent = styled.div`
   display: flex;
@@ -32,20 +32,25 @@ const Scale = styled.div`
 `;
 
 const Indicator = styled.div`
-  ${props => props.indicator === 'Up' ? 'border-bottom: 0.625rem solid' : 'border-top: 0.625rem solid' }
+  ${(props) =>
+    props.indicator === "Up"
+      ? "border-bottom: 0.625rem solid"
+      : "border-top: 0.625rem solid"}
   border-left: 0.5rem solid transparent;
-  border-right: 0.5rem solid transparent
+  border-right: 0.5rem solid transparent;
 `;
 
-const Numeric = ({number, scale, indicator, color, icon}) => (
+const Numeric = ({ number, scale, indicator, color, icon }) => (
   <NumericContent color={color}>
     {icon}
     <Number>{number}</Number>
     <ScaleAndIndicatorContainer>
-      { indicator === 'Up' || indicator === 'Down' ? <Indicator indicator={indicator}/ > : null }
+      {indicator === "Up" || indicator === "Down" ? (
+        <Indicator indicator={indicator} />
+      ) : null}
       <Scale>{scale}</Scale>
     </ScaleAndIndicatorContainer>
   </NumericContent>
-)
+);
 
-export default Numeric
+export default Numeric;
