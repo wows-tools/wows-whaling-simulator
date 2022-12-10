@@ -4,4 +4,4 @@ build:
 clean:
 	rm -rf build/
 
-.PHONY: build, clean
+.PHONY: build clean
