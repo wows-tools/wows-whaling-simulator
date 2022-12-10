@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import LootboxList from "./components/LootboxList";
-import LootboxInfo from "./components/LootboxInfo";
+import Lootbox from "./components/Lootbox";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: "lootboxes/:lootboxId",
-        element: <LootboxInfo />,
+        element: <Lootbox />,
       },
     ],
   },

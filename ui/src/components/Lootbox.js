@@ -355,7 +355,7 @@ function WhaleBox(props) {
   );
 }
 
-function LootboxInfo() {
+function Lootbox() {
   const [stats, setStats] = React.useState(false);
   const [lootbox, setLootbox] = React.useState(false);
   let { lootboxId } = useParams();
@@ -425,4 +425,4 @@ function LootboxInfo() {
   );
 }
 
-export default LootboxInfo;
+export default Lootbox;
