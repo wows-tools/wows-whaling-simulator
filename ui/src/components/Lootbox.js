@@ -106,7 +106,7 @@ function RenderShipList(props) {
       borderWidth="thin"
       borderColor="dark"
       padding="size-100"
-      overflow="scroll"
+      overflow="auto"
       backgroundColor="gray-100"
       maxHeight="size-5000"
     >
@@ -134,7 +134,7 @@ function RenderItems(props) {
       borderColor="dark"
       padding="size-100"
       backgroundColor="gray-100"
-      overflow="scroll"
+      overflow="auto"
       maxHeight="size-5000"
     >
       <Heading>{props.title}</Heading>

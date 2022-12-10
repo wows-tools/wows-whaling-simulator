@@ -13,6 +13,8 @@ import LootboxList from "./components/LootboxList";
 import { Outlet } from "react-router-dom";
 import "./css/custom.css";
 import "./App.css";
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 // Render it in your app!
 function App(props) {
@@ -24,6 +26,7 @@ function App(props) {
     colorMode = "light";
   }
   return (
+    <PerfectScrollbar>
     <Provider theme={defaultTheme} height="100%" colorScheme={colorMode}>
       <Flex
         direction="column"
@@ -46,7 +49,7 @@ function App(props) {
           borderColor="dark"
           borderRadius="medium"
           padding="size-100"
-          overflow="scroll"
+          overflow="auto"
         >
           <Outlet />
         </View>
@@ -55,6 +58,7 @@ function App(props) {
         </View>
       </Flex>
     </Provider>
+    </PerfectScrollbar>
   );
 }
 
