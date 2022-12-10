@@ -3,9 +3,9 @@ build:
 	$(MAKE) -C ui
 	rsync -Pizza ui/build/ static/
 
-build-static:
+static:
 	CGO_ENABLED=0 go build -ldflags "-s -w"
-	$(MAKE) -C ui
+	$(MAKE) -C ui build
 	rsync -Pizza ui/build/ static/
 
 test:
