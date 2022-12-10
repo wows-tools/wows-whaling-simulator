@@ -9,6 +9,7 @@ import { View } from "@adobe/react-spectrum";
 import { Flex } from "@adobe/react-spectrum";
 import { ContextualHelp } from "@adobe/react-spectrum";
 import { Form } from "@adobe/react-spectrum";
+import { Grid } from "@adobe/react-spectrum";
 import { Divider } from "@adobe/react-spectrum";
 import { IllustratedMessage } from "@adobe/react-spectrum";
 import {
@@ -195,7 +196,8 @@ function WhalingResult(props) {
 
   return (
     <Flex direction="column" gap="size-100">
-      <Flex gap="size-100" wrap>
+      <Grid areas={['slot1 slot2 slot3']} gap="size-100" justifyItems="center" wrap>
+	<View width="size-3600">
         <GenericTile
           header="Doubloons"
           subheader="Doubloons (and real money spent)"
@@ -210,6 +212,8 @@ function WhalingResult(props) {
           }
           minWidth="size-3600"
         />
+	</View>
+	<View width="size-3600">
         <GenericTile
           header="Opened"
           subheader="Container Opened"
@@ -217,6 +221,8 @@ function WhalingResult(props) {
           number={props.whalingData.container_opened}
           minWidth="size-3600"
         />
+	</View>
+	<View width="size-3600">
         <GenericTile
           header="Pities"
           subheader="Pity trigger count"
@@ -224,7 +230,8 @@ function WhalingResult(props) {
           number={props.whalingData.pities}
           minWidth="size-3600"
         />
-      </Flex>
+	</View>
+      </Grid>
       <View>
         <Flex direction="row" gap="size-100">
           <RenderShipList ships={ship_cat.tx} title="Tier X" />
