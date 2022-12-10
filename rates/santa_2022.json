@@ -2236,6 +2236,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "V"
       }
@@ -2251,6 +2252,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "V"
       }
@@ -2266,6 +2268,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "V Kamikaze"
       }
@@ -2281,6 +2284,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "V"
       }
@@ -2356,6 +2360,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2371,6 +2376,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "V Giulio"
       }
@@ -2386,6 +2392,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2401,6 +2408,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "IX"
       }
@@ -2461,6 +2469,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "X"
       }
@@ -2506,6 +2515,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "X"
       }
@@ -2581,6 +2591,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "X"
       }
@@ -2596,6 +2607,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "IX"
       }
@@ -2611,6 +2623,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "IX"
       }
@@ -2626,6 +2639,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "IX"
       }
@@ -2641,6 +2655,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "IX"
       }
@@ -2656,6 +2671,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "IX"
       }
@@ -2702,6 +2718,7 @@
       },
       "attributes": {
        "type": "ship",
+       "rare": "true",
        "tier": "IX"
       }
      },
@@ -2717,6 +2734,7 @@
       },
       "attributes": {
        "type": "ship",
+       "rare": "true",
        "tier": "IX"
       }
      },
@@ -2731,6 +2749,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2746,6 +2765,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2761,6 +2781,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2776,6 +2797,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2791,6 +2813,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2806,6 +2829,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VIII"
       }
@@ -2821,6 +2845,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VII"
       }
@@ -2836,6 +2861,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VII"
       }
@@ -2866,6 +2892,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VII"
       }
@@ -2881,6 +2908,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VI"
       }
@@ -2896,6 +2924,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VI"
       }
@@ -2911,6 +2940,7 @@
        "attributes": {"type": "resource"}
       },
       "attributes": {
+       "rare": "true",
        "type": "ship",
        "tier": "VI"
       }
