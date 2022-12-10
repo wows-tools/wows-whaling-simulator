@@ -1,22 +1,26 @@
-import {Flex, Header, View, Provider, defaultTheme, Switch, Text} from '@adobe/react-spectrum';
-
+import {
+  Flex,
+  Header,
+  View,
+  Provider,
+  defaultTheme,
+  Switch,
+  Text,
+} from "@adobe/react-spectrum";
 
 function AppHeader(props) {
-	return (
-		<Header>
-		<Flex direction="row">
-                <Flex  width="50%"  alignContent="left" justifyContent="left">
-                <Text>WoWs Whaling Simulator (version alpha.alpha.alpha)</Text>
-                </Flex>
-                <Flex width="50%" alignContent="right" justifyContent="right">
-                <Switch onChange={props.setSelection}>
-                        Switch Dark Mode
-                </Switch>
-                </Flex>
-                </Flex>
-		</Header>
-
-	)
+  return (
+    <Header>
+      <Flex direction="row">
+        <Flex width="50%" alignContent="left" justifyContent="left">
+          <Text>WoWs Whaling Simulator (version alpha.alpha.alpha)</Text>
+        </Flex>
+        <Flex width="50%" alignContent="right" justifyContent="right">
+          <Switch onChange={props.setSelection}>Switch Dark Mode</Switch>
+        </Flex>
+      </Flex>
+    </Header>
+  );
 }
 
 export default AppHeader;

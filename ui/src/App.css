@@ -1,3 +1,6 @@
-html, body, #root, #app>div { 
-  height: 100% 
-} 
+html,
+body,
+#root,
+#app > div {
+  height: 100%;
+}
