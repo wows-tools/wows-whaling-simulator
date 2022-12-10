@@ -27,6 +27,9 @@ import {
 } from "@adobe/react-spectrum";
 import { Content } from "@adobe/react-spectrum";
 import {
+  Tabs,
+  TabList,
+  TabPanels,
   TableView,
   TableHeader,
   Column,
@@ -94,25 +97,27 @@ function RenderShipList(props) {
     });
 
   return (
-          <View
-            width="33%"
-            borderRadius="medium"
-            borderWidth="thin"
-            borderColor="dark"
-            padding="size-100"
-            overflow="scroll"
-            backgroundColor="gray-100"
-            maxHeight="size-5000"
-          >
-            <Heading>{props.title}<ShipInfo />
-            </Heading>
-            <Divider size="M" />
+    <View
+      width="33%"
+      borderRadius="medium"
+      borderWidth="thin"
+      borderColor="dark"
+      padding="size-100"
+      overflow="scroll"
+      backgroundColor="gray-100"
+      maxHeight="size-5000"
+    >
+      <Heading>
+        {props.title}
+        <ShipInfo />
+      </Heading>
+      <Divider size="M" />
 
-    <Flex direction="row" gap="size-100" wrap>
-      {rows.map((row) => (
-        <View>{row}</View>
-      ))}
-    </Flex>
+      <Flex direction="row" gap="size-100" wrap>
+        {rows.map((row) => (
+          <View>{row}</View>
+        ))}
+      </Flex>
     </View>
   );
 }
@@ -190,9 +195,9 @@ function WhalingResult(props) {
     <Flex direction="column" gap="size-100">
       <View>
         <Flex direction="row" gap="size-100">
-            <RenderShipList ships={ship_cat.tx} title="Tier X" />
-            <RenderShipList ships={ship_cat.tix_viii} title="Tier IX & VIII" />
-            <RenderShipList ships={ship_cat.tvii_} title="Tier VII & bellow"/>
+          <RenderShipList ships={ship_cat.tx} title="Tier X" />
+          <RenderShipList ships={ship_cat.tix_viii} title="Tier IX & VIII" />
+          <RenderShipList ships={ship_cat.tvii_} title="Tier VII & bellow" />
         </Flex>
       </View>
       <View>
@@ -246,11 +251,12 @@ function WhaleBox(props) {
       .then((res) => {
         const stats = res.data;
         props.setStats(stats);
+        props.setTab("whaling");
       });
     // FIXME annoying work around, but managing previous whaling run is not done properly right now
     setPlayer();
     setRealm();
-    setNumlootbox(20)
+    setNumlootbox(20);
     list.setFilterText("");
   };
 
@@ -309,6 +315,7 @@ function WhaleBox(props) {
 
 function Lootbox() {
   const [stats, setStats] = React.useState(false);
+  const [tabSelected, setTabSelected] = React.useState("container");
   const [lootbox, setLootbox] = React.useState(false);
   let { lootboxId } = useParams();
 
@@ -345,6 +352,12 @@ function Lootbox() {
       </IllustratedMessage>
     );
   }
+  let defaultTab = "container";
+  let disabledTabs = ["whaling"];
+  if (stats) {
+    defaultTab = "whaling";
+    disabledTabs = [];
+  }
   return (
     <Flex
       margin="size-100"
@@ -363,16 +376,35 @@ function Lootbox() {
         {lootboxContent}
       </View>
       <View>
-        <WhaleBox lootboxId={lootboxId} setStats={setStats} />
+        <WhaleBox
+          lootboxId={lootboxId}
+          setStats={setStats}
+          setTab={setTabSelected}
+        />
       </View>
 
       <Divider size="M" />
-      {stats && (
-        <View>
-          <Heading>Whaling results:</Heading>
-          <WhalingResult whalingData={stats} />
-        </View>
-      )}
+      <Tabs
+        disabledKeys={disabledTabs}
+        selectedKey={tabSelected}
+        onSelectionChange={setTabSelected}
+      >
+        <TabList>
+          <Item key="container">Container Drop Rates</Item>
+          <Item key="whaling">Whaling Session</Item>
+        </TabList>
+        <TabPanels>
+          <Item key="container">Placeholder Container Drop Rates</Item>
+          {stats && (
+            <Item key="whaling">
+              <View>
+                <Heading>Whaling results:</Heading>
+                <WhalingResult whalingData={stats} />
+              </View>
+            </Item>
+          )}
+        </TabPanels>
+      </Tabs>
     </Flex>
   );
 }
