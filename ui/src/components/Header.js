@@ -12,9 +12,7 @@ function AppHeader(props) {
   return (
     <Header>
       <Flex direction="row">
-        <Flex width="50%" alignContent="left" justifyContent="left">
-          <Text>WoWs Whaling Simulator (version alpha.alpha.alpha)</Text>
-        </Flex>
+        <Flex width="50%" alignContent="left" justifyContent="left"></Flex>
         <Flex width="50%" alignContent="right" justifyContent="right">
           <Switch onChange={props.setSelection}>Switch Dark Mode</Switch>
         </Flex>

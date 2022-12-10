@@ -87,7 +87,7 @@ function RenderShipList(props) {
     .map(function (rowContent) {
       // surround every group with 'row'
       return (
-        <ListBox width="size-2400" selectionMode="none" aria-label="Alignment">
+        <ListBox width="size-2400" selectionMode="none">
           {rowContent}
         </ListBox>
       );
@@ -168,6 +168,7 @@ function WhalingResult(props) {
             borderColor="dark"
             padding="size-100"
             overflow="scroll"
+            backgroundColor="gray-100"
             maxHeight="size-5000"
           >
             <Heading>
@@ -184,6 +185,7 @@ function WhalingResult(props) {
             borderColor="dark"
             padding="size-100"
             overflow="scroll"
+            backgroundColor="gray-100"
             maxHeight="size-5000"
           >
             <Heading>
@@ -198,6 +200,7 @@ function WhalingResult(props) {
             borderRadius="medium"
             borderWidth="thin"
             borderColor="dark"
+            backgroundColor="gray-100"
             padding="size-100"
             overflow="scroll"
             maxHeight="size-5000"
@@ -218,6 +221,7 @@ function WhalingResult(props) {
             borderWidth="thin"
             borderColor="dark"
             padding="size-100"
+            backgroundColor="gray-100"
             overflow="scroll"
             maxHeight="size-5000"
           >
@@ -230,6 +234,7 @@ function WhalingResult(props) {
             borderRadius="medium"
             borderWidth="thin"
             borderColor="dark"
+            backgroundColor="gray-100"
             padding="size-100"
             overflow="scroll"
             maxHeight="size-5000"
@@ -243,6 +248,7 @@ function WhalingResult(props) {
             borderRadius="medium"
             borderWidth="thin"
             borderColor="dark"
+            backgroundColor="gray-100"
             padding="size-100"
             overflow="scroll"
             maxHeight="size-5000"

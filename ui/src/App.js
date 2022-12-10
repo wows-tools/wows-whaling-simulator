@@ -33,7 +33,7 @@ function App(props) {
         borderColor="dark"
         height="calc(100%)"
       >
-        <View backgroundColor="gray-200" height="size-600">
+        <View backgroundColor="gray-200" height="size-400">
           <AppHeader setSelection={setSelection} />
         </View>
         <View
@@ -41,11 +41,11 @@ function App(props) {
           width="calc(max(80%, size-6000)"
           height="100%"
           alignSelf="center"
-          marging="size-400"
           flex="true"
           borderWidth="thin"
           borderColor="dark"
           borderRadius="medium"
+          padding="size-100"
         >
           <Outlet />
         </View>

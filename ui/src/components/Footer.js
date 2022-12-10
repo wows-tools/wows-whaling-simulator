@@ -6,12 +6,13 @@ function AppFooter() {
   return (
     <Footer>
       <Flex alignContent="center" justifyContent="center">
-        <View backgroundColor="gray-200" height="size-400">
+        <View backgroundColor="gray-200" height="size-100">
           <Content>
             <a href="https://github.com/kakwa/wows-whaling-simulator">
               WoWs Whaling Simulator (Source Code)
             </a>{" "}
-            • © 2022 • Kakwa • Released under the MIT License
+            • version alpha.alpha • © 2022 • Kakwa • Released under the MIT
+            Public License
           </Content>
         </View>
       </Flex>
