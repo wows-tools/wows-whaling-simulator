@@ -94,34 +94,63 @@ function RenderShipList(props) {
     });
 
   return (
+          <View
+            width="33%"
+            borderRadius="medium"
+            borderWidth="thin"
+            borderColor="dark"
+            padding="size-100"
+            overflow="scroll"
+            backgroundColor="gray-100"
+            maxHeight="size-5000"
+          >
+            <Heading>{props.title}<ShipInfo />
+            </Heading>
+            <Divider size="M" />
+
     <Flex direction="row" gap="size-100" wrap>
       {rows.map((row) => (
         <View>{row}</View>
       ))}
     </Flex>
+    </View>
   );
 }
 
 function RenderItems(props) {
   return (
-    <TableView selectionMode="none" density="compact">
-      <TableHeader>
-        <Column key="name" width="60%">
-          Name
-        </Column>
-        <Column key="quantity" width="40%">
-          Quantity
-        </Column>
-      </TableHeader>
-      <TableBody>
-        {props.items.map((item) => (
-          <Row>
-            <Cell>{item.name}</Cell>
-            <Cell>{item.quantity}</Cell>
-          </Row>
-        ))}
-      </TableBody>
-    </TableView>
+    <View
+      width="33%"
+      borderRadius="medium"
+      borderWidth="thin"
+      borderColor="dark"
+      padding="size-100"
+      backgroundColor="gray-100"
+      overflow="scroll"
+      maxHeight="size-5000"
+    >
+      <Heading>{props.title}</Heading>
+      <Divider size="M" />
+
+      <TableView selectionMode="none" density="compact">
+        <TableHeader>
+          <Column key="name" width="60%">
+            Name
+          </Column>
+          <Column key="quantity" width="40%">
+            Quantity
+          </Column>
+        </TableHeader>
+        <TableBody>
+          {props.items.map((item) => (
+            <Row>
+              <Cell>{item.name}</Cell>
+              <Cell>{item.quantity}</Cell>
+            </Row>
+          ))}
+        </TableBody>
+      </TableView>
+    </View>
   );
 }
 
@@ -161,101 +190,16 @@ function WhalingResult(props) {
     <Flex direction="column" gap="size-100">
       <View>
         <Flex direction="row" gap="size-100">
-          <View
-            width="33%"
-            borderRadius="medium"
-            borderWidth="thin"
-            borderColor="dark"
-            padding="size-100"
-            overflow="scroll"
-            backgroundColor="gray-100"
-            maxHeight="size-5000"
-          >
-            <Heading>
-              Tier X ships <ShipInfo />
-            </Heading>
-            <Divider size="M" />
-            <RenderShipList ships={ship_cat.tx} />
-          </View>
-
-          <View
-            width="33%"
-            borderRadius="medium"
-            borderWidth="thin"
-            borderColor="dark"
-            padding="size-100"
-            overflow="scroll"
-            backgroundColor="gray-100"
-            maxHeight="size-5000"
-          >
-            <Heading>
-              Tier IX & VIII ships <ShipInfo />
-            </Heading>
-            <Divider size="M" />
-            <RenderShipList ships={ship_cat.tix_viii} />
-          </View>
-
-          <View
-            width="33%"
-            borderRadius="medium"
-            borderWidth="thin"
-            borderColor="dark"
-            backgroundColor="gray-100"
-            padding="size-100"
-            overflow="scroll"
-            maxHeight="size-5000"
-          >
-            <Heading>
-              Tier VII & bellow ships <ShipInfo />
-            </Heading>
-            <Divider size="M" />
-            <RenderShipList ships={ship_cat.tvii_} />
-          </View>
+            <RenderShipList ships={ship_cat.tx} title="Tier X" />
+            <RenderShipList ships={ship_cat.tix_viii} title="Tier IX & VIII" />
+            <RenderShipList ships={ship_cat.tvii_} title="Tier VII & bellow"/>
         </Flex>
       </View>
       <View>
         <Flex direction="row" gap="size-100">
-          <View
-            width="33%"
-            borderRadius="medium"
-            borderWidth="thin"
-            borderColor="dark"
-            padding="size-100"
-            backgroundColor="gray-100"
-            overflow="scroll"
-            maxHeight="size-5000"
-          >
-            <Heading>Resource</Heading>
-            <RenderItems items={other_cat.resource} />
-          </View>
-
-          <View
-            width="33%"
-            borderRadius="medium"
-            borderWidth="thin"
-            borderColor="dark"
-            backgroundColor="gray-100"
-            padding="size-100"
-            overflow="scroll"
-            maxHeight="size-5000"
-          >
-            <Heading>Economic Bonus</Heading>
-            <RenderItems items={other_cat.eco} />
-          </View>
-
-          <View
-            width="33%"
-            borderRadius="medium"
-            borderWidth="thin"
-            borderColor="dark"
-            backgroundColor="gray-100"
-            padding="size-100"
-            overflow="scroll"
-            maxHeight="size-5000"
-          >
-            <Heading>Other</Heading>
-            <RenderItems items={other_cat.other} />
-          </View>
+          <RenderItems items={other_cat.resource} title="Resources" />
+          <RenderItems items={other_cat.eco} title="Economic Bonuses" />
+          <RenderItems items={other_cat.other} title="Oter Items" />
         </Flex>
       </View>
     </Flex>
@@ -303,8 +247,10 @@ function WhaleBox(props) {
         const stats = res.data;
         props.setStats(stats);
       });
+    // FIXME annoying work around, but managing previous whaling run is not done properly right now
     setPlayer();
     setRealm();
+    setNumlootbox(20)
     list.setFilterText("");
   };
 
