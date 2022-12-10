@@ -219,7 +219,7 @@
       },
       "attributes": {
        "type": "ship",
-       "tier": "VI Karl von"
+       "tier": "VI"
       }
      },
      {
@@ -294,7 +294,7 @@
       },
       "attributes": {
        "type": "ship",
-       "tier": "V Rio"
+       "tier": "V"
       }
      },
      {
@@ -1311,7 +1311,7 @@
       },
       "attributes": {
        "type": "ship",
-       "tier": "VIII San"
+       "tier": "VIII"
       }
      },
      {
@@ -1431,7 +1431,7 @@
       },
       "attributes": {
        "type": "ship",
-       "tier": "IX Giuseppe"
+       "tier": "IX"
       }
      },
      {
@@ -2196,7 +2196,7 @@
       "attributes": {
        "rare": "true",
        "type": "ship",
-       "tier": "V Kamikaze"
+       "tier": "V"
       }
      },
      {
@@ -2242,7 +2242,7 @@
       },
       "attributes": {
        "type": "ship",
-       "tier": "X Forrest"
+       "tier": "X"
       }
      },
      {
@@ -2272,7 +2272,7 @@
       },
       "attributes": {
        "type": "ship",
-       "tier": "X Álvaro"
+       "tier": "X"
       }
      },
      {
@@ -2304,7 +2304,7 @@
       "attributes": {
        "rare": "true",
        "type": "ship",
-       "tier": "V Giulio"
+       "tier": "V"
       }
      },
      {
@@ -2351,7 +2351,7 @@
       },
       "attributes": {
        "type": "ship",
-       "tier": "X Grosser"
+       "tier": "X"
       }
      },
      {
