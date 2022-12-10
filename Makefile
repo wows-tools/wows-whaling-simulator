@@ -24,4 +24,4 @@ clean:
 	rm -rf static/static/
 	rm -rf ui/build/
 
-.PHONY: build clean build-static test
+.PHONY: build clean static test
