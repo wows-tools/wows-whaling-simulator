@@ -11,9 +11,12 @@
     "axios": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-lines-ellipsis": "^0.15.3",
     "react-router-dom": "^6.4.4",
     "react-scripts": "^5.0.1",
+    "react-spinners": "^0.13.7",
     "react-stately": "^3.19.0",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.19"
   },

@@ -46,6 +46,7 @@ import Money from "@spectrum-icons/workflow/Money";
 import User from "@spectrum-icons/workflow/User";
 import Star from "@spectrum-icons/workflow/Star";
 import { useAsyncList } from "react-stately";
+import GenericTile from "./GenericTile"
 
 import { API_ROOT } from "../api-config";
 
@@ -193,6 +194,27 @@ function WhalingResult(props) {
 
   return (
     <Flex direction="column" gap="size-100">
+      <Flex gap="size-100" wrap>
+ 	<GenericTile header="Doubloons"
+	  subheader="Doubloons (and real money spent)"
+	  scale="Doubloons"
+	  number={props.whalingData.game_money_spent}
+	  footer={"(ie: €" + props.whalingData.euro_spent + " or $" + props.whalingData.dollar_spent + ")"}
+	  minWidth="size-3600"
+      /> 
+      <GenericTile header="Opened"
+	  subheader="Container Opened"
+	  scale="Container(s)"
+	  number={props.whalingData.container_opened}
+	  minWidth="size-3600"
+      /> 
+      <GenericTile header="Pities"
+	  subheader="Pity trigger count"
+	  scale="Pities"
+	  number={props.whalingData.pities}
+	  minWidth="size-3600"
+      /> 
+      </Flex>
       <View>
         <Flex direction="row" gap="size-100">
           <RenderShipList ships={ship_cat.tx} title="Tier X" />
