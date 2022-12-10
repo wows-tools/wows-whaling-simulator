@@ -46,6 +46,7 @@ function App(props) {
           borderColor="dark"
           borderRadius="medium"
           padding="size-100"
+          overflow="scroll"
         >
           <Outlet />
         </View>
