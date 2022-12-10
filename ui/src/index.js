@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Error from "./components/Error";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import LootboxList from "./components/LootboxList";
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: "",
@@ -21,7 +23,7 @@ const router = createBrowserRouter([
         element: <Lootbox />,
       },
     ],
-  },
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
