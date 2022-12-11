@@ -54,16 +54,19 @@ export default class LootboxList extends React.Component {
 
         <Heading level={3}>Pick a Containers:</Heading>
         <Grid
-          columns={repeat("auto-fit", "size-2400")}
+          columns={repeat("auto-fit", "size-3600")}
           autoRows="size-3000"
           marginStart="size-800"
           gap="size-400"
         >
           {this.state.lootboxes.map((lb) => (
             <View
-              backgroundColor="gray-200"
+              width="size-3600"
+              backgroundColor="gray-100"
+              borderRadius="medium"
+              borderWidth="thin"
               borderColor="dark"
-              borderRadius="small"
+              padding="size-100"
             >
               <Link>
                 <RouterLink to={"/lootboxes/" + lb.id}>

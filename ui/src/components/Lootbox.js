@@ -46,6 +46,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import NotFound from "@spectrum-icons/illustrations/NotFound";
 import Money from "@spectrum-icons/workflow/Money";
+import Back from "@spectrum-icons/workflow/Back";
 import User from "@spectrum-icons/workflow/User";
 import Star from "@spectrum-icons/workflow/Star";
 import { useAsyncList } from "react-stately";
@@ -260,17 +261,12 @@ function WhaleBox(props) {
   const [realm, setRealm] = React.useState();
   const [player, setPlayer] = React.useState();
   const [numlootbox, setNumlootbox] = React.useState(20);
-  const navigate = useNavigate();
 
   let realmOptions = [
     { id: "eu", name: "EU" },
     { id: "na", name: "NA" },
     { id: "asia", name: "Asia" },
   ];
-
-  const GoHome = () => {
-    navigate("/");
-  };
 
   const setRealmReset = (value) => {
     // Reset Player when changing Realm
@@ -313,12 +309,14 @@ function WhaleBox(props) {
   return (
     <>
       <Flex direction="row" gap="size-400">
-        <Button variant="accent" style="fill" onPress={() => setOpen(true)}>
+        <Button
+          variant="negative"
+          style="fill"
+          height="size-600"
+          onPress={() => setOpen(true)}
+        >
           <Money />
           <Text>Start Whaling!</Text>
-        </Button>
-        <Button variant="secondary" style="outline" onPress={GoHome}>
-          <Text>Back to Containers</Text>
         </Button>
       </Flex>
 
@@ -512,7 +510,12 @@ function Lootbox() {
   const [stats, setStats] = React.useState(false);
   const [tabSelected, setTabSelected] = React.useState("container");
   const [lootbox, setLootbox] = React.useState(false);
+  const navigate = useNavigate();
   let { lootboxId } = useParams();
+
+  const GoHome = () => {
+    navigate("/");
+  };
 
   const [isOpen, setOpen] = React.useState(false);
   useEffect(() => {
@@ -554,10 +557,20 @@ function Lootbox() {
         selectedKey={tabSelected}
         onSelectionChange={setTabSelected}
       >
-        <TabList>
-          <Item key="container">Container Drop Rates</Item>
-          <Item key="whaling">Whaling Session</Item>
-        </TabList>
+        <Flex>
+          <View width="85%">
+            <TabList>
+              <Item key="container">Container Drop Rates</Item>
+              <Item key="whaling">Whaling Session</Item>
+            </TabList>
+          </View>
+          <View width="15" marginTop="calc(single-line-height)">
+            <Button variant="secondary" style="outline" onPress={GoHome}>
+              <Back />
+              <Text>Back List</Text>
+            </Button>
+          </View>
+        </Flex>
         <TabPanels>
           <Item key="container">
             <Heading>Lootbox Info:</Heading>
