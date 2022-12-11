@@ -9,6 +9,7 @@ import { View } from "@adobe/react-spectrum";
 import { Flex } from "@adobe/react-spectrum";
 import { ContextualHelp } from "@adobe/react-spectrum";
 import { Form } from "@adobe/react-spectrum";
+import { Switch } from "@adobe/react-spectrum";
 import { Grid } from "@adobe/react-spectrum";
 import { Divider } from "@adobe/react-spectrum";
 import { IllustratedMessage } from "@adobe/react-spectrum";
@@ -260,7 +261,10 @@ function WhaleBox(props) {
   const [isOpen, setOpen] = React.useState(false);
   const [realm, setRealm] = React.useState();
   const [player, setPlayer] = React.useState();
+  const [targetMode, setTargetMode] = React.useState(false);
   const [numlootbox, setNumlootbox] = React.useState(20);
+  const [ship, setShip] = React.useState("");
+  const [shipList, setShipList] = React.useState([]);
 
   let realmOptions = [
     { id: "eu", name: "EU" },
@@ -273,6 +277,19 @@ function WhaleBox(props) {
     setPlayer();
     list.setFilterText("");
     setRealm(value);
+  };
+
+  const refreshShips = (selected) => {
+    axios
+      .get(
+        `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${selected}/remainingships`
+      )
+      .then((res) => {
+        const ships = res.data.ships;
+        console.log(ships);
+        const shipObjList = ships.map((ship) => ({ name: ship }));
+        setShipList(shipObjList);
+      });
   };
 
   let list = useAsyncList({
@@ -295,17 +312,35 @@ function WhaleBox(props) {
   });
 
   const triggerWhaling = () => {
-    axios
-      .get(
-        `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/simple_whaling_quantity?number_lootbox=${numlootbox}`
-      )
-      .then((res) => {
-        const stats = res.data;
-        props.setStats(stats);
-        props.setTab("whaling");
-      });
+    if (!targetMode) {
+      axios
+        .get(
+          `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/simple_whaling_quantity`,
+          { params: { number_lootbox: numlootbox } }
+        )
+        .then((res) => {
+          const stats = res.data;
+          props.setStats(stats);
+          props.setTab("whaling");
+        });
+    } else {
+      axios
+        .get(
+          `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/simple_whaling_target`,
+          { params: { target: ship } }
+        )
+        .then((res) => {
+          const stats = res.data;
+          props.setStats(stats);
+          props.setTab("whaling");
+        });
+    }
   };
 
+  const setPlayerRefresh = (selected) => {
+    setPlayer(selected);
+    refreshShips(selected);
+  };
   return (
     <>
       <Flex direction="row" gap="size-400">
@@ -348,33 +383,55 @@ function WhaleBox(props) {
                 onInputChange={list.setFilterText}
                 loadingState={list.loadingState}
                 isDisabled={checkUnset(realm)}
-                onSelectionChange={(selected) => setPlayer(selected)}
+                onSelectionChange={(selected) => setPlayerRefresh(selected)}
               >
                 {(item) => <Item key={item.account_id}>{item.nickname}</Item>}
               </ComboBox>
 
-              <Flex direction="row" gap="size-100">
-                <View>
-                  <Slider
-                    height="size-1000"
-                    label="Number of containers"
-                    value={numlootbox}
-                    width="size-3600"
-                    maxValue="1000"
-                    showValueLabel={false}
-                    onChange={setNumlootbox}
-                  />
-                </View>
-                <View marginTop="calc(single-line-height / 2)">
-                  <NumberField
-                    width="size-1200"
-                    value={numlootbox}
-                    minValue={0}
-                    maxValue="1000"
-                    onChange={setNumlootbox}
-                  />
-                </View>
-              </Flex>
+              <Switch
+                onChange={setTargetMode}
+                width="size-1000"
+                defaultSelected={targetMode}
+              >
+                {(targetMode && "Target") || "Quantity"}
+              </Switch>
+
+              {(targetMode && (
+                <ComboBox
+                  label="Ship Search"
+                  items={shipList}
+                  defaultInputValue={ship}
+                  defaultSelectedKey={ship}
+                  onInputChange={ship.setShip}
+                  isDisabled={checkUnset(player)}
+                  onSelectionChange={(selected) => setShip(selected)}
+                >
+                  {(item) => <Item key={item.name}>{item.name}</Item>}
+                </ComboBox>
+              )) || (
+                <Flex direction="row" gap="size-100">
+                  <View>
+                    <Slider
+                      height="size-1000"
+                      label="Number of containers"
+                      value={numlootbox}
+                      width="size-3600"
+                      maxValue="1000"
+                      showValueLabel={false}
+                      onChange={setNumlootbox}
+                    />
+                  </View>
+                  <View marginTop="calc(single-line-height / 2)">
+                    <NumberField
+                      width="size-1200"
+                      value={numlootbox}
+                      minValue={0}
+                      maxValue="1000"
+                      onChange={setNumlootbox}
+                    />
+                  </View>
+                </Flex>
+              )}
             </Form>
           </AlertDialog>
         )}

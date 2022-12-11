@@ -31,7 +31,7 @@ export default class LootboxList extends React.Component {
     return (
       <View marging="size-400">
         <Heading level={1}>World of Warships Lootbox Whaling Simulator</Heading>
-	<Divider/>
+        <Divider />
         <Heading level={2}>Disclaimer</Heading>
         <View
           backgroundColor="red-400"
