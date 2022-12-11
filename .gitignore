@@ -15,6 +15,7 @@
 # vendor/
 
 wows-whaling-simulator
+wows-whaling-simulator-static
 
 .*.sw*
 

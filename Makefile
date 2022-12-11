@@ -1,19 +1,25 @@
-build:
-	go build
-	$(MAKE) -C ui
-	rsync -Pizza ui/build/ static/
+SOURCES := $(shell find ./ -type f -not -path "./ui*" -not -path '*/.*' -not -path './build/*' -not -name '*_test.go' -name '*.go') \
+	   static/asset-manifest.json static/*.png static/index.html static/static/*/* static/resources/* static/manifest.json static/robots.txt
 
-static:
-	CGO_ENABLED=0 go build -ldflags "-s -w"
+
+all:
 	$(MAKE) -C ui
-	rsync -Pizza ui/build/ static/
+	rsync -Pizza ui/build/ static/ --exclude=/resources --delete
+	$(MAKE) wows-whaling-simulator wows-whaling-simulator-static
+
+wows-whaling-simulator: $(SOURCES)
+	go build
+
+wows-whaling-simulator-static: $(SOURCES)
+	CGO_ENABLED=0 go build -ldflags "-s -w" -o wows-whaling-simulator-static
 
 test:
 	go test
 
 clean:
+	$(MAKE) -C ui clean
 	rm -f wows-whaling-simulator
-	rm -f wows-whaling-simulator
+	rm -f wows-whaling-simulator-static
 	rm -f static/asset-manifest.json
 	rm -f static/christmas.png
 	rm -f static/index.html
@@ -24,4 +30,10 @@ clean:
 	rm -rf static/static/
 	rm -rf ui/build/
 
-.PHONY: build clean static test
+
+clean-all:
+	$(MAKE) clean
+	$(MAKE) -C ui clean-all
+
+
+.PHONY: clean static test clean-all all

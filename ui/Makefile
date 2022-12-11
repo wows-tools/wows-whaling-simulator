@@ -1,6 +1,6 @@
 SOURCES := $(shell find ./ -type f -not -path "./node_modules/*" -not -path '*/.*' -not -path './build/*')
 
-all: build node_modules
+all: node_modules build
 
 node_modules: yarn.lock package.json
 	yarn install
@@ -16,3 +16,4 @@ clean-all:
 	rm -rf build/
 
 .PHONY: clean all clean-all
+.NOTPARALLEL: all
