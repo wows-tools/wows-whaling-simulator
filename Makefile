@@ -1,7 +1,6 @@
 SOURCES := $(shell find ./ -type f -not -path "./ui*" -not -path '*/.*' -not -path './build/*' -not -name '*_test.go' -name '*.go') \
 	   static/asset-manifest.json static/*.png static/index.html static/static/*/* static/resources/* static/manifest.json static/robots.txt
 
-
 all:
 	$(MAKE) -C ui
 	rsync -Pizza ui/build/ static/ --exclude=/resources --delete
@@ -30,10 +29,8 @@ clean:
 	rm -rf static/static/
 	rm -rf ui/build/
 
-
 clean-all:
 	$(MAKE) clean
 	$(MAKE) -C ui clean-all
 
-
-.PHONY: clean static test clean-all all
+.PHONY: clean test clean-all all
