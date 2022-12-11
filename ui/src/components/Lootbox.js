@@ -405,14 +405,15 @@ function RenderSlot(props) {
               <Cell>{cat.items.length}</Cell>
               <Cell>{cat.drop_rate / cat.items.length} %</Cell>
               <Cell>
-                {" "}
-                ||
-                {cat.items.map((item) => (
-                  <>
-                    {" "}
-                    {item.name} (qty: {item.quantity}) ||
-                  </>
-                ))}
+                <View maxHeight="size-2000" overflow="auto">
+                  <ul>
+                    {cat.items.map((item) => (
+                      <li>
+                        {item.name} (x {item.quantity})
+                      </li>
+                    ))}
+                  </ul>
+                </View>
               </Cell>
             </Row>
           );
