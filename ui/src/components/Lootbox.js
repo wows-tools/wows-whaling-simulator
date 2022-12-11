@@ -196,41 +196,46 @@ function WhalingResult(props) {
 
   return (
     <Flex direction="column" gap="size-100">
-      <Grid areas={['slot1 slot2 slot3']} gap="size-100" justifyItems="center" wrap>
-	<View width="size-3600">
-        <GenericTile
-          header="Doubloons"
-          subheader="Doubloons (and real money spent)"
-          scale="Doubloons"
-          number={props.whalingData.game_money_spent}
-          footer={
-            "(ie: €" +
-            props.whalingData.euro_spent +
-            " or $" +
-            props.whalingData.dollar_spent +
-            ")"
-          }
-          minWidth="size-3600"
-        />
-	</View>
-	<View width="size-3600">
-        <GenericTile
-          header="Opened"
-          subheader="Container Opened"
-          scale="Container(s)"
-          number={props.whalingData.container_opened}
-          minWidth="size-3600"
-        />
-	</View>
-	<View width="size-3600">
-        <GenericTile
-          header="Pities"
-          subheader="Pity trigger count"
-          scale="Pities"
-          number={props.whalingData.pities}
-          minWidth="size-3600"
-        />
-	</View>
+      <Grid
+        areas={["slot1 slot2 slot3"]}
+        gap="size-100"
+        justifyItems="center"
+        wrap
+      >
+        <View width="size-3600">
+          <GenericTile
+            header="Doubloons"
+            subheader="Doubloons (and real money spent)"
+            scale="Doubloons"
+            number={props.whalingData.game_money_spent}
+            footer={
+              "(ie: €" +
+              props.whalingData.euro_spent +
+              " or $" +
+              props.whalingData.dollar_spent +
+              ")"
+            }
+            minWidth="size-3600"
+          />
+        </View>
+        <View width="size-3600">
+          <GenericTile
+            header="Opened"
+            subheader="Container Opened"
+            scale="Container(s)"
+            number={props.whalingData.container_opened}
+            minWidth="size-3600"
+          />
+        </View>
+        <View width="size-3600">
+          <GenericTile
+            header="Pities"
+            subheader="Pity trigger count"
+            scale="Pities"
+            number={props.whalingData.pities}
+            minWidth="size-3600"
+          />
+        </View>
       </Grid>
       <View>
         <Flex direction="row" gap="size-100">
