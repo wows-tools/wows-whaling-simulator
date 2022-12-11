@@ -2,6 +2,7 @@
  "name": "Santa Big Gift Containers 2022",
  "img": "/resources/PCL007_SantaMedium_7161211c0108462e161d15085eb14038c0ff90150d76fc3d782f6e26bde6c0b7.png",
  "id": "santa_big_2022", 
+ "weight": 200,
  "drops": [
   {
    "Signals": {

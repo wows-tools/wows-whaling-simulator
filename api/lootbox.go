@@ -5,12 +5,14 @@ import (
 	"github.com/labstack/echo/v4"
 
 	"net/http"
+	"sort"
 )
 
 type lootboxShort struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
-	Img  string `json:"img"`
+	ID     string `json:"id"`
+	Name   string `json:"name"`
+	Img    string `json:"img"`
+	Weight int    `json:"widght"`
 }
 
 type lootboxCollection struct {
@@ -26,12 +28,16 @@ func (a *API) listLootboxes(c echo.Context) error {
 	ret.Lootboxes = make([]*lootboxShort, 0)
 	for _, lbfull := range a.lootboxCollection {
 		lb := lootboxShort{
-			Name: lbfull.Name,
-			ID:   lbfull.ID,
-			Img:  lbfull.Img,
+			Name:   lbfull.Name,
+			ID:     lbfull.ID,
+			Img:    lbfull.Img,
+			Weight: lbfull.Weight,
 		}
 		ret.Lootboxes = append(ret.Lootboxes, &lb)
 	}
+	sort.Slice(ret.Lootboxes, func(i, j int) bool {
+		return ret.Lootboxes[i].Weight < ret.Lootboxes[j].Weight
+	})
 	return c.JSON(http.StatusOK, ret)
 }
 

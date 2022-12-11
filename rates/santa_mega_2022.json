@@ -2,6 +2,7 @@
  "name": "Santa Mega Gift Containers 2022",
  "img":"/resources/PCL008_SantaBig_66c27149933df73403c7f98fc8087e44b4fe3851c7fa5789cffac9027801273a.png",
  "id": "santa_mega_2022", 
+ "weight": 300,
  "drops": [
   {
    "Elite Commander XP": {

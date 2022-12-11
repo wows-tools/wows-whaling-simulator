@@ -2,6 +2,7 @@
  "name": "Santa Gift Containers 2022",
  "img": "/resources/PCL006_SantaSmall_9a8c19e61a904be8be329399436e7f9d66b19d47041dfef0f635615f30355370.png",
  "id": "santa_2022", 
+ "weight": 100,
  "drops": [
   {
    "Signals": {
