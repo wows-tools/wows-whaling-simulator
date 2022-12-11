@@ -80,6 +80,10 @@ func (lb *LootBox) IsCollectable(target string) bool {
 	return lb.collectables.Contains(target)
 }
 
+func (lb *LootBox) GetRemainingCollectables() []string {
+	return lb.collectables.ToSlice()
+}
+
 func (lb *LootBox) Init() {
 	lb.userCollactables = mapset.NewSet[string]()
 	lb.randSeed = rand.New(rand.NewSource(time.Now().UnixNano()))

@@ -122,6 +122,10 @@ func (ws *WhalingSession) TargetWhaling(target string) error {
 	return nil
 }
 
+func (ws *WhalingSession) RemainingCollectables() []string {
+	return ws.lootBox.GetRemainingCollectables()
+}
+
 func (ws *WhalingSession) Finalize() {
 	for _, otherItem := range ws.otherItems {
 		ws.OtherItems = append(ws.OtherItems, otherItem)
