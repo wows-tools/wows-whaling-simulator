@@ -41,7 +41,7 @@ function App(props) {
           </View>
           <View
             backgroundColor="gray-50"
-            width="calc(max(80%, size-6000)"
+            width="calc(max(95%, size-6000)"
             height="100%"
             alignSelf="center"
             flex="true"
