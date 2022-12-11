@@ -567,7 +567,7 @@ function Lootbox() {
           <View width="15" marginTop="calc(single-line-height)">
             <Button variant="secondary" style="outline" onPress={GoHome}>
               <Back />
-              <Text>Back List</Text>
+              <Text>Back To Container List</Text>
             </Button>
           </View>
         </Flex>
