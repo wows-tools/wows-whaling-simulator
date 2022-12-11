@@ -265,6 +265,7 @@ function WhaleBox(props) {
   const [numlootbox, setNumlootbox] = React.useState(20);
   const [ship, setShip] = React.useState("");
   const [shipList, setShipList] = React.useState([]);
+  const [shipInput, setShipInput] = React.useState("");
 
   let realmOptions = [
     { id: "eu", name: "EU" },
@@ -399,10 +400,11 @@ function WhaleBox(props) {
               {(targetMode && (
                 <ComboBox
                   label="Ship Search"
-                  items={shipList}
-                  defaultInputValue={ship}
-                  defaultSelectedKey={ship}
-                  onInputChange={ship.setShip}
+                  defaultItems={shipList}
+                  selectedKey={ship}
+                  onSelectionChange={setShip}
+                  onInputChange={setShipInput}
+                  defaultInputValue={shipInput}
                   isDisabled={checkUnset(player)}
                   onSelectionChange={(selected) => setShip(selected)}
                 >
