@@ -437,15 +437,58 @@ function LootboxContent(props) {
 
   return (
     <View>
-      <IllustratedMessage>
-        <Image
-          height="size-1000"
-          objectFit="scale-down"
-          src={API_ROOT + lootbox.img}
-          alt={lootbox.name}
-        />
-        <Content>{lootbox.name}</Content>
-      </IllustratedMessage>
+      <Grid
+        areas={["slot1 slot2 slot3 slot4"]}
+        gap="size-100"
+        justifyItems="center"
+        wrap
+      >
+        <View
+          width="size-3600"
+          backgroundColor="gray-100"
+          borderRadius="medium"
+          borderWidth="thin"
+          borderColor="dark"
+          padding="size-100"
+        >
+          <IllustratedMessage>
+            <Image
+              height="size-2000"
+              objectFit="scale-down"
+              src={API_ROOT + lootbox.img}
+              alt={lootbox.name}
+            />
+            <Content>{lootbox.name}</Content>
+          </IllustratedMessage>
+        </View>
+        <View width="size-3600">
+          <GenericTile
+            header="Price"
+            subheader="Container Price"
+            scale="Doubloons"
+            number={lootbox.price}
+            minWidth="size-3600"
+          />
+        </View>
+        <View width="size-3600">
+          <GenericTile
+            header="Pity"
+            subheader="Pity count"
+            scale="Containers"
+            number={lootbox.pity}
+            minWidth="size-3600"
+          />
+        </View>
+        <View width="size-3600">
+          <GenericTile
+            header="Slots"
+            subheader="number of slots"
+            scale="Slot(s)"
+            number={lootbox.drops.length}
+            minWidth="size-3600"
+          />
+        </View>
+      </Grid>
       <Tabs>
         <TabList>
           {props.lootbox.drops.map((drops, index) => (
@@ -496,12 +539,6 @@ function Lootbox() {
       alignContent="center"
       alignItems="center"
     >
-      <View
-        backgroundColor="gray-200"
-        borderColor="dark"
-        borderRadius="small"
-        width="size-2400"
-      ></View>
       <View>
         <WhaleBox
           lootboxId={lootboxId}
@@ -522,6 +559,7 @@ function Lootbox() {
         </TabList>
         <TabPanels>
           <Item key="container">
+            <Heading>Lootbox Info:</Heading>
             <LootboxContent lootbox={lootbox} />
           </Item>
           {stats && (
