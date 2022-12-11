@@ -1,9 +1,14 @@
 package lootbox
 
 import (
+	"fmt"
 	"github.com/barkimedes/go-deepcopy"
 	"github.com/kakwa/wows-whaling-simulator/common"
 	"math"
+)
+
+const (
+	SafetyTargetWhaling = 100000
 )
 
 type WhalingSession struct {
@@ -43,9 +48,10 @@ func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, er
 	return &wlSess, nil
 }
 
-func (ws *WhalingSession) Draw() error {
+func (ws *WhalingSession) Draw() (*ItemShort, error) {
 
 	usePity := (ws.pityCounter == ws.lootBox.Pity)
+	var itemShort ItemShort
 	// If we reach pity, reset the counter, otherwise increment it
 	if usePity {
 		ws.pityCounter = 0
@@ -56,26 +62,27 @@ func (ws *WhalingSession) Draw() error {
 	results, err := ws.lootBox.Draw(usePity)
 
 	if err != nil {
-		return err
+		return nil, err
 	}
 	ws.ContainerOpened++
 	for _, res := range results {
+		itemShort = ItemShort{
+			ID:         res.Item.ID,
+			Name:       res.Item.Name,
+			Attributes: res.Item.Attributes,
+		}
+
 		if res.Category.Collectable {
-			itemShort := ItemShort{
-				ID:         res.Item.ID,
-				Name:       res.Item.Name,
-				Attributes: res.Item.Attributes,
-			}
 			ws.CollectableItems = append(ws.CollectableItems, &itemShort)
 		} else {
-			itemShort := ItemShortQuantity{
+			itemShortQty := ItemShortQuantity{
 				ID:         res.Item.ID,
 				Name:       res.Item.Name,
 				Attributes: res.Item.Attributes,
 				Quantity:   res.Item.Quantity,
 			}
 			if _, ok := ws.otherItems[res.Item.Name]; !ok {
-				ws.otherItems[res.Item.Name] = &itemShort
+				ws.otherItems[res.Item.Name] = &itemShortQty
 			} else {
 				ws.otherItems[res.Item.Name].Quantity += res.Item.Quantity
 			}
@@ -86,6 +93,32 @@ func (ws *WhalingSession) Draw() error {
 			ws.pityCounter = 0
 		}
 	}
+	return &itemShort, nil
+}
+
+func (ws *WhalingSession) TargetWhaling(target string) error {
+	if !ws.lootBox.IsCollectable(target) {
+		return fmt.Errorf("targeted item '%s' not in collectable set", target)
+	}
+	counter := 0
+	for {
+		// Safety break to avoid overloading / infinite looping
+		if counter >= SafetyTargetWhaling {
+			return fmt.Errorf("Max openening limit '%d' reached", SafetyTargetWhaling)
+		}
+		item, err := ws.Draw()
+		if err != nil {
+			return err
+		}
+
+		// if we got the item stop
+		if item.Name == target {
+			break
+		}
+		counter++
+	}
+	// finalize the stats computation
+	ws.Finalize()
 	return nil
 }
 

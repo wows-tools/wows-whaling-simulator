@@ -48,11 +48,12 @@ type LootBox struct {
 	Drops            []map[string]*ItemCategory `json:"drops"`
 	Pity             uint64                     `json:"pity"`
 	Price            float64                    `json:"price"`
+	collectables     mapset.Set[string]
 	drawTrees        []*interval.SearchTree[*ItemCategory, float64]
 	drawTreesMax     []float64
 	drawTreesPity    []*interval.SearchTree[*ItemCategory, float64]
 	drawTreesPityMax []float64
-	collectable      mapset.Set[string]
+	userCollactables mapset.Set[string]
 	randSeed         *rand.Rand
 }
 
@@ -72,11 +73,15 @@ func cdrCmp(cumDroprate1, cumItemCategory2 float64) int {
 }
 
 func (lb *LootBox) AddCollectable(collectable string) {
-	lb.collectable.Add(collectable)
+	lb.userCollactables.Add(collectable)
+}
+
+func (lb *LootBox) IsCollectable(target string) bool {
+	return lb.collectables.Contains(target)
 }
 
 func (lb *LootBox) Init() {
-	lb.collectable = mapset.NewSet[string]()
+	lb.userCollactables = mapset.NewSet[string]()
 	lb.randSeed = rand.New(rand.NewSource(time.Now().UnixNano()))
 }
 
@@ -92,7 +97,7 @@ func (lb *LootBox) RemoveOwnedCollectablesFromDropableItems() {
 			var item *Item
 			for _, item = range itemCategory.Items {
 				// If the item is not in the collectable set, append it
-				if !lb.collectable.Contains(item.Name) {
+				if !lb.userCollactables.Contains(item.Name) {
 					cleanedItems = append(cleanedItems, item)
 				}
 			}
@@ -152,6 +157,7 @@ func (lb *LootBox) RefreshDrawTree() error {
 		lb.drawTreesPityMax = append(lb.drawTreesPityMax, endPity)
 	}
 
+	lb.refreshCollectables()
 	return nil
 }
 
@@ -226,6 +232,22 @@ func (lb *LootBox) Draw(isPity bool) (drawResult []DrawResult, err error) {
 		drawResult = append(drawResult, result)
 	}
 	return drawResult, nil
+}
+
+func (lb *LootBox) refreshCollectables() {
+	collectables := mapset.NewSet[string]()
+	for _, drop := range lb.Drops {
+		for _, itemCategory := range drop {
+			// If the item is not collectable, skip it
+			if !itemCategory.Collectable {
+				continue
+			}
+			for _, item := range itemCategory.Items {
+				collectables.Add(item.Name)
+			}
+		}
+	}
+	lb.collectables = collectables
 }
 
 func (lb *LootBox) ListCollectables() (ret []*ItemShort) {
