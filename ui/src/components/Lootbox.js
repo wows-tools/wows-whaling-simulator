@@ -12,6 +12,7 @@ import { Form } from "@adobe/react-spectrum";
 import { Grid } from "@adobe/react-spectrum";
 import { Divider } from "@adobe/react-spectrum";
 import { IllustratedMessage } from "@adobe/react-spectrum";
+import { NumberField } from "@adobe/react-spectrum";
 import {
   ComboBox,
   ActionButton,
@@ -257,7 +258,6 @@ function WhalingResult(props) {
 
 function WhaleBox(props) {
   const [isOpen, setOpen] = React.useState(false);
-  const [whaling, setWhaling] = React.useState(false);
   const [realm, setRealm] = React.useState();
   const [player, setPlayer] = React.useState();
   const [numlootbox, setNumlootbox] = React.useState(20);
@@ -271,6 +271,13 @@ function WhaleBox(props) {
 
   const GoHome = () => {
     navigate("/");
+  };
+
+  const setRealmReset = (value) => {
+    // Reset Player when changing Realm
+    setPlayer();
+    list.setFilterText("");
+    setRealm(value);
   };
 
   let list = useAsyncList({
@@ -302,11 +309,6 @@ function WhaleBox(props) {
         props.setStats(stats);
         props.setTab("whaling");
       });
-    // FIXME annoying work around, but managing previous whaling run is not done properly right now
-    setPlayer();
-    setRealm();
-    setNumlootbox(20);
-    list.setFilterText("");
   };
 
   return (
@@ -330,13 +332,15 @@ function WhaleBox(props) {
             cancelLabel="Cancel"
             onPrimaryAction={triggerWhaling}
             isPrimaryActionDisabled={checkUnset(player)}
+            minWidth="size-6000"
           >
-            <Form maxWidth="size-4600">
+            <Form>
               <Picker
                 label="Realm/Wows Server"
                 items={realmOptions}
-                onSelectionChange={(selected) => setRealm(selected)}
+                onSelectionChange={(selected) => setRealmReset(selected)}
                 autoFocus="true"
+                defaultSelectedKey={realm}
               >
                 {(item) => <Item>{item.name}</Item>}
               </Picker>
@@ -352,14 +356,28 @@ function WhaleBox(props) {
                 {(item) => <Item key={item.account_id}>{item.nickname}</Item>}
               </ComboBox>
 
-              <Slider
-                height="size-1000"
-                width="size-3600"
-                label="Containers Quantity"
-                defaultValue="20"
-                maxValue="1000"
-                onChange={setNumlootbox}
-              />
+              <Flex direction="row" gap="size-100">
+                <View>
+                  <Slider
+                    height="size-1000"
+                    label="Number of containers"
+                    value={numlootbox}
+                    width="size-3600"
+                    maxValue="1000"
+                    showValueLabel={false}
+                    onChange={setNumlootbox}
+                  />
+                </View>
+                <View marginTop="calc(single-line-height / 2)">
+                  <NumberField
+                    width="size-1200"
+                    value={numlootbox}
+                    minValue={0}
+                    maxValue="1000"
+                    onChange={setNumlootbox}
+                  />
+                </View>
+              </Flex>
             </Form>
           </AlertDialog>
         )}
