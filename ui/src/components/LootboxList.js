@@ -6,6 +6,7 @@ import { Text } from "@adobe/react-spectrum";
 import { Grid } from "@adobe/react-spectrum";
 import { repeat } from "@adobe/react-spectrum";
 import { Flex } from "@adobe/react-spectrum";
+import { Divider } from "@adobe/react-spectrum";
 import { View } from "@adobe/react-spectrum";
 import { IllustratedMessage } from "@adobe/react-spectrum";
 import { Heading } from "@adobe/react-spectrum";
@@ -30,6 +31,7 @@ export default class LootboxList extends React.Component {
     return (
       <View marging="size-400">
         <Heading level={1}>World of Warships Lootbox Whaling Simulator</Heading>
+	<Divider/>
         <Heading level={2}>Disclaimer</Heading>
         <View
           backgroundColor="red-400"
