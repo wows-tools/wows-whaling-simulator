@@ -164,7 +164,6 @@ function RenderItems(props) {
 }
 
 function WhalingResult(props) {
-  console.log(props.whalingData);
   let ship_cat = { tx: [], tix_viii: [], tvii_: [] };
   for (const ship of props.whalingData.collectables_items) {
     switch (ship.attributes.tier) {
@@ -386,6 +385,85 @@ function WhaleBox(props) {
   );
 }
 
+function RenderSlot(props) {
+  // FIXME display properly the items
+  return (
+    <TableView selectionMode="none" density="compact" overflowMode="wrap">
+      <TableHeader>
+        <Column key="name">Category</Column>
+        <Column key="droprate">Drop Rate</Column>
+        <Column key="item_pool_size">Item Pool Size</Column>
+        <Column key="item_drop_rate">Individual Item Drop Rate</Column>
+        <Column key="items">Items</Column>
+      </TableHeader>
+      <TableBody>
+        {Object.values(props.drops).map((cat, index) => {
+          return (
+            <Row>
+              <Cell>{cat.name}</Cell>
+              <Cell>{cat.drop_rate} %</Cell>
+              <Cell>{cat.items.length}</Cell>
+              <Cell>{cat.drop_rate / cat.items.length} %</Cell>
+              <Cell>
+                {" "}
+                ||
+                {cat.items.map((item) => (
+                  <>
+                    {" "}
+                    {item.name} (qty: {item.quantity}) ||
+                  </>
+                ))}
+              </Cell>
+            </Row>
+          );
+        })}
+      </TableBody>
+    </TableView>
+  );
+}
+
+function LootboxContent(props) {
+  let lootbox = props.lootbox;
+
+  if (!props.lootbox) {
+    return (
+      <IllustratedMessage>
+        <NotFound />
+        <Heading>No result</Heading>
+        <Content>Container found</Content>
+      </IllustratedMessage>
+    );
+  }
+
+  return (
+    <View>
+      <IllustratedMessage>
+        <Image
+          height="size-1000"
+          objectFit="scale-down"
+          src={API_ROOT + lootbox.img}
+          alt={lootbox.name}
+        />
+        <Content>{lootbox.name}</Content>
+      </IllustratedMessage>
+      <Tabs>
+        <TabList>
+          {props.lootbox.drops.map((drops, index) => (
+            <Item key={index + 1}>Slot {index + 1}</Item>
+          ))}
+        </TabList>
+        <TabPanels>
+          {props.lootbox.drops.map((drops, index) => (
+            <Item key={index + 1}>
+              <RenderSlot drops={drops} />
+            </Item>
+          ))}
+        </TabPanels>
+      </Tabs>
+    </View>
+  );
+}
+
 function Lootbox() {
   const [stats, setStats] = React.useState(false);
   const [tabSelected, setTabSelected] = React.useState("container");
@@ -403,28 +481,6 @@ function Lootbox() {
   const validateInput = () => {
     return false;
   };
-  let lootboxContent;
-  if (lootbox) {
-    lootboxContent = (
-      <IllustratedMessage>
-        <Image
-          height="200px"
-          objectFit="scale-down"
-          src={API_ROOT + lootbox.img}
-          alt={lootbox.name}
-        />
-        <Content>{lootbox.name}</Content>
-      </IllustratedMessage>
-    );
-  } else {
-    lootboxContent = (
-      <IllustratedMessage>
-        <NotFound />
-        <Heading>No result</Heading>
-        <Content>Container found</Content>
-      </IllustratedMessage>
-    );
-  }
   let defaultTab = "container";
   let disabledTabs = ["whaling"];
   if (stats) {
@@ -454,7 +510,7 @@ function Lootbox() {
         />
       </View>
 
-      <Divider size="M" />
+      <Divider size="S" />
       <Tabs
         disabledKeys={disabledTabs}
         selectedKey={tabSelected}
@@ -466,8 +522,7 @@ function Lootbox() {
         </TabList>
         <TabPanels>
           <Item key="container">
-            {lootboxContent}
-            Displaying of drop rate in a future version
+            <LootboxContent lootbox={lootbox} />
           </Item>
           {stats && (
             <Item key="whaling">
