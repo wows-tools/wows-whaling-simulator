@@ -70,13 +70,11 @@ func (a *API) simpleWhalingQuantity(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 
-	for i := 0; i < whaling.Quantity; i++ {
-		_, err = ws.Draw()
-		if err != nil {
-			return echo.NewHTTPError(http.StatusBadRequest, err.Error())
-		}
+	ws.SimpleWhaling(whaling.Quantity)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
-	ws.Finalize()
+
 	a.stats.OpenedContainers += uint64(whaling.Quantity)
 	a.stats.SimpleWhalingQuantity++
 

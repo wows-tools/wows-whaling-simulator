@@ -122,6 +122,19 @@ func (ws *WhalingSession) TargetWhaling(target string) error {
 	return nil
 }
 
+func (ws *WhalingSession) SimpleWhaling(counter int) error {
+	for i := 0; i < counter; i++ {
+		_, err := ws.Draw()
+		if err != nil {
+			return err
+		}
+	}
+	// finalize the stats computation
+	ws.Finalize()
+
+	return nil
+}
+
 func (ws *WhalingSession) RemainingCollectables() []string {
 	return ws.lootBox.GetRemainingCollectables()
 }
