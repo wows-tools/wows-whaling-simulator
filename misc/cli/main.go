@@ -1,24 +1,30 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"github.com/kakwa/wows-whaling-simulator/lootbox"
 	"github.com/kakwa/wows-whaling-simulator/wows"
+	"log"
 	"os"
 )
 
 func main() {
-	num := flag.Int("n", 10, "number of containers opened")
+	num := flag.Int("n", 0, "number of containers opened")
+	target := flag.String("target", "", "ship targeted (exclusive with -n")
 	realmStr := flag.String("realm", "eu", "Wows realm (eu, na, asia)")
 	nick := flag.String("nick", "", "Nickname of the player")
 	lootboxType := flag.String("lootbox", "", "Lootbox type")
 	flag.Parse()
 
+	if len(*target) != 0 && *num != 0 {
+		log.Fatal("-n and -target are exclusive flags")
+	}
+
 	lbc, err := lootbox.NewLootBoxCollection("./rates/")
 	if err != nil {
-		fmt.Printf("Error parsing files: %s\n", err.Error())
-		os.Exit(1)
+		log.Fatal("Error parsing files: %s\n", err.Error())
 	}
 
 	lb, ok := lbc[*lootboxType]
@@ -34,41 +40,52 @@ func main() {
 	wowsApi := wows.NewWowsAPI(api_key)
 	realm, err := wows.WowsRealm(*realmStr)
 	if err != nil {
-		fmt.Printf("Error Getting the realm %s\n", err.Error())
-		os.Exit(1)
+		log.Fatal("Error Getting the realm %s\n", err.Error())
 	}
 	err = wowsApi.FillShipMapping()
 	if err != nil {
-		fmt.Printf("Error Prefilling the Ship Mapping: %s\n", err.Error())
-		os.Exit(1)
+		log.Fatal("Error Prefilling the Ship Mapping: %s\n", err.Error())
 	}
 	players, err := wowsApi.SearchPlayer(realm, *nick, "exact")
 	if err != nil {
-		fmt.Printf("Error Searching the player: %s\n", err.Error())
-		os.Exit(1)
+		log.Fatal("Error Searching the player: %s\n", err.Error())
 	}
 
 	ships, err := wowsApi.GetPlayerShips(realm, *players[0].AccountId)
 	if err != nil {
-		fmt.Printf("Error getting the player's ships: %s\n", err.Error())
-		os.Exit(1)
+		log.Fatal("Error getting the player's ships: %s\n", err.Error())
 	}
 
 	ws, err := lb.NewWhalingSession(ships)
 	if err != nil {
-		fmt.Printf("Error Initializing the whaling Session: %s\n", err.Error())
-		os.Exit(1)
+		log.Fatal("Error Initializing the whaling Session: %s\n", err.Error())
 	}
 
-	for i := 0; i < *num; i++ {
-		err := ws.Draw()
+	var data []byte
+	if *num != 0 {
+		err = ws.SimpleWhaling(*num)
 		if err != nil {
-			fmt.Printf("Error Drawing item: %s\n", err.Error())
-			os.Exit(1)
+			log.Fatal("Error Drawing item: %s\n", err.Error())
 
 		}
+
+		data, err = json.MarshalIndent(ws, "", " ")
+		if err != nil {
+			log.Fatal(err)
+		}
 	}
-	for k, v := range ws.Items {
-		fmt.Printf("%6d Item: %s\n", v, k)
+	if len(*target) != 0 {
+		err = ws.TargetWhaling(*target)
+		if err != nil {
+			log.Fatal("Error Drawing item: %s\n", err.Error())
+
+		}
+
+		data, err = json.MarshalIndent(ws, "", " ")
+		if err != nil {
+			log.Fatal(err)
+		}
 	}
+
+	fmt.Printf(string(data))
 }
