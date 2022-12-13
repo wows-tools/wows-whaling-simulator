@@ -30,7 +30,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	api_key := os.Getenv("WG_API_KEY")
+	api_key := os.Getenv("WOWS_WOWSAPIKEY")
 	wowsApi := wows.NewWowsAPI(api_key)
 	realm, err := wows.WowsRealm(*realmStr)
 	if err != nil {

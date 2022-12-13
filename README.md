@@ -30,7 +30,7 @@ To use the CLI tool you need a Wargaming API key: https://developers.wargaming.n
 Once you got the API key (don't forget to whitelist your public IP), do the following:
 
 ```
-export WG_API_KEY=zzzzzzzzzzzzzzzzzzzzz
+export WOWS_WOWSAPIKEY=zzzzzzzzzzzzzzzzzzzzz
 
 go run misc/cli/main.go --help
 Usage of /tmp/go-build4003606908/b001/exe/main:
