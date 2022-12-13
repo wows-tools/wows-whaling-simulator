@@ -16,6 +16,7 @@ func main() {
 	realmStr := flag.String("realm", "eu", "Wows realm (eu, na, asia)")
 	nick := flag.String("nick", "", "Nickname of the player")
 	lootboxType := flag.String("lootbox", "", "Lootbox type")
+	statsMode := flag.Bool("stats", false, "Enable stats mode (stats on 1000 runs)")
 	flag.Parse()
 
 	if len(*target) != 0 && *num != 0 {
@@ -56,13 +57,15 @@ func main() {
 		log.Fatal("Error getting the player's ships: %s\n", err.Error())
 	}
 
+	wss := lb.NewWhalingStatsSession(ships)
+
 	ws, err := lb.NewWhalingSession(ships)
 	if err != nil {
 		log.Fatal("Error Initializing the whaling Session: %s\n", err.Error())
 	}
 
 	var data []byte
-	if *num != 0 {
+	if *num != 0 && !*statsMode {
 		err = ws.SimpleWhaling(*num)
 		if err != nil {
 			log.Fatal("Error Drawing item: %s\n", err.Error())
@@ -74,7 +77,7 @@ func main() {
 			log.Fatal(err)
 		}
 	}
-	if len(*target) != 0 {
+	if len(*target) != 0 && !*statsMode {
 		err = ws.TargetWhaling(*target)
 		if err != nil {
 			log.Fatal("Error Drawing item: %s\n", err.Error())
@@ -86,6 +89,38 @@ func main() {
 			log.Fatal(err)
 		}
 	}
+	if *statsMode {
+		lootbox.InitStatsWorkers()
+	}
 
+	if *num != 0 && *statsMode {
+		err = wss.StatsSimpleWhaling(*num)
+		if err != nil {
+			log.Fatal("Error Drawing item: %s\n", err.Error())
+
+		}
+
+		data, err = json.MarshalIndent(wss, "", " ")
+		if err != nil {
+			log.Fatal(err)
+		}
+
+	}
+
+	if len(*target) != 0 && *statsMode {
+		err = wss.StatsTargetWhaling(*target)
+		if err != nil {
+			log.Fatal("Error Drawing item: %s\n", err.Error())
+
+		}
+
+		data, err = json.MarshalIndent(wss, "", " ")
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
+	if *statsMode {
+		lootbox.StopStatsWorkers()
+	}
 	fmt.Printf(string(data))
 }
