@@ -52,6 +52,7 @@ func ParseConfig(cfgfile string) (*AppConfig, error) {
 	viper.BindEnv("LogLevel")
 	viper.BindEnv("StaticAssets")
 	viper.BindEnv("WowsApiKey")
+	viper.BindEnv("Rates")
 	viper.AutomaticEnv()
 	if err := viper.Unmarshal(&cfg); err != nil {
 		fmt.Printf("unable to decode into struct, %v", err)
