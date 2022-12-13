@@ -4,13 +4,19 @@ SOURCES := $(shell find ./ -type f -not -path "./ui*" -not -path '*/.*' -not -pa
 all:
 	$(MAKE) -C ui
 	rsync -Pizza ui/build/ static/ --exclude=/resources --delete
-	$(MAKE) wows-whaling-simulator wows-whaling-simulator-static
+	$(MAKE) wows-whaling-simulator wows-whaling-simulator-static wows-whaling-simulator-cli wows-whaling-simulator-cli-static
 
 wows-whaling-simulator: $(SOURCES)
 	go build
 
+wows-whaling-simulator-cli: $(SOURCES)
+	go build -o wows-whaling-simulator-cli misc/cli/main.go
+
 wows-whaling-simulator-static: $(SOURCES)
 	CGO_ENABLED=0 go build -ldflags "-s -w" -o wows-whaling-simulator-static
+
+wows-whaling-simulator-cli-static: $(SOURCES)
+	CGO_ENABLED=0 go build -ldflags "-s -w" -o wows-whaling-simulator-cli-static misc/cli/main.go
 
 test:
 	go test

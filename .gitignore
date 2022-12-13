@@ -16,6 +16,9 @@
 
 wows-whaling-simulator
 wows-whaling-simulator-static
+wows-whaling-simulator-cli
+wows-whaling-simulator-cli-static
+
 
 .*.sw*
 
