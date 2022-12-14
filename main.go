@@ -34,6 +34,9 @@ func main() {
 		AllowOrigins: []string{"http://localhost:8080", "http://localhost:3000"},
 		AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
 	}))
+	e.Use(middleware.GzipWithConfig(middleware.GzipConfig{
+		Level: 5,
+	}))
 
 	e.Logger.Fatal(e.Start(cfg.Listen))
 }
