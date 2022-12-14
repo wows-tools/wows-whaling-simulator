@@ -22,6 +22,7 @@ type WhalingSession struct {
 	SpentDollar      float64                       `json:"dollar_spent"`
 	CollectableItems []*ItemShort                  `json:"collectables_items"`
 	OtherItems       []*ItemShortQuantity          `json:"other_items"`
+	ByAttribute      map[string]map[string]uint64  `json:"by_attributes"`
 }
 
 func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, error) {
@@ -39,6 +40,7 @@ func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, er
 	wlSess.pityCounter = 0
 	wlSess.Pities = 0
 	wlSess.otherItems = make(map[string]*ItemShortQuantity)
+	wlSess.ByAttribute = make(map[string]map[string]uint64)
 	wlSess.lootBox.Init()
 	for _, collectable := range collectables {
 		wlSess.lootBox.AddCollectable(collectable)
@@ -139,12 +141,31 @@ func (ws *WhalingSession) RemainingCollectables() []string {
 	return ws.lootBox.GetRemainingCollectables()
 }
 
+func (ws *WhalingSession) addAttributeValue(key, value string, quantity uint64) {
+	if _, ok := ws.ByAttribute[key]; !ok {
+		ws.ByAttribute[key] = make(map[string]uint64)
+	}
+	ws.ByAttribute[key][value] += quantity
+}
+
 func (ws *WhalingSession) Finalize() {
 	for _, otherItem := range ws.otherItems {
 		ws.OtherItems = append(ws.OtherItems, otherItem)
 	}
 	ws.Spent = float64(ws.ContainerOpened) * ws.lootBox.Price
 	// FIXME Should not hardcode conversion rates here
-	ws.SpentEuro = math.Round(ws.Spent/308.641975309*100) / 100
-	ws.SpentDollar = math.Round(ws.Spent/280.583613917*100) / 100
+	ws.SpentEuro = math.Round(ws.Spent/ws.lootBox.ExchangeRateEuro*100) / 100
+	ws.SpentDollar = math.Round(ws.Spent/ws.lootBox.ExchangeRateEuro*100) / 100
+
+	// Collectable items are only handled by attributes
+	for _, item := range ws.CollectableItems {
+		for key, value := range item.Attributes {
+			ws.addAttributeValue(key, value, 1)
+		}
+	}
+	for _, item := range ws.OtherItems {
+		for key, value := range item.Attributes {
+			ws.addAttributeValue(key, value, item.Quantity)
+		}
+	}
 }
