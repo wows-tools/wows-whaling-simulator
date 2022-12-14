@@ -1,3 +1,4 @@
+![Whale](https://github.com/kakwa/wows-whaling-simulator/raw/main/ui/public/logo192.png)
 # Wows Whaling Simulator
 
 Webapp + API + CLI tool simulating massive whaling with World of Warships lootboxes.
