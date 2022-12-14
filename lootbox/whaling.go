@@ -162,7 +162,7 @@ func (ws *WhalingSession) Finalize() {
 	ws.Spent = float64(ws.ContainerOpened) * ws.lootBox.Price
 	// FIXME Should not hardcode conversion rates here
 	ws.SpentEuro = math.Round(ws.Spent/ws.lootBox.ExchangeRateEuro*100) / 100
-	ws.SpentDollar = math.Round(ws.Spent/ws.lootBox.ExchangeRateEuro*100) / 100
+	ws.SpentDollar = math.Round(ws.Spent/ws.lootBox.ExchangeRateDollar*100) / 100
 
 	// Collectable items are only handled by attributes
 	for _, item := range ws.CollectableItems {
