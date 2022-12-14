@@ -5,9 +5,16 @@ import (
 	"sync"
 )
 
+const (
+	QuatityWhalingStats = "stats_whaling_quantity"
+	TargetWhalingStats  = "stats_whaling_target"
+)
+
 type WhalingStatsSession struct {
+	SimulationType           string                             `json:"simulation_type"`
 	SessionCounter           uint64                             `json:"session_count"`
-	OpenedEach               []uint64                           `json:"opened_count_list"`
+	OpenedEach               []uint64                           `json:"opened_each"`
+	ByAttributeEach          []map[string]map[string]uint64     `json:"by_attribute_each"`
 	AverageByItem            map[string]*ItemShortQuantityFloat `json:"avg_by_item"`
 	AverageByAttribute       map[string]map[string]float64      `json:"avg_by_attribute"`
 	ContainterOpened         uint64                             `json:"session_opened"`
@@ -57,9 +64,9 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 			wss.collectablesItems += uint64(len(res.CollectableItems))
 			wss.pities += res.Pities
 			wss.OpenedEach = append(wss.OpenedEach, res.ContainerOpened)
+			wss.ByAttributeEach = append(wss.ByAttributeEach, res.ByAttribute)
 
 			// Collectable items are only handled by attributes
-			// TODO rework since the info is provided by Whaling Session in ByAttribute
 			for _, item := range res.CollectableItems {
 				for key, value := range item.Attributes {
 					wss.addAttributeValue(key, value, float64(1))
@@ -78,9 +85,7 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 				for key, value := range item.Attributes {
 					wss.addAttributeValue(key, value, float64(item.Quantity))
 				}
-
 			}
-
 		}
 
 		close(outputChannel)
@@ -99,17 +104,19 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 			}
 		}
 
-		sort.Slice(wss.OpenedEach, func(i, j int) bool { return wss.OpenedEach[i] < wss.OpenedEach[j] })
+		tmpEach := make([]uint64, len(wss.OpenedEach))
+		copy(tmpEach, wss.OpenedEach)
+		sort.Slice(tmpEach, func(i, j int) bool { return tmpEach[i] < tmpEach[j] })
 		// In Quantity mode, this is useless
 		if input.SessionType != Quantity {
-			wss.Percentiles["best"] = wss.OpenedEach[0]
-			wss.Percentiles["10%%"] = wss.OpenedEach[StatsSessionCount/10]
-			wss.Percentiles["33%%"] = wss.OpenedEach[StatsSessionCount/3]
-			wss.Percentiles["50%%"] = wss.OpenedEach[StatsSessionCount/2]
-			wss.Percentiles["66%%"] = wss.OpenedEach[StatsSessionCount*2/3]
-			wss.Percentiles["90%%"] = wss.OpenedEach[StatsSessionCount*9/20]
-			wss.Percentiles["95%%"] = wss.OpenedEach[StatsSessionCount*19/20]
-			wss.Percentiles["worst"] = wss.OpenedEach[StatsSessionCount-1]
+			wss.Percentiles["best"] = tmpEach[0]
+			wss.Percentiles["10%%"] = tmpEach[StatsSessionCount/10]
+			wss.Percentiles["33%%"] = tmpEach[StatsSessionCount/3]
+			wss.Percentiles["50%%"] = tmpEach[StatsSessionCount/2]
+			wss.Percentiles["66%%"] = tmpEach[StatsSessionCount*2/3]
+			wss.Percentiles["90%%"] = tmpEach[StatsSessionCount*9/20]
+			wss.Percentiles["95%%"] = tmpEach[StatsSessionCount*19/20]
+			wss.Percentiles["worst"] = tmpEach[StatsSessionCount-1]
 		}
 	}()
 
@@ -149,6 +156,7 @@ func (lb *LootBox) NewWhalingStatsSession(collectables []string) *WhalingStatsSe
 }
 
 func (wss *WhalingStatsSession) StatsSimpleWhaling(count int) error {
+	wss.SimulationType = QuatityWhalingStats
 	input := &WhalingInput{
 		SessionType:    Quantity,
 		Quantity:       count,
@@ -158,6 +166,7 @@ func (wss *WhalingStatsSession) StatsSimpleWhaling(count int) error {
 }
 
 func (wss *WhalingStatsSession) StatsTargetWhaling(target string) error {
+	wss.SimulationType = TargetWhalingStats
 	input := &WhalingInput{
 		SessionType:    Target,
 		Target:         target,
