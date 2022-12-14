@@ -47,20 +47,22 @@ type ItemCategory struct {
 }
 
 type LootBox struct {
-	Name             string                     `json:"name"`
-	Img              string                     `json:"img"`
-	Weight           int                        `json:"weight"`
-	ID               string                     `json:"id"`
-	Drops            []map[string]*ItemCategory `json:"drops"`
-	Pity             uint64                     `json:"pity"`
-	Price            float64                    `json:"price"`
-	collectables     mapset.Set[string]
-	drawTrees        []*interval.SearchTree[*ItemCategory, float64]
-	drawTreesMax     []float64
-	drawTreesPity    []*interval.SearchTree[*ItemCategory, float64]
-	drawTreesPityMax []float64
-	userCollactables mapset.Set[string]
-	randSeed         *rand.Rand
+	Name               string                     `json:"name"`
+	Img                string                     `json:"img"`
+	Weight             int                        `json:"weight"`
+	ID                 string                     `json:"id"`
+	Drops              []map[string]*ItemCategory `json:"drops"`
+	Pity               uint64                     `json:"pity"`
+	Price              float64                    `json:"price"`
+	ExchangeRateEuro   float64                    `json:"exchange_rate_euro"`
+	ExchangeRateDollar float64                    `json:"exchange_rate_dollar"`
+	collectables       mapset.Set[string]
+	drawTrees          []*interval.SearchTree[*ItemCategory, float64]
+	drawTreesMax       []float64
+	drawTreesPity      []*interval.SearchTree[*ItemCategory, float64]
+	drawTreesPityMax   []float64
+	userCollactables   mapset.Set[string]
+	randSeed           *rand.Rand
 }
 
 type DrawResult struct {
