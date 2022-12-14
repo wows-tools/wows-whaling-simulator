@@ -10,10 +10,15 @@ import (
 const (
 	SafetyTargetWhaling = 100000
 )
+const (
+	QuantityWhaling = "simple_whaling_quantity"
+	TargetWhaling   = "simple_whaling_target"
+)
 
 type WhalingSession struct {
 	lootBox          *LootBox
 	pityCounter      uint64
+	SimulationType   string                        `json:"simulation_type"`
 	otherItems       map[string]*ItemShortQuantity `json:"other_items"`
 	ContainerOpened  uint64                        `json:"container_opened"`
 	Pities           uint64                        `json:"pities"`
@@ -99,6 +104,7 @@ func (ws *WhalingSession) Draw() (*ItemShort, error) {
 }
 
 func (ws *WhalingSession) TargetWhaling(target string) error {
+	ws.SimulationType = TargetWhaling
 	if !ws.lootBox.IsCollectable(target) {
 		return fmt.Errorf("targeted item '%s' not in collectable set", target)
 	}
@@ -125,6 +131,7 @@ func (ws *WhalingSession) TargetWhaling(target string) error {
 }
 
 func (ws *WhalingSession) SimpleWhaling(counter int) error {
+	ws.SimulationType = QuantityWhaling
 	for i := 0; i < counter; i++ {
 		_, err := ws.Draw()
 		if err != nil {
