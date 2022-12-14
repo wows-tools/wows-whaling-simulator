@@ -16,10 +16,10 @@ var (
 )
 
 type Stats struct {
-	SimpleWhalingQuantity uint64 `json:"simple_whaling_quantity"`
-	SimpleWhalingStats    uint64 `json:"simple_whaling_stats"`
-	TargetWhalingQuantity uint64 `json:"target_whaling_quantity"`
-	TargetWhalingStats    uint64 `json:"target_whaling_status"`
+	WhalingQuantitySimple uint64 `json:"simple_whaling_quantity"`
+	WhalingQuantityStats  uint64 `json:"stats_whaling_quantity"`
+	TargetWhalingSimple   uint64 `json:"simple_whaling_target"`
+	TargetWhalingStats    uint64 `json:"stats_whaling_target"`
 	OpenedContainers      uint64 `json:"opened_counters"`
 }
 

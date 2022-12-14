@@ -76,13 +76,60 @@ func (a *API) simpleWhalingQuantity(c echo.Context) error {
 	}
 
 	a.stats.OpenedContainers += uint64(whaling.Quantity)
-	a.stats.SimpleWhalingQuantity++
+	a.stats.WhalingQuantitySimple++
 
 	return c.JSON(http.StatusOK, ws)
 }
 
 func (a *API) statsWhalingQuantity(c echo.Context) error {
-	return echo.NewHTTPError(http.StatusNotImplemented, "Not implemented yet")
+	var whaling QuantityWhaling
+	err := c.Bind(&whaling)
+	if err != nil {
+		return c.String(http.StatusBadRequest, "bad request")
+	}
+	realm, err := wows.WowsRealm(whaling.Realm)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	if whaling.Quantity > 10000 || whaling.Quantity < 0 {
+		return echo.NewHTTPError(http.StatusBadRequest, "Please pick a number of lootbox between 0 and 10000")
+	}
+	shipList := make([]string, 0)
+	err = a.cache.Once(&cache.Item{
+		TTL:   time.Hour,
+		SetNX: true,
+		Key:   "wows:searchShip:" + whaling.Realm + ":" + strconv.Itoa(whaling.PlayerID),
+		Value: &shipList, // destination
+		Do: func(*cache.Item) (interface{}, error) {
+			shipList, err := a.wowsAPI.GetPlayerShips(realm, whaling.PlayerID)
+			if err != nil {
+				return nil, err
+			}
+			return shipList, nil
+		},
+	})
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+	lb, ok := a.lootboxCollection[whaling.LootboxID]
+	if !ok {
+		return echo.NewHTTPError(http.StatusNotFound, "Lootbox id unknown")
+	}
+	wss := lb.NewWhalingStatsSession(shipList)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	wss.StatsSimpleWhaling(whaling.Quantity)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	a.stats.OpenedContainers += wss.Opened
+	a.stats.WhalingQuantityStats++
+
+	return c.JSON(http.StatusOK, wss)
 }
 
 func (a *API) simpleWhalingTarget(c echo.Context) error {
@@ -130,13 +177,60 @@ func (a *API) simpleWhalingTarget(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 	a.stats.OpenedContainers += ws.ContainerOpened
-	a.stats.TargetWhalingQuantity++
+	a.stats.TargetWhalingSimple++
 
 	return c.JSON(http.StatusOK, ws)
 }
 
 func (a *API) statsWhalingTarget(c echo.Context) error {
-	return echo.NewHTTPError(http.StatusNotImplemented, "Not implemented yet")
+	var whaling TargetWhaling
+	err := c.Bind(&whaling)
+	if err != nil {
+		return c.String(http.StatusBadRequest, "bad request")
+	}
+	realm, err := wows.WowsRealm(whaling.Realm)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	if len(whaling.Target) == 0 {
+		return echo.NewHTTPError(http.StatusBadRequest, "Missing target for this whaling")
+	}
+	shipList := make([]string, 0)
+	err = a.cache.Once(&cache.Item{
+		TTL:   time.Hour,
+		SetNX: true,
+		Key:   "wows:searchShip:" + whaling.Realm + ":" + strconv.Itoa(whaling.PlayerID),
+		Value: &shipList, // destination
+		Do: func(*cache.Item) (interface{}, error) {
+			shipList, err := a.wowsAPI.GetPlayerShips(realm, whaling.PlayerID)
+			if err != nil {
+				return nil, err
+			}
+			return shipList, nil
+		},
+	})
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+	lb, ok := a.lootboxCollection[whaling.LootboxID]
+	if !ok {
+		return echo.NewHTTPError(http.StatusNotFound, "Lootbox id unknown")
+	}
+	wss := lb.NewWhalingStatsSession(shipList)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	err = wss.StatsTargetWhaling(whaling.Target)
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+	a.stats.OpenedContainers += wss.Opened
+	a.stats.TargetWhalingSimple++
+
+	return c.JSON(http.StatusOK, wss)
+
 }
 
 func (a *API) remainingShips(c echo.Context) error {

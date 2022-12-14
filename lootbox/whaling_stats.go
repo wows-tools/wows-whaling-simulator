@@ -12,6 +12,7 @@ const (
 
 type WhalingStatsSession struct {
 	SimulationType           string                             `json:"simulation_type"`
+	Opened                   uint64                             `json:"total_opened"`
 	SessionCounter           uint64                             `json:"session_count"`
 	OpenedEach               []uint64                           `json:"opened_each"`
 	ByAttributeEach          []map[string]map[string]uint64     `json:"by_attribute_each"`
@@ -25,7 +26,6 @@ type WhalingStatsSession struct {
 	AveragePities            float64                            `json:"avg_pities"`
 	AverageCollectablesItems float64                            `json:"avg_collectable_items"`
 	Percentiles              map[string]uint64                  `json:"percentiles_open"`
-	opened                   uint64
 	pities                   uint64
 	collectablesItems        uint64
 	lootBox                  *LootBox
@@ -57,7 +57,7 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 			wss.SessionCounter++
 			wss.ContainterOpened += res.ContainerOpened
 
-			wss.opened += res.ContainerOpened
+			wss.Opened += res.ContainerOpened
 			wss.AverageSpent += res.Spent
 			wss.AverageSpentEuro += res.SpentEuro
 			wss.AverageSpentDollar += res.SpentDollar
@@ -89,7 +89,7 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 		}
 
 		close(outputChannel)
-		wss.AverageOpened = float64(wss.opened) / float64(wss.SessionCounter)
+		wss.AverageOpened = float64(wss.Opened) / float64(wss.SessionCounter)
 		wss.AverageSpent /= float64(wss.SessionCounter)
 		wss.AverageSpentEuro /= float64(wss.SessionCounter)
 		wss.AverageSpentDollar /= float64(wss.SessionCounter)
