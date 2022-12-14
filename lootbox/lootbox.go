@@ -27,7 +27,13 @@ type ItemShortQuantity struct {
 	Name       string            `json:"name"`       // Name of the item
 	ID         string            `json:"id"`         // Iternal ID
 	Attributes map[string]string `json:"attributes"` // map of attributes (ex: {"tier": "X"})
+}
 
+type ItemShortQuantityFloat struct {
+	Quantity   float64           `json:"quantity"`   // Quantity of this item dropped
+	Name       string            `json:"name"`       // Name of the item
+	ID         string            `json:"id"`         // Iternal ID
+	Attributes map[string]string `json:"attributes"` // map of attributes (ex: {"tier": "X"})
 }
 
 type ItemCategory struct {
