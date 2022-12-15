@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/kakwa/wows-whaling-simulator/api"
 	"github.com/kakwa/wows-whaling-simulator/config"
+	"github.com/kakwa/wows-whaling-simulator/lootbox"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -25,6 +26,7 @@ func main() {
 
 	e.Logger.SetLevel(logLevel)
 
+	lootbox.InitStatsWorkers()
 	apiv1, err := api.NewAPI(e, cfg)
 	if err != nil {
 		e.Logger.Fatalf("failed to init API: %s", err)
