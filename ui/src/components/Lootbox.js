@@ -166,6 +166,22 @@ function RenderItems(props) {
 }
 
 function WhalingResult(props) {
+  switch (props.whalingData.simulation_type) {
+    case "simple_whaling_quantity":
+    case "simple_whaling_target":
+      return <SimpleWhalingResult whalingData={props.whalingData} />;
+    case "stats_whaling_quantity":
+    case "stats_whaling_target":
+      return <StatsWhalingResult whalingData={props.whalingData} />;
+  }
+}
+
+function StatsWhalingResult(props) {
+  // TODO
+  return <></>;
+}
+
+function SimpleWhalingResult(props) {
   let ship_cat = { tx: [], tix_viii: [], tvii_: [] };
   for (const ship of props.whalingData.collectables_items) {
     switch (ship.attributes.tier) {
@@ -273,6 +289,13 @@ function WhaleBox(props) {
     { id: "asia", name: "Asia" },
   ];
 
+  let whalingModeOptions = [
+    { id: "simple_whaling_quantity", name: "Simple Whaling (Quantity)" },
+    { id: "stats_whaling_quantity", name: "Stats Whaling (Quantity)" },
+    { id: "simple_whaling_target", name: "Simple Whaling (Target)" },
+    { id: "stats_whaling_target", name: "Stats Whaling (Target)" },
+  ];
+
   const setRealmReset = (value) => {
     // Reset Player when changing Realm
     setPlayer();
@@ -313,28 +336,33 @@ function WhaleBox(props) {
   });
 
   const triggerWhaling = () => {
-    if (!targetMode) {
-      axios
-        .get(
-          `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/simple_whaling_quantity`,
-          { params: { number_lootbox: numlootbox } }
-        )
-        .then((res) => {
-          const stats = res.data;
-          props.setStats(stats);
-          props.setTab("whaling");
-        });
-    } else {
-      axios
-        .get(
-          `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/simple_whaling_target`,
-          { params: { target: ship } }
-        )
-        .then((res) => {
-          const stats = res.data;
-          props.setStats(stats);
-          props.setTab("whaling");
-        });
+    switch (targetMode) {
+      case "simple_whaling_quantity":
+      case "stats_whaling_quantity":
+        axios
+          .get(
+            `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/${targetMode}`,
+            { params: { number_lootbox: numlootbox } }
+          )
+          .then((res) => {
+            const stats = res.data;
+            props.setStats(stats);
+            props.setTab("whaling");
+          });
+        break;
+      case "simple_whaling_target":
+      case "stats_whaling_target":
+        axios
+          .get(
+            `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/${targetMode}`,
+            { params: { target: ship } }
+          )
+          .then((res) => {
+            const stats = res.data;
+            props.setStats(stats);
+            props.setTab("whaling");
+          });
+        break;
     }
   };
 
@@ -389,15 +417,17 @@ function WhaleBox(props) {
                 {(item) => <Item key={item.account_id}>{item.nickname}</Item>}
               </ComboBox>
 
-              <Switch
-                onChange={setTargetMode}
-                width="size-1000"
-                defaultSelected={targetMode}
+              <Picker
+                label="Simulation Mode"
+                items={whalingModeOptions}
+                onSelectionChange={setTargetMode}
+                defaultSelectedKey={targetMode}
               >
-                {(targetMode && "Target") || "Quantity"}
-              </Switch>
+                {(item) => <Item>{item.name}</Item>}
+              </Picker>
 
-              {(targetMode && (
+              {((targetMode === "simple_whaling_target" ||
+                targetMode === "stats_whaling_target") && (
                 <ComboBox
                   label="Ship Search"
                   defaultItems={shipList}
