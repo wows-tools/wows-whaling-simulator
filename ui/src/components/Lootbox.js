@@ -61,7 +61,6 @@ function checkUnset(props) {
   return props === undefined || props === null || props.length === 0;
 }
 
-
 function WhaleBox(props) {
   const [isOpen, setOpen] = React.useState(false);
   const [realm, setRealm] = React.useState();
