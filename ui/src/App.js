@@ -30,18 +30,19 @@ function App(props) {
       <Provider theme={defaultTheme} height="100%" colorScheme={colorMode}>
         <Flex
           direction="column"
-          width="calc(100%)"
+          width="calc(max(100%, size-4200)"
           gap="size-100"
           borderWidth="thin"
           borderColor="dark"
-          height="calc(100%)"
+          height="100%"
+          overflow="auto"
         >
           <View backgroundColor="gray-200" height="size-400">
             <AppHeader setSelection={setSelection} />
           </View>
           <View
             backgroundColor="gray-50"
-            width="calc(max(95%, size-6000)"
+            width="calc(max(95%, size-3600)"
             height="100%"
             alignSelf="center"
             flex="true"

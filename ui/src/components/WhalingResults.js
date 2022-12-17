@@ -77,7 +77,7 @@ function RenderShipList(props) {
   var rows = props.ships
     .map(function (ship) {
       // map content to Item
-      if ("rare" in ship.attributes) {
+      if ("rare" in ship.attributes && ship.attributes["rare"] === "true") {
         return (
           <Item>
             <Text>{ship.name} *</Text>
@@ -141,7 +141,10 @@ function RenderItems(props) {
       overflow="auto"
       maxHeight="size-5000"
     >
-      <Heading>{props.prefix}{props.title}</Heading>
+      <Heading>
+        {props.prefix}
+        {props.title}
+      </Heading>
       <Divider size="M" />
 
       <TableView selectionMode="none" density="compact">
@@ -199,12 +202,7 @@ function SimpleWhalingResult(props) {
 
   return (
     <Flex direction="column" gap="size-100">
-      <Grid
-        areas={["slot1 slot2 slot3"]}
-        gap="size-100"
-        justifyItems="center"
-        wrap
-      >
+      <Flex direction="row" gap="size-100" justifyContent="space-evenly" wrap>
         <View width="size-3600">
           <GenericTile
             header="Doubloons"
@@ -232,6 +230,15 @@ function SimpleWhalingResult(props) {
         </View>
         <View width="size-3600">
           <GenericTile
+            header="Ships"
+            subheader="Number of ships dropped"
+            scale="Ships"
+            number={props.whalingData.collectables_items.length}
+            minWidth="size-3600"
+          />
+        </View>
+        <View width="size-3600">
+          <GenericTile
             header="Pities"
             subheader="Pity trigger count"
             scale="Pities"
@@ -239,7 +246,8 @@ function SimpleWhalingResult(props) {
             minWidth="size-3600"
           />
         </View>
-      </Grid>
+      </Flex>
+      <Divider size="S" />
       <View>
         <Flex direction="row" gap="size-100">
           <RenderShipList ships={ship_cat.tx} title="Tier X" />
@@ -247,6 +255,7 @@ function SimpleWhalingResult(props) {
           <RenderShipList ships={ship_cat.tvii_} title="Tier VII & bellow" />
         </Flex>
       </View>
+      <Divider size="S" />
       <View>
         <Flex direction="row" gap="size-100">
           <RenderItems items={other_cat.resource} title="Resources" />
@@ -270,7 +279,7 @@ function WhalingResults(props) {
 }
 
 function RenderPercentiles(props) {
-	return (
+  return (
     <View
       width="33%"
       borderRadius="medium"
@@ -281,29 +290,62 @@ function RenderPercentiles(props) {
       overflow="auto"
       maxHeight="size-5000"
     >
-      <Heading>Containers required to have N% chance of getting "{props.target}"</Heading>
+      <Heading>
+        Containers required to have N% chance of getting "{props.target}"
+      </Heading>
       <Divider size="M" />
 
       <TableView selectionMode="none" density="compact">
         <TableHeader>
-          <Column key="name">
-            Odds
-          </Column>
-          <Column key="quantity">
-            Number of Containers
-          </Column>
+          <Column key="name">Odds</Column>
+          <Column key="quantity">Number of Containers</Column>
         </TableHeader>
         <TableBody>
-	  {Object.keys(props.percentiles).map((key,i) => (
+          {Object.keys(props.percentiles).map((key) => (
             <Row>
-              <Cell>{isNaN(key) && (<>{key}</>) || (<>{key}%</>) }</Cell>
+              <Cell>{(isNaN(key) && <>{key}</>) || <>{key}%</>}</Cell>
               <Cell>{props.percentiles[key]}</Cell>
             </Row>
           ))}
         </TableBody>
       </TableView>
     </View>
-	)
+  );
+}
+
+function RenderByAttribute(props) {
+  let attribute = props.attribute;
+  let data = props.data;
+  return (
+    <View
+      width="33%"
+      borderRadius="medium"
+      borderWidth="thin"
+      borderColor="dark"
+      padding="size-100"
+      backgroundColor="gray-100"
+      overflow="auto"
+      maxHeight="size-5000"
+    >
+      <Heading>{attribute}</Heading>
+      <Divider size="M" />
+
+      <TableView selectionMode="none" density="compact">
+        <TableHeader>
+          <Column key="name">Name</Column>
+          <Column key="quantity">Quantity</Column>
+        </TableHeader>
+        <TableBody>
+          {Object.keys(data).map((key) => (
+            <Row>
+              <Cell>{key}</Cell>
+              <Cell>{data[key]}</Cell>
+            </Row>
+          ))}
+        </TableBody>
+      </TableView>
+    </View>
+  );
 }
 
 function StatsWhalingResult(props) {
@@ -324,19 +366,16 @@ function StatsWhalingResult(props) {
 
   return (
     <Flex direction="column" gap="size-100">
-      <Grid
-        areas={["slot1 slot2 slot3 slot4"]}
-        gap="size-100"
-        justifyItems="center"
-        wrap
-      >
+      <Flex direction="row" gap="size-100" justifyContent="space-evenly" wrap>
         <View width="size-4200">
           <GenericTile
             header="Simulation runs"
             subheader="Number of runs"
             scale="Runs"
             number={props.whalingData.session_count}
-            footer={props.whalingData.total_opened + " containers opened in total"}
+            footer={
+              props.whalingData.total_opened + " containers opened in total"
+            }
             minWidth="size-4200"
           />
         </View>
@@ -374,26 +413,50 @@ function StatsWhalingResult(props) {
             minWidth="size-4200"
           />
         </View>
-      </Grid>
+      </Flex>
+
+      <Divider size="S" />
       <View>
-        <Flex direction="row" gap="size-100">
-	  <RenderPercentiles target={props.whalingData.target} percentiles={props.whalingData.percentiles_open} />
-          <RenderItems items={other_cat.eco} title="Economic Bonuses" prefix="Average "/>
-          <RenderItems items={other_cat.other} title="Oter Items" prefix="Average "/>
-        </Flex>
-      </View>
-      <View>
-        <Flex direction="row" gap="size-100">
-          <RenderItems items={other_cat.resource} title="Resources" prefix="Average "/>
-          <RenderItems items={other_cat.eco} title="Economic Bonuses" prefix="Average "/>
-          <RenderItems items={other_cat.other} title="Oter Items" prefix="Average "/>
+        <Flex direction="row" gap="size-100" justifyContent="space-evenly">
+          {props.whalingData.simulation_type == "stats_whaling_target" && (
+            <RenderPercentiles
+              target={props.whalingData.target}
+              percentiles={props.whalingData.percentiles_open}
+            />
+          )}
+          <RenderByAttribute
+            attribute="Ship Tiers"
+            data={props.whalingData.avg_by_attribute["tier"]}
+          />
+          <RenderByAttribute
+            attribute="Rare Ships"
+            data={props.whalingData.avg_by_attribute["rare"]}
+          />
         </Flex>
       </View>
 
+      <Divider size="S" />
+      <View>
+        <Flex direction="row" gap="size-100" justifyContent="space-evenly">
+          <RenderItems
+            items={other_cat.resource}
+            title="Resources"
+            prefix="Average "
+          />
+          <RenderItems
+            items={other_cat.eco}
+            title="Economic Bonuses"
+            prefix="Average "
+          />
+          <RenderItems
+            items={other_cat.other}
+            title="Oter Items"
+            prefix="Average "
+          />
+        </Flex>
+      </View>
     </Flex>
   );
 }
-
-
 
 export default WhalingResults;

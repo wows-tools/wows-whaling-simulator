@@ -112,12 +112,7 @@ function LootboxContent(props) {
 
   return (
     <View>
-      <Grid
-        areas={["slot1 slot2 slot3 slot4"]}
-        gap="size-100"
-        justifyItems="center"
-        wrap
-      >
+      <Flex direction="row" gap="size-100" justifyContent="space-evenly" wrap>
         <View
           width="size-3600"
           backgroundColor="gray-100"
@@ -150,7 +145,6 @@ function LootboxContent(props) {
               Number(lootbox.price / lootbox.exchange_rate_dollar).toFixed(2) +
               ")"
             }
-
           />
         </View>
         <View width="size-3600">
@@ -171,7 +165,7 @@ function LootboxContent(props) {
             minWidth="size-3600"
           />
         </View>
-      </Grid>
+      </Flex>
       <Tabs>
         <TabList>
           {props.lootbox.drops.map((drops, index) => (

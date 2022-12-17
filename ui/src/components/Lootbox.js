@@ -78,10 +78,10 @@ function WhaleBox(props) {
   ];
 
   let whalingModeOptions = [
-    { id: "simple_whaling_quantity", name: "Simple Whaling (Quantity)" },
-    { id: "stats_whaling_quantity", name: "Stats Whaling (Quantity)" },
-    { id: "simple_whaling_target", name: "Simple Whaling (Target)" },
-    { id: "stats_whaling_target", name: "Stats Whaling (Target)" },
+    { id: "simple_whaling_quantity", name: "Quantity Whaling - Single Run" },
+    { id: "stats_whaling_quantity", name: "Quantity Whaling - Statistics" },
+    { id: "simple_whaling_target", name: "Target Whaling - Single Run" },
+    { id: "stats_whaling_target", name: "Target Whaling - Statistics" },
   ];
 
   const setRealmReset = (value) => {
