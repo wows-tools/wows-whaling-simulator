@@ -106,6 +106,7 @@ function RenderShipList(props) {
   return (
     <View
       width="33%"
+      minWidth="size-3600"
       borderRadius="medium"
       borderWidth="thin"
       borderColor="dark"
@@ -133,6 +134,7 @@ function RenderItems(props) {
   return (
     <View
       width="33%"
+      minWidth="size-3600"
       borderRadius="medium"
       borderWidth="thin"
       borderColor="dark"
@@ -249,7 +251,7 @@ function SimpleWhalingResult(props) {
       </Flex>
       <Divider size="S" />
       <View>
-        <Flex direction="row" gap="size-100">
+        <Flex direction="row" gap="size-100" wrap>
           <RenderShipList ships={ship_cat.tx} title="Tier X" />
           <RenderShipList ships={ship_cat.tix_viii} title="Tier IX & VIII" />
           <RenderShipList ships={ship_cat.tvii_} title="Tier VII & bellow" />
@@ -257,10 +259,10 @@ function SimpleWhalingResult(props) {
       </View>
       <Divider size="S" />
       <View>
-        <Flex direction="row" gap="size-100">
+        <Flex direction="row" gap="size-100" wrap>
           <RenderItems items={other_cat.resource} title="Resources" />
           <RenderItems items={other_cat.eco} title="Economic Bonuses" />
-          <RenderItems items={other_cat.other} title="Oter Items" />
+          <RenderItems items={other_cat.other} title="Other Items" />
         </Flex>
       </View>
     </Flex>
@@ -282,6 +284,7 @@ function RenderPercentiles(props) {
   return (
     <View
       width="33%"
+      minWidth="size-3600"
       borderRadius="medium"
       borderWidth="thin"
       borderColor="dark"
@@ -291,7 +294,7 @@ function RenderPercentiles(props) {
       maxHeight="size-5000"
     >
       <Heading>
-        Containers required to have N% chance of getting "{props.target}"
+        Containers required to have X% chance of getting "{props.target}"
       </Heading>
       <Divider size="M" />
 
@@ -319,6 +322,7 @@ function RenderByAttribute(props) {
   return (
     <View
       width="33%"
+      minWidth="size-3600"
       borderRadius="medium"
       borderWidth="thin"
       borderColor="dark"
@@ -423,7 +427,7 @@ function StatsWhalingResult(props) {
 
       <Divider size="S" />
       <View>
-        <Flex direction="row" gap="size-100" justifyContent="space-evenly">
+        <Flex direction="row" gap="size-100" justifyContent="space-evenly" wrap>
           {props.whalingData.simulation_type == "stats_whaling_target" && (
             <RenderPercentiles
               target={props.whalingData.target}
@@ -431,11 +435,11 @@ function StatsWhalingResult(props) {
             />
           )}
           <RenderByAttribute
-            attribute="Ship Tiers"
+            attribute="Average Ships dropped by tier"
             data={props.whalingData.avg_by_attribute["tier"]}
           />
           <RenderByAttribute
-            attribute="Rare Ships"
+            attribute="Average Rare/Not Rate Ships dropped"
             data={props.whalingData.avg_by_attribute["rare"]}
           />
         </Flex>
@@ -443,7 +447,7 @@ function StatsWhalingResult(props) {
 
       <Divider size="S" />
       <View>
-        <Flex direction="row" gap="size-100" justifyContent="space-evenly">
+        <Flex direction="row" gap="size-100" justifyContent="space-evenly" wrap>
           <RenderItems
             items={other_cat.resource}
             title="Resources"
@@ -456,7 +460,7 @@ function StatsWhalingResult(props) {
           />
           <RenderItems
             items={other_cat.other}
-            title="Oter Items"
+            title="Other Items"
             prefix="Average "
           />
         </Flex>
