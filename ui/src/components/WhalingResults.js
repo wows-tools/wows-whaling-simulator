@@ -439,7 +439,7 @@ function StatsWhalingResult(props) {
             data={props.whalingData.avg_by_attribute["tier"]}
           />
           <RenderByAttribute
-            attribute="Average Rare/Not Rate Ships dropped"
+            attribute="Average Rare/Not Rare Ships dropped"
             data={props.whalingData.avg_by_attribute["rare"]}
           />
         </Flex>
