@@ -143,6 +143,14 @@ function LootboxContent(props) {
             scale="Doubloons"
             number={lootbox.price}
             minWidth="size-3600"
+            footer={
+              "(ie: €" +
+              Number(lootbox.price / lootbox.exchange_rate_euro).toFixed(1) +
+              " or $" +
+              Number(lootbox.price / lootbox.exchange_rate_dollar).toFixed(2) +
+              ")"
+            }
+
           />
         </View>
         <View width="size-3600">
