@@ -113,12 +113,12 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 		copy(tmpEach, wss.OpenedEach)
 		sort.Slice(tmpEach, func(i, j int) bool { return tmpEach[i] < tmpEach[j] })
 		wss.Percentiles["best"] = tmpEach[0]
-		wss.Percentiles["10%%"] = tmpEach[StatsSessionCount/10]
-		wss.Percentiles["33%%"] = tmpEach[StatsSessionCount/3]
-		wss.Percentiles["50%%"] = tmpEach[StatsSessionCount/2]
-		wss.Percentiles["66%%"] = tmpEach[StatsSessionCount*2/3]
-		wss.Percentiles["90%%"] = tmpEach[StatsSessionCount*9/10]
-		wss.Percentiles["95%%"] = tmpEach[StatsSessionCount*19/20]
+		wss.Percentiles["10"] = tmpEach[StatsSessionCount/10]
+		wss.Percentiles["33"] = tmpEach[StatsSessionCount/3]
+		wss.Percentiles["50"] = tmpEach[StatsSessionCount/2]
+		wss.Percentiles["66"] = tmpEach[StatsSessionCount*2/3]
+		wss.Percentiles["90"] = tmpEach[StatsSessionCount*9/10]
+		wss.Percentiles["95"] = tmpEach[StatsSessionCount*19/20]
 		wss.Percentiles["worst"] = tmpEach[StatsSessionCount-1]
 	}()
 
