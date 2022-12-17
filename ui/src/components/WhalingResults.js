@@ -363,6 +363,12 @@ function StatsWhalingResult(props) {
         break;
     }
   }
+  if (!("tier" in props.whalingData.avg_by_attribute)) {
+    props.whalingData.avg_by_attribute["tier"] = {};
+  }
+  if (!("rare" in props.whalingData.avg_by_attribute)) {
+    props.whalingData.avg_by_attribute["rare"] = {};
+  }
 
   return (
     <Flex direction="column" gap="size-100">
