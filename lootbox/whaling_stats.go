@@ -1,6 +1,7 @@
 package lootbox
 
 import (
+	"math"
 	"sort"
 	"sync"
 )
@@ -12,6 +13,7 @@ const (
 
 type WhalingStatsSession struct {
 	SimulationType           string                             `json:"simulation_type"`
+	Target                   string                             `json:"target"`
 	Opened                   uint64                             `json:"total_opened"`
 	SessionCounter           uint64                             `json:"session_count"`
 	OpenedEach               []uint64                           `json:"opened_each"`
@@ -91,8 +93,11 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 		close(outputChannel)
 		wss.AverageOpened = float64(wss.Opened) / float64(wss.SessionCounter)
 		wss.AverageSpent /= float64(wss.SessionCounter)
+		wss.AverageSpent = math.Round(wss.AverageSpent*100) / 100
 		wss.AverageSpentEuro /= float64(wss.SessionCounter)
+		wss.AverageSpentEuro = math.Round(wss.AverageSpentEuro*100) / 100
 		wss.AverageSpentDollar /= float64(wss.SessionCounter)
+		wss.AverageSpentDollar = math.Round(wss.AverageSpentDollar*100) / 100
 		wss.AverageCollectablesItems = float64(wss.collectablesItems) / float64(wss.SessionCounter)
 		wss.AveragePities = float64(wss.pities) / float64(wss.SessionCounter)
 		for _, item := range wss.AverageByItem {
@@ -107,17 +112,14 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 		tmpEach := make([]uint64, len(wss.OpenedEach))
 		copy(tmpEach, wss.OpenedEach)
 		sort.Slice(tmpEach, func(i, j int) bool { return tmpEach[i] < tmpEach[j] })
-		// In Quantity mode, this is useless
-		if input.SessionType != Quantity {
-			wss.Percentiles["best"] = tmpEach[0]
-			wss.Percentiles["10%%"] = tmpEach[StatsSessionCount/10]
-			wss.Percentiles["33%%"] = tmpEach[StatsSessionCount/3]
-			wss.Percentiles["50%%"] = tmpEach[StatsSessionCount/2]
-			wss.Percentiles["66%%"] = tmpEach[StatsSessionCount*2/3]
-			wss.Percentiles["90%%"] = tmpEach[StatsSessionCount*9/10]
-			wss.Percentiles["95%%"] = tmpEach[StatsSessionCount*19/20]
-			wss.Percentiles["worst"] = tmpEach[StatsSessionCount-1]
-		}
+		wss.Percentiles["best"] = tmpEach[0]
+		wss.Percentiles["10%%"] = tmpEach[StatsSessionCount/10]
+		wss.Percentiles["33%%"] = tmpEach[StatsSessionCount/3]
+		wss.Percentiles["50%%"] = tmpEach[StatsSessionCount/2]
+		wss.Percentiles["66%%"] = tmpEach[StatsSessionCount*2/3]
+		wss.Percentiles["90%%"] = tmpEach[StatsSessionCount*9/10]
+		wss.Percentiles["95%%"] = tmpEach[StatsSessionCount*19/20]
+		wss.Percentiles["worst"] = tmpEach[StatsSessionCount-1]
 	}()
 
 	for i := 0; i < StatsSessionCount; i++ {
@@ -167,6 +169,7 @@ func (wss *WhalingStatsSession) StatsSimpleWhaling(count int) error {
 
 func (wss *WhalingStatsSession) StatsTargetWhaling(target string) error {
 	wss.SimulationType = TargetWhalingStats
+	wss.Target = target
 	input := &WhalingInput{
 		SessionType:    Target,
 		Target:         target,

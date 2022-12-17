@@ -19,6 +19,7 @@ type WhalingSession struct {
 	lootBox          *LootBox
 	pityCounter      uint64
 	SimulationType   string                        `json:"simulation_type"`
+	Target           string                        `json:"target"`
 	otherItems       map[string]*ItemShortQuantity `json:"other_items"`
 	ContainerOpened  uint64                        `json:"container_opened"`
 	Pities           uint64                        `json:"pities"`
@@ -105,6 +106,7 @@ func (ws *WhalingSession) Draw() (*ItemShort, error) {
 
 func (ws *WhalingSession) TargetWhaling(target string) error {
 	ws.SimulationType = TargetWhaling
+	ws.Target = "target"
 	if !ws.lootBox.IsCollectable(target) {
 		return fmt.Errorf("targeted item '%s' not in collectable set", target)
 	}
