@@ -65,7 +65,7 @@ function WhaleBox(props) {
   const [isOpen, setOpen] = React.useState(false);
   const [realm, setRealm] = React.useState();
   const [player, setPlayer] = React.useState();
-  const [targetMode, setTargetMode] = React.useState(false);
+  const [targetMode, setTargetMode] = React.useState();
   const [numlootbox, setNumlootbox] = React.useState(20);
   const [ship, setShip] = React.useState("");
   const [shipList, setShipList] = React.useState([]);
@@ -122,6 +122,24 @@ function WhaleBox(props) {
       };
     },
   });
+
+  const notSubmitable = () => {
+    // If Either of this parameters are unset, return true (form not submitable)
+    if (checkUnset(player) || checkUnset(targetMode)) {
+      return true;
+    }
+    // If we are in one of the target mode, and no ship target is set, return true (form not submitable)
+    if (
+      (targetMode === "simple_whaling_target" ||
+        targetMode === "stats_whaling_target") &&
+      checkUnset(ship)
+    ) {
+      return true;
+    }
+
+    // Otherwise, return false (form submitable)
+    return false;
+  };
 
   const triggerWhaling = () => {
     switch (targetMode) {
@@ -180,7 +198,7 @@ function WhaleBox(props) {
             primaryActionLabel="Start Whaling"
             cancelLabel="Cancel"
             onPrimaryAction={triggerWhaling}
-            isPrimaryActionDisabled={checkUnset(player)}
+            isPrimaryActionDisabled={notSubmitable()}
             minWidth="size-6000"
           >
             <Form>
