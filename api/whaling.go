@@ -227,7 +227,7 @@ func (a *API) statsWhalingTarget(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 	a.stats.OpenedContainers += wss.Opened
-	a.stats.TargetWhalingSimple++
+	a.stats.TargetWhalingStats++
 
 	return c.JSON(http.StatusOK, wss)
 
