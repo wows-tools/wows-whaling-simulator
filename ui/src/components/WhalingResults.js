@@ -141,7 +141,7 @@ function RenderItems(props) {
       overflow="auto"
       maxHeight="size-5000"
     >
-      <Heading>{props.title}</Heading>
+      <Heading>{props.prefix}{props.title}</Heading>
       <Divider size="M" />
 
       <TableView selectionMode="none" density="compact">
@@ -164,11 +164,6 @@ function RenderItems(props) {
       </TableView>
     </View>
   );
-}
-
-function StatsWhalingResult(props) {
-  // TODO
-  return <></>;
 }
 
 function SimpleWhalingResult(props) {
@@ -213,7 +208,7 @@ function SimpleWhalingResult(props) {
         <View width="size-3600">
           <GenericTile
             header="Doubloons"
-            subheader="Doubloons (and real money spent)"
+            subheader="Doubloons (and real money) spent"
             scale="Doubloons"
             number={props.whalingData.game_money_spent}
             footer={
@@ -273,5 +268,132 @@ function WhalingResults(props) {
       return <StatsWhalingResult whalingData={props.whalingData} />;
   }
 }
+
+function RenderPercentiles(props) {
+	return (
+    <View
+      width="33%"
+      borderRadius="medium"
+      borderWidth="thin"
+      borderColor="dark"
+      padding="size-100"
+      backgroundColor="gray-100"
+      overflow="auto"
+      maxHeight="size-5000"
+    >
+      <Heading>Containers required to have N% chance of getting "{props.target}"</Heading>
+      <Divider size="M" />
+
+      <TableView selectionMode="none" density="compact">
+        <TableHeader>
+          <Column key="name">
+            Odds
+          </Column>
+          <Column key="quantity">
+            Number of Containers
+          </Column>
+        </TableHeader>
+        <TableBody>
+	  {Object.keys(props.percentiles).map((key,i) => (
+            <Row>
+              <Cell>{isNaN(key) && (<>{key}</>) || (<>{key}%</>) }</Cell>
+              <Cell>{props.percentiles[key]}</Cell>
+            </Row>
+          ))}
+        </TableBody>
+      </TableView>
+    </View>
+	)
+}
+
+function StatsWhalingResult(props) {
+  let other_cat = { resource: [], eco: [], other: [] };
+  for (const [key, item] of Object.entries(props.whalingData.avg_by_item)) {
+    switch (item.attributes.type) {
+      case "economic bonus":
+        other_cat.eco.push(item);
+        break;
+      case "resource":
+        other_cat.resource.push(item);
+        break;
+      default:
+        other_cat.other.push(item);
+        break;
+    }
+  }
+
+  return (
+    <Flex direction="column" gap="size-100">
+      <Grid
+        areas={["slot1 slot2 slot3 slot4"]}
+        gap="size-100"
+        justifyItems="center"
+        wrap
+      >
+        <View width="size-4200">
+          <GenericTile
+            header="Simulation runs"
+            subheader="Number of runs"
+            scale="Runs"
+            number={props.whalingData.session_count}
+            footer={props.whalingData.total_opened + " containers opened in total"}
+            minWidth="size-4200"
+          />
+        </View>
+        <View width="size-4200">
+          <GenericTile
+            header="Average Doubloons"
+            subheader="Doubloons (and real money) spent"
+            scale="Doubloons"
+            number={props.whalingData.avg_game_money_spent}
+            footer={
+              "(ie: €" +
+              props.whalingData.avg_euro_spent +
+              " or $" +
+              props.whalingData.avg_dollar_spent +
+              ")"
+            }
+            minWidth="size-4200"
+          />
+        </View>
+        <View width="size-4200">
+          <GenericTile
+            header="Average Opened"
+            subheader="Container Opened"
+            scale="Container(s)"
+            number={props.whalingData.avg_opened}
+            minWidth="size-4200"
+          />
+        </View>
+        <View width="size-4200">
+          <GenericTile
+            header="Average Pities"
+            subheader="Pity trigger count"
+            scale="Pities"
+            number={props.whalingData.avg_pities}
+            minWidth="size-4200"
+          />
+        </View>
+      </Grid>
+      <View>
+        <Flex direction="row" gap="size-100">
+	  <RenderPercentiles target={props.whalingData.target} percentiles={props.whalingData.percentiles_open} />
+          <RenderItems items={other_cat.eco} title="Economic Bonuses" prefix="Average "/>
+          <RenderItems items={other_cat.other} title="Oter Items" prefix="Average "/>
+        </Flex>
+      </View>
+      <View>
+        <Flex direction="row" gap="size-100">
+          <RenderItems items={other_cat.resource} title="Resources" prefix="Average "/>
+          <RenderItems items={other_cat.eco} title="Economic Bonuses" prefix="Average "/>
+          <RenderItems items={other_cat.other} title="Oter Items" prefix="Average "/>
+        </Flex>
+      </View>
+
+    </Flex>
+  );
+}
+
+
 
 export default WhalingResults;
