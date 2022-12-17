@@ -190,7 +190,7 @@ function WhaleBox(props) {
         </Button>
       </Flex>
 
-      <DialogContainer onDismiss={() => setOpen(false)}>
+      <DialogContainer onDismiss={() => setOpen(false)} minWidth="size-6000">
         {isOpen && (
           <AlertDialog
             title="Let's Do Some Whaling"
@@ -199,7 +199,6 @@ function WhaleBox(props) {
             cancelLabel="Cancel"
             onPrimaryAction={triggerWhaling}
             isPrimaryActionDisabled={notSubmitable()}
-            minWidth="size-6000"
           >
             <Form>
               <Picker
@@ -247,23 +246,24 @@ function WhaleBox(props) {
                   {(item) => <Item key={item.name}>{item.name}</Item>}
                 </ComboBox>
               )) || (
-                <Flex direction="row" gap="size-100">
+                <Flex direction="row" gap="size-100" wrap>
                   <View>
                     <Slider
-                      height="size-1000"
                       label="Number of containers"
                       value={numlootbox}
-                      width="size-3600"
+                      minWidth="size-3200"
                       maxValue="1000"
                       showValueLabel={false}
+                      minValue={1}
                       onChange={setNumlootbox}
                     />
                   </View>
-                  <View marginTop="calc(single-line-height / 2)">
+                  <View marginTop="calc(single-line-height/2)">
                     <NumberField
-                      width="size-1200"
+                      minWidth="calc(size-1200 * 1.33)"
+                      width="calc(size-1200 * 1.33)"
                       value={numlootbox}
-                      minValue={0}
+                      minValue={1}
                       maxValue="1000"
                       onChange={setNumlootbox}
                     />
