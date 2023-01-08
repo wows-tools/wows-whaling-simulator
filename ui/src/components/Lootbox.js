@@ -70,9 +70,8 @@ function WhaleBox(props) {
   const [targetMode, setTargetMode] = React.useState();
   const [numlootbox, setNumlootbox] = React.useState(20);
   const [ship, setShip] = React.useState("");
-  const [shipList, setShipList] = React.useState([]);
   const [shipExcludeList, setShipExcludeList] = React.useState([]);
-  const [shipExcludeListInput, setShipExcludeListInput] = React.useState([]);
+  const [shipListInput, setShipListInput] = React.useState([]);
   const [shipInput, setShipInput] = React.useState("");
 
   let realmOptions = [
@@ -105,8 +104,7 @@ function WhaleBox(props) {
         const ships = res.data.ships;
         console.log(ships);
         const shipObjList = ships.map((ship) => ({ name: ship }));
-        setShipList(shipObjList);
-        setShipExcludeListInput(shipObjList);
+        setShipListInput(shipObjList);
       });
   };
 
@@ -154,10 +152,8 @@ function WhaleBox(props) {
     setShipExcludeList([ship, ...shipExcludeList]);
 
     // Remove the selected ship from the exclusion list input
-    let filteredArray = shipExcludeListInput.filter(
-      (item) => item.name !== ship
-    );
-    setShipExcludeListInput(filteredArray);
+    let filteredArray = shipListInput.filter((item) => item.name !== ship);
+    setShipListInput(filteredArray);
   };
 
   const delShipExclusion = (ship) => {
@@ -165,10 +161,7 @@ function WhaleBox(props) {
     setShipExcludeList(filteredArray);
 
     // Add the ship back in the exclusion list input
-    setShipExcludeListInput((shipExcludeListInput) => [
-      { name: ship },
-      ...shipExcludeListInput,
-    ]);
+    setShipListInput((shipListInput) => [{ name: ship }, ...shipListInput]);
   };
 
   const triggerWhaling = () => {
@@ -267,7 +260,7 @@ function WhaleBox(props) {
                 <>
                   <ComboBox
                     label="Ship Search"
-                    defaultItems={shipList}
+                    defaultItems={shipListInput}
                     selectedKey={ship}
                     onSelectionChange={setShip}
                     onInputChange={setShipInput}
@@ -279,7 +272,9 @@ function WhaleBox(props) {
                   </ComboBox>
                   <ComboBox
                     label="Exclude Ship"
-                    defaultItems={shipExcludeListInput}
+                    defaultItems={shipListInput.filter(
+                      (item) => item.name !== ship
+                    )}
                     isDisabled={checkUnset(player)}
                     defaultInputValue=""
                     onSelectionChange={(selected) => addShipExclusion(selected)}
