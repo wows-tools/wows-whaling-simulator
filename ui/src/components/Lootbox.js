@@ -63,6 +63,68 @@ function checkUnset(props) {
   return props === undefined || props === null || props.length === 0;
 }
 
+function PlayerRealmInfo() {
+  return (
+    <ContextualHelp variant="info" placement="top start">
+      <Content>
+        <Text>
+          Realm & Nick required to recover the ships already own and exclude
+          them from the drops.
+        </Text>
+      </Content>
+    </ContextualHelp>
+  );
+}
+
+function WhalingModesInfo() {
+  return (
+    <ContextualHelp variant="info" placement="top start">
+      <Content>
+        <Text>
+          <ul>
+            <li>
+              "Quantity Whaling" simulates buying+opening a set number
+              containers.
+            </li>
+            <li>
+              "Target Whaling" simulates buying+opening containers until a given
+              ship drops.
+            </li>
+          </ul>
+          <ul>
+            <li>
+              "Single Run" provides the result of a single session of whaling.
+            </li>
+            <li>
+              "Statistics" does 1000 "Single Runs" and display statistics about
+              the drops (average drops, average money spent, etc).
+            </li>
+          </ul>
+        </Text>
+      </Content>
+    </ContextualHelp>
+  );
+}
+
+function ExcludeShipInfo() {
+  return (
+    <ContextualHelp variant="info" placement="top start">
+      <Content>
+        <Text>
+          <p>
+            WG WoWs API is unfortunately inaccurate (ex: subs and unplayed ships
+            not returned).
+          </p>
+          <p>
+            Use this field to compensate for that, and exclude ship you actually
+            own.
+          </p>
+        </Text>
+      </Content>
+    </ContextualHelp>
+  );
+}
+
 function WhaleBox(props) {
   const [isOpen, setOpen] = React.useState(false);
   const [realm, setRealm] = React.useState();
@@ -226,7 +288,12 @@ function WhaleBox(props) {
           >
             <Form>
               <Picker
-                label="Realm/Wows Server"
+                label={
+                  <>
+                    <Text>Realm/Wows Server</Text>
+                    <PlayerRealmInfo />
+                  </>
+                }
                 items={realmOptions}
                 onSelectionChange={(selected) => setRealmReset(selected)}
                 autoFocus="true"
@@ -235,7 +302,12 @@ function WhaleBox(props) {
                 {(item) => <Item>{item.name}</Item>}
               </Picker>
               <ComboBox
-                label="Player Search"
+                label={
+                  <>
+                    <Text>Player Search</Text>
+                    <PlayerRealmInfo />
+                  </>
+                }
                 items={list.items}
                 inputValue={list.filterText}
                 onInputChange={list.setFilterText}
@@ -247,7 +319,12 @@ function WhaleBox(props) {
               </ComboBox>
 
               <Picker
-                label="Simulation Mode"
+                label={
+                  <>
+                    <Text>Simulation Mode</Text>
+                    <WhalingModesInfo />
+                  </>
+                }
                 items={whalingModeOptions}
                 onSelectionChange={setTargetMode}
                 defaultSelectedKey={targetMode}
@@ -271,7 +348,12 @@ function WhaleBox(props) {
                     {(item) => <Item key={item.name}>{item.name}</Item>}
                   </ComboBox>
                   <ComboBox
-                    label="Exclude Ship"
+                    label={
+                      <>
+                        <Text>Exclude Ship</Text>
+                        <ExcludeShipInfo />
+                      </>
+                    }
                     defaultItems={shipListInput.filter(
                       (item) => item.name !== ship
                     )}
