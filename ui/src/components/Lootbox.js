@@ -41,6 +41,7 @@ import {
   TableBody,
   Row,
   Cell,
+  ListView,
 } from "@adobe/react-spectrum";
 import { ListBox } from "@adobe/react-spectrum";
 import { useNavigate } from "react-router-dom";
@@ -52,6 +53,7 @@ import Money from "@spectrum-icons/workflow/Money";
 import Back from "@spectrum-icons/workflow/Back";
 import User from "@spectrum-icons/workflow/User";
 import Star from "@spectrum-icons/workflow/Star";
+import Delete from "@spectrum-icons/workflow/Delete";
 import { useAsyncList } from "react-stately";
 import GenericTile from "./GenericTile";
 
@@ -69,6 +71,8 @@ function WhaleBox(props) {
   const [numlootbox, setNumlootbox] = React.useState(20);
   const [ship, setShip] = React.useState("");
   const [shipList, setShipList] = React.useState([]);
+  const [shipExcludeList, setShipExcludeList] = React.useState([]);
+  const [shipExcludeListInput, setShipExcludeListInput] = React.useState([]);
   const [shipInput, setShipInput] = React.useState("");
 
   let realmOptions = [
@@ -89,6 +93,7 @@ function WhaleBox(props) {
     setPlayer();
     list.setFilterText("");
     setRealm(value);
+    setShipExcludeList([]);
   };
 
   const refreshShips = (selected) => {
@@ -101,6 +106,7 @@ function WhaleBox(props) {
         console.log(ships);
         const shipObjList = ships.map((ship) => ({ name: ship }));
         setShipList(shipObjList);
+        setShipExcludeListInput(shipObjList);
       });
   };
 
@@ -141,6 +147,30 @@ function WhaleBox(props) {
     return false;
   };
 
+  const addShipExclusion = (ship) => {
+    if (ship === null) {
+      return;
+    }
+    setShipExcludeList([ship, ...shipExcludeList]);
+
+    // Remove the selected ship from the exclusion list input
+    let filteredArray = shipExcludeListInput.filter(
+      (item) => item.name !== ship
+    );
+    setShipExcludeListInput(filteredArray);
+  };
+
+  const delShipExclusion = (ship) => {
+    let filteredArray = shipExcludeList.filter((item) => item !== ship);
+    setShipExcludeList(filteredArray);
+
+    // Add the ship back in the exclusion list input
+    setShipExcludeListInput((shipExcludeListInput) => [
+      { name: ship },
+      ...shipExcludeListInput,
+    ]);
+  };
+
   const triggerWhaling = () => {
     switch (targetMode) {
       case "simple_whaling_quantity":
@@ -161,7 +191,7 @@ function WhaleBox(props) {
         axios
           .get(
             `${API_ROOT}/api/v1/lootboxes/${props.lootboxId}/realms/${realm}/players/${player}/${targetMode}`,
-            { params: { target: ship } }
+            { params: { target: ship, excluded_ships: shipExcludeList } }
           )
           .then((res) => {
             const stats = res.data;
@@ -175,6 +205,7 @@ function WhaleBox(props) {
   const setPlayerRefresh = (selected) => {
     setPlayer(selected);
     refreshShips(selected);
+    setShipExcludeList([]);
   };
   return (
     <>
@@ -233,18 +264,49 @@ function WhaleBox(props) {
 
               {((targetMode === "simple_whaling_target" ||
                 targetMode === "stats_whaling_target") && (
-                <ComboBox
-                  label="Ship Search"
-                  defaultItems={shipList}
-                  selectedKey={ship}
-                  onSelectionChange={setShip}
-                  onInputChange={setShipInput}
-                  defaultInputValue={shipInput}
-                  isDisabled={checkUnset(player)}
-                  onSelectionChange={(selected) => setShip(selected)}
-                >
-                  {(item) => <Item key={item.name}>{item.name}</Item>}
-                </ComboBox>
+                <>
+                  <ComboBox
+                    label="Ship Search"
+                    defaultItems={shipList}
+                    selectedKey={ship}
+                    onSelectionChange={setShip}
+                    onInputChange={setShipInput}
+                    defaultInputValue={shipInput}
+                    isDisabled={checkUnset(player)}
+                    onSelectionChange={(selected) => setShip(selected)}
+                  >
+                    {(item) => <Item key={item.name}>{item.name}</Item>}
+                  </ComboBox>
+                  <ComboBox
+                    label="Exclude Ship"
+                    defaultItems={shipExcludeListInput}
+                    isDisabled={checkUnset(player)}
+                    defaultInputValue=""
+                    onSelectionChange={(selected) => addShipExclusion(selected)}
+                  >
+                    {(item) => <Item key={item.name}>{item.name}</Item>}
+                  </ComboBox>
+                  {shipExcludeList.length === 0 || (
+                    <ListView
+                      selectionMode="none"
+                      aria-label="ship-exclude-list"
+                      maxWidth="size-6000"
+                      density="compact"
+                    >
+                      {shipExcludeList.map((ship) => (
+                        <Item key={ship}>
+                          <Text>{ship}</Text>
+                          <ActionButton
+                            onPress={(e) => delShipExclusion(ship)}
+                            aria-label="Icon only"
+                          >
+                            <Delete />
+                          </ActionButton>
+                        </Item>
+                      ))}
+                    </ListView>
+                  )}
+                </>
               )) || (
                 <Flex direction="row" gap="size-100" wrap>
                   <View>
