@@ -1,6 +1,7 @@
 package api
 
 import (
+	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/go-redis/cache/v8"
 	"github.com/kakwa/wows-whaling-simulator/wows"
 	"github.com/labstack/echo/v4"
@@ -21,7 +22,8 @@ type QuantityWhaling struct {
 }
 
 type TargetWhaling struct {
-	Target string `query:"target"`
+	Target        string   `query:"target"`
+	ExcludedShips []string `query:"excluded_ships[]"`
 	BaseWhaling
 }
 
@@ -148,7 +150,7 @@ func (a *API) simpleWhalingTarget(c echo.Context) error {
 	}
 	shipList := make([]string, 0)
 	err = a.cache.Once(&cache.Item{
-		TTL:   time.Hour,
+		TTL:   time.Minute * 10,
 		SetNX: true,
 		Key:   "wows:searchShip:" + whaling.Realm + ":" + strconv.Itoa(whaling.PlayerID),
 		Value: &shipList, // destination
@@ -160,6 +162,9 @@ func (a *API) simpleWhalingTarget(c echo.Context) error {
 			return shipList, nil
 		},
 	})
+	setApiShipList := mapset.NewSet[string](shipList...)
+	setExcludeShipList := mapset.NewSet[string](whaling.ExcludedShips...)
+	setUnionExclusion := setApiShipList.Union(setExcludeShipList)
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
@@ -167,7 +172,7 @@ func (a *API) simpleWhalingTarget(c echo.Context) error {
 	if !ok {
 		return echo.NewHTTPError(http.StatusNotFound, "Lootbox id unknown")
 	}
-	ws, err := lb.NewWhalingSession(shipList)
+	ws, err := lb.NewWhalingSession(setUnionExclusion.ToSlice())
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
@@ -198,7 +203,7 @@ func (a *API) statsWhalingTarget(c echo.Context) error {
 	}
 	shipList := make([]string, 0)
 	err = a.cache.Once(&cache.Item{
-		TTL:   time.Hour,
+		TTL:   time.Minute * 10,
 		SetNX: true,
 		Key:   "wows:searchShip:" + whaling.Realm + ":" + strconv.Itoa(whaling.PlayerID),
 		Value: &shipList, // destination
@@ -210,6 +215,9 @@ func (a *API) statsWhalingTarget(c echo.Context) error {
 			return shipList, nil
 		},
 	})
+	setApiShipList := mapset.NewSet[string](shipList...)
+	setExcludeShipList := mapset.NewSet[string](whaling.ExcludedShips...)
+	setUnionExclusion := setApiShipList.Union(setExcludeShipList)
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
@@ -217,7 +225,7 @@ func (a *API) statsWhalingTarget(c echo.Context) error {
 	if !ok {
 		return echo.NewHTTPError(http.StatusNotFound, "Lootbox id unknown")
 	}
-	wss := lb.NewWhalingStatsSession(shipList)
+	wss := lb.NewWhalingStatsSession(setUnionExclusion.ToSlice())
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
