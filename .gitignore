@@ -19,7 +19,7 @@ wows-whaling-simulator-static
 wows-whaling-simulator-cli
 wows-whaling-simulator-cli-static
 
-lootbox-collector
+misc/lootbox-collector/lootbox-collector
 
 .*.sw*
 
