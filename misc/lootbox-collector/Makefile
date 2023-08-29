@@ -1,4 +1,4 @@
-lootbox-collector: main.go
+lootbox-collector: *.go
 	@go build -o lootbox-collector
 
 clean:
