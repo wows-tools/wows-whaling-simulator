@@ -229,10 +229,74 @@
         "items": [
           {
             "quantity": 1,
+            "name": "Tokachi",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "type": "ship",
+              "rare": "false",
+              "tier": "VII"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "West Virginia '44",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "type": "ship",
+              "rare": "false",
+              "tier": "VII"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Dupleix",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "type": "ship",
+              "rare": "false",
+              "tier": "VI"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Leipzig",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "type": "ship",
+              "rare": "false",
+              "tier": "VI"
+            }
+          },
+          {
+            "quantity": 1,
             "name": "Karl von Schönberg",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -248,7 +312,7 @@
             "name": "FR25",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -264,7 +328,7 @@
             "name": "Huron",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -280,7 +344,7 @@
             "name": "Toulon",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -296,7 +360,7 @@
             "name": "Maya",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -312,7 +376,7 @@
             "name": "Rio de Janeiro",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -328,7 +392,7 @@
             "name": "Repulse",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -344,7 +408,7 @@
             "name": "Collingwood",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -360,7 +424,7 @@
             "name": "Novorossiysk",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -376,7 +440,7 @@
             "name": "Béarn",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -392,7 +456,7 @@
             "name": "Florida",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -408,7 +472,7 @@
             "name": "California",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "attributes": { "type": "resource", "resource_id": "steel" },
               "id": ""
@@ -424,7 +488,7 @@
             "name": "Hood",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "attributes": { "type": "resource", "resource_id": "steel" },
               "id": ""
@@ -440,7 +504,7 @@
             "name": "Duke of York",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -456,7 +520,7 @@
             "name": "Strasbourg",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -472,7 +536,7 @@
             "name": "Scharnhorst",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -488,7 +552,7 @@
             "name": "Ashitaka",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -504,7 +568,7 @@
             "name": "Hyūga",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -520,39 +584,7 @@
             "name": "Poltava",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Atlanta",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Indianapolis",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -568,7 +600,7 @@
             "name": "Boise",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -584,7 +616,7 @@
             "name": "München",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -600,7 +632,7 @@
             "name": "Weimar",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -616,7 +648,7 @@
             "name": "Duca degli Abruzzi",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -632,7 +664,7 @@
             "name": "Gorizia",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -648,7 +680,7 @@
             "name": "Lazo",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -664,7 +696,7 @@
             "name": "Nueve de Julio",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -680,23 +712,7 @@
             "name": "Yukon",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Sims",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -712,7 +728,7 @@
             "name": "Yūdachi",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -728,7 +744,7 @@
             "name": "Leningrad",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -744,7 +760,7 @@
             "name": "Błyskawica",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -760,7 +776,7 @@
             "name": "Ark Royal",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -776,39 +792,7 @@
             "name": "W. Virginia 1941",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VI"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Arizona",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VI"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Warspite",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -824,7 +808,7 @@
             "name": "Dunkerque",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -840,7 +824,7 @@
             "name": "Prinz Eitel Friedrich",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -856,7 +840,7 @@
             "name": "Mutsu",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -872,7 +856,7 @@
             "name": "London",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -888,23 +872,7 @@
             "name": "De Grasse",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VI"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Duca d'Aosta",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -920,7 +888,7 @@
             "name": "Molotov",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -936,7 +904,7 @@
             "name": "Admiral Makarov",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -952,7 +920,7 @@
             "name": "Perth",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -968,23 +936,7 @@
             "name": "Mysore",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VI"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Huanghe",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1000,7 +952,7 @@
             "name": "Ise",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1016,7 +968,7 @@
             "name": "Monaghan",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1032,23 +984,7 @@
             "name": "Gallant",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VI"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Aigle",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1064,7 +1000,7 @@
             "name": "Leone",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1080,7 +1016,7 @@
             "name": "Juruá",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1089,38 +1025,6 @@
               "type": "ship",
               "rare": "false",
               "tier": "VI"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Anshan",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VI"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Texas",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "V"
             }
           },
           {
@@ -1128,23 +1032,7 @@
             "name": "Agincourt",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "V"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Oktyabrskaya Revolutsiya",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1160,23 +1048,7 @@
             "name": "Viribus Unitis",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "V"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Marblehead",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1192,7 +1064,7 @@
             "name": "Marblehead Lima",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1208,7 +1080,7 @@
             "name": "Exeter",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1224,7 +1096,7 @@
             "name": "Genova",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1240,23 +1112,7 @@
             "name": "Yahagi",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "V"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Murmansk",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1272,7 +1128,7 @@
             "name": "Krasny Krym",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1288,23 +1144,7 @@
             "name": "Mikoyan",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "V"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Kirov",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1320,7 +1160,7 @@
             "name": "Hill",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1336,7 +1176,7 @@
             "name": "Siroco",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1352,7 +1192,7 @@
             "name": "Okhotnik",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1374,10 +1214,186 @@
         "items": [
           {
             "quantity": 1,
+            "name": "Jäger",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "IX"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Almirante Grau",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "VIII"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Velos",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "IX"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Alliance",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "VIII"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Sun Yat-Sen",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "IX"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Halford",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "IX"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Numancia",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "VIII"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Nottingham",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "VIII"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Karl XIV Johan",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "IX"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Scarlet Thunder",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "IX"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Schill",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "IX"
+            }
+          },
+          {
+            "quantity": 1,
             "name": "Rochester",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1393,7 +1409,7 @@
             "name": "San Diego",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1409,7 +1425,7 @@
             "name": "Hampshire",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1425,7 +1441,7 @@
             "name": "Tulsa",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1441,7 +1457,7 @@
             "name": "Carnot",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1457,7 +1473,7 @@
             "name": "Dalian",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1473,7 +1489,7 @@
             "name": "Brandenburg",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1489,7 +1505,7 @@
             "name": "Anhalt",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1505,7 +1521,7 @@
             "name": "Kearsarge",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1521,7 +1537,7 @@
             "name": "Giuseppe Verdi",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1537,7 +1553,7 @@
             "name": "Iwami",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1553,7 +1569,7 @@
             "name": "Hornet",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1569,7 +1585,7 @@
             "name": "Aquila",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1585,7 +1601,7 @@
             "name": "Chkalov",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1601,7 +1617,7 @@
             "name": "I-56",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1617,7 +1633,7 @@
             "name": "S-189",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1630,58 +1646,10 @@
           },
           {
             "quantity": 1,
-            "name": "Pommern",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "IX"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Marco Polo",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "IX"
-            }
-          },
-          {
-            "quantity": 1,
             "name": "Ägir",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "IX"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Azuma",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1697,7 +1665,7 @@
             "name": "Z-44",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1706,38 +1674,6 @@
               "type": "ship",
               "rare": "false",
               "tier": "IX"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Groningen",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "IX"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Saipan",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
             }
           },
           {
@@ -1745,55 +1681,7 @@
             "name": "Indomitable",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Graf Zeppelin",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Kaga",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Alabama",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1809,39 +1697,7 @@
             "name": "Constellation",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Vanguard",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Gascogne",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1857,7 +1713,7 @@
             "name": "Champagne",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1873,7 +1729,7 @@
             "name": "Flandre",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1889,39 +1745,7 @@
             "name": "Tirpitz",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Roma",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Kii",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1937,7 +1761,7 @@
             "name": "Borodino",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1953,7 +1777,7 @@
             "name": "Congress",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1969,7 +1793,7 @@
             "name": "Wichita",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -1985,7 +1809,7 @@
             "name": "Cheshire",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2001,23 +1825,7 @@
             "name": "Tiger '59",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Belfast '43",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2033,39 +1841,7 @@
             "name": "Bayard",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Prinz Eugen",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Mainz",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2081,7 +1857,7 @@
             "name": "Atago",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2097,7 +1873,7 @@
             "name": "Tone",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2113,7 +1889,7 @@
             "name": "Ochakov",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2129,23 +1905,7 @@
             "name": "Pyotr Bagration",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Irian",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2161,39 +1921,7 @@
             "name": "Kidd",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Cossack",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Le Terrible",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2209,7 +1937,7 @@
             "name": "Z-35",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2225,23 +1953,7 @@
             "name": "Orkan",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VIII"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Loyang",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2257,7 +1969,7 @@
             "name": "Fenyang",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2273,7 +1985,7 @@
             "name": "Siliwangi",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2295,10 +2007,74 @@
         "items": [
           {
             "quantity": 1,
+            "name": "Tashkent 39",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "VII"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Tromp",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "X"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Brisbane",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "X"
+            }
+          },
+          {
+            "quantity": 1,
+            "name": "Colossus",
+            "id": "undefined",
+            "compensation": {
+              "quantity": 750,
+              "name": "Steel",
+              "id": "steel",
+              "attributes": { "type": "resource", "resource_id": "steel" }
+            },
+            "attributes": {
+              "rare": "true",
+              "type": "ship",
+              "tier": "VIII"
+            }
+          },
+          {
+            "quantity": 1,
             "name": "Fūjin",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2314,7 +2090,7 @@
             "name": "Kamikaze",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2330,7 +2106,7 @@
             "name": "Kamikaze R",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2346,7 +2122,7 @@
             "name": "Gremyashchy",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2359,42 +2135,10 @@
           },
           {
             "quantity": 1,
-            "name": "Black",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "IX"
-            }
-          },
-          {
-            "quantity": 1,
             "name": "Forrest Sherman",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "X"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Khabarovsk",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2410,7 +2154,7 @@
             "name": "Álvaro de Bazán",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2426,7 +2170,7 @@
             "name": "Anchorage",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2442,7 +2186,7 @@
             "name": "Giulio Cesare",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2458,7 +2202,7 @@
             "name": "Odin",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2474,7 +2218,7 @@
             "name": "Hizen",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2487,26 +2231,10 @@
           },
           {
             "quantity": 1,
-            "name": "Grosser Kurfürst",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "X"
-            }
-          },
-          {
-            "quantity": 1,
             "name": "Malta",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2522,7 +2250,7 @@
             "name": "Max Immelmann",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2538,7 +2266,7 @@
             "name": "Thunderer",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2546,38 +2274,6 @@
             "attributes": {
               "rare": "true",
               "type": "ship",
-              "tier": "X"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Marceau",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "X"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Hayate",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
               "tier": "X"
             }
           },
@@ -2586,7 +2282,7 @@
             "name": "Småland",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2599,58 +2295,10 @@
           },
           {
             "quantity": 1,
-            "name": "Salem",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "X"
-            }
-          },
-          {
-            "quantity": 1,
             "name": "Napoli",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "X"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Yoshino",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "X"
-            }
-          },
-          {
-            "quantity": 1,
-            "name": "Moskva",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2666,7 +2314,7 @@
             "name": "Smolensk",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2682,7 +2330,7 @@
             "name": "Missouri",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2698,7 +2346,7 @@
             "name": "Georgia",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2714,7 +2362,7 @@
             "name": "Jean Bart",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2730,7 +2378,7 @@
             "name": "Musashi",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2746,7 +2394,7 @@
             "name": "Benham",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2759,26 +2407,10 @@
           },
           {
             "quantity": 1,
-            "name": "Neustrashimy",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "IX"
-            }
-          },
-          {
-            "quantity": 1,
             "name": "Friesland",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2794,7 +2426,7 @@
             "name": "Alaska",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2810,7 +2442,7 @@
             "name": "Kronshtadt",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2826,7 +2458,7 @@
             "name": "Enterprise",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2842,7 +2474,7 @@
             "name": "Massachusetts",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2858,7 +2490,7 @@
             "name": "Lenin",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2874,7 +2506,7 @@
             "name": "Asashio",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2890,7 +2522,7 @@
             "name": "Mikhail Kutuzov",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2906,7 +2538,7 @@
             "name": "Z-39",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2922,7 +2554,7 @@
             "name": "Haida",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2938,7 +2570,7 @@
             "name": "Nelson",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2951,26 +2583,10 @@
           },
           {
             "quantity": 1,
-            "name": "Flint",
-            "id": "undefined",
-            "compensation": {
-              "quantity": 1250,
-              "name": "Steel",
-              "id": "steel",
-              "attributes": { "type": "resource", "resource_id": "steel" }
-            },
-            "attributes": {
-              "type": "ship",
-              "rare": "false",
-              "tier": "VII"
-            }
-          },
-          {
-            "quantity": 1,
             "name": "Belfast",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -2986,7 +2602,7 @@
             "name": "Erich Loewenhardt",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -3002,7 +2618,7 @@
             "name": "Admiral Graf Spee",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
@@ -3018,7 +2634,7 @@
             "name": "T-61",
             "id": "undefined",
             "compensation": {
-              "quantity": 1250,
+              "quantity": 750,
               "name": "Steel",
               "id": "steel",
               "attributes": { "type": "resource", "resource_id": "steel" }
