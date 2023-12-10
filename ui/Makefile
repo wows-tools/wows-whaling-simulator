@@ -3,11 +3,11 @@ SOURCES := $(shell find ./ -type f -not -path "./node_modules/*" -not -path '*/.
 all: node_modules build
 
 node_modules: yarn.lock package.json
-	yarn install
+	yarnpkg install
 	touch node_modules
 
 build: ${SOURCES}
-	yarn build
+	yarnpkg build
 clean:
 	rm -rf build/
 
