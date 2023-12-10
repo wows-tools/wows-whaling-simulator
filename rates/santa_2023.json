@@ -282,7 +282,7 @@
       "TV-TVII": {
         "name": "TV-TVII",
         "id": "tv_tvii",
-        "drop_rate": 12,
+        "drop_rate": 2,
         "collectable": true,
         "pitiable": true,
         "drop_rate_transfers_to": ["TVIII-TIX", "TX-Rare"],
@@ -1267,7 +1267,7 @@
       },
       "TVIII-TIX": {
         "name": "TVIII-TIX",
-        "drop_rate": 3,
+        "drop_rate": 0.4,
         "collectable": true,
         "pitiable": true,
         "drop_rate_transfers_to": ["TV-TVII", "TX-Rare"],
@@ -2060,7 +2060,7 @@
       },
       "TX-Rare": {
         "name": "TX-Rare",
-        "drop_rate": 1,
+        "drop_rate": 0.1,
         "collectable": true,
         "pitiable": true,
         "drop_rate_transfers_to": ["TV-TVII", "TVIII-TIX"],
