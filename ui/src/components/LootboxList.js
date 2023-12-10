@@ -32,26 +32,6 @@ export default class LootboxList extends React.Component {
       <View marging="size-400">
         <Heading level={1}>World of Warships Lootbox Whaling Simulator</Heading>
         <Divider />
-        <Heading level={2}>Disclaimer</Heading>
-        <View
-          backgroundColor="red-400"
-          colorVersion="6"
-          width="size-6000"
-          padding="size-100"
-          borderColor="red-800"
-          borderWidth="medium"
-          borderRadius="medium"
-        >
-          <Flex gap="size-100" direction="column">
-            <Text>
-              This website is in alpha stage. You are likely to encounter bugs.
-            </Text>
-            <Text>
-              The estimates are provided as is, without an warranty of any kind.
-            </Text>
-          </Flex>
-        </View>
-
         <Heading level={2}>Container List</Heading>
 
         <Heading level={3}>Pick a Containers:</Heading>
