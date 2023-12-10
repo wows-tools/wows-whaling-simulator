@@ -116,7 +116,7 @@ func CollectLootboxURLs() []string {
 		"--no-sandbox",
 		"--disable-dev-shm-usage",
 		"disable-gpu",
-		"--headless",  // comment out this line to see the browser
+		//		"--headless",  // comment out this line to see the browser
 	}})
 	caps.SetLogLevel(log.Performance, log.All)
 
@@ -144,7 +144,7 @@ func CollectLootboxURLs() []string {
 			panic(err)
 		}
 
-		time.Sleep(time.Millisecond * 100) // Give some time for the page to settle
+		time.Sleep(time.Millisecond * 200) // Give some time for the page to settle
 	}
 	time.Sleep(time.Second * 1) // Give some time for the page to load
 
@@ -179,6 +179,6 @@ func CollectLootboxURLs() []string {
 	//for _, url := range urls {
 	//	fmt.Println(url)
 	//}
-    return urls
+	return urls
 
 }
