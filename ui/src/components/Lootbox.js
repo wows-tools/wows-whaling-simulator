@@ -1,61 +1,36 @@
 import React from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import { Image } from "@adobe/react-spectrum";
 import LootboxContent from "./LootboxContent";
 import WhalingResults from "./WhalingResults";
-import { Link } from "@adobe/react-spectrum";
-import { Text } from "@adobe/react-spectrum";
-import { Heading } from "@adobe/react-spectrum";
-import { View } from "@adobe/react-spectrum";
-import { Flex } from "@adobe/react-spectrum";
-import { ContextualHelp } from "@adobe/react-spectrum";
-import { Form } from "@adobe/react-spectrum";
-import { Switch } from "@adobe/react-spectrum";
-import { Grid } from "@adobe/react-spectrum";
-import { Divider } from "@adobe/react-spectrum";
-import { IllustratedMessage } from "@adobe/react-spectrum";
-import { NumberField } from "@adobe/react-spectrum";
 import {
+  Text,
+  Heading,
+  View,
+  Flex,
+  ContextualHelp,
+  Form,
+  Divider,
+  NumberField,
   ComboBox,
   ActionButton,
   AlertDialog,
-  ButtonGroup,
   Button,
-  DialogTrigger,
   Slider,
   Picker,
   Item,
-  SearchField,
   DialogContainer,
-  TextField,
-} from "@adobe/react-spectrum";
-import { Content } from "@adobe/react-spectrum";
-import {
   Tabs,
   TabList,
   TabPanels,
-  TableView,
-  TableHeader,
-  Column,
-  TableBody,
-  Row,
-  Cell,
   ListView,
+  Content
 } from "@adobe/react-spectrum";
-import { ListBox } from "@adobe/react-spectrum";
-import { useNavigate } from "react-router-dom";
-import { Section } from "@adobe/react-spectrum";
-import { Link as RouterLink } from "react-router-dom";
-import { useParams } from "react-router-dom";
-import NotFound from "@spectrum-icons/illustrations/NotFound";
+import { useNavigate, useParams } from "react-router-dom";
 import Money from "@spectrum-icons/workflow/Money";
 import Back from "@spectrum-icons/workflow/Back";
-import User from "@spectrum-icons/workflow/User";
-import Star from "@spectrum-icons/workflow/Star";
 import Delete from "@spectrum-icons/workflow/Delete";
 import { useAsyncList } from "react-stately";
-import GenericTile from "./GenericTile";
 
 import { API_ROOT } from "../api-config";
 
@@ -164,7 +139,6 @@ function WhaleBox(props) {
       )
       .then((res) => {
         const ships = res.data.ships;
-        console.log(ships);
         const shipObjList = ships.map((ship) => ({ name: ship }));
         setShipListInput(shipObjList);
       });
@@ -334,81 +308,81 @@ function WhaleBox(props) {
 
               {((targetMode === "simple_whaling_target" ||
                 targetMode === "stats_whaling_target") && (
-                <>
-                  <ComboBox
-                    label="Ship Search"
-                    defaultItems={shipListInput}
-                    selectedKey={ship}
-                    onSelectionChange={setShip}
-                    onInputChange={setShipInput}
-                    defaultInputValue={shipInput}
-                    isDisabled={checkUnset(player)}
-                    onSelectionChange={(selected) => setShip(selected)}
-                  >
-                    {(item) => <Item key={item.name}>{item.name}</Item>}
-                  </ComboBox>
-                  <ComboBox
-                    label={
-                      <>
-                        <Text>Exclude Ship</Text>
-                        <ExcludeShipInfo />
-                      </>
-                    }
-                    defaultItems={shipListInput.filter(
-                      (item) => item.name !== ship
-                    )}
-                    isDisabled={checkUnset(player)}
-                    defaultInputValue=""
-                    onSelectionChange={(selected) => addShipExclusion(selected)}
-                  >
-                    {(item) => <Item key={item.name}>{item.name}</Item>}
-                  </ComboBox>
-                  {shipExcludeList.length === 0 || (
-                    <ListView
-                      selectionMode="none"
-                      aria-label="ship-exclude-list"
-                      maxWidth="size-6000"
-                      density="compact"
+                  <>
+                    <ComboBox
+                      label="Ship Search"
+                      defaultItems={shipListInput}
+                      selectedKey={ship}
+                      onSelectionChange={setShip}
+                      onInputChange={setShipInput}
+                      defaultInputValue={shipInput}
+                      isDisabled={checkUnset(player)}
+                      onSelectionChange={(selected) => setShip(selected)}
                     >
-                      {shipExcludeList.map((ship) => (
-                        <Item key={ship}>
-                          <Text>{ship}</Text>
-                          <ActionButton
-                            onPress={(e) => delShipExclusion(ship)}
-                            aria-label="Icon only"
-                          >
-                            <Delete />
-                          </ActionButton>
-                        </Item>
-                      ))}
-                    </ListView>
-                  )}
-                </>
-              )) || (
-                <Flex direction="row" gap="size-100" wrap>
-                  <View>
-                    <Slider
-                      label="Number of containers"
-                      value={numlootbox}
-                      minWidth="size-3200"
-                      maxValue="1000"
-                      showValueLabel={false}
-                      minValue={1}
-                      onChange={setNumlootbox}
-                    />
-                  </View>
-                  <View marginTop="calc(single-line-height/2)">
-                    <NumberField
-                      minWidth="calc(size-1200 * 1.33)"
-                      width="calc(size-1200 * 1.33)"
-                      value={numlootbox}
-                      minValue={1}
-                      maxValue="1000"
-                      onChange={setNumlootbox}
-                    />
-                  </View>
-                </Flex>
-              )}
+                      {(item) => <Item key={item.name}>{item.name}</Item>}
+                    </ComboBox>
+                    <ComboBox
+                      label={
+                        <>
+                          <Text>Exclude Ship</Text>
+                          <ExcludeShipInfo />
+                        </>
+                      }
+                      defaultItems={shipListInput.filter(
+                        (item) => item.name !== ship
+                      )}
+                      isDisabled={checkUnset(player)}
+                      defaultInputValue=""
+                      onSelectionChange={(selected) => addShipExclusion(selected)}
+                    >
+                      {(item) => <Item key={item.name}>{item.name}</Item>}
+                    </ComboBox>
+                    {shipExcludeList.length === 0 || (
+                      <ListView
+                        selectionMode="none"
+                        aria-label="ship-exclude-list"
+                        maxWidth="size-6000"
+                        density="compact"
+                      >
+                        {shipExcludeList.map((ship) => (
+                          <Item key={ship}>
+                            <Text>{ship}</Text>
+                            <ActionButton
+                              onPress={(e) => delShipExclusion(ship)}
+                              aria-label="Icon only"
+                            >
+                              <Delete />
+                            </ActionButton>
+                          </Item>
+                        ))}
+                      </ListView>
+                    )}
+                  </>
+                )) || (
+                  <Flex direction="row" gap="size-100" wrap>
+                    <View>
+                      <Slider
+                        label="Number of containers"
+                        value={numlootbox}
+                        minWidth="size-3200"
+                        maxValue="1000"
+                        showValueLabel={false}
+                        minValue={1}
+                        onChange={setNumlootbox}
+                      />
+                    </View>
+                    <View marginTop="calc(single-line-height/2)">
+                      <NumberField
+                        minWidth="calc(size-1200 * 1.33)"
+                        width="calc(size-1200 * 1.33)"
+                        value={numlootbox}
+                        minValue={1}
+                        maxValue="1000"
+                        onChange={setNumlootbox}
+                      />
+                    </View>
+                  </Flex>
+                )}
             </Form>
           </AlertDialog>
         )}

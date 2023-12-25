@@ -1,64 +1,25 @@
 import React from "react";
-import { useEffect } from "react";
-import axios from "axios";
-import { Image } from "@adobe/react-spectrum";
-import LootboxContent from "./LootboxContent";
-import { Link } from "@adobe/react-spectrum";
-import { Text } from "@adobe/react-spectrum";
-import { Heading } from "@adobe/react-spectrum";
-import { View } from "@adobe/react-spectrum";
-import { Flex } from "@adobe/react-spectrum";
-import { ContextualHelp } from "@adobe/react-spectrum";
-import { Form } from "@adobe/react-spectrum";
-import { Switch } from "@adobe/react-spectrum";
-import { Grid } from "@adobe/react-spectrum";
-import { Divider } from "@adobe/react-spectrum";
-import { IllustratedMessage } from "@adobe/react-spectrum";
-import { NumberField } from "@adobe/react-spectrum";
 import {
-  ComboBox,
-  ActionButton,
-  AlertDialog,
-  ButtonGroup,
-  Button,
-  DialogTrigger,
-  Slider,
-  Picker,
+  Content,
   Item,
-  SearchField,
-  DialogContainer,
-  TextField,
-} from "@adobe/react-spectrum";
-import { Content } from "@adobe/react-spectrum";
-import {
-  Tabs,
-  TabList,
-  TabPanels,
+  Text,
+  Heading,
+  View,
+  Flex,
+  ContextualHelp,
+  Divider,
   TableView,
   TableHeader,
   Column,
   TableBody,
   Row,
   Cell,
+  ListBox
+
 } from "@adobe/react-spectrum";
-import { ListBox } from "@adobe/react-spectrum";
-import { useNavigate } from "react-router-dom";
-import { Section } from "@adobe/react-spectrum";
-import { Link as RouterLink } from "react-router-dom";
-import { useParams } from "react-router-dom";
-import NotFound from "@spectrum-icons/illustrations/NotFound";
-import Money from "@spectrum-icons/workflow/Money";
-import Back from "@spectrum-icons/workflow/Back";
-import User from "@spectrum-icons/workflow/User";
-import Star from "@spectrum-icons/workflow/Star";
-import { useAsyncList } from "react-stately";
 import GenericTile from "./GenericTile";
 
-import { API_ROOT } from "../api-config";
-
-function checkUnset(props) {
-  return props === undefined || props === null || props.length === 0;
-}
+const userLocale = navigator.language || 'en-US';
 
 function ShipInfo() {
   return (
@@ -162,7 +123,7 @@ function RenderItems(props) {
           {props.items.map((item) => (
             <Row>
               <Cell>{item.name}</Cell>
-              <Cell>{item.quantity}</Cell>
+              <Cell>{item.quantity.toLocaleString(userLocale)}</Cell>
             </Row>
           ))}
         </TableBody>
@@ -210,7 +171,7 @@ function SimpleWhalingResult(props) {
             header="Doubloons"
             subheader="Doubloons (and real money) spent"
             scale="Doubloons"
-            number={props.whalingData.game_money_spent}
+            number={props.whalingData.game_money_spent.toLocaleString(userLocale)}
             footer={
               "(ie: €" +
               props.whalingData.euro_spent +
@@ -394,7 +355,7 @@ function StatsWhalingResult(props) {
             header="Average Doubloons"
             subheader="Doubloons (and real money) spent"
             scale="Doubloons"
-            number={props.whalingData.avg_game_money_spent}
+            number={props.whalingData.avg_game_money_spent.toLocaleString(userLocale)}
             footer={
               "(ie: €" +
               props.whalingData.avg_euro_spent +
