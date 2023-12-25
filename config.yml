@@ -1,0 +1,6 @@
+Listen: 127.0.0.1:8080
+RedisURI: redis://localhost:6379/
+WowsApiKey: Nope
+LogLevel: DEBUG
+StaticAssets: ./static/
+Rates: ./rates
