@@ -1,16 +1,16 @@
 import React from "react";
 import axios from "axios";
-import { Image } from "@adobe/react-spectrum";
-import { Link } from "@adobe/react-spectrum";
-import { Text } from "@adobe/react-spectrum";
-import { Grid } from "@adobe/react-spectrum";
-import { repeat } from "@adobe/react-spectrum";
-import { Flex } from "@adobe/react-spectrum";
-import { Divider } from "@adobe/react-spectrum";
-import { View } from "@adobe/react-spectrum";
-import { IllustratedMessage } from "@adobe/react-spectrum";
-import { Heading } from "@adobe/react-spectrum";
-import { Content } from "@adobe/react-spectrum";
+import {
+  Image,
+  Link,
+  Grid,
+  repeat,
+  Divider,
+  View,
+  IllustratedMessage,
+  Heading,
+  Content
+} from "@adobe/react-spectrum";
 import { Link as RouterLink } from "react-router-dom";
 
 import { API_ROOT } from "../api-config";
