@@ -11,7 +11,7 @@ function AppFooter() {
             <a href="https://github.com/kakwa/wows-whaling-simulator">
               WoWs Whaling Simulator (Source Code)
             </a>{" "}
-            • version alpha.alpha • © 2022 • Kakwa • Released under the MIT
+            • version 0.1.0 • © 2022 • Kakwa • Released under the MIT
             Public License
           </Content>
         </View>
