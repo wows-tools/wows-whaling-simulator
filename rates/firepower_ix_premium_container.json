@@ -1,10 +1,9 @@
 {
     "name": "Firepower IX Premium container",
     "img": "/resources/PCL271_Tier9_Prem_d349b670cda3d194287dfce9306e0fd4726684cb22f481b9377f2cba3ad7fb93.png",
-    "id": "firepower_ix_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "firepower_ix_premium_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,6 +18,7 @@
                         "quantity": 787500,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -38,6 +38,7 @@
                         "quantity": 39375,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -57,6 +58,7 @@
                         "quantity": 13125,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -78,9 +80,102 @@
                         "quantity": 12000,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 1": {
+                "name": "Economic Bonuses 1",
+                "id": "economic_bonuses_1",
+                "drop_rate": 31,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4280283056",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4269797296",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4259311536",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4248825776",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 2": {
+                "name": "Economic Bonuses 2",
+                "id": "economic_bonuses_2",
+                "drop_rate": 48,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 12,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 12,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 12,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 12,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -95,484 +190,458 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3750638896",
+                        "name": "Jäger",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190192",
+                        "name": "Karl XIV Johan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761124656",
+                        "name": "Velos",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761157968",
+                        "name": "Carnot",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750672176",
+                        "name": "Ägir",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750639408",
+                        "name": "Z-44",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190704",
+                        "name": "Pommern",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190640",
+                        "name": "Marco Polo",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540956912",
+                        "name": "Ferrante Gonzaga",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750704880",
+                        "name": "Giuseppe Verdi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760109264",
+                        "name": "Azuma",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3719247568",
+                        "name": "Tsurugi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3740219088",
+                        "name": "Iwami",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540924112",
+                        "name": "Minegumo",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761125136",
+                        "name": "Groningen",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540956368",
+                        "name": "Tianjin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3740218576",
+                        "name": "Sun Yat-Sen",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761157328",
+                        "name": "Dalian",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190352",
+                        "name": "Navarin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750639600",
+                        "name": "Halford",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750705136",
+                        "name": "Kearsarge",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750672368",
+                        "name": "Tulsa",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3551410160",
+                        "name": "Black",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3656333264",
+                        "name": "Scarlet Thunder",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2400,
                             "name": "paragon_xp",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 7.75,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4280283056",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4269797296",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4259311536",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4248825776",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -591,6 +660,7 @@
                         "quantity": 787500,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -610,6 +680,7 @@
                         "quantity": 39375,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -629,6 +700,7 @@
                         "quantity": 13125,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -639,5 +711,7 @@
         }
     ],
     "pity": 25,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

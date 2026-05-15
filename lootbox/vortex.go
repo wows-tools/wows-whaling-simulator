@@ -6,6 +6,7 @@ import (
 	"io/fs"
 	"os"
 	"path/filepath"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -407,6 +408,8 @@ func vortexConvert(raw *vortexEnvelope) (*LootBox, error) {
 		}
 
 		// Each ship category transfers to all other ship categories.
+		// Sort both the category list and the transfers slice for stable JSON output.
+		sort.Strings(shipCatNames)
 		for i, name := range shipCatNames {
 			var others []string
 			for j, other := range shipCatNames {

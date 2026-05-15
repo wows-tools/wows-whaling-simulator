@@ -1,10 +1,9 @@
 {
     "name": "Navy 250 Premium container",
     "img": "/resources/PCL261_USA250_Prem_10341637e3c297f22bf3c421568a341ebabf6284be37829025356a91c99ed037.png",
-    "id": "navy_250_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "navy_250_premium_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,9 +18,56 @@
                         "quantity": 375000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 40,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -38,6 +84,7 @@
                         "quantity": 18750,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -57,51 +104,10 @@
                         "quantity": 6250,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 10,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -120,6 +126,7 @@
                         "quantity": 7500,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -139,9 +146,49 @@
                         "quantity": 18750,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
+                "drop_rate": 6,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 7,
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "premium_days",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Styles": {
+                "name": "Styles",
+                "id": "styles",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4081708976",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
                         }
                     }
                 ]
@@ -156,56 +203,22 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3540989936",
+                        "name": "Indiana",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 18750,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "style": {
-                "name": "style",
-                "id": "style",
-                "drop_rate": 80,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4081708976",
-                        "attributes": {
-                            "type": "style"
-                        }
-                    }
-                ]
-            },
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
-                "drop_rate": 6,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 7,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
-                        "attributes": {
-                            "type": "wows_premium"
                         }
                     }
                 ]
@@ -224,9 +237,56 @@
                         "quantity": 375000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 40,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -243,6 +303,7 @@
                         "quantity": 18750,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -262,51 +323,10 @@
                         "quantity": 6250,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 10,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -314,5 +334,7 @@
         }
     ],
     "pity": 51,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

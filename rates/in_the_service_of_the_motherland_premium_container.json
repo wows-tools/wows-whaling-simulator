@@ -1,15 +1,14 @@
 {
     "name": "\"In the Service of the Motherland\" Premium container",
     "img": "/resources/PCL067_SArcBB_Coll_Prem_784a1394bafe46c8f63db2869805f4d2912b3cd778e83a019c3566580dfc3dfd.png",
-    "id": "in_the_service_of_the_motherland_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "in_the_service_of_the_motherland_premium_container",
+    "category": "",
     "drops": [
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -19,6 +18,7 @@
                         "quantity": 6,
                         "name": "Camouflages",
                         "id": "4220448688",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -27,52 +27,56 @@
             }
         },
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4281331632",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4270845872",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4260360112",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4249874352",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
             }
         },
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -81,10 +85,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4278164400",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -92,5 +98,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

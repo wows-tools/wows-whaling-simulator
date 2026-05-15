@@ -1,12 +1,85 @@
 {
     "name": "\"Mini No. 5\" Premium container",
     "img": "/resources/PCL213_BA_Prem_a1292e783e4fbd10a92a21f9b09137c1978506385554e3f06e570ade78360f2a.png",
-    "id": "mini_no5_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "mini_no5_premium_container",
+    "category": "",
     "drops": [
         {
+            "Container": {
+                "name": "Container",
+                "id": "container",
+                "drop_rate": 25,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Container",
+                        "id": "4061320112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "resource"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Container",
+                        "id": "4059222960",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 40,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
             "Free XP": {
                 "name": "Free XP",
                 "id": "free_xp",
@@ -19,6 +92,7 @@
                         "quantity": 19000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -36,88 +110,22 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3437180720",
+                        "name": "BA Tirpitz",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 19000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 10,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "lootbox": {
-                "name": "lootbox",
-                "id": "lootbox",
-                "drop_rate": 12.5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "lootbox",
-                        "id": "4061320112",
-                        "attributes": {
-                            "type": "lootbox"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "lootbox",
-                        "id": "4059222960",
-                        "attributes": {
-                            "type": "lootbox"
                         }
                     }
                 ]
@@ -125,5 +133,7 @@
         }
     ],
     "pity": 75,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

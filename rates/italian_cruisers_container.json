@@ -1,10 +1,9 @@
 {
     "name": "Italian Cruisers container",
     "img": "/resources/PCL089_ITCA_Free_old_1ed71ed2bc842eafa9681bd30ab96a91d734e24c2ef0a12c7ee9199e9866cad9.png",
-    "id": "italian_cruisers_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "italian_cruisers_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,6 +18,7 @@
                         "quantity": 50000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -40,9 +40,56 @@
                         "quantity": 50000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -59,6 +106,7 @@
                         "quantity": 2500,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -78,73 +126,81 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3762271984",
+                        "name": "Aquila",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 50000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750704880",
+                        "name": "Giuseppe Verdi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 50000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190640",
+                        "name": "Marco Polo",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 50000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762239216",
+                        "name": "Roma",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 50000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     }
@@ -162,62 +218,22 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3540956912",
+                        "name": "Ferrante Gonzaga",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 50000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 20,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4283428784",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4272943024",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4262457264",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4251971504",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -236,6 +252,7 @@
                         "quantity": 50000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -246,5 +263,7 @@
         }
     ],
     "pity": 150,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

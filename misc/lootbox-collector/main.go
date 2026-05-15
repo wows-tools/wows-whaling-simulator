@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"flag"
@@ -14,6 +15,7 @@ import (
 
 	"github.com/IceflowRE/go-wargaming/v3/wargaming"
 	wgwows "github.com/IceflowRE/go-wargaming/v3/wargaming/wows"
+	"github.com/kakwa/wows-whaling-simulator/lootbox"
 )
 
 func main() {
@@ -59,7 +61,26 @@ func main() {
 		return
 	}
 
-	santaYear := santaContainerYear()
+	// Pre-scan: find the last raw filename for each container ID so that when
+	// duplicate raw files exist (old + new version of the same container) only
+	// the last one triggers change-detection in rates/.
+	lastFileForID := map[string]string{}
+	for _, entry := range entries {
+		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".json") {
+			continue
+		}
+		raw, err := os.ReadFile(filepath.Join(*inputDir, entry.Name()))
+		if err != nil {
+			continue
+		}
+		var env struct {
+			Data struct{ Title string `json:"title"` } `json:"data"`
+		}
+		if json.Unmarshal(raw, &env) == nil && env.Data.Title != "" {
+			id := vortexName2IDPublic(env.Data.Title)
+			lastFileForID[id] = entry.Name()
+		}
+	}
 
 	for _, entry := range entries {
 		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".json") {
@@ -102,43 +123,84 @@ func main() {
 		}
 		fmt.Printf("Converted %s → %s\n", inPath, outPath)
 
-		// Copy Santa containers to the rates directory with the year suffix.
-		if ratesName := santaRatesName(lb.Data.Title, santaYear); ratesName != "" {
-			ratesPath := filepath.Join(*ratesDir, ratesName)
-			if err := os.WriteFile(ratesPath, data, 0644); err != nil {
-				fmt.Printf("Warning: could not write rates file %s: %v\n", ratesPath, err)
-			} else {
-				fmt.Printf("  → rates: %s\n", ratesPath)
+		// Copy to rates only from the last raw file for this ID so duplicate
+		// raw files don't cause perpetual false change-detections.
+		if *ratesDir != "" && lastFileForID[lbws.ID] == entry.Name() {
+			if err := writeToRates(*ratesDir, lbws, data); err != nil {
+				fmt.Printf("Warning: could not write rates file %s: %v\n", lbws.ID, err)
 			}
 		}
 	}
 }
 
-// santaContainerYear returns the year to use for Santa container filenames.
-// Christmas containers are released in December; if we're in the first half of
-// the year the current containers are from the previous December.
-func santaContainerYear() int {
-	now := time.Now()
-	if now.Month() < time.July {
-		return now.Year() - 1
+// writeToRates writes the container JSON to <ratesDir>/<id>.json.
+// If a file with the same ID already exists but has different LootBox content,
+// the old file is archived as <id>_preYYYYMMDD.json and the new file includes
+// "changed_at" and "archived_previous_as" metadata fields.
+func writeToRates(ratesDir string, lb *lootbox.LootBox, data []byte) error {
+	if err := os.MkdirAll(ratesDir, 0755); err != nil {
+		return err
 	}
-	return now.Year()
+	dest := filepath.Join(ratesDir, lb.ID+".json")
+
+	if existing, err := os.ReadFile(dest); err == nil {
+		var existingLB lootbox.LootBox
+		if jerr := json.Unmarshal(existing, &existingLB); jerr == nil {
+			existBytes, _ := json.Marshal(existingLB)
+			newBytes, _ := json.Marshal(*lb)
+			if !bytes.Equal(existBytes, newBytes) {
+				today := time.Now().Format("20060102")
+				archiveName := lb.ID + "_pre" + today + ".json"
+				archivePath := filepath.Join(ratesDir, archiveName)
+				if rerr := os.Rename(dest, archivePath); rerr != nil {
+					return fmt.Errorf("archive %s: %w", dest, rerr)
+				}
+				fmt.Printf("  → rates: changed, archived previous → %s\n", archiveName)
+				data = injectChangeMeta(data, today, archiveName)
+			}
+		}
+	}
+
+	if werr := os.WriteFile(dest, data, 0644); werr != nil {
+		return werr
+	}
+	fmt.Printf("  → rates: %s\n", dest)
+	return nil
 }
 
-// santaRatesName maps a container title to a rates/ filename (empty = not a Santa container).
-func santaRatesName(title string, year int) string {
-	t := strings.ToLower(title)
-	switch {
-	case strings.Contains(t, "santa") && strings.Contains(t, "ultra"):
-		return fmt.Sprintf("santa_ultra_%d.json", year)
-	case strings.Contains(t, "santa") && strings.Contains(t, "mega"):
-		return fmt.Sprintf("santa_mega_%d.json", year)
-	case strings.Contains(t, "santa") && strings.Contains(t, "big"):
-		return fmt.Sprintf("santa_big_%d.json", year)
-	case strings.Contains(t, "santa"):
-		return fmt.Sprintf("santa_%d.json", year)
+// vortexName2IDPublic mirrors the lootbox package's internal name→ID helper so
+// the pre-scan can predict container IDs without a full parse.
+func vortexName2IDPublic(s string) string {
+	s = strings.ToLower(s)
+	for _, q := range []string{"'", "’", "“", "”", "«", "»", "\""} {
+		s = strings.ReplaceAll(s, q, "")
 	}
-	return ""
+	var b strings.Builder
+	for _, r := range s {
+		switch {
+		case r >= 'a' && r <= 'z', r >= '0' && r <= '9':
+			b.WriteRune(r)
+		case r == ' ' || r == '_' || r == '-':
+			b.WriteByte('_')
+		}
+	}
+	return b.String()
+}
+
+// injectChangeMeta adds change-tracking fields to a JSON blob without touching
+// the rest of the structure.
+func injectChangeMeta(data []byte, today, archiveName string) []byte {
+	var obj map[string]json.RawMessage
+	if err := json.Unmarshal(data, &obj); err != nil {
+		return data
+	}
+	obj["changed_at"] = json.RawMessage(`"` + today + `"`)
+	obj["archived_previous_as"] = json.RawMessage(`"` + archiveName + `"`)
+	out, err := json.MarshalIndent(obj, "", "    ")
+	if err != nil {
+		return data
+	}
+	return out
 }
 
 // fetchShips queries the WG encyclopedia for all ship names, tiers, and rarity flags.

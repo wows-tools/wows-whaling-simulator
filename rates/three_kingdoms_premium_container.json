@@ -1,56 +1,96 @@
 {
     "name": "Three Kingdoms Premium container",
     "img": "/resources/PCL210_Three_Kingdoms_Prem_f9635dc289beaf4415441b00e490defb659fd4487a025c61960f107a1bda3307.png",
-    "id": "three_kingdoms_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "three_kingdoms_premium_container",
+    "category": "",
     "drops": [
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4282380208",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4271894448",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4261408688",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4250922928",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
             }
         },
         {
+            "Styles": {
+                "name": "Styles",
+                "id": "styles",
+                "drop_rate": 81,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4216975280",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4215926704",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4214878128",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
             "Tier VIII–IX ship": {
                 "name": "Tier VIII–IX ship",
                 "id": "tier_viiiixship",
@@ -61,152 +101,130 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3740185808",
+                        "name": "Mengchong",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3729732816",
+                        "name": "Louchuan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3552457936",
+                        "name": "Zhu Que",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3552523472",
+                        "name": "Xuan Wu",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "style": {
-                "name": "style",
-                "id": "style",
-                "drop_rate": 27,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4216975280",
-                        "attributes": {
-                            "type": "style"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4215926704",
-                        "attributes": {
-                            "type": "style"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4214878128",
-                        "attributes": {
-                            "type": "style"
                         }
                     }
                 ]
             }
         },
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4282380208",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4271894448",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4261408688",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 11,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4250922928",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -214,5 +232,7 @@
         }
     ],
     "pity": 38,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

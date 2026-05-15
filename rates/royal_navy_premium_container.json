@@ -1,16 +1,15 @@
 {
     "name": "Royal Navy Premium container",
     "img": "/resources/PCL038_UKarc_Prem_old_8fad2de5ab4ecfb988506a10d6de43bb6ac10d1882ebf4a924ebb13d3068aecd.png",
-    "id": "royal_navy_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "royal_navy_premium_container",
+    "category": "",
     "drops": [
         {
             "Signals": {
                 "name": "Signals",
                 "id": "signals",
-                "drop_rate": 25,
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -19,6 +18,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4287459248",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -27,6 +27,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4286410672",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -35,6 +36,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4263342000",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -43,6 +45,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4280119216",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -63,6 +66,7 @@
                         "quantity": 6000,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -82,9 +86,56 @@
                         "quantity": 900000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 60,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -99,62 +150,22 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3741300688",
+                        "name": "Colossus",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 6000,
                             "name": "Coal",
                             "id": "coal",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "coal",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 15,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 6,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 6,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 6,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 6,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -164,7 +175,7 @@
             "Signals": {
                 "name": "Signals",
                 "id": "signals",
-                "drop_rate": 16.667,
+                "drop_rate": 100.00200000000001,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -173,6 +184,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4265439152",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -181,6 +193,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4264390576",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -189,6 +202,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4289556400",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -197,6 +211,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4287459248",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -205,6 +220,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4276973488",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -213,6 +229,7 @@
                         "quantity": 10,
                         "name": "Signals",
                         "id": "4275924912",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -222,5 +239,7 @@
         }
     ],
     "pity": 33,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

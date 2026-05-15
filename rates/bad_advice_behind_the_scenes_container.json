@@ -1,14 +1,13 @@
 {
     "name": "\"Bad Advice: Behind the Scenes\" container",
     "img": "/resources/PCL096_CAPT2020_old_91107415340ca19e5bb857ba27fbe4df957470c61a05b22bd384dd29967b1920.png",
-    "id": "bad_advice_behind_the_scenes_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "bad_advice_behind_the_scenes_container",
+    "category": "",
     "drops": [
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -17,10 +16,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4272921520",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -28,5 +29,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,12 +1,76 @@
 {
     "name": "Golden Daruma Premium container",
     "img": "/resources/PCL245_Daruma_Gold_Prem_c684bf94259c493aede33b2dacf5459841d91b71e890a6c7689307759ac49dc0.png",
-    "id": "golden_daruma_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "golden_daruma_premium_container",
+    "category": "",
     "drops": [
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 66,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 4,
+                        "name": "Economic Bonuses",
+                        "id": "4280283056",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 4,
+                        "name": "Economic Bonuses",
+                        "id": "4269797296",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 4,
+                        "name": "Economic Bonuses",
+                        "id": "4259311536",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 4,
+                        "name": "Economic Bonuses",
+                        "id": "4248825776",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Supercontainer": {
+                "name": "Supercontainer",
+                "id": "supercontainer",
+                "drop_rate": 24,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Supercontainer",
+                        "id": "4286476208",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
             "Suzuya Golden": {
                 "name": "Suzuya Golden",
                 "id": "suzuya_golden",
@@ -19,18 +83,20 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3509499600",
+                        "name": "Suzuya Golden",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "shipdestruction",
+                            "name": "Supercontainer",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     }
@@ -48,79 +114,21 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3551409968",
+                        "name": "ZF-6 Golden",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "shipdestruction",
+                            "name": "Supercontainer",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 16.5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 4,
-                        "name": "camoboost",
-                        "id": "4280283056",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 4,
-                        "name": "camoboost",
-                        "id": "4269797296",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 4,
-                        "name": "camoboost",
-                        "id": "4259311536",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 4,
-                        "name": "camoboost",
-                        "id": "4248825776",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "shipdestruction": {
-                "name": "shipdestruction",
-                "id": "shipdestruction",
-                "drop_rate": 24,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "shipdestruction",
-                        "id": "4286476208",
-                        "attributes": {
-                            "type": "shipdestruction"
                         }
                     }
                 ]
@@ -128,5 +136,7 @@
         }
     ],
     "pity": 20,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

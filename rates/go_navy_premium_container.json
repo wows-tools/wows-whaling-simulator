@@ -1,82 +1,99 @@
 {
     "name": "\"Go Navy!\" Premium container",
     "img": "/resources/PCL033_RvR_GoNavy_Prem_old_59a409e9fbf1f9be8cb9ef84d89866a618fd280d495e730eb98f46ae75008129.png",
-    "id": "go_navy_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "go_navy_premium_container",
+    "category": "",
     "drops": [
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 2.5,
+            "Economic Bonuses 1": {
+                "name": "Economic Bonuses 1",
+                "id": "economic_bonuses_1",
+                "drop_rate": 10,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 8,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4260360112",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 8,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4281331632",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 8,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4270845872",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 8,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4249874352",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
-                    },
+                    }
+                ]
+            },
+            "Economic Bonuses 2": {
+                "name": "Economic Bonuses 2",
+                "id": "economic_bonuses_2",
+                "drop_rate": 90,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
                     {
                         "quantity": 28,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4261408688",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 28,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4282380208",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 28,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4271894448",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 28,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4250922928",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -85,7 +102,7 @@
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -95,6 +112,7 @@
                         "quantity": 10,
                         "name": "Camouflages",
                         "id": "4233031600",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -105,7 +123,7 @@
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -115,6 +133,7 @@
                         "quantity": 10,
                         "name": "Camouflages",
                         "id": "4231983024",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -124,5 +143,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

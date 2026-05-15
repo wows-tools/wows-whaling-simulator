@@ -1,50 +1,53 @@
 {
     "name": "Always Courageous Premium container",
     "img": "/resources/PCL115_USA_BB0910_Coll_Prem_f3a00dc5ed6e835b8aea5540894161b645f53aa2b4b586bde3172b3aa2d6e127.png",
-    "id": "always_courageous_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "always_courageous_premium_container",
+    "category": "",
     "drops": [
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4281331632",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4270845872",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4260360112",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 10,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4249874352",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -63,6 +66,7 @@
                         "quantity": 3400,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -82,6 +86,7 @@
                         "quantity": 25000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -101,6 +106,7 @@
                         "quantity": 8500,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -110,8 +116,8 @@
             }
         },
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -120,10 +126,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4269775792",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -131,5 +139,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,14 +1,13 @@
 {
     "name": "Royal Navy Destroyers Premium container",
     "img": "/resources/PCL045_UK_Coll_Prem_66fbcd9038c92a6d39097afccfe30523a78d99cc81bc32d16c593eb6d34dc0e0.png",
-    "id": "royal_navy_destroyers_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "royal_navy_destroyers_premium_container",
+    "category": "",
     "drops": [
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -17,62 +16,68 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4282358704",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
             }
         },
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 14,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4281331632",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 14,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4270845872",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 14,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4260360112",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 14,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4249874352",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
             }
         },
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -81,10 +86,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4282358704",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -92,5 +99,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,14 +1,13 @@
 {
     "name": "Third Game Anniversary container",
     "img": "/resources/PCL035_Bday3Y_Coll_Free_58f4593d206661592cc20cbe74880599d23050f56687f35c624352917fdfdc2c.png",
-    "id": "third_game_anniversary_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "third_game_anniversary_container",
+    "category": "",
     "drops": [
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -17,16 +16,64 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4284455856",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
             }
         },
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
             "Free XP": {
                 "name": "Free XP",
                 "id": "free_xp",
@@ -39,59 +86,18 @@
                         "quantity": 1500,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
                         }
                     }
                 ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 20,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4283428784",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4272943024",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4262457264",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4251971504",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
             }
         },
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -100,10 +106,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4284455856",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -111,5 +119,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

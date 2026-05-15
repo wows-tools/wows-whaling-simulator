@@ -1,10 +1,9 @@
 {
     "name": "\"psplive: Radiant Prism\" Premium container",
     "img": "/resources/PCL229_psplive_Prem_bc1566a908340b618c7617850980ad77a1e3542f43010f2dace0adcec62bf1dd.png",
-    "id": "psplive_radiant_prism_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "psplive_radiant_prism_premium_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,6 +18,7 @@
                         "quantity": 187500,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -29,5 +29,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

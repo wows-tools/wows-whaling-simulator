@@ -1,15 +1,14 @@
 {
     "name": "Azur Lane Premium container",
     "img": "/resources/PCL060_AzurLane_Coll_Prem_85457ba731dbf30a7f173eccf77547f6ba1521880b05a79f0f63af4aba92b1d3.png",
-    "id": "azur_lane_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "azur_lane_premium_container",
+    "category": "",
     "drops": [
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -19,6 +18,7 @@
                         "quantity": 6,
                         "name": "Camouflages",
                         "id": "4235128752",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -28,44 +28,48 @@
         },
         {},
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4281331632",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4270845872",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4260360112",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4249874352",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -73,5 +77,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,10 +1,9 @@
 {
     "name": "Air Supply container",
     "img": "/resources/PCL057_Aviabox_Free_old_efce55a6e20860557a954115f39699732886fa6dceb52ca8b541368f13931617.png",
-    "id": "air_supply_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "air_supply_container",
+    "category": "",
     "drops": [
         {
             "Coal": {
@@ -19,9 +18,56 @@
                         "quantity": 2000,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4282380208",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4271894448",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4261408688",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4250922928",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -38,6 +84,7 @@
                         "quantity": 2500,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -55,116 +102,82 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3751786288",
+                        "name": "Graf Zeppelin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751786480",
+                        "name": "Enterprise",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741300720",
+                        "name": "Saipan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751786192",
+                        "name": "Kaga",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 20,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4282380208",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4271894448",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4261408688",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4250922928",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -172,5 +185,7 @@
         }
     ],
     "pity": 625,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,10 +1,9 @@
 {
     "name": "Submarines container",
     "img": "/resources/PCL149_Subs_EA_d54a39187d0ab824bf6e8c8a54cc1d0bb41f180a1a0bab1a5b47815608c9de54.png",
-    "id": "submarines_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "submarines_container",
+    "category": "",
     "drops": [
         {
             "Free XP": {
@@ -19,6 +18,7 @@
                         "quantity": 70000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -38,12 +38,13 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_4078352176",
+                        "name": "U-69",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 70000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
@@ -51,17 +52,19 @@
                         },
                         "attributes": {
                             "rare": "false",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4078352368",
+                        "name": "Cachalot",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 70000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
@@ -69,6 +72,7 @@
                         },
                         "attributes": {
                             "rare": "false",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     }
@@ -86,12 +90,13 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_4076255024",
+                        "name": "U-190",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 70000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
@@ -99,17 +104,19 @@
                         },
                         "attributes": {
                             "rare": "false",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4076255216",
+                        "name": "Salmon",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 70000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
@@ -117,6 +124,7 @@
                         },
                         "attributes": {
                             "rare": "false",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     }
@@ -125,5 +133,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

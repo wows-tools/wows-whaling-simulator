@@ -1,15 +1,14 @@
 {
     "name": "Twitch container",
     "img": "/resources/PCL026_Twitch2_71d22f5066f22ee70fadc5542bd047d054d9f1feb6aaee913a8124f8ea4acab2.png",
-    "id": "twitch_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "twitch_container",
+    "category": "",
     "drops": [
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -19,6 +18,7 @@
                         "quantity": 1,
                         "name": "Camouflages",
                         "id": "4256100272",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -30,7 +30,7 @@
             "Signals": {
                 "name": "Signals",
                 "id": "signals",
-                "drop_rate": 20,
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -39,6 +39,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4280119216",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -47,6 +48,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4263342000",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -55,6 +57,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4287459248",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -63,6 +66,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4289556400",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -71,6 +75,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4274876336",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -79,8 +84,8 @@
             }
         },
         {
-            "recruitment_points": {
-                "name": "recruitment_points",
+            "Recruitment Points": {
+                "name": "Recruitment Points",
                 "id": "recruitment_points",
                 "drop_rate": 100,
                 "collectable": false,
@@ -89,10 +94,12 @@
                 "items": [
                     {
                         "quantity": 100,
-                        "name": "recruitment_points",
+                        "name": "Recruitment Points",
                         "id": "recruitment_points",
+                        "compensation": null,
                         "attributes": {
-                            "type": "recruitment_points"
+                            "resource_id": "recruitment_points",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -100,5 +107,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,13 +1,14 @@
 {
     "name": "\"On a Retro Wave\" container",
     "img": "/resources/PCL182_BDay8_skin_ec8be94ff7f30eabbff7eff3fac9ceeefdf7651566eafc41e025c7448ee139ad.png",
-    "id": "on_a_retro_wave_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "on_a_retro_wave_container",
+    "category": "",
     "drops": [
         {}
     ],
     "pity": 10,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

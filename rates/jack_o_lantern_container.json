@@ -1,10 +1,9 @@
 {
     "name": "Jack-o’-Lantern container",
     "img": "/resources/PCL041_HW2018_Free_b4295147f705e5eef3f76f8fa5911b2b2c93f49ece44355550ce62d315e77753.png",
-    "id": "jack_o_lantern_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "jack_o_lantern_container",
+    "category": "",
     "drops": [
         {
             "Coal": {
@@ -19,6 +18,7 @@
                         "quantity": 1000,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -38,6 +38,7 @@
                         "quantity": 250000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -57,6 +58,7 @@
                         "quantity": 10000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -76,6 +78,7 @@
                         "quantity": 5000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -86,5 +89,7 @@
         }
     ],
     "pity": 100,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

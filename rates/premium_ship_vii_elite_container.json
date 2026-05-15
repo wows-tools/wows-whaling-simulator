@@ -1,10 +1,9 @@
 {
     "name": "Premium Ship VII Elite container",
     "img": "/resources/PCL073_EPICprem7_e321f8d4304c48fd9f79775c262084111c609d4bbb30c88415f4991294b939fa.png",
-    "id": "premium_ship_vii_elite_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "premium_ship_vii_elite_container",
+    "category": "",
     "drops": [
         {
             "Tier VII Premium ship": {
@@ -17,596 +16,701 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3763287856",
+                        "name": "Scharnhorst",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255024",
+                        "name": "Duca degli Abruzzi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763287760",
+                        "name": "Ashitaka",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763254608",
+                        "name": "Nueve de Julio",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3769513264",
+                        "name": "Błyskawica",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763288016",
+                        "name": "Hood",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3742316496",
+                        "name": "Duke of York",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4288591856",
+                        "name": "Atlanta",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255280",
+                        "name": "Indianapolis",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3668883440",
+                        "name": "Boise",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4264441840",
+                        "name": "Sims",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751720400",
+                        "name": "Lazo",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763221968",
+                        "name": "Leningrad",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763222224",
+                        "name": "Yūdachi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762238928",
+                        "name": "Poltava",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3658397424",
+                        "name": "Gorizia",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3553572848",
+                        "name": "California",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752802288",
+                        "name": "Florida",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763287888",
+                        "name": "Strasbourg",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752802000",
+                        "name": "Hyūga",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763287408",
+                        "name": "Yukon",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255088",
+                        "name": "München",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752769328",
+                        "name": "Weimar",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752769232",
+                        "name": "Maya",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763222256",
+                        "name": "FR25",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3731830736",
+                        "name": "Collingwood",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255120",
+                        "name": "Toulon",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752736112",
+                        "name": "Huron",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763254992",
+                        "name": "Tokachi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3742316528",
+                        "name": "West Virginia '44",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3543087056",
+                        "name": "Rodney",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3543021520",
+                        "name": "Jupiter '42",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3543020848",
+                        "name": "Stord '43",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3543086896",
+                        "name": "Scharnhorst '43",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752736208",
+                        "name": "Tashkent '39",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 8500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     }
@@ -615,5 +719,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

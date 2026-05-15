@@ -1,16 +1,15 @@
 {
     "name": "Air Supply Premium container",
     "img": "/resources/PCL058_Aviabox_Prem_old_b544a3fd3d55de39b0fe874584cb1bf744cef137bd349a3a4c1cc4bbe0da7572.png",
-    "id": "air_supply_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "air_supply_premium_container",
+    "category": "",
     "drops": [
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
-                "drop_rate": 16.667,
+                "id": "camouflages",
+                "drop_rate": 100.00200000000001,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -19,6 +18,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4258197424",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -27,6 +27,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4216254384",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -35,6 +36,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4202622896",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -43,6 +45,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4201574320",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -51,6 +54,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4200525744",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -59,6 +63,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4199477168",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -67,6 +72,52 @@
             }
         },
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 72,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 10,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 10,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 10,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
             "Elite Commander XP": {
                 "name": "Elite Commander XP",
                 "id": "elite_commander_xp",
@@ -79,6 +130,7 @@
                         "quantity": 75000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -98,6 +150,7 @@
                         "quantity": 25000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -115,214 +168,202 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3751786288",
+                        "name": "Graf Zeppelin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3730814960",
+                        "name": "Hornet",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764369232",
+                        "name": "Béarn",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762271984",
+                        "name": "Aquila",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762272208",
+                        "name": "Indomitable",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751786448",
+                        "name": "Ark Royal",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762271696",
+                        "name": "Chkalov",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741300720",
+                        "name": "Saipan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751786192",
+                        "name": "Kaga",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741300688",
+                        "name": "Colossus",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 2500,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 18,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 10,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 10,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 10,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 10,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -331,8 +372,8 @@
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
-                "drop_rate": 16.667,
+                "id": "camouflages",
+                "drop_rate": 100.00200000000001,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -341,6 +382,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4258197424",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -349,6 +391,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4216254384",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -357,6 +400,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4202622896",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -365,6 +409,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4201574320",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -373,6 +418,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4200525744",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -381,6 +427,7 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4199477168",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -390,5 +437,7 @@
         }
     ],
     "pity": 50,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

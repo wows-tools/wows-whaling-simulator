@@ -1,12 +1,85 @@
 {
     "name": "Plus Ultra Premium container",
     "img": "/resources/PCL197_Spanish_Prem_53756c8823fc491b834e7b81efaa3c8ac72f48a5095a2716eba3466e99976136.png",
+    "weight": 20,
     "id": "plus_ultra_premium_container",
-    "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "category": "",
     "drops": [
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 17.6,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 32,
+                        "name": "Economic Bonuses",
+                        "id": "4282380208",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 32,
+                        "name": "Economic Bonuses",
+                        "id": "4271894448",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 32,
+                        "name": "Economic Bonuses",
+                        "id": "4261408688",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 32,
+                        "name": "Economic Bonuses",
+                        "id": "4250922928",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Styles": {
+                "name": "Styles",
+                "id": "styles",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4094291888",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4261015472",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
             "Tier IX Premium ship": {
                 "name": "Tier IX Premium ship",
                 "id": "tier_ix_premium_ship",
@@ -17,88 +90,22 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3540989360",
+                        "name": "Victoria",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 20000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 4.4,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 32,
-                        "name": "camoboost",
-                        "id": "4282380208",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 32,
-                        "name": "camoboost",
-                        "id": "4271894448",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 32,
-                        "name": "camoboost",
-                        "id": "4261408688",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 32,
-                        "name": "camoboost",
-                        "id": "4250922928",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "style": {
-                "name": "style",
-                "id": "style",
-                "drop_rate": 40,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4094291888",
-                        "attributes": {
-                            "type": "style"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4261015472",
-                        "attributes": {
-                            "type": "style"
                         }
                     }
                 ]
@@ -106,5 +113,7 @@
         }
     ],
     "pity": 65,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

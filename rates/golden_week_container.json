@@ -1,12 +1,57 @@
 {
     "name": "Golden Week container",
     "img": "/resources/PCL162_Golden_Week_Free_9a5299e86d2b6121f36c9a032e62b5f896d38aa5b69380f5a52f998f0ee36ce4.png",
-    "id": "golden_week_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "golden_week_container",
+    "category": "",
     "drops": [
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 70,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4282380208",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4271894448",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4261408688",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4250922928",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
             "Elite Commander XP": {
                 "name": "Elite Commander XP",
                 "id": "elite_commander_xp",
@@ -19,6 +64,7 @@
                         "quantity": 15000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -38,8 +84,47 @@
                         "quantity": 5000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Styles": {
+                "name": "Styles",
+                "id": "styles",
+                "drop_rate": 5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4162449328",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Supercontainer": {
+                "name": "Supercontainer",
+                "id": "supercontainer",
+                "drop_rate": 0.4,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Supercontainer",
+                        "id": "4272844720",
+                        "compensation": null,
+                        "attributes": {
                             "type": "resource"
                         }
                     }
@@ -55,224 +140,162 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3752769232",
+                        "name": "Maya",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752802000",
+                        "name": "Hyūga",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760076496",
+                        "name": "Hayate",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3519985360",
+                        "name": "Suzuya",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3719247568",
+                        "name": "Tsurugi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3531486928",
+                        "name": "Shigure",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3542037808",
+                        "name": "Turgut Reis",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3542005040",
+                        "name": "Regele Carol I",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 17.5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4282380208",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4271894448",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4261408688",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4250922928",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "shipdestruction": {
-                "name": "shipdestruction",
-                "id": "shipdestruction",
-                "drop_rate": 0.4,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "shipdestruction",
-                        "id": "4272844720",
-                        "attributes": {
-                            "type": "shipdestruction"
-                        }
-                    }
-                ]
-            },
-            "style": {
-                "name": "style",
-                "id": "style",
-                "drop_rate": 5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4162449328",
-                        "attributes": {
-                            "type": "style"
                         }
                     }
                 ]
@@ -280,5 +303,7 @@
         }
     ],
     "pity": 250,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

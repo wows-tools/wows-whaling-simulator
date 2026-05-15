@@ -1,12 +1,57 @@
 {
     "name": "Heroic Clash container",
     "img": "/resources/PCL191_Jap_EA_126_Coll_ed399e8f48764f38c9ab0f221a1a4d2b62b7e3db174e625a78682fced289a806.png",
-    "id": "heroic_clash_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "heroic_clash_container",
+    "category": "",
     "drops": [
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4282380208",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4271894448",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4261408688",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4250922928",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
             "Elite Commander XP": {
                 "name": "Elite Commander XP",
                 "id": "elite_commander_xp",
@@ -19,6 +64,7 @@
                         "quantity": 1800,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -38,51 +84,10 @@
                         "quantity": 600,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 20,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "camoboost",
-                        "id": "4282380208",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "camoboost",
-                        "id": "4271894448",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "camoboost",
-                        "id": "4261408688",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "camoboost",
-                        "id": "4250922928",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -101,6 +106,7 @@
                         "quantity": 30000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -111,7 +117,7 @@
             "Signals": {
                 "name": "Signals",
                 "id": "signals",
-                "drop_rate": 20,
+                "drop_rate": 80,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -120,6 +126,7 @@
                         "quantity": 2,
                         "name": "Signals",
                         "id": "4287459248",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -128,6 +135,7 @@
                         "quantity": 2,
                         "name": "Signals",
                         "id": "4289556400",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -136,6 +144,7 @@
                         "quantity": 2,
                         "name": "Signals",
                         "id": "4265439152",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -144,6 +153,7 @@
                         "quantity": 2,
                         "name": "Signals",
                         "id": "4264390576",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -152,8 +162,8 @@
             }
         },
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -162,10 +172,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4259290032",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -173,5 +185,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

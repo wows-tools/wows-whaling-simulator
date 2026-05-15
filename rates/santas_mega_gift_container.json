@@ -1,10 +1,9 @@
 {
     "name": "Santa's Mega Gift container",
     "img": "/resources/PCL236_SantaBig_Prem_1b9d17991e5737e2c788de7990b0e2a57c2aec15baeb385ee207381169e2b379.png",
-    "id": "santas_mega_gift_container",
     "weight": 40,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "santas_mega_gift_container",
+    "category": "",
     "drops": [
         {
             "Coal": {
@@ -19,8 +18,28 @@
                         "quantity": 12500,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Container": {
+                "name": "Container",
+                "id": "container",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Container",
+                        "id": "4045591472",
+                        "compensation": null,
+                        "attributes": {
                             "type": "resource"
                         }
                     }
@@ -38,9 +57,122 @@
                         "quantity": 2250000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Doubloons": {
+                "name": "Doubloons",
+                "id": "doubloons",
+                "drop_rate": 5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 2500,
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "doubloons",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 1": {
+                "name": "Economic Bonuses 1",
+                "id": "economic_bonuses_1",
+                "drop_rate": 8,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 7,
+                        "name": "Economic Bonuses",
+                        "id": "4280283056",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 7,
+                        "name": "Economic Bonuses",
+                        "id": "4269797296",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 7,
+                        "name": "Economic Bonuses",
+                        "id": "4259311536",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 7,
+                        "name": "Economic Bonuses",
+                        "id": "4248825776",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 2": {
+                "name": "Economic Bonuses 2",
+                "id": "economic_bonuses_2",
+                "drop_rate": 32,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -57,8 +189,29 @@
                         "quantity": 100000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
+                "drop_rate": 1,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 180,
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "premium_days",
                             "type": "resource"
                         }
                     }
@@ -71,889 +224,987 @@
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier X ship or a rare ship",
-                    "Tier V–VIII Premium ship"
+                    "Tier V–VIII Premium ship",
+                    "Tier X ship or a rare ship"
                 ],
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3540924112",
+                        "name": "Minegumo",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4292818736",
+                        "name": "Tirpitz",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190352",
+                        "name": "Navarin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3531519792",
+                        "name": "Wiesbaden",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762173936",
+                        "name": "Kidd",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3719247568",
+                        "name": "Tsurugi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4255037136",
+                        "name": "Atago",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540956368",
+                        "name": "Tianjin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3730814960",
+                        "name": "Hornet",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762272208",
+                        "name": "Indomitable",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750638896",
+                        "name": "Jäger",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762271696",
+                        "name": "Chkalov",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751196368",
+                        "name": "I-56",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540989360",
+                        "name": "Victoria",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762206704",
+                        "name": "Wichita",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750639408",
+                        "name": "Z-44",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3730749424",
+                        "name": "Rochester",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762173232",
+                        "name": "Orkan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741267408",
+                        "name": "Borodino",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762206672",
+                        "name": "Cheshire",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3730782032",
+                        "name": "Flandre",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4076745936",
+                        "name": "Siliwangi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3730782192",
+                        "name": "Constellation",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741234640",
+                        "name": "Ochakov",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741235184",
+                        "name": "Congress",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750704880",
+                        "name": "Giuseppe Verdi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3730748880",
+                        "name": "Pyotr Bagration",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761157968",
+                        "name": "Carnot",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761681872",
+                        "name": "S-189",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741267760",
+                        "name": "Anhalt",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761157328",
+                        "name": "Dalian",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741234992",
+                        "name": "Schill",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4276008656",
+                        "name": "Tone",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3730749392",
+                        "name": "Hampshire",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762271984",
+                        "name": "Aquila",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751687984",
+                        "name": "Z-35",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751687376",
+                        "name": "Fenyang",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3740218576",
+                        "name": "Sun Yat-Sen",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751720912",
+                        "name": "Tiger '59",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750672368",
+                        "name": "Tulsa",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750639600",
+                        "name": "Halford",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3656333264",
+                        "name": "Scarlet Thunder",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762206032",
+                        "name": "Almirante Grau",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761682384",
+                        "name": "Alliance",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762206128",
+                        "name": "Numancia",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190192",
+                        "name": "Karl XIV Johan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761124656",
+                        "name": "Velos",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3720263632",
+                        "name": "Nottingham",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750672176",
+                        "name": "Ägir",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     }
@@ -966,1033 +1217,1147 @@
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier X ship or a rare ship",
-                    "Tier VIII–IX Premium ship"
+                    "Tier VIII–IX Premium ship",
+                    "Tier X ship or a rare ship"
                 ],
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3743364816",
+                        "name": "Ise",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752736208",
+                        "name": "Tashkent '39",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752769328",
+                        "name": "Weimar",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3765319664",
+                        "name": "Hill",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3553572848",
+                        "name": "California",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3765384528",
+                        "name": "Rio de Janeiro",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3543021520",
+                        "name": "Jupiter '42",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3720296272",
+                        "name": "Picardie",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3544102864",
+                        "name": "Orion '44",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3543087056",
+                        "name": "Rodney",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3542071248",
+                        "name": "Theseus",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3543577808",
+                        "name": "Xin Zhong Guo 14",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752802000",
+                        "name": "Hyūga",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763222224",
+                        "name": "Yūdachi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763254992",
+                        "name": "Tokachi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752769232",
+                        "name": "Maya",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764369232",
+                        "name": "Béarn",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752802288",
+                        "name": "Florida",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752736112",
+                        "name": "Huron",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764303152",
+                        "name": "Elli",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3765352400",
+                        "name": "Exeter",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255088",
+                        "name": "München",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752769264",
+                        "name": "Francesco Ferruccio",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763254608",
+                        "name": "Nueve de Julio",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764271088",
+                        "name": "Monaghan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3668883440",
+                        "name": "Boise",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255024",
+                        "name": "Duca degli Abruzzi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3765385168",
+                        "name": "Agincourt",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764303696",
+                        "name": "De Grasse",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763287760",
+                        "name": "Ashitaka",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3766368080",
+                        "name": "Siroco",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763222256",
+                        "name": "FR25",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762238928",
+                        "name": "Poltava",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763288016",
+                        "name": "Hood",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764270416",
+                        "name": "Juruá",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3754866128",
+                        "name": "Mikoyan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3658397424",
+                        "name": "Gorizia",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3544102736",
+                        "name": "Montcalm",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764336464",
+                        "name": "Dunkerque",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764336336",
+                        "name": "Mutsu",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3753818064",
+                        "name": "London",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763287888",
+                        "name": "Strasbourg",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763287408",
+                        "name": "Yukon",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3753785136",
+                        "name": "Karl von Schönberg",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3659445712",
+                        "name": "Admiral Makarov",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763221968",
+                        "name": "Leningrad",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3753817456",
+                        "name": "Mysore",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764303216",
+                        "name": "Perth",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763287856",
+                        "name": "Scharnhorst",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255120",
+                        "name": "Toulon",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3753817904",
+                        "name": "Leipzig",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3731830736",
+                        "name": "Collingwood",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3765351888",
+                        "name": "Krasny Krym",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764271056",
+                        "name": "Gallant",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3765319120",
+                        "name": "Okhotnik",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3742316528",
+                        "name": "West Virginia '44",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764303312",
+                        "name": "Molotov",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     }
@@ -2005,838 +2370,788 @@
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier V–VIII Premium ship",
-                    "Tier VIII–IX Premium ship"
+                    "Tier VIII–IX Premium ship",
+                    "Tier V–VIII Premium ship"
                 ],
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3539941360",
+                        "name": "Rhode Island",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760175056",
+                        "name": "Malta",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540924400",
+                        "name": "Johnston",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3530504176",
+                        "name": "Georgia",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3445536720",
+                        "name": "Defence",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760108912",
+                        "name": "Brisbane",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764303664",
+                        "name": "Admiral Graf Spee",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760142288",
+                        "name": "Thunderer",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3655218960",
+                        "name": "Tromp",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751753712",
+                        "name": "Massachusetts",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751753552",
+                        "name": "Jean Bart",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3655251408",
+                        "name": "Smolensk",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760076208",
+                        "name": "Álvaro de Bazán",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751753168",
+                        "name": "Lenin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764270896",
+                        "name": "T-61",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751687888",
+                        "name": "Asashio",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762173744",
+                        "name": "Z-39",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763221872",
+                        "name": "Haida",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751720944",
+                        "name": "Anchorage",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762239280",
+                        "name": "Odin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764369200",
+                        "name": "Erich Loewenhardt",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3750704848",
+                        "name": "Hizen",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762206160",
+                        "name": "Mikhail Kutuzov",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3765384944",
+                        "name": "Giulio Cesare",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3763255248",
+                        "name": "Belfast",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3741300688",
+                        "name": "Colossus",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761125360",
+                        "name": "Benham",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4268635856",
+                        "name": "Kamikaze",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4267587280",
+                        "name": "Kamikaze R",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4277024464",
+                        "name": "Fūjin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4293801424",
+                        "name": "Gremyashchy",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751786480",
+                        "name": "Enterprise",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190896",
+                        "name": "Missouri",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761157584",
+                        "name": "Kronshtadt",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3761190608",
+                        "name": "Musashi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3655218480",
+                        "name": "Småland",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760109552",
+                        "name": "Alaska",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760076080",
+                        "name": "Friesland",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752802256",
+                        "name": "Nelson",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "steel",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 2,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 7,
-                        "name": "camoboost",
-                        "id": "4280283056",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 7,
-                        "name": "camoboost",
-                        "id": "4269797296",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 7,
-                        "name": "camoboost",
-                        "id": "4259311536",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 7,
-                        "name": "camoboost",
-                        "id": "4248825776",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "gold": {
-                "name": "gold",
-                "id": "gold",
-                "drop_rate": 5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 2500,
-                        "name": "gold",
-                        "id": "gold",
-                        "attributes": {
-                            "type": "gold"
-                        }
-                    }
-                ]
-            },
-            "lootbox": {
-                "name": "lootbox",
-                "id": "lootbox",
-                "drop_rate": 10,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "lootbox",
-                        "id": "4045591472",
-                        "attributes": {
-                            "type": "lootbox"
-                        }
-                    }
-                ]
-            },
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
-                "drop_rate": 1,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 180,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
-                        "attributes": {
-                            "type": "wows_premium"
                         }
                     }
                 ]
@@ -2844,5 +3159,7 @@
         }
     ],
     "pity": 15,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

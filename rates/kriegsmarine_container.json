@@ -1,12 +1,57 @@
 {
     "name": "Kriegsmarine container",
     "img": "/resources/PCL106_GE_PShips_Free_97de4a4d058cd92ea0e48cb02e490839282638f77789c7721f6effa066c781e7.png",
-    "id": "kriegsmarine_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "kriegsmarine_container",
+    "category": "",
     "drops": [
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 64,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 15,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 15,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 15,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 15,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
             "Free XP": {
                 "name": "Free XP",
                 "id": "free_xp",
@@ -19,8 +64,29 @@
                         "quantity": 5000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
+                "drop_rate": 7,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "premium_days",
                             "type": "resource"
                         }
                     }
@@ -36,12 +102,33 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3761190704",
+                        "name": "Pommern",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "IX",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Admiral Hipper",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 5000,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
@@ -49,103 +136,28 @@
                         },
                         "attributes": {
                             "rare": "false",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4181636912",
+                        "name": "Mainz",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 5000,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3751720752",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 5000,
-                            "name": "Free XP",
-                            "id": "free_xp",
-                            "attributes": {
-                                "resource_id": "free_xp",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 16,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 15,
-                        "name": "camoboost",
-                        "id": "4283428784",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 15,
-                        "name": "camoboost",
-                        "id": "4272943024",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 15,
-                        "name": "camoboost",
-                        "id": "4262457264",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 15,
-                        "name": "camoboost",
-                        "id": "4251971504",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
-                "drop_rate": 7,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
-                        "attributes": {
-                            "type": "wows_premium"
                         }
                     }
                 ]
@@ -153,5 +165,7 @@
         }
     ],
     "pity": 250,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

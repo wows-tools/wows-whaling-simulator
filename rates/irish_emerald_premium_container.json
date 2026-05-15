@@ -1,10 +1,9 @@
 {
     "name": "Irish Emerald Premium container",
     "img": "/resources/PCL168_SaintPatric_Prem_9d294b0e7aba9c4570d1bcb36ab07dd691be83699efb289ba01258071e6ba29c.png",
-    "id": "irish_emerald_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "irish_emerald_premium_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,9 +18,56 @@
                         "quantity": 750000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 48,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -38,6 +84,7 @@
                         "quantity": 37500,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -57,9 +104,38 @@
                         "quantity": 12500,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Styles": {
+                "name": "Styles",
+                "id": "styles",
+                "drop_rate": 19.4,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4139380656",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4240043952",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
                         }
                     }
                 ]
@@ -76,19 +152,21 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3553540048",
+                        "name": "Bóinn",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     }
@@ -106,124 +184,62 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3552491472",
+                        "name": "Sinann",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3542005712",
+                        "name": "Érne",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3511629776",
+                        "name": "Danu",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12500,
                             "name": "Free XP",
                             "id": "free_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 12,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 5,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "style": {
-                "name": "style",
-                "id": "style",
-                "drop_rate": 9.7,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4139380656",
-                        "attributes": {
-                            "type": "style"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4240043952",
-                        "attributes": {
-                            "type": "style"
                         }
                     }
                 ]
@@ -231,5 +247,7 @@
         }
     ],
     "pity": 100,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

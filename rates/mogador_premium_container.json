@@ -1,15 +1,14 @@
 {
     "name": "MOGADOR Premium container",
     "img": "/resources/PCL083_MogadorEA_Prem_old_b95f51dd478202bcffc3daf2f2eb8c615b9b6a2748fe868dc48325211cab4d6e.png",
-    "id": "mogador_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "mogador_premium_container",
+    "category": "",
     "drops": [
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -19,6 +18,7 @@
                         "quantity": 10,
                         "name": "Camouflages",
                         "id": "4217302960",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
@@ -27,44 +27,48 @@
             }
         },
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4281331632",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4270845872",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4260360112",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 7,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4249874352",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -83,6 +87,7 @@
                         "quantity": 1500,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -102,6 +107,7 @@
                         "quantity": 300000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -109,9 +115,9 @@
                     }
                 ]
             },
-            "gold": {
-                "name": "gold",
-                "id": "gold",
+            "Doubloons": {
+                "name": "Doubloons",
+                "id": "doubloons",
                 "drop_rate": 25,
                 "collectable": false,
                 "pitiable": false,
@@ -119,17 +125,19 @@
                 "items": [
                     {
                         "quantity": 150,
-                        "name": "gold",
-                        "id": "gold",
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
                         "attributes": {
-                            "type": "gold"
+                            "resource_id": "doubloons",
+                            "type": "resource"
                         }
                     }
                 ]
             },
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
                 "drop_rate": 25,
                 "collectable": false,
                 "pitiable": false,
@@ -137,10 +145,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
                         "attributes": {
-                            "type": "wows_premium"
+                            "resource_id": "premium_days",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -148,5 +158,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

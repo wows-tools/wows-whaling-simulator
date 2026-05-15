@@ -1,12 +1,30 @@
 {
     "name": "Defenders of Order Premium container",
     "img": "/resources/PCL207_GoodTeam_Prem_0ef040da94261038329e3091aadda8ce2da90d777ce790f6544d69e71b7d543d.png",
-    "id": "defenders_of_order_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "defenders_of_order_premium_container",
+    "category": "",
     "drops": [
         {
+            "Container": {
+                "name": "Container",
+                "id": "container",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Container",
+                        "id": "4055028656",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
             "Credits": {
                 "name": "Credits",
                 "id": "credits",
@@ -19,6 +37,7 @@
                         "quantity": 750000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -38,6 +57,7 @@
                         "quantity": 37500,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -57,9 +77,47 @@
                         "quantity": 12500,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Styles": {
+                "name": "Styles",
+                "id": "styles",
+                "drop_rate": 36,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4197052336",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4068077488",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Styles",
+                        "id": "4214878128",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
                         }
                     }
                 ]
@@ -74,326 +132,306 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3437147600",
+                        "name": "Kiberpankov",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3445569264",
+                        "name": "Tempesta Nera",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540989680",
+                        "name": "Pilus Posterior",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3551475440",
+                        "name": "Pilus Prior",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3511629776",
+                        "name": "Danu",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3542005712",
+                        "name": "Érne",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3319740208",
+                        "name": "Von Zuckerhoff",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3342775504",
+                        "name": "Piñatian",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764270288",
+                        "name": "Anshan",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762173136",
+                        "name": "Loyang",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3764303056",
+                        "name": "Huanghe",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VI",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762205904",
+                        "name": "Irian",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3751687376",
+                        "name": "Fenyang",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3540956368",
+                        "name": "Tianjin",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4076745936",
+                        "name": "Siliwangi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3550393552",
+                        "name": "Incheon",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "lootbox",
+                            "name": "Container",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "lootbox": {
-                "name": "lootbox",
-                "id": "lootbox",
-                "drop_rate": 10,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "lootbox",
-                        "id": "4055028656",
-                        "attributes": {
-                            "type": "lootbox"
-                        }
-                    }
-                ]
-            },
-            "style": {
-                "name": "style",
-                "id": "style",
-                "drop_rate": 12,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4197052336",
-                        "attributes": {
-                            "type": "style"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4068077488",
-                        "attributes": {
-                            "type": "style"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "style",
-                        "id": "4214878128",
-                        "attributes": {
-                            "type": "style"
                         }
                     }
                 ]
@@ -401,5 +439,7 @@
         }
     ],
     "pity": 50,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

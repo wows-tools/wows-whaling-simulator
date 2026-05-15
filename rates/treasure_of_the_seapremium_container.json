@@ -1,10 +1,9 @@
 {
     "name": "Treasure of the Sea Premium container",
     "img": "/resources/PCL204_Summer_Days_Prem_7fabf2808a5b0edccc16124438b76760b19dbd754902ff5f0f89b7ed27e73f4a.png",
-    "id": "treasure_of_the_seapremium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "treasure_of_the_seapremium_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,9 +18,56 @@
                         "quantity": 1500000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 32,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -38,6 +84,7 @@
                         "quantity": 75000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -55,116 +102,82 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3720263632",
+                        "name": "Nottingham",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3762206032",
+                        "name": "Almirante Grau",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3752736208",
+                        "name": "Tashkent '39",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3721344976",
+                        "name": "Renown '44",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 60000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 8,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4281331632",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4260360112",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 8,
-                        "name": "camoboost",
-                        "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -172,5 +185,7 @@
         }
     ],
     "pity": 50,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

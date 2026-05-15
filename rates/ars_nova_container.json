@@ -1,10 +1,9 @@
 {
     "name": "Ars Nova container",
     "img": "/resources/PCL211_Arpeggio_Free_87139aca12f2a18c0848eb9f810525465d8b8c7882cce7521aff7d0200866a42.png",
-    "id": "ars_nova_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "ars_nova_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,9 +18,56 @@
                         "quantity": 240000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 60,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 14,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 14,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 14,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 14,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -38,6 +84,7 @@
                         "quantity": 12000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -57,6 +104,7 @@
                         "quantity": 4000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -74,242 +122,222 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3560912592",
+                        "name": "ARP Yamato",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3553572560",
+                        "name": "ARP Haruna",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3552523984",
+                        "name": "ARP Hiei",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3554621136",
+                        "name": "ARP Kirishima",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3555669712",
+                        "name": "ARP Kongō",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "V",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3542005456",
+                        "name": "ARP Maya",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3552491216",
+                        "name": "ARP Takao",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3553539792",
+                        "name": "ARP Ashigara",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3555636944",
+                        "name": "ARP Myōkō",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3522082512",
+                        "name": "ARP Nachi",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3551442640",
+                        "name": "ARP Haguro",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 12000,
                             "name": "Elite Commander XP",
                             "id": "elite_commander_xp",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "elite_commander_xp",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 15,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 14,
-                        "name": "camoboost",
-                        "id": "4283428784",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 14,
-                        "name": "camoboost",
-                        "id": "4272943024",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 14,
-                        "name": "camoboost",
-                        "id": "4262457264",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 14,
-                        "name": "camoboost",
-                        "id": "4251971504",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -317,5 +345,7 @@
         }
     ],
     "pity": 400,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

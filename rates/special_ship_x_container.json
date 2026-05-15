@@ -1,10 +1,9 @@
 {
     "name": "Special Ship X container",
     "img": "/resources/PCL246_EPICstd10_ac27b507fed024c7623c9390547c26137e13c29ccbf06bd8d2a900d73d1ac7cc.png",
-    "id": "special_ship_x_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "special_ship_x_container",
+    "category": "",
     "drops": [
         {
             "Special Tier X ship": {
@@ -17,271 +16,301 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3550394352",
+                        "name": "Salem",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3655218960",
+                        "name": "Tromp",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3655219184",
+                        "name": "Forrest Sherman",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3655317296",
+                        "name": "Max Immelmann",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3749623504",
+                        "name": "Yoshino",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3759585072",
+                        "name": "U-4501",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760076208",
+                        "name": "Álvaro de Bazán",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760108912",
+                        "name": "Brisbane",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760076496",
+                        "name": "Hayate",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760109296",
+                        "name": "Napoli",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3760175056",
+                        "name": "Malta",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4074649424",
+                        "name": "Marceau",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4179506640",
+                        "name": "Khabarovsk",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4179539408",
+                        "name": "Moskva",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_4179572528",
+                        "name": "Grosser Kurfürst",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 51975000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     }
@@ -290,5 +319,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

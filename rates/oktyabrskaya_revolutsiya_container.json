@@ -1,12 +1,51 @@
 {
     "name": "Oktyabrskaya Revolutsiya container",
     "img": "/resources/PCL017_OctRevolution_6716ab5fa00459931db600aca6a32896f5776fde061290bcb19347edb999369d.png",
-    "id": "oktyabrskaya_revolutsiya_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "oktyabrskaya_revolutsiya_container",
+    "category": "",
     "drops": [
         {
+            "Doubloons 1": {
+                "name": "Doubloons 1",
+                "id": "doubloons_1",
+                "drop_rate": 0.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 2500,
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "doubloons",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Doubloons 2": {
+                "name": "Doubloons 2",
+                "id": "doubloons_2",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 250,
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "doubloons",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
             "Free XP": {
                 "name": "Free XP",
                 "id": "free_xp",
@@ -19,6 +58,7 @@
                         "quantity": 5000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
@@ -26,35 +66,9 @@
                     }
                 ]
             },
-            "gold": {
-                "name": "gold",
-                "id": "gold",
-                "drop_rate": 0.5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 2500,
-                        "name": "gold",
-                        "id": "gold",
-                        "attributes": {
-                            "type": "gold"
-                        }
-                    },
-                    {
-                        "quantity": 250,
-                        "name": "gold",
-                        "id": "gold",
-                        "attributes": {
-                            "type": "gold"
-                        }
-                    }
-                ]
-            },
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
                 "drop_rate": 30,
                 "collectable": false,
                 "pitiable": false,
@@ -62,10 +76,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
                         "attributes": {
-                            "type": "wows_premium"
+                            "resource_id": "premium_days",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -73,5 +89,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

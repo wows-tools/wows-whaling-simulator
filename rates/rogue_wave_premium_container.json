@@ -1,15 +1,14 @@
 {
     "name": "Rogue Wave Premium container",
     "img": "/resources/PCL079_RogueWave_Prem_old_4a77d20a531f1d47b98099c7c1c02dca501988bedd1166ca35d733cade71d4e1.png",
-    "id": "rogue_wave_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "rogue_wave_premium_container",
+    "category": "",
     "drops": [
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 86,
                 "collectable": false,
                 "pitiable": false,
@@ -19,15 +18,16 @@
                         "quantity": 5,
                         "name": "Camouflages",
                         "id": "4218351536",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
                         }
                     }
                 ]
             },
-            "gold": {
-                "name": "gold",
-                "id": "gold",
+            "Doubloons": {
+                "name": "Doubloons",
+                "id": "doubloons",
                 "drop_rate": 5,
                 "collectable": false,
                 "pitiable": false,
@@ -35,10 +35,12 @@
                 "items": [
                     {
                         "quantity": 400,
-                        "name": "gold",
-                        "id": "gold",
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
                         "attributes": {
-                            "type": "gold"
+                            "resource_id": "doubloons",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -57,6 +59,7 @@
                         "quantity": 10000,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -76,9 +79,29 @@
                         "quantity": 1000000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 20,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 7,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -95,6 +118,7 @@
                         "quantity": 50000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -102,27 +126,9 @@
                     }
                 ]
             },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 20,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 7,
-                        "name": "camoboost",
-                        "id": "4270845872",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
                 "drop_rate": 10,
                 "collectable": false,
                 "pitiable": false,
@@ -130,10 +136,12 @@
                 "items": [
                     {
                         "quantity": 7,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
                         "attributes": {
-                            "type": "wows_premium"
+                            "resource_id": "premium_days",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -152,6 +160,7 @@
                         "quantity": 500000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -162,5 +171,7 @@
         }
     ],
     "pity": 27,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

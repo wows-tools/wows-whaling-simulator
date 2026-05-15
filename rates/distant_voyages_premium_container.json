@@ -1,10 +1,9 @@
 {
     "name": "Distant Voyages Premium container",
     "img": "/resources/PCL212_SkinContainer_V2_Prem_4f281126b8cc286c27f4875d424554fb0a14546b23212695c6474a549629d69b.png",
-    "id": "distant_voyages_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "distant_voyages_premium_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,6 +18,7 @@
                         "quantity": 1125000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -26,612 +26,697 @@
                     }
                 ]
             },
-            "style": {
-                "name": "style",
-                "id": "style",
-                "drop_rate": 0.676,
+            "Styles 1": {
+                "name": "Styles 1",
+                "id": "styles_1",
+                "drop_rate": 35.152,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4258918320",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4247383984",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4243189680",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4242141104",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4240043952",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4237946800",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4236898224",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4234801072",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4231655344",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4229558192",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4227461040",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4220121008",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4218023856",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4216975280",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4215926704",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4214878128",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4213829552",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4212780976",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4207538096",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4206489520",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4205440944",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4204392368",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4203343792",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4201246640",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4199149488",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4198100912",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4197052336",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4194955184",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4193906608",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4189712304",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4176080816",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4172935088",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4171886512",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4168740784",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4164546480",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4163497904",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4162449328",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4161400752",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4157206448",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4155109296",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4154060720",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4150914992",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4144623536",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4141477808",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4139380656",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4137283504",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4130992048",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4102680496",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4110020528",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4108971952",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4101631920",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4100583344",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
-                    },
+                    }
+                ]
+            },
+            "Styles 2": {
+                "name": "Styles 2",
+                "id": "styles_2",
+                "drop_rate": 33.327,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4261015472",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4259966896",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4254724016",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4253675440",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4252626864",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4251578288",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4248432560",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4246335408",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4245286832",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4244238256",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4241092528",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4233752496",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4230606768",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4225363888",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4224315312",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4223266736",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4222218160",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4221169584",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4202295216",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4192858032",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4191809456",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4158255024",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "style",
+                        "name": "Styles",
                         "id": "4129943472",
+                        "compensation": null,
                         "attributes": {
-                            "type": "style"
+                            "type": "camo"
                         }
                     }
                 ]
@@ -639,5 +724,7 @@
         }
     ],
     "pity": 8,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

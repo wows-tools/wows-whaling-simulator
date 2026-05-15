@@ -1,15 +1,14 @@
 {
     "name": "Black Friday 2021 container",
     "img": "/resources/PCL141_BF2021_Free_d416fca1c416407e19b9a79345d4fd12f6e0e901dd06cf65b86e8e8270c450b1.png",
-    "id": "black_friday_2021_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "black_friday_2021_container",
+    "category": "",
     "drops": [
         {
             "Camouflages": {
                 "name": "Camouflages",
-                "id": "camouflage",
+                "id": "camouflages",
                 "drop_rate": 15,
                 "collectable": false,
                 "pitiable": false,
@@ -19,8 +18,75 @@
                         "quantity": 8,
                         "name": "Camouflages",
                         "id": "4225691568",
+                        "compensation": null,
                         "attributes": {
                             "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Doubloons": {
+                "name": "Doubloons",
+                "id": "doubloons",
+                "drop_rate": 5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 250,
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "doubloons",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 29.68,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 20,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -37,6 +103,7 @@
                         "quantity": 20000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -56,8 +123,29 @@
                         "quantity": 6000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "premium_days",
                             "type": "resource"
                         }
                     }
@@ -73,352 +161,322 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3679369200",
+                        "name": "Atlanta B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3668850672",
+                        "name": "Sims B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3668916016",
+                        "name": "Scharnhorst B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667900112",
+                        "name": "Kaga B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667802064",
+                        "name": "Cossack B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667900208",
+                        "name": "Graf Zeppelin B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667867440",
+                        "name": "Tirpitz B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667900400",
+                        "name": "Saipan B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667867632",
+                        "name": "Massachusetts B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667834576",
+                        "name": "Atago B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667801808",
+                        "name": "Asashio B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3667801296",
+                        "name": "Loyang B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3666786288",
+                        "name": "Alaska B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3666818896",
+                        "name": "Jean Bart B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3666818864",
+                        "name": "Pommern B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "IX",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3676223184",
+                        "name": "Yoshino B",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 250,
-                            "name": "gold",
-                            "id": "",
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
                             "attributes": {
+                                "resource_id": "doubloons",
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 7.42,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4283428784",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4272943024",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4262457264",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 20,
-                        "name": "camoboost",
-                        "id": "4251971504",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
-            },
-            "gold": {
-                "name": "gold",
-                "id": "gold",
-                "drop_rate": 5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 250,
-                        "name": "gold",
-                        "id": "gold",
-                        "attributes": {
-                            "type": "gold"
-                        }
-                    }
-                ]
-            },
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
-                "drop_rate": 10,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
-                        "attributes": {
-                            "type": "wows_premium"
                         }
                     }
                 ]
@@ -426,5 +484,7 @@
         }
     ],
     "pity": 781,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

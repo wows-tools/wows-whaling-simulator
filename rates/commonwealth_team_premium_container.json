@@ -1,10 +1,9 @@
 {
     "name": "Commonwealth Team Premium container",
     "img": "/resources/PCL195_EA_CMW_Prem_adddec4d1f29e38ea0cbcad27817534c5239b3b3d1e9d05f0f726de1e854513b.png",
-    "id": "commonwealth_team_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "commonwealth_team_premium_container",
+    "category": "",
     "drops": [
         {
             "Credits": {
@@ -19,6 +18,7 @@
                         "quantity": 300000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -28,9 +28,9 @@
             }
         },
         {
-            "Credits": {
-                "name": "Credits",
-                "id": "credits",
+            "Credits 1": {
+                "name": "Credits 1",
+                "id": "credits_1",
                 "drop_rate": 2.5,
                 "collectable": false,
                 "pitiable": false,
@@ -40,18 +40,76 @@
                         "quantity": 3000000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
                         }
-                    },
+                    }
+                ]
+            },
+            "Credits 2": {
+                "name": "Credits 2",
+                "id": "credits_2",
+                "drop_rate": 14.7,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
                     {
                         "quantity": 1000000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 24,
+                        "name": "Economic Bonuses",
+                        "id": "4282380208",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 24,
+                        "name": "Economic Bonuses",
+                        "id": "4271894448",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 24,
+                        "name": "Economic Bonuses",
+                        "id": "4261408688",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 24,
+                        "name": "Economic Bonuses",
+                        "id": "4250922928",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -66,12 +124,13 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_4274959728",
+                        "name": "Encounter",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1000000,
                             "name": "Credits",
                             "id": "credits",
+                            "compensation": null,
                             "attributes": {
                                 "resource_id": "credits",
                                 "type": "resource"
@@ -79,49 +138,8 @@
                         },
                         "attributes": {
                             "rare": "false",
+                            "tier": "IX",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 20,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 24,
-                        "name": "camoboost",
-                        "id": "4282380208",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 24,
-                        "name": "camoboost",
-                        "id": "4271894448",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 24,
-                        "name": "camoboost",
-                        "id": "4261408688",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 24,
-                        "name": "camoboost",
-                        "id": "4250922928",
-                        "attributes": {
-                            "type": "camoboost"
                         }
                     }
                 ]
@@ -129,5 +147,7 @@
         }
     ],
     "pity": 20,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

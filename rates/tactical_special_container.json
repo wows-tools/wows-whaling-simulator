@@ -1,15 +1,14 @@
 {
     "name": "Tactical Special container",
     "img": "/resources/PCL048_WG_Compensation_9438afa31b6fa3a971f995e4d10960d66d72c6df9d5b50cc36e802cbf7870346.png",
-    "id": "tactical_special_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "tactical_special_container",
+    "category": "",
     "drops": [
         {
-            "wows_premium": {
-                "name": "wows_premium",
-                "id": "wows_premium",
+            "Premium Days": {
+                "name": "Premium Days",
+                "id": "premium_days",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -17,19 +16,21 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "wows_premium",
-                        "id": "wows_premium",
+                        "name": "Premium Days",
+                        "id": "premium_days",
+                        "compensation": null,
                         "attributes": {
-                            "type": "wows_premium"
+                            "resource_id": "premium_days",
+                            "type": "resource"
                         }
                     }
                 ]
             }
         },
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
                 "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
@@ -37,10 +38,11 @@
                 "items": [
                     {
                         "quantity": 2,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4251971504",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -59,6 +61,7 @@
                         "quantity": 3,
                         "name": "Signals",
                         "id": "4263342000",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -68,5 +71,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

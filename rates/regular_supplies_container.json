@@ -1,10 +1,9 @@
 {
     "name": "Regular Supplies container",
     "img": "/resources/PCL138_Subscription_9438afa31b6fa3a971f995e4d10960d66d72c6df9d5b50cc36e802cbf7870346.png",
-    "id": "regular_supplies_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "regular_supplies_container",
+    "category": "",
     "drops": [
         {
             "Coal": {
@@ -19,6 +18,7 @@
                         "quantity": 5000,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -38,8 +38,29 @@
                         "quantity": 950000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Doubloons": {
+                "name": "Doubloons",
+                "id": "doubloons",
+                "drop_rate": 15,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 500,
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "doubloons",
                             "type": "resource"
                         }
                     }
@@ -57,6 +78,7 @@
                         "quantity": 40000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -76,27 +98,10 @@
                         "quantity": 15000,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
-                        }
-                    }
-                ]
-            },
-            "gold": {
-                "name": "gold",
-                "id": "gold",
-                "drop_rate": 15,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 500,
-                        "name": "gold",
-                        "id": "gold",
-                        "attributes": {
-                            "type": "gold"
                         }
                     }
                 ]
@@ -104,5 +109,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,13 +1,14 @@
 {
     "name": "Festive Finery container",
     "img": "/resources/PCL159_NY23_permoflages_f24315d145e00497cccf3bec3097feed188d982ec91cee022cc2b60ba92654d6.png",
-    "id": "festive_finery_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "festive_finery_container",
+    "category": "",
     "drops": [
         {}
     ],
     "pity": 10,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

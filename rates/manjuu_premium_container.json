@@ -1,12 +1,30 @@
 {
     "name": "Manjuu Premium container",
     "img": "/resources/PCL273_AzurLane_Super_Prem_85457ba731dbf30a7f173eccf77547f6ba1521880b05a79f0f63af4aba92b1d3.png",
-    "id": "manjuu_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "manjuu_premium_container",
+    "category": "",
     "drops": [
         {
+            "Supercontainer": {
+                "name": "Supercontainer",
+                "id": "supercontainer",
+                "drop_rate": 32,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Supercontainer",
+                        "id": "4284379056",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
             "Tier VIII–X ship": {
                 "name": "Tier VIII–X ship",
                 "id": "tier_viiix_ship",
@@ -17,54 +35,40 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "ship_3330258640",
+                        "name": "AL Shinano",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "shipdestruction",
+                            "name": "Supercontainer",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "X",
                             "type": "ship"
                         }
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3332323312",
+                        "name": "AL Massachusetts",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 1,
-                            "name": "shipdestruction",
+                            "name": "Supercontainer",
                             "id": "",
+                            "compensation": null,
                             "attributes": {
                                 "type": "resource"
                             }
                         },
                         "attributes": {
-                            "rare": "false",
+                            "rare": "true",
+                            "tier": "VIII",
                             "type": "ship"
-                        }
-                    }
-                ]
-            },
-            "shipdestruction": {
-                "name": "shipdestruction",
-                "id": "shipdestruction",
-                "drop_rate": 32,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "shipdestruction",
-                        "id": "4284379056",
-                        "attributes": {
-                            "type": "shipdestruction"
                         }
                     }
                 ]
@@ -72,5 +76,7 @@
         }
     ],
     "pity": 20,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

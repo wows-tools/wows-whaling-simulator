@@ -1,16 +1,15 @@
 {
     "name": "Allied Heroes container",
     "img": "/resources/PCL146_May_Day_collection_a0eec8b6ed28934407d7ae751d31ce31ad8ce7c2c18eebd15c9a5fcbd7972db1.png",
-    "id": "allied_heroes_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "allied_heroes_container",
+    "category": "",
     "drops": [
         {
             "Signals": {
                 "name": "Signals",
                 "id": "signals",
-                "drop_rate": 7.143,
+                "drop_rate": 100.002,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -19,6 +18,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4289556400",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -27,6 +27,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4287459248",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -35,6 +36,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4265439152",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -43,6 +45,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4264390576",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -51,6 +54,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4275924912",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -59,6 +63,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4276973488",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -67,6 +72,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4288507824",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -75,6 +81,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4285362096",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -83,6 +90,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4282216368",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -91,6 +99,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4274876336",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -99,6 +108,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4278022064",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -107,6 +117,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4280119216",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -115,6 +126,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4263342000",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -123,6 +135,7 @@
                         "quantity": 8,
                         "name": "Signals",
                         "id": "4286410672",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -131,6 +144,52 @@
             }
         },
         {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
             "Free XP": {
                 "name": "Free XP",
                 "id": "free_xp",
@@ -143,59 +202,18 @@
                         "quantity": 500,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
                         }
                     }
                 ]
-            },
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 20,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4283428784",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4272943024",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4262457264",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 3,
-                        "name": "camoboost",
-                        "id": "4251971504",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    }
-                ]
             }
         },
         {
-            "collection_album": {
-                "name": "collection_album",
+            "Collection Album": {
+                "name": "Collection Album",
                 "id": "collection_album",
                 "drop_rate": 100,
                 "collectable": false,
@@ -204,10 +222,12 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "collection_album",
+                        "name": "Collection Album",
                         "id": "4263484336",
+                        "compensation": null,
                         "attributes": {
-                            "type": "collection_album"
+                            "resource_id": "collection_album",
+                            "type": "resource"
                         }
                     }
                 ]
@@ -215,5 +235,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

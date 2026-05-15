@@ -1,15 +1,14 @@
 {
     "name": "Colorful Regatta Premium container",
     "img": "/resources/PCL165_ColorfulEvent_Prem_184cfcb7c1cd85a82ca5beb242f94961f9bf6d4586abeab2022733b6ddca5b16.png",
-    "id": "colorful_regatta_premium_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "colorful_regatta_premium_container",
+    "category": "",
     "drops": [
         {
-            "Credits": {
-                "name": "Credits",
-                "id": "credits",
+            "Credits 1": {
+                "name": "Credits 1",
+                "id": "credits_1",
                 "drop_rate": 0.5,
                 "collectable": false,
                 "pitiable": false,
@@ -19,24 +18,47 @@
                         "quantity": 15000000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
                         }
-                    },
+                    }
+                ]
+            },
+            "Credits 2": {
+                "name": "Credits 2",
+                "id": "credits_2",
+                "drop_rate": 24.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
                     {
                         "quantity": 1500000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
                         }
-                    },
+                    }
+                ]
+            },
+            "Credits 3": {
+                "name": "Credits 3",
+                "id": "credits_3",
+                "drop_rate": 75,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
                     {
                         "quantity": 750000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
                             "type": "resource"
@@ -58,6 +80,7 @@
                         "quantity": 5000,
                         "name": "Coal",
                         "id": "coal",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "coal",
                             "type": "resource"
@@ -77,8 +100,29 @@
                         "quantity": 750000,
                         "name": "Credits",
                         "id": "credits",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Doubloons": {
+                "name": "Doubloons",
+                "id": "doubloons",
+                "drop_rate": 0.3,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 15000,
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "doubloons",
                             "type": "resource"
                         }
                     }
@@ -96,6 +140,7 @@
                         "quantity": 37500,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "elite_commander_xp",
                             "type": "resource"
@@ -115,27 +160,10 @@
                         "quantity": 12500,
                         "name": "Free XP",
                         "id": "free_xp",
+                        "compensation": null,
                         "attributes": {
                             "resource_id": "free_xp",
                             "type": "resource"
-                        }
-                    }
-                ]
-            },
-            "gold": {
-                "name": "gold",
-                "id": "gold",
-                "drop_rate": 0.3,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 15000,
-                        "name": "gold",
-                        "id": "gold",
-                        "attributes": {
-                            "type": "gold"
                         }
                     }
                 ]
@@ -145,7 +173,7 @@
             "Signals": {
                 "name": "Signals",
                 "id": "signals",
-                "drop_rate": 10,
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -154,6 +182,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4287459248",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -162,6 +191,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4286410672",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -170,6 +200,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4263342000",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -178,6 +209,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4280119216",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -186,6 +218,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4289556400",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -194,6 +227,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4278022064",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -202,6 +236,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4276973488",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -210,6 +245,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4275924912",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -218,6 +254,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4265439152",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -226,6 +263,7 @@
                         "quantity": 5,
                         "name": "Signals",
                         "id": "4264390576",
+                        "compensation": null,
                         "attributes": {
                             "type": "signal"
                         }
@@ -235,5 +273,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

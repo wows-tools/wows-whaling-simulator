@@ -1,50 +1,53 @@
 {
     "name": "Uncommon Bonuses container",
     "img": "/resources/PCL154_gift_tier_Two_59e18fbd4dfffcce994d7bd7eb3ad3b0a56f2568d69e9a79de06ce3bb967568d.png",
-    "id": "uncommon_bonuses_container",
     "weight": 1100,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31,
+    "id": "uncommon_bonuses_container",
+    "category": "",
     "drops": [
         {
-            "camoboost": {
-                "name": "camoboost",
-                "id": "camoboost",
-                "drop_rate": 25,
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 100,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
                         "quantity": 5,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4282380208",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 5,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4271894448",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 5,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4261408688",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     },
                     {
                         "quantity": 5,
-                        "name": "camoboost",
+                        "name": "Economic Bonuses",
                         "id": "4250922928",
+                        "compensation": null,
                         "attributes": {
-                            "type": "camoboost"
+                            "type": "economic bonus"
                         }
                     }
                 ]
@@ -52,5 +55,7 @@
         }
     ],
     "pity": 0,
-    "price": 250
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }
