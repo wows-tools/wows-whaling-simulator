@@ -40,19 +40,20 @@ type ValuableReward struct {
 	ID          int         `json:"id"`
 }
 
-type ValuableRewards struct {
-	List1 struct {
-		SavePoint            int              `json:"savePoint"`
-		Rewards              []ValuableReward `json:"rewards"`
-		RerollNonUniqueCrews bool             `json:"rerollNonUniqueCrews"`
-		Probability          string           `json:"probability"`
-		Weight               int              `json:"weight"`
-		ProbabilityDisplayed float64          `json:"probabilityDisplayed"`
-		HasUniqueRewards     bool             `json:"hasUniqueRewards"`
-		Title                string           `json:"title"`
-		ShortTitle           string           `json:"shortTitle"`
-	} `json:"list1"`
+type ValuableRewardList struct {
+	SavePoint            int              `json:"savePoint"`
+	Rewards              []ValuableReward `json:"rewards"`
+	RerollNonUniqueCrews bool             `json:"rerollNonUniqueCrews"`
+	Probability          string           `json:"probability"`
+	Weight               int              `json:"weight"`
+	ProbabilityDisplayed float64          `json:"probabilityDisplayed"`
+	HasUniqueRewards     bool             `json:"hasUniqueRewards"`
+	Title                string           `json:"title"`
+	ShortTitle           string           `json:"shortTitle"`
 }
+
+// ValuableRewards is keyed by "list1", "list2", etc.
+type ValuableRewards map[string]ValuableRewardList
 
 type Slot struct {
 	CommonRewards     CommonRewards   `json:"commonRewards"`
@@ -67,7 +68,7 @@ type Data struct {
 	Tags       []interface{} `json:"tags"`
 	Filler     Filler        `json:"filler"`
 	IsPremium  bool          `json:"isPremium"`
-	SavePoint  interface{}   `json:"savePoint"`
+	SavePoint  *int          `json:"savePoint"`
 	Icons      Icon          `json:"icons"`
 	Slots      []Slot        `json:"slots"`
 	Title      string        `json:"title"`

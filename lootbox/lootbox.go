@@ -51,6 +51,7 @@ type LootBox struct {
 	Img                string                     `json:"img"`
 	Weight             int                        `json:"weight"`
 	ID                 string                     `json:"id"`
+	Category           string                     `json:"category"`
 	Drops              []map[string]*ItemCategory `json:"drops"`
 	Pity               uint64                     `json:"pity"`
 	Price              float64                    `json:"price"`

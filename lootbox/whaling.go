@@ -58,7 +58,7 @@ func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, er
 
 func (ws *WhalingSession) Draw() (*ItemShort, error) {
 
-	usePity := (ws.pityCounter == ws.lootBox.Pity)
+	usePity := ws.lootBox.Pity > 0 && (ws.pityCounter == ws.lootBox.Pity)
 	var itemShort ItemShort
 	// If we reach pity, reset the counter, otherwise increment it
 	if usePity {
