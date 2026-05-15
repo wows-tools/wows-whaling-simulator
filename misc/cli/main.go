@@ -19,13 +19,20 @@ func main() {
 	ownedShips := flag.String("owned-ships", "", "Comma-separated list of owned ship names to exclude from drops (offline alternative to -nick)")
 	lootboxType := flag.String("lootbox", "", "Lootbox type")
 	statsMode := flag.Bool("stats", false, "Enable stats mode (stats on 1000 runs)")
+	rawDir := flag.String("raw-dir", "", "Load lootboxes directly from a raw WG vortex JSON directory (bypasses rates/)")
 	flag.Parse()
 
 	if len(*target) != 0 && *num != 0 {
 		log.Fatal("-n and -target are exclusive flags")
 	}
 
-	lbc, err := lootbox.NewLootBoxCollection("./rates/")
+	var lbc map[string]*lootbox.LootBox
+	var err error
+	if *rawDir != "" {
+		lbc, err = lootbox.NewLootBoxCollectionFromVortexDir(*rawDir)
+	} else {
+		lbc, err = lootbox.NewLootBoxCollection("./rates/")
+	}
 	if err != nil {
 		log.Fatal("Error parsing files: %s\n", err.Error())
 	}

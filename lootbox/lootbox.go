@@ -209,12 +209,15 @@ func (lb *LootBox) Draw(isPity bool) (drawResult []DrawResult, err error) {
 	var ok bool
 	for i, _ := range lb.drawTrees {
 		var result DrawResult
-		if !isPity {
-			draw := lb.randSeed.Float64() * lb.drawTreesMax[i]
-			result.Category, ok = lb.drawTrees[i].AnyIntersection(draw, draw)
-		} else {
+		// Use the pity tree only when pity fires AND this slot has pitiable categories.
+		// Slots without pitiable items have an empty pity tree (max=0); draw from the
+		// regular tree instead so those slots always resolve normally.
+		if isPity && lb.drawTreesPityMax[i] > 0 {
 			draw := lb.randSeed.Float64() * lb.drawTreesPityMax[i]
 			result.Category, ok = lb.drawTreesPity[i].AnyIntersection(draw, draw)
+		} else {
+			draw := lb.randSeed.Float64() * lb.drawTreesMax[i]
+			result.Category, ok = lb.drawTrees[i].AnyIntersection(draw, draw)
 		}
 		if !ok {
 			return nil, common.ErrDraw

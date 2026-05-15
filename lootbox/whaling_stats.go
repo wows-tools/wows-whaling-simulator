@@ -112,14 +112,17 @@ func (wss *WhalingStatsSession) genericStatsWhaling(input *WhalingInput) error {
 		tmpEach := make([]uint64, len(wss.OpenedEach))
 		copy(tmpEach, wss.OpenedEach)
 		sort.Slice(tmpEach, func(i, j int) bool { return tmpEach[i] < tmpEach[j] })
-		wss.Percentiles["best"] = tmpEach[0]
-		wss.Percentiles["10"] = tmpEach[StatsSessionCount/10]
-		wss.Percentiles["33"] = tmpEach[StatsSessionCount/3]
-		wss.Percentiles["50"] = tmpEach[StatsSessionCount/2]
-		wss.Percentiles["66"] = tmpEach[StatsSessionCount*2/3]
-		wss.Percentiles["90"] = tmpEach[StatsSessionCount*9/10]
-		wss.Percentiles["95"] = tmpEach[StatsSessionCount*19/20]
-		wss.Percentiles["worst"] = tmpEach[StatsSessionCount-1]
+		n := len(tmpEach)
+		if n > 0 {
+			wss.Percentiles["best"] = tmpEach[0]
+			wss.Percentiles["10"] = tmpEach[n/10]
+			wss.Percentiles["33"] = tmpEach[n/3]
+			wss.Percentiles["50"] = tmpEach[n/2]
+			wss.Percentiles["66"] = tmpEach[n*2/3]
+			wss.Percentiles["90"] = tmpEach[n*9/10]
+			wss.Percentiles["95"] = tmpEach[n*19/20]
+			wss.Percentiles["worst"] = tmpEach[n-1]
+		}
 	}()
 
 	for i := 0; i < StatsSessionCount; i++ {
@@ -194,8 +197,8 @@ func worker(id int) {
 		}
 		ws, err := j.WhalingSession.lootBox.NewWhalingSession(j.WhalingSession.collectables)
 		if err != nil {
-			// TODO proper error handling
 			j.OutChannel <- nil
+			continue
 		}
 		switch j.SessionType {
 		case Target:
@@ -204,11 +207,12 @@ func worker(id int) {
 			err = ws.SimpleWhaling(j.Quantity)
 		default:
 			j.OutChannel <- nil
+			continue
 		}
 		if err != nil {
 			j.OutChannel <- nil
+			continue
 		}
-
 		j.OutChannel <- ws
 	}
 }
