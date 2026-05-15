@@ -8,13 +8,15 @@ import (
 	"github.com/kakwa/wows-whaling-simulator/wows"
 	"log"
 	"os"
+	"strings"
 )
 
 func main() {
 	num := flag.Int("n", 0, "number of containers opened")
 	target := flag.String("target", "", "ship targeted (exclusive with -n")
 	realmStr := flag.String("realm", "eu", "Wows realm (eu, na, asia)")
-	nick := flag.String("nick", "", "Nickname of the player")
+	nick := flag.String("nick", "", "Nickname of the player (requires WOWS_WOWSAPIKEY env var; omit for offline mode)")
+	ownedShips := flag.String("owned-ships", "", "Comma-separated list of owned ship names to exclude from drops (offline alternative to -nick)")
 	lootboxType := flag.String("lootbox", "", "Lootbox type")
 	statsMode := flag.Bool("stats", false, "Enable stats mode (stats on 1000 runs)")
 	flag.Parse()
@@ -37,24 +39,34 @@ func main() {
 		os.Exit(1)
 	}
 
-	api_key := os.Getenv("WOWS_WOWSAPIKEY")
-	wowsApi := wows.NewWowsAPI(api_key)
-	realm, err := wows.WowsRealm(*realmStr)
-	if err != nil {
-		log.Fatal("Error Getting the realm %s\n", err.Error())
-	}
-	err = wowsApi.FillShipMapping()
-	if err != nil {
-		log.Fatal("Error Prefilling the Ship Mapping: %s\n", err.Error())
-	}
-	players, err := wowsApi.SearchPlayer(realm, *nick, "exact")
-	if err != nil {
-		log.Fatal("Error Searching the player: %s\n", err.Error())
-	}
+	var ships []string
 
-	ships, err := wowsApi.GetPlayerShips(realm, *players[0].AccountId)
-	if err != nil {
-		log.Fatal("Error getting the player's ships: %s\n", err.Error())
+	if len(*nick) != 0 {
+		api_key := os.Getenv("WOWS_WOWSAPIKEY")
+		wowsApi := wows.NewWowsAPI(api_key)
+		realm, err := wows.WowsRealm(*realmStr)
+		if err != nil {
+			log.Fatal("Error Getting the realm %s\n", err.Error())
+		}
+		err = wowsApi.FillShipMapping()
+		if err != nil {
+			log.Fatal("Error Prefilling the Ship Mapping: %s\n", err.Error())
+		}
+		players, err := wowsApi.SearchPlayer(realm, *nick, "exact")
+		if err != nil {
+			log.Fatal("Error Searching the player: %s\n", err.Error())
+		}
+		ships, err = wowsApi.GetPlayerShips(realm, *players[0].AccountId)
+		if err != nil {
+			log.Fatal("Error getting the player's ships: %s\n", err.Error())
+		}
+	} else if len(*ownedShips) != 0 {
+		for _, s := range strings.Split(*ownedShips, ",") {
+			s = strings.TrimSpace(s)
+			if s != "" {
+				ships = append(ships, s)
+			}
+		}
 	}
 
 	wss := lb.NewWhalingStatsSession(ships)
