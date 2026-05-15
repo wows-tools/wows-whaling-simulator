@@ -1,9 +1,7 @@
 {
-    "name": "Santa's Big Gift container",
-    "img": "/resources/PCL007_SantaMedium_3461486933ef467acaa5a32ea802675170176e98a3711fb0b28af738508c242d.png",
-    "weight": 110,
-    "id": "santas_big_gift_container",
-    "category": "",
+    "archived_previous_as": "santas_big_gift_container_pre20260516.json",
+    "category": "Santa's Gifts",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -3276,8 +3274,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "santas_big_gift_container",
+    "img": "/resources/PCL007_SantaMedium_3461486933ef467acaa5a32ea802675170176e98a3711fb0b28af738508c242d.png",
+    "name": "Santa's Big Gift container",
     "pity": 27,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 110
 }

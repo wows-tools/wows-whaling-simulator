@@ -1,9 +1,7 @@
 {
-    "name": "German Destroyers container",
-    "img": "/resources/PCL125_GerDD0104_Coll_Free_e1846426cd6086823644534dc76ce5fc08ff75eb083c8e3ab6992b287e45ceaf.png",
-    "weight": 1100,
-    "id": "german_destroyers_container",
-    "category": "",
+    "archived_previous_as": "german_destroyers_container_pre20260516.json",
+    "category": "National Navies",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -117,8 +115,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "german_destroyers_container",
+    "img": "/resources/PCL125_GerDD0104_Coll_Free_e1846426cd6086823644534dc76ce5fc08ff75eb083c8e3ab6992b287e45ceaf.png",
+    "name": "German Destroyers container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

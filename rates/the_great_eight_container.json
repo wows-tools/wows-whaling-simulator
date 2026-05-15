@@ -1,9 +1,7 @@
 {
-    "name": "\"The Great Eight\" container",
-    "img": "/resources/PCL039_Ovechkin_Free_old_674c437bbc78a451d3a5d7267c46b23cef35ad9cad1972b345ac09e0cf5cd48a.png",
-    "weight": 1100,
-    "id": "the_great_eight_container",
-    "category": "",
+    "archived_previous_as": "the_great_eight_container_pre20260516.json",
+    "category": "Special Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -97,8 +95,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "the_great_eight_container",
+    "img": "/resources/PCL039_Ovechkin_Free_old_674c437bbc78a451d3a5d7267c46b23cef35ad9cad1972b345ac09e0cf5cd48a.png",
+    "name": "\"The Great Eight\" container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

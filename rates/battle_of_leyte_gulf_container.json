@@ -1,9 +1,7 @@
 {
-    "name": "Battle of Leyte Gulf container",
-    "img": "/resources/PCL227_BLG_Free_d60ca2bf76bfbf55c5a20c32d34692a16ab0df3da99dc3dc9bf12c08f92c9bb3.png",
-    "weight": 1100,
-    "id": "battle_of_leyte_gulf_container",
-    "category": "",
+    "archived_previous_as": "battle_of_leyte_gulf_container_pre20260516.json",
+    "category": "Historical Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -318,8 +316,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "battle_of_leyte_gulf_container",
+    "img": "/resources/PCL227_BLG_Free_d60ca2bf76bfbf55c5a20c32d34692a16ab0df3da99dc3dc9bf12c08f92c9bb3.png",
+    "name": "Battle of Leyte Gulf container",
     "pity": 400,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

@@ -1,9 +1,7 @@
 {
-    "name": "Twitch container",
-    "img": "/resources/PCL026_Twitch2_71d22f5066f22ee70fadc5542bd047d054d9f1feb6aaee913a8124f8ea4acab2.png",
-    "weight": 1100,
-    "id": "twitch_container",
-    "category": "",
+    "archived_previous_as": "twitch_container_pre20260516.json",
+    "category": "Special Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -106,8 +104,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "twitch_container",
+    "img": "/resources/PCL026_Twitch2_71d22f5066f22ee70fadc5542bd047d054d9f1feb6aaee913a8124f8ea4acab2.png",
+    "name": "Twitch container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

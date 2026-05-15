@@ -1,9 +1,7 @@
 {
-    "name": "Treasure of the Sea Premium container",
-    "img": "/resources/PCL204_Summer_Days_Prem_7fabf2808a5b0edccc16124438b76760b19dbd754902ff5f0f89b7ed27e73f4a.png",
-    "weight": 1100,
-    "id": "treasure_of_the_seapremium_container",
-    "category": "",
+    "archived_previous_as": "treasure_of_the_seapremium_container_pre20260516.json",
+    "category": "Special Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -184,8 +182,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "treasure_of_the_seapremium_container",
+    "img": "/resources/PCL204_Summer_Days_Prem_7fabf2808a5b0edccc16124438b76760b19dbd754902ff5f0f89b7ed27e73f4a.png",
+    "name": "Treasure of the Sea Premium container",
     "pity": 50,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

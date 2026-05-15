@@ -9,10 +9,11 @@ import (
 )
 
 type lootboxShort struct {
-	ID     string `json:"id"`
-	Name   string `json:"name"`
-	Img    string `json:"img"`
-	Weight int    `json:"widght"`
+	ID       string `json:"id"`
+	Name     string `json:"name"`
+	Img      string `json:"img"`
+	Weight   int    `json:"weight"`
+	Category string `json:"category"`
 }
 
 type lootboxCollection struct {
@@ -28,10 +29,11 @@ func (a *API) listLootboxes(c echo.Context) error {
 	ret.Lootboxes = make([]*lootboxShort, 0)
 	for _, lbfull := range a.lootboxCollection {
 		lb := lootboxShort{
-			Name:   lbfull.Name,
-			ID:     lbfull.ID,
-			Img:    lbfull.Img,
-			Weight: lbfull.Weight,
+			Name:     lbfull.Name,
+			ID:       lbfull.ID,
+			Img:      lbfull.Img,
+			Weight:   lbfull.Weight,
+			Category: lbfull.Category,
 		}
 		ret.Lootboxes = append(ret.Lootboxes, &lb)
 	}

@@ -1,9 +1,7 @@
 {
-    "name": "Premium Ship VI Elite container",
-    "img": "/resources/PCL071_EPICprem6_98d8499e68f6ad932629668fb3cb26835b2d3cfa53054af3bb6cb2c274770107.png",
-    "weight": 1100,
-    "id": "premium_ship_vi_elite_container",
-    "category": "",
+    "archived_previous_as": "premium_ship_vi_elite_container_pre20260516.json",
+    "category": "Premium \u0026 Special Ships",
+    "changed_at": "20260516",
     "drops": [
         {
             "Tier VI Premium ship": {
@@ -658,8 +656,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "premium_ship_vi_elite_container",
+    "img": "/resources/PCL071_EPICprem6_98d8499e68f6ad932629668fb3cb26835b2d3cfa53054af3bb6cb2c274770107.png",
+    "name": "Premium Ship VI Elite container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

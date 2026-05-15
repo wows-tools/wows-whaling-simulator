@@ -1,9 +1,7 @@
 {
-    "name": "Small container",
-    "img": "/resources/PCL004_Lucky_c8667d7543dfa1605751bfbaa21f48902dfa8a7d49d4706d561f26ba38628cfa.png",
-    "weight": 1100,
-    "id": "small_container",
-    "category": "",
+    "archived_previous_as": "small_container_pre20260516.json",
+    "category": "Resources \u0026 Supplies",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -289,8 +287,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "small_container",
+    "img": "/resources/PCL004_Lucky_c8667d7543dfa1605751bfbaa21f48902dfa8a7d49d4706d561f26ba38628cfa.png",
+    "name": "Small container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

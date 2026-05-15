@@ -1,9 +1,7 @@
 {
-    "name": "Shipbuilding container",
-    "img": "/resources/PCL095_Shipbuilding_Coll_1ec9f2ec4d163985c9ceb2fd1c5439689353da331612fffab696857b84add043.png",
-    "weight": 1100,
-    "id": "shipbuilding_container",
-    "category": "",
+    "archived_previous_as": "shipbuilding_container_pre20260516.json",
+    "category": "Special Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -164,8 +162,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "shipbuilding_container",
+    "img": "/resources/PCL095_Shipbuilding_Coll_1ec9f2ec4d163985c9ceb2fd1c5439689353da331612fffab696857b84add043.png",
+    "name": "Shipbuilding container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

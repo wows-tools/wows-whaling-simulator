@@ -53,3 +53,6 @@ yarn-error.log*
 static/*
 !static/resources
 !static/resources/*
+
+# Archived rates files (historical snapshots, not for version control)
+rates/*_pre*.json

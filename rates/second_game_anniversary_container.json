@@ -1,9 +1,7 @@
 {
-    "name": "Second Game Anniversary container",
-    "img": "/resources/PCL016_Bday2Y_Coll_Free_c15519113773501e34bba3a048f8ce5cc567fa938333de1b614d6f682c1794e9.png",
-    "weight": 1100,
-    "id": "second_game_anniversary_container",
-    "category": "",
+    "archived_previous_as": "second_game_anniversary_container_pre20260516.json",
+    "category": "Anniversaries",
+    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -118,8 +116,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "second_game_anniversary_container",
+    "img": "/resources/PCL016_Bday2Y_Coll_Free_c15519113773501e34bba3a048f8ce5cc567fa938333de1b614d6f682c1794e9.png",
+    "name": "Second Game Anniversary container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

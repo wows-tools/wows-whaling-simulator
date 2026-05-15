@@ -1,9 +1,7 @@
 {
-    "name": "More Economic Rewards container",
-    "img": "/resources/PCL001_Credits_e3707e7a073cdbc9676745da979a83478299a0d5904bb210ecb162aae1b048a9.png",
-    "weight": 1100,
-    "id": "more_economic_rewards_container",
-    "category": "",
+    "archived_previous_as": "more_economic_rewards_container_pre20260516.json",
+    "category": "Resources \u0026 Supplies",
+    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -230,8 +228,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "more_economic_rewards_container",
+    "img": "/resources/PCL001_Credits_e3707e7a073cdbc9676745da979a83478299a0d5904bb210ecb162aae1b048a9.png",
+    "name": "More Economic Rewards container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

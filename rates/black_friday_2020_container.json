@@ -1,9 +1,7 @@
 {
-    "name": "Black Friday 2020 container",
-    "img": "/resources/PCL111_BF2020_Free_63396e4d0d40d6339f3ea4ad70e73992a9be337b98b99b5e707d5fb5218c5d07.png",
-    "weight": 1100,
-    "id": "black_friday_2020_container",
-    "category": "",
+    "archived_previous_as": "black_friday_2020_container_pre20260516.json",
+    "category": "Black Friday",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -223,8 +221,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "black_friday_2020_container",
+    "img": "/resources/PCL111_BF2020_Free_63396e4d0d40d6339f3ea4ad70e73992a9be337b98b99b5e707d5fb5218c5d07.png",
+    "name": "Black Friday 2020 container",
     "pity": 714,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

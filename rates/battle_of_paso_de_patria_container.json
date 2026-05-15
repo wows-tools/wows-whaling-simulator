@@ -1,9 +1,7 @@
 {
-    "name": "Battle of Paso de Patria container",
-    "img": "/resources/PCL230_PAMBB_Collection_Free_e5c1d331f0d6320063a3b81f9ad0a935d3259d4f72e1517e98c8fc98a883b96e.png",
-    "weight": 1100,
-    "id": "battle_of_paso_de_patria_container",
-    "category": "",
+    "archived_previous_as": "battle_of_paso_de_patria_container_pre20260516.json",
+    "category": "Historical Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -28,8 +26,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "battle_of_paso_de_patria_container",
+    "img": "/resources/PCL230_PAMBB_Collection_Free_e5c1d331f0d6320063a3b81f9ad0a935d3259d4f72e1517e98c8fc98a883b96e.png",
+    "name": "Battle of Paso de Patria container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

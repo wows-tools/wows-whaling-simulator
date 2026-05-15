@@ -1,9 +1,7 @@
 {
-    "name": "Santa's Gift container",
-    "img": "/resources/PCL265_SantaGift_Prem_f92d4b7cdb93af840e71c7eb07bde33412fc9c2c1acf4ab7effbb5eff02cf7b5.png",
-    "weight": 1100,
-    "id": "santas_gift_container",
-    "category": "",
+    "archived_previous_as": "santas_gift_container_pre20260516.json",
+    "category": "Santa's Gifts",
+    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -3202,8 +3200,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "santas_gift_container",
+    "img": "/resources/PCL265_SantaGift_Prem_f92d4b7cdb93af840e71c7eb07bde33412fc9c2c1acf4ab7effbb5eff02cf7b5.png",
+    "name": "Santa's Gift container",
     "pity": 100,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

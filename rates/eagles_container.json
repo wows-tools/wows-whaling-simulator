@@ -1,9 +1,7 @@
 {
-    "name": "Eagles container",
-    "img": "/resources/PCL032_RvR_Eagles_old_136ee17956d1e98f7d77dfc91b06790b7863ae0ba2d1a1f1a5a61a5c2cac520a.png",
-    "weight": 1100,
-    "id": "eagles_container",
-    "category": "",
+    "archived_previous_as": "eagles_container_pre20260516.json",
+    "category": "Historical Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -152,8 +150,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "eagles_container",
+    "img": "/resources/PCL032_RvR_Eagles_old_136ee17956d1e98f7d77dfc91b06790b7863ae0ba2d1a1f1a5a61a5c2cac520a.png",
+    "name": "Eagles container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

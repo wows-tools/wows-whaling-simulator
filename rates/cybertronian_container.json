@@ -1,9 +1,7 @@
 {
-    "name": "Cybertronian container",
-    "img": "/resources/PCL108_TF098_Free_d69fd3f748cc94e5aa925110c813d46ca63a0a48f4a96403af027ba4bfef4d1f.png",
-    "weight": 1100,
-    "id": "cybertronian_container",
-    "category": "",
+    "archived_previous_as": "cybertronian_container_pre20260516.json",
+    "category": "Collaborations",
+    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -136,8 +134,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "cybertronian_container",
+    "img": "/resources/PCL108_TF098_Free_d69fd3f748cc94e5aa925110c813d46ca63a0a48f4a96403af027ba4bfef4d1f.png",
+    "name": "Cybertronian container",
     "pity": 1250,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

@@ -1,9 +1,7 @@
 {
-    "name": "Jack-o’-Lantern container",
-    "img": "/resources/PCL041_HW2018_Free_b4295147f705e5eef3f76f8fa5911b2b2c93f49ece44355550ce62d315e77753.png",
-    "weight": 1100,
-    "id": "jack_o_lantern_container",
-    "category": "",
+    "archived_previous_as": "jack_o_lantern_container_pre20260516.json",
+    "category": "Seasonal",
+    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -88,8 +86,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "jack_o_lantern_container",
+    "img": "/resources/PCL041_HW2018_Free_b4295147f705e5eef3f76f8fa5911b2b2c93f49ece44355550ce62d315e77753.png",
+    "name": "Jack-o’-Lantern container",
     "pity": 100,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

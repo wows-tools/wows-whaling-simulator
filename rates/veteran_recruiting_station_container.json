@@ -1,9 +1,7 @@
 {
-    "name": "Veteran Recruiting Station container",
-    "img": "/resources/PCL185_RecruitBig_de27faab6904d7e1f822e9ce1167a994b2c8bed32c5eb1c2993df4f58ee03852.png",
-    "weight": 1100,
-    "id": "veteran_recruiting_station_container",
-    "category": "",
+    "archived_previous_as": "veteran_recruiting_station_container_pre20260516.json",
+    "category": "Recruitment",
+    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -264,8 +262,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "veteran_recruiting_station_container",
+    "img": "/resources/PCL185_RecruitBig_de27faab6904d7e1f822e9ce1167a994b2c8bed32c5eb1c2993df4f58ee03852.png",
+    "name": "Veteran Recruiting Station container",
     "pity": 62,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

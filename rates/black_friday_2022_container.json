@@ -1,9 +1,7 @@
 {
-    "name": "Black Friday 2022 container",
-    "img": "/resources/PCL157_BF2022_Free_c72c93b6c5a73b4c5d47491f1dbbafc0c8b62e0b4c310adf43911f2b21a64c98.png",
-    "weight": 1100,
-    "id": "black_friday_2022_container",
-    "category": "",
+    "archived_previous_as": "black_friday_2022_container_pre20260516.json",
+    "category": "Black Friday",
+    "changed_at": "20260516",
     "drops": [
         {
             "Economic Bonuses": {
@@ -524,8 +522,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "black_friday_2022_container",
+    "img": "/resources/PCL157_BF2022_Free_c72c93b6c5a73b4c5d47491f1dbbafc0c8b62e0b4c310adf43911f2b21a64c98.png",
+    "name": "Black Friday 2022 container",
     "pity": 625,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

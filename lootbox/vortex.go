@@ -169,6 +169,61 @@ func vortexGetWeight(id string) int {
 	}
 }
 
+func vortexCategory(id string) string {
+	switch {
+	case strings.HasPrefix(id, "santas_"):
+		return "Santa's Gifts"
+	case strings.HasPrefix(id, "black_friday_"):
+		return "Black Friday"
+	case strings.HasPrefix(id, "premium_ship_"), strings.HasPrefix(id, "special_ship_"):
+		return "Premium & Special Ships"
+	case strings.HasPrefix(id, "halloween_"), strings.HasPrefix(id, "jack_o_lantern"):
+		return "Seasonal"
+	case strings.HasPrefix(id, "lunar_new_year"), strings.HasPrefix(id, "golden_week"),
+		strings.HasPrefix(id, "red_daruma"), strings.HasPrefix(id, "golden_daruma"):
+		return "Seasonal"
+	case strings.HasPrefix(id, "christmas_"), strings.HasPrefix(id, "festive_"):
+		return "Seasonal"
+	case strings.Contains(id, "_anniversary"):
+		return "Anniversaries"
+	case strings.HasPrefix(id, "battle_of_"), strings.HasPrefix(id, "d_day"),
+		strings.HasPrefix(id, "war_is_over"), strings.HasPrefix(id, "five_epochs"),
+		strings.HasPrefix(id, "the_hunt_for_bismarck"), strings.HasPrefix(id, "unsinkable_sam"),
+		strings.HasPrefix(id, "finest_hour"), strings.HasPrefix(id, "allied_heroes"),
+		strings.HasPrefix(id, "heart_of_oak"), strings.HasPrefix(id, "eagles"),
+		strings.HasPrefix(id, "legion_of_honor"), strings.HasPrefix(id, "belle_poque"),
+		strings.HasPrefix(id, "three_kingdoms"), strings.HasPrefix(id, "the_age_of_sa_zhenbing"),
+		strings.HasPrefix(id, "go_navy"), strings.HasPrefix(id, "navy_250"):
+		return "Historical Events"
+	case strings.HasSuffix(id, "_league") || strings.Contains(id, "_league_"):
+		return "Leagues"
+	case strings.HasPrefix(id, "azur_lane"), strings.HasPrefix(id, "arpeggio_"),
+		strings.HasPrefix(id, "high_school_fleet"), strings.HasPrefix(id, "plus_ultra"),
+		strings.HasPrefix(id, "cybertronian"), strings.HasPrefix(id, "logh_"),
+		strings.HasPrefix(id, "space_the_final_frontier"), strings.HasPrefix(id, "ars_nova"),
+		strings.HasPrefix(id, "manjuu"), strings.HasPrefix(id, "on_a_retro_wave"),
+		strings.HasPrefix(id, "psplive"), strings.HasPrefix(id, "wings_of_freedom"):
+		return "Collaborations"
+	case strings.HasPrefix(id, "american_"), strings.HasPrefix(id, "german_"),
+		strings.HasPrefix(id, "japanese_"), strings.HasPrefix(id, "italian_"),
+		strings.HasPrefix(id, "royal_navy"), strings.HasPrefix(id, "soviet"),
+		strings.HasPrefix(id, "commonwealth_"), strings.HasPrefix(id, "kriegsmarine"),
+		strings.HasPrefix(id, "vive_la_france"), strings.HasPrefix(id, "yamamoto_"),
+		strings.HasPrefix(id, "oktyabrskaya_"):
+		return "National Navies"
+	case strings.Contains(id, "_recruiting_station"):
+		return "Recruitment"
+	case strings.HasPrefix(id, "regular_supplies"), strings.HasPrefix(id, "more_economic"),
+		strings.HasPrefix(id, "more_camouflages"), strings.HasPrefix(id, "small_"),
+		strings.HasPrefix(id, "common_bonuses"), strings.HasPrefix(id, "uncommon_bonuses"),
+		strings.HasPrefix(id, "rare_bonuses"), strings.HasPrefix(id, "tactical"),
+		strings.HasPrefix(id, "volunteer_skins"), strings.HasPrefix(id, "air_supply"):
+		return "Resources & Supplies"
+	default:
+		return "Special Events"
+	}
+}
+
 func vortexIconImg(icons vortexIcon) string {
 	for _, u := range []string{icons.Large, icons.Default, icons.Small} {
 		if u == "" {
@@ -227,6 +282,7 @@ func vortexConvert(raw *vortexEnvelope) (*LootBox, error) {
 		Name:               d.Title,
 		Img:                vortexIconImg(d.Icons),
 		ID:                 id,
+		Category:           vortexCategory(id),
 		Weight:             vortexGetWeight(id),
 		ExchangeRateEuro:   303.96,
 		ExchangeRateDollar: 289.31,

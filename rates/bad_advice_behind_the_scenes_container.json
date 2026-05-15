@@ -1,9 +1,7 @@
 {
-    "name": "\"Bad Advice: Behind the Scenes\" container",
-    "img": "/resources/PCL096_CAPT2020_old_91107415340ca19e5bb857ba27fbe4df957470c61a05b22bd384dd29967b1920.png",
-    "weight": 1100,
-    "id": "bad_advice_behind_the_scenes_container",
-    "category": "",
+    "archived_previous_as": "bad_advice_behind_the_scenes_container_pre20260516.json",
+    "category": "Special Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -28,8 +26,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "bad_advice_behind_the_scenes_container",
+    "img": "/resources/PCL096_CAPT2020_old_91107415340ca19e5bb857ba27fbe4df957470c61a05b22bd384dd29967b1920.png",
+    "name": "\"Bad Advice: Behind the Scenes\" container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

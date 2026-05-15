@@ -1,9 +1,7 @@
 {
-    "name": "\"Belle Époque\" container",
-    "img": "/resources/PCL051_BelleEpoque_Coll_6637af0669ce11b9ec4cd08fd147b04a37130de0a8b26244614726bf857e57cb.png",
-    "weight": 1100,
-    "id": "belle_poque_container",
-    "category": "",
+    "archived_previous_as": "belle_poque_container_pre20260516.json",
+    "category": "Historical Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -118,8 +116,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "belle_poque_container",
+    "img": "/resources/PCL051_BelleEpoque_Coll_6637af0669ce11b9ec4cd08fd147b04a37130de0a8b26244614726bf857e57cb.png",
+    "name": "\"Belle Époque\" container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

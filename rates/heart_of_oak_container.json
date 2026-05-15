@@ -1,9 +1,7 @@
 {
-    "name": "Heart of Oak container",
-    "img": "/resources/PCL277_WebThunderer_Backup_Free_fb7032ed22e75f480f150b5c99673e82afb164151131f8d9a1a72ab24a036680.png",
-    "weight": 1100,
-    "id": "heart_of_oak_container",
-    "category": "",
+    "archived_previous_as": "heart_of_oak_container_pre20260516.json",
+    "category": "Historical Events",
+    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -243,8 +241,12 @@
             }
         }
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "heart_of_oak_container",
+    "img": "/resources/PCL277_WebThunderer_Backup_Free_fb7032ed22e75f480f150b5c99673e82afb164151131f8d9a1a72ab24a036680.png",
+    "name": "Heart of Oak container",
     "pity": 400,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }

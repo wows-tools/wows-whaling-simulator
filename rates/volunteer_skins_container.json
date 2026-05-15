@@ -1,14 +1,16 @@
 {
-    "name": "Volunteer Skins container",
-    "img": "/resources/PCL003_STbox_Prem_41d353177cbeeee0e4fb41dcf937af5ba50b1adefc33afad0a616ac0ea6ca371.png",
-    "weight": 1100,
-    "id": "volunteer_skins_container",
-    "category": "",
+    "archived_previous_as": "volunteer_skins_container_pre20260516.json",
+    "category": "Resources \u0026 Supplies",
+    "changed_at": "20260516",
     "drops": [
         {}
     ],
+    "exchange_rate_dollar": 289.31,
+    "exchange_rate_euro": 303.96,
+    "id": "volunteer_skins_container",
+    "img": "/resources/PCL003_STbox_Prem_41d353177cbeeee0e4fb41dcf937af5ba50b1adefc33afad0a616ac0ea6ca371.png",
+    "name": "Volunteer Skins container",
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "weight": 1100
 }
