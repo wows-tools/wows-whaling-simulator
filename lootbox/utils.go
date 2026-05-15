@@ -3,6 +3,7 @@ package lootbox
 import (
 	"encoding/csv"
 	"encoding/json"
+	"io/fs"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -27,6 +28,29 @@ func NewLootBoxCollection(dirPath string) (map[string]*LootBox, error) {
 			return nil, err
 		}
 		ret[lb.ID] = lb
+	}
+	return ret, nil
+}
+
+func NewLootBoxCollectionFromFS(fsys fs.FS) (map[string]*LootBox, error) {
+	ret := make(map[string]*LootBox)
+	entries, err := fs.ReadDir(fsys, ".")
+	if err != nil {
+		return nil, err
+	}
+	for _, entry := range entries {
+		if entry.IsDir() || filepath.Ext(entry.Name()) != ".json" {
+			continue
+		}
+		data, err := fs.ReadFile(fsys, entry.Name())
+		if err != nil {
+			return nil, err
+		}
+		var lb LootBox
+		if err = json.Unmarshal(data, &lb); err != nil {
+			return nil, err
+		}
+		ret[lb.ID] = &lb
 	}
 	return ret, nil
 }

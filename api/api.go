@@ -2,13 +2,15 @@ package api
 
 import (
 	"errors"
+	"io/fs"
+	"time"
+
 	"github.com/go-redis/cache/v8"
 	"github.com/go-redis/redis/v8"
 	"github.com/kakwa/wows-whaling-simulator/config"
 	"github.com/kakwa/wows-whaling-simulator/lootbox"
 	"github.com/kakwa/wows-whaling-simulator/wows"
 	"github.com/labstack/echo/v4"
-	"time"
 )
 
 var (
@@ -26,6 +28,7 @@ type Stats struct {
 type API struct {
 	echo              *echo.Echo
 	cfg               *config.AppConfig
+	embeddedFS        fs.FS
 	lootboxCollection map[string]*lootbox.LootBox
 	redis             *redis.Client
 	cache             *cache.Cache
@@ -33,13 +36,23 @@ type API struct {
 	stats             *Stats
 }
 
-func NewAPI(echo *echo.Echo, cfg *config.AppConfig) (*API, error) {
+func NewAPI(echo *echo.Echo, cfg *config.AppConfig, embeddedFS fs.FS) (*API, error) {
 	var a API
 	var err error
 	a.echo = echo
 	a.cfg = cfg
+	a.embeddedFS = embeddedFS
 	a.stats = &Stats{}
-	a.lootboxCollection, err = lootbox.NewLootBoxCollection(a.cfg.Rates)
+
+	if cfg.Rates != "" {
+		a.lootboxCollection, err = lootbox.NewLootBoxCollection(cfg.Rates)
+	} else {
+		ratesFS, fsErr := fs.Sub(embeddedFS, "rates")
+		if fsErr != nil {
+			return nil, fsErr
+		}
+		a.lootboxCollection, err = lootbox.NewLootBoxCollectionFromFS(ratesFS)
+	}
 	if err != nil {
 		return nil, err
 	}

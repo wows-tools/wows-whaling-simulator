@@ -27,7 +27,7 @@ func main() {
 	e.Logger.SetLevel(logLevel)
 
 	lootbox.InitStatsWorkers()
-	apiv1, err := api.NewAPI(e, cfg)
+	apiv1, err := api.NewAPI(e, cfg, embeddedFS)
 	if err != nil {
 		e.Logger.Fatalf("failed to init API: %s", err)
 	}

@@ -1,5 +1,6 @@
 SOURCES := $(shell find ./ -type f -not -path "./ui*" -not -path '*/.*' -not -path './build/*' -not -name '*_test.go' -name '*.go') \
-	   static/asset-manifest.json static/*.png static/index.html static/static/*/* static/resources/* static/manifest.json static/robots.txt
+	   static/asset-manifest.json static/*.png static/index.html static/static/*/* static/resources/* static/manifest.json static/robots.txt \
+	   $(wildcard rates/*.json)
 
 all:
 	$(MAKE) -C ui
