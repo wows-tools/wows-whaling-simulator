@@ -79,7 +79,7 @@ func main() {
 			continue
 		}
 
-		lbws, err := convert(&lb, ships)
+		lbws, err := convert(raw, ships)
 		if err != nil {
 			fmt.Printf("Error converting %s: %v\n", inPath, err)
 			continue
