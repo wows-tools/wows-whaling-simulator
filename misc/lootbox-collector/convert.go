@@ -96,7 +96,7 @@ func tierToRoman(tier int) string {
 }
 
 func iconImg(icons Icon) string {
-	for _, u := range []string{icons.Default, icons.Large, icons.Small} {
+	for _, u := range []string{icons.Large, icons.Default, icons.Small} {
 		if u == "" {
 			continue
 		}

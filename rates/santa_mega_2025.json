@@ -1,6 +1,6 @@
 {
     "name": "Santa's Mega Gift container",
-    "img": "/resources/icon_reward_lootbox_PCL236_SantaBig_Prem_d9309af164d7ae258b8d7da2594a8547a8fb294724b24490a142e1e9b8f76f00.png",
+    "img": "/resources/PCL236_SantaBig_Prem_1b9d17991e5737e2c788de7990b0e2a57c2aec15baeb385ee207381169e2b379.png",
     "id": "santas_mega_gift_container",
     "weight": 40,
     "exchange_rate_euro": 303.96,
@@ -71,8 +71,8 @@
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier V–VIII Premium ship",
-                    "Tier X ship or a rare ship"
+                    "Tier X ship or a rare ship",
+                    "Tier V–VIII Premium ship"
                 ],
                 "items": [
                     {
@@ -966,8 +966,8 @@
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier VIII–IX Premium ship",
-                    "Tier X ship or a rare ship"
+                    "Tier X ship or a rare ship",
+                    "Tier VIII–IX Premium ship"
                 ],
                 "items": [
                     {

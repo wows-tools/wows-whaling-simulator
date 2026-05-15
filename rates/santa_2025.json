@@ -1,6 +1,6 @@
 {
     "name": "Santa's Gift container",
-    "img": "/resources/icon_reward_lootbox_PCL265_SantaGift_Prem_5f7d03ceea042d4262e1e15b225604f5c77ba13f1d96978b077199f5d4e83d91.png",
+    "img": "/resources/PCL265_SantaGift_Prem_f92d4b7cdb93af840e71c7eb07bde33412fc9c2c1acf4ab7effbb5eff02cf7b5.png",
     "id": "santas_gift_container",
     "weight": 1100,
     "exchange_rate_euro": 303.96,

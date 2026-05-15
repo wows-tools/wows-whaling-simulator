@@ -19,12 +19,13 @@ import (
 func main() {
 	collect := flag.Bool("collect", false, "scrape WG page and fetch lootbox JSON into input dir")
 	inputDir := flag.String("input", "raw", "directory with raw WG JSON files")
-	outputDir := flag.String("output", "output", "directory for converted JSON and images")
+	outputDir := flag.String("output", "output", "directory for converted JSON")
 	ratesDir := flag.String("rates", "../../rates", "rates directory to copy Santa containers into")
+	staticDir := flag.String("static", "../../static", "static assets directory; icons are written to <static>/resources/")
 	wgKey := flag.String("wg-key", "", "Wargaming API application_id (for ship name resolution)")
 	flag.Parse()
 
-	imgDir := filepath.Join(*outputDir, "resources")
+	imgDir := filepath.Join(*staticDir, "resources")
 	for _, dir := range []string{*inputDir, *outputDir, imgDir} {
 		if err := os.MkdirAll(dir, 0755); err != nil {
 			fmt.Println("Error creating directory:", err)
@@ -184,12 +185,17 @@ func fetchShips(key string) (map[int]ShipInfo, error) {
 	return result, nil
 }
 
+// sessionCookies holds cookies extracted from the browser session for
+// authenticated icon downloads. Set during -collect, empty otherwise.
+var sessionCookies []*http.Cookie
+
 // collectRaw uses Selenium to scrape the WG lootbox page, then fetches each
 // discovered vortex API URL and saves the raw JSON into destDir.
 func collectRaw(destDir string) error {
 	fmt.Println("Launching browser to collect lootbox URLs…")
-	urls := CollectLootboxURLs()
-	fmt.Printf("Found %d lootbox URL(s)\n", len(urls))
+	urls, cookies := CollectLootboxURLs()
+	sessionCookies = cookies
+	fmt.Printf("Found %d lootbox URL(s), %d session cookies\n", len(urls), len(cookies))
 	for i, u := range urls {
 		fmt.Printf("Fetching [%d/%d] %s\n", i+1, len(urls), u)
 		resp, err := http.Get(u) //nolint:gosec
@@ -213,7 +219,7 @@ func collectRaw(destDir string) error {
 	return nil
 }
 
-const wgIconBase = "https://wows-gloss-icons.wgcdn.co/"
+const wgIconBase = "https://wows-gloss-icons.wgcdn.co/icons/"
 
 // downloadIcon fetches all available icon variants and saves them under imgDir.
 func downloadIcon(icons Icon, imgDir string) error {
@@ -251,7 +257,17 @@ func downloadFile(url, destDir string) error {
 		return nil
 	}
 
-	resp, err := http.Get(url) //nolint:gosec
+	req, err := http.NewRequest(http.MethodGet, url, nil) //nolint:gosec
+	if err != nil {
+		return fmt.Errorf("GET %s: %w", url, err)
+	}
+	req.Header.Set("Referer", "https://worldofwarships.com/")
+	req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+	for _, c := range sessionCookies {
+		req.AddCookie(c)
+	}
+	client := &http.Client{Timeout: 15 * time.Second}
+	resp, err := client.Do(req)
 	if err != nil {
 		return fmt.Errorf("GET %s: %w", url, err)
 	}

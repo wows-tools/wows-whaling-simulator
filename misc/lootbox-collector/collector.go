@@ -3,11 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"net/http"
+	"strings"
+	"time"
+
 	"github.com/tebeka/selenium"
 	"github.com/tebeka/selenium/chrome"
 	"github.com/tebeka/selenium/log"
-	"strings"
-	"time"
 )
 
 type Headers struct {
@@ -102,7 +104,7 @@ type Root struct {
 	WebView string  `json:"webview"`
 }
 
-func CollectLootboxURLs() []string {
+func CollectLootboxURLs() ([]string, []*http.Cookie) {
 	// Run Chrome browser
 	service, err := selenium.NewChromeDriverService("/usr/bin/chromedriver", 4444)
 	if err != nil {
@@ -177,11 +179,16 @@ func CollectLootboxURLs() []string {
 		}
 	}
 
-	// Print vortex URLs
-	//fmt.Println("URLs containing 'vortex':")
-	//for _, url := range urls {
-	//	fmt.Println(url)
-	//}
-	return urls
+	// Extract browser cookies to reuse for authenticated icon downloads.
+	var httpCookies []*http.Cookie
+	if selCookies, err := driver.GetCookies(); err == nil {
+		for _, c := range selCookies {
+			httpCookies = append(httpCookies, &http.Cookie{
+				Name:  c.Name,
+				Value: c.Value,
+			})
+		}
+	}
 
+	return urls, httpCookies
 }
