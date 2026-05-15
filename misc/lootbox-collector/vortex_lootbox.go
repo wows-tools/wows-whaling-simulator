@@ -31,13 +31,21 @@ type CommonRewards struct {
 	} `json:"list0"`
 }
 
+type AdditionalData struct {
+	Title     string `json:"title"`
+	Level     int    `json:"level"`
+	IsPremium bool   `json:"isPremium"`
+	IsSpecial bool   `json:"isSpecial"`
+}
+
 type ValuableReward struct {
-	CrewLevel   int         `json:"crewLevel"`
-	AddTop      bool        `json:"addTop"`
-	DefaultCrew interface{} `json:"defaultCrew"`
-	Amount      int         `json:"amount"`
-	Type        string      `json:"type"`
-	ID          int         `json:"id"`
+	CrewLevel      int             `json:"crewLevel"`
+	AddTop         bool            `json:"addTop"`
+	DefaultCrew    interface{}     `json:"defaultCrew"`
+	Amount         int             `json:"amount"`
+	Type           string          `json:"type"`
+	ID             int             `json:"id"`
+	AdditionalData *AdditionalData `json:"additionalData"`
 }
 
 type ValuableRewardList struct {

@@ -2,12 +2,25 @@ package wows
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
+	"io/fs"
+	"os"
+	"strconv"
+
 	"github.com/IceflowRE/go-wargaming/v3/wargaming"
 	"github.com/IceflowRE/go-wargaming/v3/wargaming/wows"
 	"net/http"
 	"time"
 )
+
+// ShipData holds per-ship metadata stored in ships.json.
+type ShipData struct {
+	Name      string `json:"name"`
+	Tier      int    `json:"tier"`
+	IsPremium bool   `json:"is_premium"`
+	IsSpecial bool   `json:"is_special"`
+}
 
 var (
 	EURealm   = wargaming.RealmEu
@@ -43,6 +56,42 @@ func NewWowsAPI(key string) *WowsAPI {
 		client:      wargaming.NewClient(key, &wargaming.ClientOptions{HTTPClient: &http.Client{Timeout: 10 * time.Second}}),
 		ShipMapping: make(map[int]string),
 	}
+}
+
+// LoadShipMappingFromFile reads a ships.json file and pre-populates ShipMapping.
+// Entries already present (e.g. from a prior API call) are not overwritten.
+func (wowsAPI *WowsAPI) LoadShipMappingFromFile(path string) error {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return err
+	}
+	return wowsAPI.loadShipMappingFromBytes(data)
+}
+
+// LoadShipMappingFromFS reads ships.json from an fs.FS and pre-populates ShipMapping.
+func (wowsAPI *WowsAPI) LoadShipMappingFromFS(fsys fs.FS, path string) error {
+	data, err := fs.ReadFile(fsys, path)
+	if err != nil {
+		return err
+	}
+	return wowsAPI.loadShipMappingFromBytes(data)
+}
+
+func (wowsAPI *WowsAPI) loadShipMappingFromBytes(data []byte) error {
+	var ships map[string]ShipData
+	if err := json.Unmarshal(data, &ships); err != nil {
+		return err
+	}
+	for key, ship := range ships {
+		id, err := strconv.Atoi(key)
+		if err != nil {
+			continue
+		}
+		if _, exists := wowsAPI.ShipMapping[id]; !exists {
+			wowsAPI.ShipMapping[id] = ship.Name
+		}
+	}
+	return nil
 }
 
 func (wowsAPI *WowsAPI) FillShipMapping() error {

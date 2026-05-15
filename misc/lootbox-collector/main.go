@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"time"
 
@@ -18,12 +19,21 @@ import (
 	"github.com/kakwa/wows-whaling-simulator/lootbox"
 )
 
+// ShipEntry is the per-ship record written to ships.json.
+type ShipEntry struct {
+	Name      string `json:"name"`
+	Tier      int    `json:"tier"`
+	IsPremium bool   `json:"is_premium"`
+	IsSpecial bool   `json:"is_special"`
+}
+
 func main() {
 	collect := flag.Bool("collect", false, "scrape WG page and fetch lootbox JSON into input dir")
 	inputDir := flag.String("input", "raw", "directory with raw WG JSON files")
 	outputDir := flag.String("output", "output", "directory for converted JSON")
-	ratesDir := flag.String("rates", "../../rates", "rates directory to copy Santa containers into")
+	ratesDir := flag.String("rates", "../../rates", "rates directory to copy all containers into")
 	staticDir := flag.String("static", "../../static", "static assets directory; icons are written to <static>/resources/")
+	shipsFile := flag.String("ships-file", "../../ships/ships.json", "output file for ship ID→name/tier mapping")
 	wgKey := flag.String("wg-key", "", "Wargaming API application_id (for ship name resolution)")
 	flag.Parse()
 
@@ -131,6 +141,84 @@ func main() {
 			}
 		}
 	}
+
+	if *shipsFile != "" {
+		rawShips := extractShipsFromRaw(*inputDir)
+		if err := writeShipsFile(*shipsFile, rawShips, ships); err != nil {
+			fmt.Printf("Warning: could not write ships file: %v\n", err)
+		} else {
+			total := len(rawShips)
+			if len(ships) > total {
+				total = len(ships)
+			}
+			fmt.Printf("Wrote %d ships to %s\n", total, *shipsFile)
+		}
+	}
+}
+
+// extractShipsFromRaw scans all raw vortex JSON files in inputDir and builds a
+// map of ship ID → ShipEntry from the additionalData embedded in each file.
+func extractShipsFromRaw(inputDir string) map[string]ShipEntry {
+	ships := make(map[string]ShipEntry)
+	entries, err := os.ReadDir(inputDir)
+	if err != nil {
+		return ships
+	}
+	for _, entry := range entries {
+		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".json") {
+			continue
+		}
+		raw, err := os.ReadFile(filepath.Join(inputDir, entry.Name()))
+		if err != nil {
+			continue
+		}
+		var lb WgLootbox
+		if err := json.Unmarshal(raw, &lb); err != nil {
+			continue
+		}
+		for _, slot := range lb.Data.Slots {
+			for _, vlist := range slot.ValuableRewards {
+				for _, r := range vlist.Rewards {
+					if r.Type != "ship" || r.AdditionalData == nil || r.AdditionalData.Title == "" {
+						continue
+					}
+					ships[strconv.Itoa(r.ID)] = ShipEntry{
+						Name:      r.AdditionalData.Title,
+						Tier:      r.AdditionalData.Level,
+						IsPremium: r.AdditionalData.IsPremium,
+						IsSpecial: r.AdditionalData.IsSpecial,
+					}
+				}
+			}
+		}
+	}
+	return ships
+}
+
+// writeShipsFile merges ship data extracted from raw files with optional WG API
+// results and writes the combined map to path as JSON.
+func writeShipsFile(path string, fromRaw map[string]ShipEntry, fromAPI map[int]ShipInfo) error {
+	merged := make(map[string]ShipEntry, len(fromRaw)+len(fromAPI))
+	for k, v := range fromRaw {
+		merged[k] = v
+	}
+	// API data takes precedence (more authoritative names/tiers).
+	for id, info := range fromAPI {
+		merged[strconv.Itoa(id)] = ShipEntry{
+			Name:      info.Name,
+			Tier:      info.Tier,
+			IsPremium: info.IsPremium,
+			IsSpecial: info.IsSpecial,
+		}
+	}
+	data, err := json.MarshalIndent(merged, "", "    ")
+	if err != nil {
+		return err
+	}
+	if err := os.MkdirAll(filepath.Dir(path), 0755); err != nil {
+		return err
+	}
+	return os.WriteFile(path, data, 0644)
 }
 
 // writeToRates writes the container JSON to <ratesDir>/<id>.json.

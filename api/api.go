@@ -70,6 +70,12 @@ func NewAPI(echo *echo.Echo, cfg *config.AppConfig, embeddedFS fs.FS) (*API, err
 		LocalCache: cache.NewTinyLFU(1000, time.Minute),
 	})
 	a.wowsAPI = wows.NewWowsAPI(a.cfg.WowsApiKey)
+	// Pre-populate ship mapping from the embedded ships.json so that ship names
+	// are available even when the WG API is unreachable or the key is missing.
+	if loadErr := a.wowsAPI.LoadShipMappingFromFS(embeddedFS, "ships/ships.json"); loadErr != nil {
+		// Non-fatal: the API call below will still populate what it can.
+		_ = loadErr
+	}
 	shipMapping := make(map[int]string)
 	err = a.cache.Once(&cache.Item{
 		TTL:   time.Hour,

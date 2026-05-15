@@ -1,0 +1,1994 @@
+{
+    "3319740208": {
+        "name": "Von Zuckerhoff",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3319740400": {
+        "name": "Rhode Island B",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3330192848": {
+        "name": "PTRPVLSK",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3330258640": {
+        "name": "AL Shinano",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3332323312": {
+        "name": "AL Massachusetts",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3340646192": {
+        "name": "Sharqi",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3341694416": {
+        "name": "Neustrashimy B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3341727696": {
+        "name": "Cursed Fang",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3341759792": {
+        "name": "Karl XIV Johan B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3341759952": {
+        "name": "Mahtaga",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3341760496": {
+        "name": "Bird Cry",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3342775504": {
+        "name": "Piñatian",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3342808880": {
+        "name": "Wahnsinn",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3342809072": {
+        "name": "Kheper",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3343791408": {
+        "name": "Scarlet Storm",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3425613520": {
+        "name": "Azuma B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3436099280": {
+        "name": "BA Takahashi",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3437147600": {
+        "name": "Kiberpankov",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3437180720": {
+        "name": "BA Tirpitz",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3437180912": {
+        "name": "Alabama B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3438196528": {
+        "name": "München B",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3445536112": {
+        "name": "Brisbane B",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3445536720": {
+        "name": "Defence",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3445569264": {
+        "name": "Tempesta Nera",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3509499600": {
+        "name": "Suzuya Golden",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3511629776": {
+        "name": "Danu",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3519985360": {
+        "name": "Suzuya",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3522082512": {
+        "name": "ARP Nachi",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3522115536": {
+        "name": "Royal Sovereign",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3530504176": {
+        "name": "Georgia",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3531486928": {
+        "name": "Shigure",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3531519792": {
+        "name": "Wiesbaden",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3539907792": {
+        "name": "Zhuge Liang",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3539941360": {
+        "name": "Rhode Island",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3540924112": {
+        "name": "Minegumo",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540924368": {
+        "name": "Barfleur",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540924400": {
+        "name": "Johnston",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540956368": {
+        "name": "Tianjin",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540956624": {
+        "name": "Kozma Minin",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540956912": {
+        "name": "Ferrante Gonzaga",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540957136": {
+        "name": "Aberdeen",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540957168": {
+        "name": "Cambridge",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540989360": {
+        "name": "Victoria",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540989680": {
+        "name": "Pilus Posterior",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540989936": {
+        "name": "Indiana",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3541972432": {
+        "name": "Provorny",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3541972944": {
+        "name": "Eskimo",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3542005040": {
+        "name": "Regele Carol I",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3542005456": {
+        "name": "ARP Maya",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3542005712": {
+        "name": "Érne",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3542037808": {
+        "name": "Turgut Reis",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3542038512": {
+        "name": "Tennessee",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3542071248": {
+        "name": "Theseus",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3543020848": {
+        "name": "Stord '43",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3543021520": {
+        "name": "Jupiter '42",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3543086544": {
+        "name": "Arkhangelsk",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3543086896": {
+        "name": "Scharnhorst '43",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3543087056": {
+        "name": "Rodney",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3543577808": {
+        "name": "Xin Zhong Guo 14",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3544102736": {
+        "name": "Montcalm",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3544102864": {
+        "name": "Orion '44",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3550360912": {
+        "name": "La Pampa",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3550393552": {
+        "name": "Incheon",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3550394160": {
+        "name": "Hildebrand",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3550394352": {
+        "name": "Salem",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3550426576": {
+        "name": "Sibir",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3551409968": {
+        "name": "ZF-6 Golden",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3551410160": {
+        "name": "Black",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3551442640": {
+        "name": "ARP Haguro",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3551474896": {
+        "name": "Taihang",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3551475440": {
+        "name": "Pilus Prior",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3552457936": {
+        "name": "Zhu Que",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3552491216": {
+        "name": "ARP Takao",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3552491472": {
+        "name": "Sinann",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3552523472": {
+        "name": "Xuan Wu",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3552523984": {
+        "name": "ARP Hiei",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3553539792": {
+        "name": "ARP Ashigara",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3553540048": {
+        "name": "Bóinn",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3553572560": {
+        "name": "ARP Haruna",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3553572848": {
+        "name": "California",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3554621136": {
+        "name": "ARP Kirishima",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3555636944": {
+        "name": "ARP Myōkō",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3555669712": {
+        "name": "ARP Kongō",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3555670000": {
+        "name": "Texas",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3560912592": {
+        "name": "ARP Yamato",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3655218480": {
+        "name": "Småland",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3655218960": {
+        "name": "Tromp",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3655219184": {
+        "name": "Forrest Sherman",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3655251408": {
+        "name": "Smolensk",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3655317296": {
+        "name": "Max Immelmann",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3656333264": {
+        "name": "Scarlet Thunder",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3658397424": {
+        "name": "Gorizia",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3659445712": {
+        "name": "Admiral Makarov",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3666786288": {
+        "name": "Alaska B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3666818864": {
+        "name": "Pommern B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3666818896": {
+        "name": "Jean Bart B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3666819056": {
+        "name": "Kearsarge B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667801296": {
+        "name": "Loyang B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667801808": {
+        "name": "Asashio B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667802064": {
+        "name": "Cossack B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667834576": {
+        "name": "Atago B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667834672": {
+        "name": "Mainz B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667867440": {
+        "name": "Tirpitz B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667867632": {
+        "name": "Massachusetts B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667899856": {
+        "name": "Chkalov B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667900112": {
+        "name": "Kaga B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667900208": {
+        "name": "Graf Zeppelin B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3667900400": {
+        "name": "Saipan B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3668850672": {
+        "name": "Sims B",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3668883440": {
+        "name": "Boise",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3668916016": {
+        "name": "Scharnhorst B",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3676223184": {
+        "name": "Yoshino B",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3676223216": {
+        "name": "Napoli B",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3679369200": {
+        "name": "Atlanta B",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3699291600": {
+        "name": "Lazo B",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3708761808": {
+        "name": "Iwami B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3709777360": {
+        "name": "Dmitry Pozharsky",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3719247568": {
+        "name": "Tsurugi",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3720263632": {
+        "name": "Nottingham",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3720263664": {
+        "name": "San Diego",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3720296272": {
+        "name": "Picardie",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3721344976": {
+        "name": "Renown '44",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3729732816": {
+        "name": "Louchuan",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3730748880": {
+        "name": "Pyotr Bagration",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3730749392": {
+        "name": "Hampshire",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3730749424": {
+        "name": "Rochester",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3730782000": {
+        "name": "Brandenburg B",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3730782032": {
+        "name": "Flandre",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3730782192": {
+        "name": "Constellation",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3730814960": {
+        "name": "Hornet",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3731830736": {
+        "name": "Collingwood",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3740153840": {
+        "name": "Black B",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3740185808": {
+        "name": "Mengchong",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3740218576": {
+        "name": "Sun Yat-Sen",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3740219088": {
+        "name": "Iwami",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741234640": {
+        "name": "Ochakov",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741234992": {
+        "name": "Schill",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741235152": {
+        "name": "Belfast '43",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741235184": {
+        "name": "Congress",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741267408": {
+        "name": "Borodino",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741267760": {
+        "name": "Anhalt",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741267792": {
+        "name": "Champagne",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741300688": {
+        "name": "Colossus",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3741300720": {
+        "name": "Saipan",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3742316496": {
+        "name": "Duke of York",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3742316528": {
+        "name": "West Virginia '44",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3743364816": {
+        "name": "Ise",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3743365072": {
+        "name": "Repulse",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3744380368": {
+        "name": "Kirov",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3749623504": {
+        "name": "Yoshino",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3750638896": {
+        "name": "Jäger",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750639408": {
+        "name": "Z-44",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750639600": {
+        "name": "Halford",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750672176": {
+        "name": "Ägir",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750672368": {
+        "name": "Tulsa",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750704848": {
+        "name": "Hizen",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750704880": {
+        "name": "Giuseppe Verdi",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750705136": {
+        "name": "Kearsarge",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751196368": {
+        "name": "I-56",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751687376": {
+        "name": "Fenyang",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751687888": {
+        "name": "Asashio",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751687984": {
+        "name": "Z-35",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751720400": {
+        "name": "Lazo",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751720752": {
+        "name": "Mainz",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751720912": {
+        "name": "Tiger '59",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751720944": {
+        "name": "Anchorage",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751753168": {
+        "name": "Lenin",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751753520": {
+        "name": "Brandenburg",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751753552": {
+        "name": "Jean Bart",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751753712": {
+        "name": "Massachusetts",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751786192": {
+        "name": "Kaga",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751786288": {
+        "name": "Graf Zeppelin",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751786448": {
+        "name": "Ark Royal",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751786480": {
+        "name": "Enterprise",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752736112": {
+        "name": "Huron",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752736208": {
+        "name": "Tashkent '39",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752736720": {
+        "name": "Cossack",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752769232": {
+        "name": "Maya",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752769264": {
+        "name": "Francesco Ferruccio",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752769328": {
+        "name": "Weimar",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752802000": {
+        "name": "Hyūga",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752802256": {
+        "name": "Nelson",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752802288": {
+        "name": "Florida",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3753785136": {
+        "name": "Karl von Schönberg",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3753817456": {
+        "name": "Mysore",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3753817904": {
+        "name": "Leipzig",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3753817936": {
+        "name": "Dupleix",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3753818064": {
+        "name": "London",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3753850320": {
+        "name": "Novorossiysk",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3754866128": {
+        "name": "Mikoyan",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3756963280": {
+        "name": "Varyag",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3759585072": {
+        "name": "U-4501",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3760076080": {
+        "name": "Friesland",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3760076208": {
+        "name": "Álvaro de Bazán",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3760076496": {
+        "name": "Hayate",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3760108912": {
+        "name": "Brisbane",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3760109264": {
+        "name": "Azuma",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3760109296": {
+        "name": "Napoli",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3760109552": {
+        "name": "Alaska",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3760142288": {
+        "name": "Thunderer",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3760175056": {
+        "name": "Malta",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3761124656": {
+        "name": "Velos",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761125136": {
+        "name": "Groningen",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761125360": {
+        "name": "Benham",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761157328": {
+        "name": "Dalian",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761157584": {
+        "name": "Kronshtadt",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761157968": {
+        "name": "Carnot",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761190192": {
+        "name": "Karl XIV Johan",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761190352": {
+        "name": "Navarin",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761190608": {
+        "name": "Musashi",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761190640": {
+        "name": "Marco Polo",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761190704": {
+        "name": "Pommern",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761190896": {
+        "name": "Missouri",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761681872": {
+        "name": "S-189",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3761682384": {
+        "name": "Alliance",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762173136": {
+        "name": "Loyang",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762173232": {
+        "name": "Orkan",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762173744": {
+        "name": "Z-39",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762173776": {
+        "name": "Le Terrible",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762173936": {
+        "name": "Kidd",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762205904": {
+        "name": "Irian",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762206032": {
+        "name": "Almirante Grau",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762206128": {
+        "name": "Numancia",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762206160": {
+        "name": "Mikhail Kutuzov",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762206512": {
+        "name": "Prinz Eugen",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762206544": {
+        "name": "Bayard",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762206672": {
+        "name": "Cheshire",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762206704": {
+        "name": "Wichita",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762238928": {
+        "name": "Poltava",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762239184": {
+        "name": "Kii",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762239216": {
+        "name": "Roma",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762239280": {
+        "name": "Odin",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762239312": {
+        "name": "Gascogne",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762239440": {
+        "name": "Vanguard",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762239472": {
+        "name": "Alabama",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762271696": {
+        "name": "Chkalov",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762271984": {
+        "name": "Aquila",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762272208": {
+        "name": "Indomitable",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763221872": {
+        "name": "Haida",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763221968": {
+        "name": "Leningrad",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763222224": {
+        "name": "Yūdachi",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763222256": {
+        "name": "FR25",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763254608": {
+        "name": "Nueve de Julio",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763254992": {
+        "name": "Tokachi",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763255024": {
+        "name": "Duca degli Abruzzi",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763255088": {
+        "name": "München",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763255120": {
+        "name": "Toulon",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763255248": {
+        "name": "Belfast",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763255280": {
+        "name": "Indianapolis",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763287408": {
+        "name": "Yukon",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763287760": {
+        "name": "Ashitaka",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763287856": {
+        "name": "Scharnhorst",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763287888": {
+        "name": "Strasbourg",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763288016": {
+        "name": "Hood",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3763288048": {
+        "name": "W. Virginia '41",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764270288": {
+        "name": "Anshan",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764270416": {
+        "name": "Juruá",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764270832": {
+        "name": "Leone",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764270896": {
+        "name": "T-61",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764270928": {
+        "name": "Aigle",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764271056": {
+        "name": "Gallant",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764271088": {
+        "name": "Monaghan",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303056": {
+        "name": "Huanghe",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303152": {
+        "name": "Elli",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303216": {
+        "name": "Perth",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303280": {
+        "name": "Canarias",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303312": {
+        "name": "Molotov",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303600": {
+        "name": "Duca d'Aosta",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303664": {
+        "name": "Admiral Graf Spee",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764303696": {
+        "name": "De Grasse",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764336336": {
+        "name": "Mutsu",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764336432": {
+        "name": "Prinz Eitel Friedrich",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764336464": {
+        "name": "Dunkerque",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764336624": {
+        "name": "Arizona",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764369200": {
+        "name": "Erich Loewenhardt",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3764369232": {
+        "name": "Béarn",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765319120": {
+        "name": "Okhotnik",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765319664": {
+        "name": "Hill",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765351888": {
+        "name": "Krasny Krym",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765352144": {
+        "name": "Yahagi",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765352176": {
+        "name": "Genova",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765352400": {
+        "name": "Exeter",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765384528": {
+        "name": "Rio de Janeiro",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765384656": {
+        "name": "Oktyabrskaya Revolutsiya",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765384944": {
+        "name": "Giulio Cesare",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3765385168": {
+        "name": "Agincourt",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3766368080": {
+        "name": "Siroco",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3766433072": {
+        "name": "Viribus Unitis",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3767416784": {
+        "name": "Campbeltown",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3767449040": {
+        "name": "Oleg",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3767449296": {
+        "name": "Katori",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3767449584": {
+        "name": "Charleston",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3767482160": {
+        "name": "König Albert",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3767482320": {
+        "name": "Dreadnought",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3768465392": {
+        "name": "Smith",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3768497488": {
+        "name": "Almirante Abreu",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3768497968": {
+        "name": "Emden",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3769513264": {
+        "name": "Błyskawica",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4074649424": {
+        "name": "Marceau",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "4076255024": {
+        "name": "U-190",
+        "tier": 8,
+        "is_premium": false,
+        "is_special": false
+    },
+    "4076255216": {
+        "name": "Salmon",
+        "tier": 8,
+        "is_premium": false,
+        "is_special": false
+    },
+    "4076745936": {
+        "name": "Siliwangi",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4078352176": {
+        "name": "U-69",
+        "tier": 6,
+        "is_premium": false,
+        "is_special": false
+    },
+    "4078352368": {
+        "name": "Cachalot",
+        "tier": 6,
+        "is_premium": false,
+        "is_special": false
+    },
+    "4179506640": {
+        "name": "Khabarovsk",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "4179539408": {
+        "name": "Moskva",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "4179572528": {
+        "name": "Grosser Kurfürst",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "4181636912": {
+        "name": "Admiral Hipper",
+        "tier": 8,
+        "is_premium": false,
+        "is_special": false
+    },
+    "4181669680": {
+        "name": "Bismarck",
+        "tier": 8,
+        "is_premium": false,
+        "is_special": false
+    },
+    "4247697392": {
+        "name": "Marblehead Lima",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4248745968": {
+        "name": "Marblehead",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4255037136": {
+        "name": "Atago",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4264441840": {
+        "name": "Sims",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4267587280": {
+        "name": "Kamikaze R",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4268635856": {
+        "name": "Kamikaze",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4273911760": {
+        "name": "Monmouth",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "4274959728": {
+        "name": "Encounter",
+        "tier": 9,
+        "is_premium": false,
+        "is_special": false
+    },
+    "4276008656": {
+        "name": "Tone",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4277024464": {
+        "name": "Fūjin",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4280170192": {
+        "name": "Tachibana Lima",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4284397008": {
+        "name": "Diana Lima",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4286527184": {
+        "name": "Ishizuchi",
+        "tier": 4,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4288591856": {
+        "name": "Atlanta",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4290688720": {
+        "name": "Yūbari",
+        "tier": 4,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4291737040": {
+        "name": "Murmansk",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4291737584": {
+        "name": "Albany",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4292785616": {
+        "name": "Diana",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4292818736": {
+        "name": "Tirpitz",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4292818896": {
+        "name": "Warspite",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4293801424": {
+        "name": "Gremyashchy",
+        "tier": 5,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4293801680": {
+        "name": "Tachibana",
+        "tier": 2,
+        "is_premium": true,
+        "is_special": false
+    },
+    "4293834192": {
+        "name": "Aurora",
+        "tier": 3,
+        "is_premium": true,
+        "is_special": false
+    }
+}

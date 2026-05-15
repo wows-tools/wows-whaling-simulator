@@ -20,6 +20,7 @@ func main() {
 	lootboxType := flag.String("lootbox", "", "Lootbox type")
 	statsMode := flag.Bool("stats", false, "Enable stats mode (stats on 1000 runs)")
 	rawDir := flag.String("raw-dir", "", "Load lootboxes directly from a raw WG vortex JSON directory (bypasses rates/)")
+	shipsFile := flag.String("ships-file", "", "Path to ships.json for offline ship name resolution (supplements WG API)")
 	flag.Parse()
 
 	if len(*target) != 0 && *num != 0 {
@@ -51,6 +52,11 @@ func main() {
 	if len(*nick) != 0 {
 		api_key := os.Getenv("WOWS_WOWSAPIKEY")
 		wowsApi := wows.NewWowsAPI(api_key)
+		if *shipsFile != "" {
+			if err := wowsApi.LoadShipMappingFromFile(*shipsFile); err != nil {
+				log.Printf("Warning: could not load ships file: %v", err)
+			}
+		}
 		realm, err := wows.WowsRealm(*realmStr)
 		if err != nil {
 			log.Fatal("Error Getting the realm %s\n", err.Error())
