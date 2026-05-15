@@ -1,0 +1,135 @@
+{
+    "name": "Always Courageous Premium container",
+    "img": "/resources/PCL115_USA_BB0910_Coll_Prem_f3a00dc5ed6e835b8aea5540894161b645f53aa2b4b586bde3172b3aa2d6e127.png",
+    "id": "always_courageous_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 25,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10,
+                        "name": "camoboost",
+                        "id": "4281331632",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 10,
+                        "name": "camoboost",
+                        "id": "4270845872",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 10,
+                        "name": "camoboost",
+                        "id": "4260360112",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 10,
+                        "name": "camoboost",
+                        "id": "4249874352",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Coal": {
+                "name": "Coal",
+                "id": "coal",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3400,
+                        "name": "Coal",
+                        "id": "coal",
+                        "attributes": {
+                            "resource_id": "coal",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Elite Commander XP": {
+                "name": "Elite Commander XP",
+                "id": "elite_commander_xp",
+                "drop_rate": 45,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 25000,
+                        "name": "Elite Commander XP",
+                        "id": "elite_commander_xp",
+                        "attributes": {
+                            "resource_id": "elite_commander_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 45,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8500,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4269775792",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

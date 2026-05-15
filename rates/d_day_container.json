@@ -1,0 +1,233 @@
+{
+    "name": "D-Day container",
+    "img": "/resources/PCL198_D_Day_Free_92c77ec896c5946a4ec04323582a23c2a7fe85377a17dfe337bfb5636ff27351.png",
+    "id": "d_day_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 7.8,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1900,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Tier VII–VIII ship": {
+                "name": "Tier VII–VIII ship",
+                "id": "tier_viiviiiship",
+                "drop_rate": 0.3,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "Tier VI–VII ship"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3741235152",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1900,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3543020848",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1900,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3752802256",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1900,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "Tier VI–VII ship": {
+                "name": "Tier VI–VII ship",
+                "id": "tier_viviiship",
+                "drop_rate": 0.1,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "Tier VII–VIII ship"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3543087056",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1900,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3544102736",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1900,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3544102864",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1900,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 21,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            },
+            "style": {
+                "name": "style",
+                "id": "style",
+                "drop_rate": 3.9,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4218023856",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4203343792",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 500,
+    "price": 250
+}

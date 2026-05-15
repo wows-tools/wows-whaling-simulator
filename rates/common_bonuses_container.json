@@ -1,0 +1,56 @@
+{
+    "name": "Common Bonuses container",
+    "img": "/resources/PCL153_gift_tier_One_54d326987ced14e0f05dc9b8b7f9778f78bf1c48273284c6a0270d45bcc24b73.png",
+    "id": "common_bonuses_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 25,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4283428784",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4272943024",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4262457264",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4251971504",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

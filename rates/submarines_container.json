@@ -1,0 +1,129 @@
+{
+    "name": "Submarines container",
+    "img": "/resources/PCL149_Subs_EA_d54a39187d0ab824bf6e8c8a54cc1d0bb41f180a1a0bab1a5b47815608c9de54.png",
+    "id": "submarines_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 79,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 70000,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Tier VI ship": {
+                "name": "Tier VI ship",
+                "id": "tier_vi_ship",
+                "drop_rate": 14,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "Tier VIII ship"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_4078352176",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 70000,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4078352368",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 70000,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "Tier VIII ship": {
+                "name": "Tier VIII ship",
+                "id": "tier_viii_ship",
+                "drop_rate": 7,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "Tier VI ship"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_4076255024",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 70000,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4076255216",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 70000,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

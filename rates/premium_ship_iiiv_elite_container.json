@@ -1,0 +1,313 @@
+{
+    "name": "Premium Ship II–IV Elite container",
+    "img": "/resources/PCL130_EPICprem2_4_16e84bcbd5feb51abb018f88bd90d23a13b9ed290c90092d55ee7982ff389f8f.png",
+    "id": "premium_ship_iiiv_elite_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Tier II–IV Premium ship": {
+                "name": "Tier II–IV Premium ship",
+                "id": "tier_iiivpremium_ship",
+                "drop_rate": 100,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3768497968",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4290688720",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4293801680",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4280170192",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3767449296",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4286527184",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4292785616",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4284397008",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3767449040",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3756963280",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4293834192",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3767449584",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4291737584",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3768465392",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3767482320",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3767416784",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3768497488",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 2000,
+                            "name": "gold",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

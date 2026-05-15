@@ -1,0 +1,172 @@
+{
+    "name": "German Supplies container",
+    "img": "/resources/PCL103_GArc096_Free_old_102e6654bcafbe66b1f4882ab88ac0e6f243d16a10f150d878da8c53375fa557.png",
+    "id": "german_supplies_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 2,
+                        "name": "Camouflages",
+                        "id": "4195282864",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Coal": {
+                "name": "Coal",
+                "id": "coal",
+                "drop_rate": 7,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1000,
+                        "name": "Coal",
+                        "id": "coal",
+                        "attributes": {
+                            "resource_id": "coal",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 7,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3000,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Signals": {
+                "name": "Signals",
+                "id": "signals",
+                "drop_rate": 9,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 15,
+                        "name": "Signals",
+                        "id": "4286410672",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 15,
+                        "name": "Signals",
+                        "id": "4263342000",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 15,
+                        "name": "Signals",
+                        "id": "4280119216",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 15,
+                        "name": "Signals",
+                        "id": "4278022064",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            },
+            "wows_premium": {
+                "name": "wows_premium",
+                "id": "wows_premium",
+                "drop_rate": 5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "wows_premium",
+                        "id": "wows_premium",
+                        "attributes": {
+                            "type": "wows_premium"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

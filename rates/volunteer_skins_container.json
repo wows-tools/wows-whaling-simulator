@@ -1,0 +1,13 @@
+{
+    "name": "Volunteer Skins container",
+    "img": "/resources/PCL003_STbox_Prem_41d353177cbeeee0e4fb41dcf937af5ba50b1adefc33afad0a616ac0ea6ca371.png",
+    "id": "volunteer_skins_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {}
+    ],
+    "pity": 0,
+    "price": 250
+}

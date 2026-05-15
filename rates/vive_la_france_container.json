@@ -1,0 +1,115 @@
+{
+    "name": "\"Vive la France\" container",
+    "img": "/resources/PCL023_VivaLaFr_Coll_Free_c305db779d926b2b1ca75b6f8b4acc6b1a15ca25572fea4c4b42273307805a21.png",
+    "id": "vive_la_france_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4286553008",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 20,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1500,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 20,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4283428784",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4272943024",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4262457264",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4251971504",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4286553008",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

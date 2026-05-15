@@ -1,0 +1,13 @@
+{
+    "name": "Flags Premium container",
+    "img": "/resources/PCL169_FlagBox_Prem_0bc515c1f16ca0a25eef7d49643829b8a8c13224251ce96b5f7b609ef5999ef0.png",
+    "id": "flags_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {}
+    ],
+    "pity": 0,
+    "price": 250
+}

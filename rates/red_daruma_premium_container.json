@@ -1,0 +1,186 @@
+{
+    "name": "Red Daruma Premium container",
+    "img": "/resources/PCL243_Daruma_Red_Prem_6d69ae42486f99125fa43796e910e3b7a0177950d2df8ab8289856a6aeb6ac09.png",
+    "id": "red_daruma_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Tier VI–VII Premium ship": {
+                "name": "Tier VI–VII Premium ship",
+                "id": "tier_vivii_premium_ship",
+                "drop_rate": 2,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3764336336",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "lootbox",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3743364816",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "lootbox",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3752769232",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "lootbox",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3752802000",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "lootbox",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 20,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 12,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 12,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 12,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 12,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            },
+            "lootbox": {
+                "name": "lootbox",
+                "id": "lootbox",
+                "drop_rate": 15,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "lootbox",
+                        "id": "4038251440",
+                        "attributes": {
+                            "type": "lootbox"
+                        }
+                    }
+                ]
+            },
+            "style": {
+                "name": "style",
+                "id": "style",
+                "drop_rate": 1,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4162449328",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4228509616",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4190760880",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 70,
+    "price": 250
+}

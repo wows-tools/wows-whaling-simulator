@@ -1,0 +1,128 @@
+{
+    "name": "\"Go Navy!\" Premium container",
+    "img": "/resources/PCL033_RvR_GoNavy_Prem_old_59a409e9fbf1f9be8cb9ef84d89866a618fd280d495e730eb98f46ae75008129.png",
+    "id": "go_navy_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 2.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4260360112",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4281331632",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4270845872",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4249874352",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 28,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 28,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 28,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 28,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10,
+                        "name": "Camouflages",
+                        "id": "4233031600",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10,
+                        "name": "Camouflages",
+                        "id": "4231983024",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

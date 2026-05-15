@@ -1,0 +1,72 @@
+{
+    "name": "High School Fleet container",
+    "img": "/resources/PCL022_HSF18_Coll_17feb766a0b1f1516a9611a632570c70640b5ea5835f501775ae8ee4904b79fa.png",
+    "id": "high_school_fleet_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4287601584",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "camoboost",
+                        "id": "4262457264",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4287601584",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

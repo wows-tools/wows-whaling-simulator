@@ -1,0 +1,643 @@
+{
+    "name": "Distant Voyages Premium container",
+    "img": "/resources/PCL212_SkinContainer_V2_Prem_4f281126b8cc286c27f4875d424554fb0a14546b23212695c6474a549629d69b.png",
+    "id": "distant_voyages_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 2.512,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1125000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "style": {
+                "name": "style",
+                "id": "style",
+                "drop_rate": 0.676,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4258918320",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4247383984",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4243189680",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4242141104",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4240043952",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4237946800",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4236898224",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4234801072",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4231655344",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4229558192",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4227461040",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4220121008",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4218023856",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4216975280",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4215926704",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4214878128",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4213829552",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4212780976",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4207538096",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4206489520",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4205440944",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4204392368",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4203343792",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4201246640",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4199149488",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4198100912",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4197052336",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4194955184",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4193906608",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4189712304",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4176080816",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4172935088",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4171886512",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4168740784",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4164546480",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4163497904",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4162449328",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4161400752",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4157206448",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4155109296",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4154060720",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4150914992",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4144623536",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4141477808",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4139380656",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4137283504",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4130992048",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4102680496",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4110020528",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4108971952",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4101631920",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4100583344",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4261015472",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4259966896",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4254724016",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4253675440",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4252626864",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4251578288",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4248432560",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4246335408",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4245286832",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4244238256",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4241092528",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4233752496",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4230606768",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4225363888",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4224315312",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4223266736",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4222218160",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4221169584",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4202295216",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4192858032",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4191809456",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4158255024",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4129943472",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 8,
+    "price": 250
+}

@@ -1,0 +1,330 @@
+{
+    "name": "Premium Ship V container",
+    "img": "/resources/PCL068_EPICstd5_af1dfed5e08abf86825ff457b64bc68150e2b55e2bdd1b3f352c9b280a8d00c2.png",
+    "id": "premium_ship_v_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Tier V Premium ship": {
+                "name": "Tier V Premium ship",
+                "id": "tier_v_premium_ship",
+                "drop_rate": 100,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765352400",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3555670000",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4248745968",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4247697392",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765384656",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4291737040",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765351888",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765319120",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765352176",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765352144",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765319664",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3766368080",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3766433072",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3754866128",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3744380368",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765385168",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765384528",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 6000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

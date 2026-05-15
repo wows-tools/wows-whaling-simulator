@@ -1,0 +1,297 @@
+{
+    "name": "Wings of Freedom container",
+    "img": "/resources/PCL219_US_v2_free_b5476fa215a134fa3c9a14accb491b69102ae54a5ba03ac8ad61078f5656fef4.png",
+    "id": "wings_of_freedom_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 24.4,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Tier VIII–IX Premium ship": {
+                "name": "Tier VIII–IX Premium ship",
+                "id": "tier_viiiix_premium_ship",
+                "drop_rate": 0.1,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "Tier VII–VIII Premium ship"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3750672368",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3750639600",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3751786480",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3530504176",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "Tier VII–VIII Premium ship": {
+                "name": "Tier VII–VIII Premium ship",
+                "id": "tier_viiviii_premium_ship",
+                "drop_rate": 0.5,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "Tier VIII–IX Premium ship"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3730814960",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3752802288",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3730782192",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3668883440",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3762239472",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3741300720",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 17.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            },
+            "style": {
+                "name": "style",
+                "id": "style",
+                "drop_rate": 5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4207538096",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 400,
+    "price": 250
+}

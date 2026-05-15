@@ -1,0 +1,134 @@
+{
+    "name": "Cybertronian container",
+    "img": "/resources/PCL108_TF098_Free_d69fd3f748cc94e5aa925110c813d46ca63a0a48f4a96403af027ba4bfef4d1f.png",
+    "id": "cybertronian_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Camouflages",
+                        "id": "4193185712",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Elite Commander XP": {
+                "name": "Elite Commander XP",
+                "id": "elite_commander_xp",
+                "drop_rate": 19.4,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 4500,
+                        "name": "Elite Commander XP",
+                        "id": "elite_commander_xp",
+                        "attributes": {
+                            "resource_id": "elite_commander_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 17,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1500,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 14,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "camoboost",
+                        "id": "4281331632",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "camoboost",
+                        "id": "4270845872",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "camoboost",
+                        "id": "4260360112",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "camoboost",
+                        "id": "4249874352",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Camouflages",
+                        "id": "4192137136",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 1250,
+    "price": 250
+}

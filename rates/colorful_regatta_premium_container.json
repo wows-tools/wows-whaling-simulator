@@ -1,0 +1,239 @@
+{
+    "name": "Colorful Regatta Premium container",
+    "img": "/resources/PCL165_ColorfulEvent_Prem_184cfcb7c1cd85a82ca5beb242f94961f9bf6d4586abeab2022733b6ddca5b16.png",
+    "id": "colorful_regatta_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 0.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 15000000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    },
+                    {
+                        "quantity": 1500000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    },
+                    {
+                        "quantity": 750000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Coal": {
+                "name": "Coal",
+                "id": "coal",
+                "drop_rate": 24.925,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5000,
+                        "name": "Coal",
+                        "id": "coal",
+                        "attributes": {
+                            "resource_id": "coal",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 24.925,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 750000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Elite Commander XP": {
+                "name": "Elite Commander XP",
+                "id": "elite_commander_xp",
+                "drop_rate": 24.925,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 37500,
+                        "name": "Elite Commander XP",
+                        "id": "elite_commander_xp",
+                        "attributes": {
+                            "resource_id": "elite_commander_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 24.925,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 12500,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "gold": {
+                "name": "gold",
+                "id": "gold",
+                "drop_rate": 0.3,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 15000,
+                        "name": "gold",
+                        "id": "gold",
+                        "attributes": {
+                            "type": "gold"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Signals": {
+                "name": "Signals",
+                "id": "signals",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4287459248",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4286410672",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4263342000",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4280119216",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4289556400",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4278022064",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4276973488",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4275924912",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4265439152",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4264390576",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

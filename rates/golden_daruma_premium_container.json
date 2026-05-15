@@ -1,0 +1,132 @@
+{
+    "name": "Golden Daruma Premium container",
+    "img": "/resources/PCL245_Daruma_Gold_Prem_c684bf94259c493aede33b2dacf5459841d91b71e890a6c7689307759ac49dc0.png",
+    "id": "golden_daruma_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Suzuya Golden": {
+                "name": "Suzuya Golden",
+                "id": "suzuya_golden",
+                "drop_rate": 9,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "ZF-6 Golden"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3509499600",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "shipdestruction",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "ZF-6 Golden": {
+                "name": "ZF-6 Golden",
+                "id": "zf_6_golden",
+                "drop_rate": 1,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": [
+                    "Suzuya Golden"
+                ],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3551409968",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "shipdestruction",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 16.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 4,
+                        "name": "camoboost",
+                        "id": "4280283056",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 4,
+                        "name": "camoboost",
+                        "id": "4269797296",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 4,
+                        "name": "camoboost",
+                        "id": "4259311536",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 4,
+                        "name": "camoboost",
+                        "id": "4248825776",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            },
+            "shipdestruction": {
+                "name": "shipdestruction",
+                "id": "shipdestruction",
+                "drop_rate": 24,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "shipdestruction",
+                        "id": "4286476208",
+                        "attributes": {
+                            "type": "shipdestruction"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 20,
+    "price": 250
+}

@@ -1,0 +1,114 @@
+{
+    "name": "\"Azur Lane: Battle Maidens of the Sea\" Premium container",
+    "img": "/resources/PCL175_AzurLane_126_Prem_b08ebc6f45db1df8942b1d4f6e99ca07d0116d7f69d38a9aa6452188c0e7c336.png",
+    "id": "azur_lane_battle_maidens_of_the_sea_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Camouflages",
+                        "id": "4235128752",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 8,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 12,
+                        "name": "Camouflages",
+                        "id": "4235128752",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 15,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4281331632",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4270845872",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4260360112",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4249874352",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Camouflages",
+                        "id": "4235128752",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 7,
+    "price": 250
+}

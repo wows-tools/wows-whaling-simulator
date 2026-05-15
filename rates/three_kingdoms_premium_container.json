@@ -1,0 +1,218 @@
+{
+    "name": "Three Kingdoms Premium container",
+    "img": "/resources/PCL210_Three_Kingdoms_Prem_f9635dc289beaf4415441b00e490defb659fd4487a025c61960f107a1bda3307.png",
+    "id": "three_kingdoms_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 25,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Tier VIII–IX ship": {
+                "name": "Tier VIII–IX ship",
+                "id": "tier_viiiixship",
+                "drop_rate": 3.88,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3740185808",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 60000,
+                            "name": "Elite Commander XP",
+                            "id": "elite_commander_xp",
+                            "attributes": {
+                                "resource_id": "elite_commander_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3729732816",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 60000,
+                            "name": "Elite Commander XP",
+                            "id": "elite_commander_xp",
+                            "attributes": {
+                                "resource_id": "elite_commander_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3552457936",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 60000,
+                            "name": "Elite Commander XP",
+                            "id": "elite_commander_xp",
+                            "attributes": {
+                                "resource_id": "elite_commander_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3552523472",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 60000,
+                            "name": "Elite Commander XP",
+                            "id": "elite_commander_xp",
+                            "attributes": {
+                                "resource_id": "elite_commander_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "style": {
+                "name": "style",
+                "id": "style",
+                "drop_rate": 27,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4216975280",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4215926704",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4214878128",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 25,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 38,
+    "price": 250
+}

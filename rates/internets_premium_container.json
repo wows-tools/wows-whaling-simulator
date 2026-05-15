@@ -1,0 +1,75 @@
+{
+    "name": "Internets Premium container",
+    "img": "/resources/PCL192_Influencers_takeover_370f35d3d905fb9f684e1e77455d2a1d3447fbee5f6d81c4b4bca9b7a045e4e8.png",
+    "id": "internets_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 30,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1000000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 12.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4282380208",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4271894448",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4261408688",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 11,
+                        "name": "camoboost",
+                        "id": "4250922928",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 25,
+    "price": 250
+}

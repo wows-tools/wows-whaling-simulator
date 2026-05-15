@@ -1,0 +1,32 @@
+{
+    "name": "Battle of Paso de Patria container",
+    "img": "/resources/PCL230_PAMBB_Collection_Free_e5c1d331f0d6320063a3b81f9ad0a935d3259d4f72e1517e98c8fc98a883b96e.png",
+    "id": "battle_of_paso_de_patria_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4258241456",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

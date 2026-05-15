@@ -1,0 +1,96 @@
+{
+    "name": "Yamamoto Isoroku Premium container",
+    "img": "/resources/PCL014_Yamamoto_Coll_Prem_437da5acfee7053c901e133753a14f618dcdbe9ca6fb68e2e3ac2ae45ce246c0.png",
+    "id": "yamamoto_isoroku_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4290747312",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "collection_album": {
+                "name": "collection_album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "collection_album",
+                        "id": "4290747312",
+                        "attributes": {
+                            "type": "collection_album"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 25,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4281331632",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4270845872",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4260360112",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 8,
+                        "name": "camoboost",
+                        "id": "4249874352",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}

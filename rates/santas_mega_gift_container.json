@@ -1,8 +1,8 @@
 {
-    "name": "Santa's Gift container",
-    "img": "/resources/PCL265_SantaGift_Prem_f92d4b7cdb93af840e71c7eb07bde33412fc9c2c1acf4ab7effbb5eff02cf7b5.png",
-    "id": "santas_gift_container",
-    "weight": 1100,
+    "name": "Santa's Mega Gift container",
+    "img": "/resources/PCL236_SantaBig_Prem_1b9d17991e5737e2c788de7990b0e2a57c2aec15baeb385ee207381169e2b379.png",
+    "id": "santas_mega_gift_container",
+    "weight": 40,
     "exchange_rate_euro": 303.96,
     "exchange_rate_dollar": 289.31,
     "drops": [
@@ -10,13 +10,13 @@
             "Coal": {
                 "name": "Coal",
                 "id": "coal",
-                "drop_rate": 7,
+                "drop_rate": 8,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 2500,
+                        "quantity": 12500,
                         "name": "Coal",
                         "id": "coal",
                         "attributes": {
@@ -35,7 +35,7 @@
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 400000,
+                        "quantity": 2250000,
                         "name": "Credits",
                         "id": "credits",
                         "attributes": {
@@ -54,7 +54,7 @@
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 20000,
+                        "quantity": 100000,
                         "name": "Elite Commander XP",
                         "id": "elite_commander_xp",
                         "attributes": {
@@ -64,315 +64,23 @@
                     }
                 ]
             },
-            "Signals": {
-                "name": "Signals",
-                "id": "signals",
-                "drop_rate": 4,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 25,
-                        "name": "Signals",
-                        "id": "4287459248",
-                        "attributes": {
-                            "type": "signal"
-                        }
-                    },
-                    {
-                        "quantity": 25,
-                        "name": "Signals",
-                        "id": "4289556400",
-                        "attributes": {
-                            "type": "signal"
-                        }
-                    },
-                    {
-                        "quantity": 25,
-                        "name": "Signals",
-                        "id": "4276973488",
-                        "attributes": {
-                            "type": "signal"
-                        }
-                    },
-                    {
-                        "quantity": 25,
-                        "name": "Signals",
-                        "id": "4275924912",
-                        "attributes": {
-                            "type": "signal"
-                        }
-                    },
-                    {
-                        "quantity": 25,
-                        "name": "Signals",
-                        "id": "4265439152",
-                        "attributes": {
-                            "type": "signal"
-                        }
-                    },
-                    {
-                        "quantity": 25,
-                        "name": "Signals",
-                        "id": "4264390576",
-                        "attributes": {
-                            "type": "signal"
-                        }
-                    }
-                ]
-            },
-            "Tier VIII–IX ship": {
-                "name": "Tier VIII–IX ship",
-                "id": "tier_viiiix_ship",
-                "drop_rate": 0.4,
+            "Tier VIII–IX Premium ship": {
+                "name": "Tier VIII–IX Premium ship",
+                "id": "tier_viiiix_premium_ship",
+                "drop_rate": 3,
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier V–X ship",
-                    "Tier V–VIII ship"
+                    "Tier X ship or a rare ship",
+                    "Tier V–VIII Premium ship"
                 ],
                 "items": [
-                    {
-                        "quantity": 1,
-                        "name": "ship_3540956624",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3519985360",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3540957168",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3531519792",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3719247568",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3540989360",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3762206672",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3741234992",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3656333264",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3762206032",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3540956912",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3541972944",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3541972432",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
                     {
                         "quantity": 1,
                         "name": "ship_3540924112",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -390,7 +98,7 @@
                         "name": "ship_4292818736",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -408,7 +116,25 @@
                         "name": "ship_3761190352",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3531519792",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -426,7 +152,43 @@
                         "name": "ship_3762173936",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3719247568",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4255037136",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -444,7 +206,7 @@
                         "name": "ship_3540956368",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -462,7 +224,7 @@
                         "name": "ship_3730814960",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -480,7 +242,7 @@
                         "name": "ship_3762272208",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -498,7 +260,7 @@
                         "name": "ship_3750638896",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -516,7 +278,7 @@
                         "name": "ship_3762271696",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -534,7 +296,25 @@
                         "name": "ship_3751196368",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3540989360",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -552,7 +332,7 @@
                         "name": "ship_3762206704",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -570,7 +350,25 @@
                         "name": "ship_3750639408",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3730749424",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -588,7 +386,7 @@
                         "name": "ship_3762173232",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -606,7 +404,25 @@
                         "name": "ship_3741267408",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3762206672",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -624,7 +440,7 @@
                         "name": "ship_3730782032",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -642,7 +458,7 @@
                         "name": "ship_4076745936",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -660,7 +476,7 @@
                         "name": "ship_3730782192",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -678,7 +494,7 @@
                         "name": "ship_3741234640",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -696,7 +512,7 @@
                         "name": "ship_3741235184",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -714,7 +530,7 @@
                         "name": "ship_3750704880",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -732,7 +548,7 @@
                         "name": "ship_3730748880",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -750,7 +566,7 @@
                         "name": "ship_3761157968",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -768,7 +584,7 @@
                         "name": "ship_3761681872",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -786,7 +602,7 @@
                         "name": "ship_3741267760",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -804,7 +620,25 @@
                         "name": "ship_3761157328",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3741234992",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -822,7 +656,7 @@
                         "name": "ship_4276008656",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -840,7 +674,7 @@
                         "name": "ship_3730749392",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -858,7 +692,7 @@
                         "name": "ship_3762271984",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -876,7 +710,7 @@
                         "name": "ship_3751687984",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -894,7 +728,7 @@
                         "name": "ship_3751687376",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -912,7 +746,7 @@
                         "name": "ship_3740218576",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -930,7 +764,7 @@
                         "name": "ship_3751720912",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -948,7 +782,7 @@
                         "name": "ship_3750672368",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -966,7 +800,43 @@
                         "name": "ship_3750639600",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3656333264",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3762206032",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -984,7 +854,7 @@
                         "name": "ship_3761682384",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1002,7 +872,7 @@
                         "name": "ship_3762206128",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1020,7 +890,7 @@
                         "name": "ship_3761190192",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1038,7 +908,7 @@
                         "name": "ship_3761124656",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1056,7 +926,7 @@
                         "name": "ship_3720263632",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1074,7 +944,7 @@
                         "name": "ship_3750672176",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1089,239 +959,23 @@
                     }
                 ]
             },
-            "Tier V–VIII ship": {
-                "name": "Tier V–VIII ship",
-                "id": "tier_vviii_ship",
-                "drop_rate": 2,
+            "Tier V–VIII Premium ship": {
+                "name": "Tier V–VIII Premium ship",
+                "id": "tier_vviii_premium_ship",
+                "drop_rate": 12,
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier VIII–IX ship",
-                    "Tier V–X ship"
+                    "Tier X ship or a rare ship",
+                    "Tier VIII–IX Premium ship"
                 ],
                 "items": [
-                    {
-                        "quantity": 1,
-                        "name": "ship_3544102864",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3543087056",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3542071248",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3763254992",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3764303152",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3752769264",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3762238928",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3658397424",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3544102736",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3659445712",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3522115536",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3543086544",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
                     {
                         "quantity": 1,
                         "name": "ship_3743364816",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1339,7 +993,7 @@
                         "name": "ship_3752736208",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1357,7 +1011,7 @@
                         "name": "ship_3752769328",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1375,7 +1029,7 @@
                         "name": "ship_3765319664",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1393,7 +1047,7 @@
                         "name": "ship_3553572848",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1411,7 +1065,7 @@
                         "name": "ship_3765384528",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1429,7 +1083,7 @@
                         "name": "ship_3543021520",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1447,7 +1101,61 @@
                         "name": "ship_3720296272",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3544102864",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3543087056",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3542071248",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1465,7 +1173,7 @@
                         "name": "ship_3543577808",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1483,7 +1191,43 @@
                         "name": "ship_3752802000",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3763222224",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3763254992",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1501,7 +1245,7 @@
                         "name": "ship_3752769232",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1519,7 +1263,7 @@
                         "name": "ship_3764369232",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1537,7 +1281,43 @@
                         "name": "ship_3752802288",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3752736112",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3764303152",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1555,7 +1335,7 @@
                         "name": "ship_3765352400",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1573,7 +1353,25 @@
                         "name": "ship_3763255088",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3752769264",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1591,7 +1389,7 @@
                         "name": "ship_3763254608",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1609,7 +1407,7 @@
                         "name": "ship_3764271088",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1627,7 +1425,7 @@
                         "name": "ship_3668883440",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1645,7 +1443,25 @@
                         "name": "ship_3763255024",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765385168",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1663,7 +1479,7 @@
                         "name": "ship_3764303696",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1681,7 +1497,25 @@
                         "name": "ship_3763287760",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3766368080",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1699,7 +1533,25 @@
                         "name": "ship_3763222256",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3762238928",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1717,7 +1569,7 @@
                         "name": "ship_3763288016",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1735,7 +1587,79 @@
                         "name": "ship_3764270416",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3754866128",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3658397424",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3544102736",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3764336464",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1753,7 +1677,7 @@
                         "name": "ship_3764336336",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1771,7 +1695,7 @@
                         "name": "ship_3753818064",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1789,7 +1713,7 @@
                         "name": "ship_3763287888",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1807,7 +1731,43 @@
                         "name": "ship_3763287408",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3753785136",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3659445712",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1825,7 +1785,7 @@
                         "name": "ship_3763221968",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1843,7 +1803,25 @@
                         "name": "ship_3753817456",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3764303216",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1861,7 +1839,7 @@
                         "name": "ship_3763287856",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1879,7 +1857,25 @@
                         "name": "ship_3763255120",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3753817904",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1897,7 +1893,7 @@
                         "name": "ship_3731830736",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1915,7 +1911,7 @@
                         "name": "ship_3765351888",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1933,7 +1929,7 @@
                         "name": "ship_3764271056",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1951,7 +1947,43 @@
                         "name": "ship_3765319120",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3742316528",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3764303312",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -1966,131 +1998,23 @@
                     }
                 ]
             },
-            "Tier V–X ship": {
-                "name": "Tier V–X ship",
-                "id": "tier_vx_ship",
-                "drop_rate": 0.1,
+            "Tier X ship or a rare ship": {
+                "name": "Tier X ship or a rare ship",
+                "id": "tier_x_ship_or_a_rare_ship",
+                "drop_rate": 1,
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier VIII–IX ship",
-                    "Tier V–VIII ship"
+                    "Tier V–VIII Premium ship",
+                    "Tier VIII–IX Premium ship"
                 ],
                 "items": [
-                    {
-                        "quantity": 1,
-                        "name": "ship_3550360912",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3550393552",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_4273911760",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3550426576",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3550394160",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3551474896",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
                     {
                         "quantity": 1,
                         "name": "ship_3539941360",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2105,352 +2029,10 @@
                     },
                     {
                         "quantity": 1,
-                        "name": "ship_3445536720",
+                        "name": "ship_3760175056",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3760142288",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3655251408",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3760076208",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3751753168",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3751720944",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3762239280",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3750704848",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3765384944",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3763255248",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3761125360",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_4268635856",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_4267587280",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_4277024464",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_4293801424",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3751786480",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3761190896",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3761157584",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3761190608",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
-                            "name": "Steel",
-                            "id": "steel",
-                            "attributes": {
-                                "resource_id": "steel",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "false",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "ship_3655218480",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2468,7 +2050,7 @@
                         "name": "ship_3540924400",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2486,7 +2068,43 @@
                         "name": "ship_3530504176",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3445536720",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3760108912",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2504,7 +2122,43 @@
                         "name": "ship_3764303664",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3760142288",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3655218960",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2522,7 +2176,7 @@
                         "name": "ship_3751753712",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2540,7 +2194,61 @@
                         "name": "ship_3751753552",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3655251408",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3760076208",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3751753168",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2558,7 +2266,7 @@
                         "name": "ship_3764270896",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2576,7 +2284,7 @@
                         "name": "ship_3751687888",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2594,7 +2302,7 @@
                         "name": "ship_3762173744",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2612,7 +2320,43 @@
                         "name": "ship_3763221872",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3751720944",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3762239280",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2630,7 +2374,25 @@
                         "name": "ship_3764369200",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3750704848",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2648,7 +2410,43 @@
                         "name": "ship_3762206160",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765384944",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3763255248",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2666,7 +2464,187 @@
                         "name": "ship_3741300688",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3761125360",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4268635856",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4267587280",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4277024464",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_4293801424",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3751786480",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3761190896",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3761157584",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3761190608",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
+                            "name": "Steel",
+                            "id": "steel",
+                            "attributes": {
+                                "resource_id": "steel",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3655218480",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2684,7 +2662,7 @@
                         "name": "ship_3760109552",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2702,7 +2680,7 @@
                         "name": "ship_3760076080",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2720,7 +2698,7 @@
                         "name": "ship_3752802256",
                         "id": "undefined",
                         "compensation": {
-                            "quantity": 250,
+                            "quantity": 1250,
                             "name": "Steel",
                             "id": "steel",
                             "attributes": {
@@ -2738,13 +2716,45 @@
             "camoboost": {
                 "name": "camoboost",
                 "id": "camoboost",
-                "drop_rate": 2.5,
+                "drop_rate": 2,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 3,
+                        "quantity": 7,
+                        "name": "camoboost",
+                        "id": "4280283056",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 7,
+                        "name": "camoboost",
+                        "id": "4269797296",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 7,
+                        "name": "camoboost",
+                        "id": "4259311536",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 7,
+                        "name": "camoboost",
+                        "id": "4248825776",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 20,
                         "name": "camoboost",
                         "id": "4281331632",
                         "attributes": {
@@ -2752,7 +2762,7 @@
                         }
                     },
                     {
-                        "quantity": 3,
+                        "quantity": 20,
                         "name": "camoboost",
                         "id": "4270845872",
                         "attributes": {
@@ -2760,7 +2770,7 @@
                         }
                     },
                     {
-                        "quantity": 3,
+                        "quantity": 20,
                         "name": "camoboost",
                         "id": "4260360112",
                         "attributes": {
@@ -2768,41 +2778,9 @@
                         }
                     },
                     {
-                        "quantity": 3,
+                        "quantity": 20,
                         "name": "camoboost",
                         "id": "4249874352",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4282380208",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4271894448",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4261408688",
-                        "attributes": {
-                            "type": "camoboost"
-                        }
-                    },
-                    {
-                        "quantity": 12,
-                        "name": "camoboost",
-                        "id": "4250922928",
                         "attributes": {
                             "type": "camoboost"
                         }
@@ -2818,7 +2796,7 @@
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 500,
+                        "quantity": 2500,
                         "name": "gold",
                         "id": "gold",
                         "attributes": {
@@ -2830,7 +2808,7 @@
             "lootbox": {
                 "name": "lootbox",
                 "id": "lootbox",
-                "drop_rate": 1,
+                "drop_rate": 10,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -2838,27 +2816,9 @@
                     {
                         "quantity": 1,
                         "name": "lootbox",
-                        "id": "4275229616",
+                        "id": "4045591472",
                         "attributes": {
                             "type": "lootbox"
-                        }
-                    }
-                ]
-            },
-            "slots": {
-                "name": "slots",
-                "id": "slots",
-                "drop_rate": 5.5,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1,
-                        "name": "slots",
-                        "id": "slots",
-                        "attributes": {
-                            "type": "slots"
                         }
                     }
                 ]
@@ -2872,7 +2832,7 @@
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 30,
+                        "quantity": 180,
                         "name": "wows_premium",
                         "id": "wows_premium",
                         "attributes": {
@@ -2883,6 +2843,6 @@
             }
         }
     ],
-    "pity": 100,
+    "pity": 15,
     "price": 250
 }

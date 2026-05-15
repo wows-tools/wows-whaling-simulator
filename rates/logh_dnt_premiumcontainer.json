@@ -1,0 +1,97 @@
+{
+    "name": "\"LOGH: DNT\" Premium container",
+    "img": "/resources/PCL131_Logh_Prem_b41ffd995bd67fa36a174c9b1dc133d7fc20f8dd4b37875741ddaeddb6b3b778.png",
+    "id": "logh_dnt_premiumcontainer",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflage",
+                "drop_rate": 25,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 14,
+                        "name": "Camouflages",
+                        "id": "4174311344",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    },
+                    {
+                        "quantity": 14,
+                        "name": "Camouflages",
+                        "id": "4173262768",
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Coal": {
+                "name": "Coal",
+                "id": "coal",
+                "drop_rate": 7,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 7500,
+                        "name": "Coal",
+                        "id": "coal",
+                        "attributes": {
+                            "resource_id": "coal",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Elite Commander XP": {
+                "name": "Elite Commander XP",
+                "id": "elite_commander_xp",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 60000,
+                        "name": "Elite Commander XP",
+                        "id": "elite_commander_xp",
+                        "attributes": {
+                            "resource_id": "elite_commander_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 20000,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 25,
+    "price": 250
+}

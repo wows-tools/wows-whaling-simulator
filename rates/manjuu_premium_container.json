@@ -1,0 +1,76 @@
+{
+    "name": "Manjuu Premium container",
+    "img": "/resources/PCL273_AzurLane_Super_Prem_85457ba731dbf30a7f173eccf77547f6ba1521880b05a79f0f63af4aba92b1d3.png",
+    "id": "manjuu_premium_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Tier VIII–X ship": {
+                "name": "Tier VIII–X ship",
+                "id": "tier_viiix_ship",
+                "drop_rate": 8,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3330258640",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "shipdestruction",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3332323312",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 1,
+                            "name": "shipdestruction",
+                            "id": "",
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "shipdestruction": {
+                "name": "shipdestruction",
+                "id": "shipdestruction",
+                "drop_rate": 32,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "shipdestruction",
+                        "id": "4284379056",
+                        "attributes": {
+                            "type": "shipdestruction"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 20,
+    "price": 250
+}

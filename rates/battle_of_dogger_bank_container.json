@@ -1,0 +1,246 @@
+{
+    "name": "Battle of Dogger Bank container",
+    "img": "/resources/PCL248_DoggerBank_Free_d5619488692cdd44848d494a88a95092ee7f1bb6c15acb551c115b2df58683bf.png",
+    "id": "battle_of_dogger_bank_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 50000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 30,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 50000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Tier V–VII Premium ship": {
+                "name": "Tier V–VII Premium ship",
+                "id": "tier_vvii_premium_ship",
+                "drop_rate": 0.3,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "ship_3743365072",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 50000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3765385168",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 50000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "ship_3721344976",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 50000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "false",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            },
+            "camoboost": {
+                "name": "camoboost",
+                "id": "camoboost",
+                "drop_rate": 15,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4283428784",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4272943024",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4262457264",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    },
+                    {
+                        "quantity": 3,
+                        "name": "camoboost",
+                        "id": "4251971504",
+                        "attributes": {
+                            "type": "camoboost"
+                        }
+                    }
+                ]
+            },
+            "style": {
+                "name": "style",
+                "id": "style",
+                "drop_rate": 4.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4203343792",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "style",
+                        "id": "4172935088",
+                        "attributes": {
+                            "type": "style"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Signals": {
+                "name": "Signals",
+                "id": "signals",
+                "drop_rate": 16.667,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4265439152",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4264390576",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4289556400",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4287459248",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4276973488",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Signals",
+                        "id": "4275924912",
+                        "attributes": {
+                            "type": "signal"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 100,
+    "price": 250
+}

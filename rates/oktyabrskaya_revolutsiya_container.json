@@ -1,0 +1,77 @@
+{
+    "name": "Oktyabrskaya Revolutsiya container",
+    "img": "/resources/PCL017_OctRevolution_6716ab5fa00459931db600aca6a32896f5776fde061290bcb19347edb999369d.png",
+    "id": "oktyabrskaya_revolutsiya_container",
+    "weight": 1100,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31,
+    "drops": [
+        {
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 59.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5000,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "gold": {
+                "name": "gold",
+                "id": "gold",
+                "drop_rate": 0.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 2500,
+                        "name": "gold",
+                        "id": "gold",
+                        "attributes": {
+                            "type": "gold"
+                        }
+                    },
+                    {
+                        "quantity": 250,
+                        "name": "gold",
+                        "id": "gold",
+                        "attributes": {
+                            "type": "gold"
+                        }
+                    }
+                ]
+            },
+            "wows_premium": {
+                "name": "wows_premium",
+                "id": "wows_premium",
+                "drop_rate": 30,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "wows_premium",
+                        "id": "wows_premium",
+                        "attributes": {
+                            "type": "wows_premium"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250
+}
