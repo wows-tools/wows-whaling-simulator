@@ -128,6 +128,8 @@ func santaContainerYear() int {
 func santaRatesName(title string, year int) string {
 	t := strings.ToLower(title)
 	switch {
+	case strings.Contains(t, "santa") && strings.Contains(t, "ultra"):
+		return fmt.Sprintf("santa_ultra_%d.json", year)
 	case strings.Contains(t, "santa") && strings.Contains(t, "mega"):
 		return fmt.Sprintf("santa_mega_%d.json", year)
 	case strings.Contains(t, "santa") && strings.Contains(t, "big"):

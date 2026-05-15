@@ -111,13 +111,16 @@ func CollectLootboxURLs() []string {
 	defer service.Stop()
 
 	caps := selenium.Capabilities{}
-	caps.AddChrome(chrome.Capabilities{Args: []string{
-		"window-size=1920x1080",
-		"--no-sandbox",
-		"--disable-dev-shm-usage",
-		"disable-gpu",
-		//		"--headless",  // comment out this line to see the browser
-	}})
+	caps.AddChrome(chrome.Capabilities{
+		Path: "/usr/bin/chromium",
+		Args: []string{
+			"--window-size=1920x1080",
+			"--no-sandbox",
+			"--disable-dev-shm-usage",
+			"--disable-gpu",
+			//		"--headless",  // comment out this line to see the browser
+		},
+	})
 	caps.SetLogLevel(log.Performance, log.All)
 
 	driver, err := selenium.NewRemote(caps, "")
