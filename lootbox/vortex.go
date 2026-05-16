@@ -340,11 +340,22 @@ func vortexConvert(raw *vortexEnvelope) (*LootBox, error) {
 
 	compensation := vortexFillerItem(d.Filler)
 
-	// "Premium container" variants (id contains "premium" but isn't a Premium Ship
-	// category) cost 1250 doubloons; all others are unknown (0).
-	price := 0.0
-	if strings.Contains(id, "premium") && !strings.HasPrefix(id, "premium_ship") {
+	// Explicit per-container prices; fall back to 1250 for any other premium
+	// variant, and 0 (unknown) for everything else.
+	var price float64
+	switch id {
+	case "santas_gift_container":
+		price = 250.0
+	case "santas_big_gift_container":
+		price = 750.0
+	case "santas_mega_gift_container":
 		price = 1250.0
+	case "santas_ultra_gift_container":
+		price = 1850.0
+	default:
+		if strings.Contains(id, "premium") && !strings.HasPrefix(id, "premium_ship") {
+			price = 1250.0
+		}
 	}
 
 	lb := &LootBox{
