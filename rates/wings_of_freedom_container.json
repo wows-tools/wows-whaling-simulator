@@ -116,7 +116,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "IX",
                             "type": "ship"
                         }
@@ -136,7 +136,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "IX",
                             "type": "ship"
                         }
@@ -168,7 +168,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "VIII",
                             "type": "ship"
                         }
@@ -188,7 +188,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "VIII",
                             "type": "ship"
                         }
@@ -208,7 +208,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "VII",
                             "type": "ship"
                         }
@@ -228,7 +228,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "VII",
                             "type": "ship"
                         }
@@ -248,7 +248,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "VIII",
                             "type": "ship"
                         }
@@ -268,7 +268,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "VIII",
                             "type": "ship"
                         }
@@ -288,7 +288,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "VIII",
                             "type": "ship"
                         }

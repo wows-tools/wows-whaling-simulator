@@ -175,7 +175,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "V",
                             "type": "ship"
                         }
@@ -195,7 +195,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "V",
                             "type": "ship"
                         }
@@ -215,7 +215,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "V",
                             "type": "ship"
                         }
@@ -235,7 +235,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "V",
                             "type": "ship"
                         }
@@ -255,7 +255,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "IV",
                             "type": "ship"
                         }

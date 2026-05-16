@@ -501,6 +501,19 @@ func vortexConvert(raw *vortexEnvelope) (*LootBox, error) {
 				Items:               []*Item{},
 			}
 
+			// A list is the "rare" pool when WG mixes coal/special ships
+			// (isSpecial=true) with discontinued premiums (Musashi, Missouri,
+			// Belfast, etc.) in the same draw pool.  All ships in such a list
+			// share the "rare" designation; lists with only regular premium
+			// ships get no rare marker.
+			listHasSpecial := false
+			for _, r := range vlist.Rewards {
+				if r.Type == "ship" && r.AdditionalData != nil && r.AdditionalData.IsSpecial {
+					listHasSpecial = true
+					break
+				}
+			}
+
 			for _, r := range vlist.Rewards {
 				if r.Type != "ship" {
 					continue
@@ -508,7 +521,6 @@ func vortexConvert(raw *vortexEnvelope) (*LootBox, error) {
 
 				shipName := fmt.Sprintf("ship_%d", r.ID)
 				tierStr := ""
-				isRare := false
 
 				if r.AdditionalData != nil {
 					if r.AdditionalData.Title != "" {
@@ -517,8 +529,8 @@ func vortexConvert(raw *vortexEnvelope) (*LootBox, error) {
 					if r.AdditionalData.Level > 0 {
 						tierStr = vortexTierRoman(r.AdditionalData.Level)
 					}
-					isRare = r.AdditionalData.IsPremium || r.AdditionalData.IsSpecial
 				}
+				isRare := listHasSpecial
 
 				attrs := map[string]string{
 					"type": "ship",

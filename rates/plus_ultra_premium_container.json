@@ -103,7 +103,7 @@
                             }
                         },
                         "attributes": {
-                            "rare": "true",
+                            "rare": "false",
                             "tier": "IX",
                             "type": "ship"
                         }
