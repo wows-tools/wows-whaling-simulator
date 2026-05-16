@@ -165,7 +165,7 @@
         }
     ],
     "pity": 250,
-    "price": 250,
+    "price": 0,
     "exchange_rate_euro": 308.947108255,
     "exchange_rate_dollar": 252.780586451
 }
