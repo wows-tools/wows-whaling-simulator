@@ -26,8 +26,8 @@ const CATEGORY_ORDER = [
   "Black Friday",
   "Premium & Special Ships",
   "National Navies",
-  "Historical Events",
   "Collection",
+  "Historical Events",
   "Collaborations",
   "Seasonal",
   "Anniversaries",
@@ -117,7 +117,7 @@ export default function LootboxList() {
         {allCategories.map((cat) => (
           <Item key={cat}>
             <Badge
-              variant={CATEGORY_COLOR[cat] || "neutral"}
+              variant="neutral"
               UNSAFE_style={{ marginRight: 6 }}
             >
               {allGrouped[cat].length}
@@ -146,7 +146,7 @@ export default function LootboxList() {
       {visibleCategories.map((cat) => (
         <View key={cat} marginBottom="size-600">
           <Flex alignItems="center" gap="size-100" marginBottom="size-200">
-            <Badge variant={CATEGORY_COLOR[cat] || "neutral"}>
+            <Badge variant="neutral">
               {grouped[cat].length}
             </Badge>
             <Heading level={3} margin="size-0">
