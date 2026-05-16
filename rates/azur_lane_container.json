@@ -1,0 +1,96 @@
+{
+    "name": "Azur Lane container",
+    "img": "/resources/PCL059_AzurLane_Coll_Free_d3dbd9ce06895594619505dd04c266e2e538f40ca08d2da67b578e9c05eacf30.png",
+    "weight": 1100,
+    "id": "azur_lane_container",
+    "category": "Collaborations",
+    "drops": [
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflages",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Camouflages",
+                        "id": "4235128752",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Economic Bonuses 1": {
+                "name": "Economic Bonuses 1",
+                "id": "economic_bonuses_1",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 2,
+                        "name": "Economic Bonuses",
+                        "id": "4261408688",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 2": {
+                "name": "Economic Bonuses 2",
+                "id": "economic_bonuses_2",
+                "drop_rate": 90,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 3,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Collection Album": {
+                "name": "Collection Album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Collection Album",
+                        "id": "4279212976",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "collection_album",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

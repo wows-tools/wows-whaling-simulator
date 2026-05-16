@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "battle_of_jutland_container_pre20260516.json",
+    "name": "Battle of Jutland container",
+    "img": "/resources/PCL144_Jutland0110_Free_fc05fb2829a03b7f280732ef8ee5e02f4a2a5bf96bfbe25d76f177b21c679951.png",
+    "weight": 1100,
+    "id": "battle_of_jutland_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -159,12 +161,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "battle_of_jutland_container",
-    "img": "/resources/PCL144_Jutland0110_Free_fc05fb2829a03b7f280732ef8ee5e02f4a2a5bf96bfbe25d76f177b21c679951.png",
-    "name": "Battle of Jutland container",
     "pity": 250,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

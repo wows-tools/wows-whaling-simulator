@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "special_ship_x_elite_container_pre20260516.json",
+    "name": "Special Ship X Elite container",
+    "img": "/resources/PCL247_EPICprem10_fa563cdc1ff5c541d0f99e0582efe2228108a5fb38093264e9cb525c50fe3f6a.png",
+    "weight": 1100,
+    "id": "special_ship_x_elite_container",
     "category": "Premium \u0026 Special Ships",
-    "changed_at": "20260516",
     "drops": [
         {
             "Special Tier X ship": {
@@ -316,12 +318,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "special_ship_x_elite_container",
-    "img": "/resources/PCL247_EPICprem10_fa563cdc1ff5c541d0f99e0582efe2228108a5fb38093264e9cb525c50fe3f6a.png",
-    "name": "Special Ship X Elite container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

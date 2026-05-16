@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "legion_of_honor_container_pre20260516.json",
+    "name": "Legion of Honor container",
+    "img": "/resources/PCL084_Legion_Coll_Free_4418bdde06dc4ac94bc1c21c64940bc72eeb501f00c76b8b3e47741a16ec7a9e.png",
+    "weight": 1100,
+    "id": "legion_of_honor_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -116,12 +118,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "legion_of_honor_container",
-    "img": "/resources/PCL084_Legion_Coll_Free_4418bdde06dc4ac94bc1c21c64940bc72eeb501f00c76b8b3e47741a16ec7a9e.png",
-    "name": "Legion of Honor container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

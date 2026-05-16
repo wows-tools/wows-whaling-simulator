@@ -4,22 +4,21 @@
     "changed_at": "20260516",
     "drops": [
         {
-            "Credits": {
-                "name": "Credits",
-                "id": "credits",
-                "drop_rate": 24.4,
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflages",
+                "drop_rate": 5,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 10000,
-                        "name": "Credits",
-                        "id": "credits",
+                        "quantity": 2,
+                        "name": "Camouflages",
+                        "id": "4234080176",
                         "compensation": null,
                         "attributes": {
-                            "resource_id": "credits",
-                            "type": "resource"
+                            "type": "camo"
                         }
                     }
                 ]
@@ -33,7 +32,7 @@
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 3,
+                        "quantity": 5,
                         "name": "Economic Bonuses",
                         "id": "4282380208",
                         "compensation": null,
@@ -42,7 +41,7 @@
                         }
                     },
                     {
-                        "quantity": 3,
+                        "quantity": 5,
                         "name": "Economic Bonuses",
                         "id": "4271894448",
                         "compensation": null,
@@ -51,7 +50,7 @@
                         }
                     },
                     {
-                        "quantity": 3,
+                        "quantity": 5,
                         "name": "Economic Bonuses",
                         "id": "4261408688",
                         "compensation": null,
@@ -60,7 +59,7 @@
                         }
                     },
                     {
-                        "quantity": 3,
+                        "quantity": 5,
                         "name": "Economic Bonuses",
                         "id": "4250922928",
                         "compensation": null,
@@ -70,28 +69,29 @@
                     }
                 ]
             },
-            "Styles": {
-                "name": "Styles",
-                "id": "styles",
-                "drop_rate": 5,
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 24.4,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
                 "items": [
                     {
-                        "quantity": 1,
-                        "name": "Styles",
-                        "id": "4207538096",
+                        "quantity": 3000,
+                        "name": "Free XP",
+                        "id": "free_xp",
                         "compensation": null,
                         "attributes": {
-                            "type": "camo"
+                            "resource_id": "free_xp",
+                            "type": "resource"
                         }
                     }
                 ]
             },
-            "Tier VIII–IX Premium ship": {
-                "name": "Tier VIII–IX Premium ship",
-                "id": "tier_viiiix_premium_ship",
+            "Tier IX Premium ship": {
+                "name": "Tier IX Premium ship",
+                "id": "tier_ix_premium_ship",
                 "drop_rate": 0.1,
                 "collectable": true,
                 "pitiable": true,
@@ -101,15 +101,15 @@
                 "items": [
                     {
                         "quantity": 1,
-                        "name": "Tulsa",
+                        "name": "Georgia",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
+                            "name": "Free XP",
+                            "id": "free_xp",
                             "compensation": null,
                             "attributes": {
-                                "resource_id": "credits",
+                                "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
@@ -125,51 +125,11 @@
                         "id": "undefined",
                         "compensation": {
                             "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
+                            "name": "Free XP",
+                            "id": "free_xp",
                             "compensation": null,
                             "attributes": {
-                                "resource_id": "credits",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "true",
-                            "tier": "IX",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "Enterprise",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
-                            "compensation": null,
-                            "attributes": {
-                                "resource_id": "credits",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "true",
-                            "tier": "VIII",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "Georgia",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
-                            "compensation": null,
-                            "attributes": {
-                                "resource_id": "credits",
+                                "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
@@ -188,20 +148,40 @@
                 "collectable": true,
                 "pitiable": true,
                 "drop_rate_transfers_to": [
-                    "Tier VIII–IX Premium ship"
+                    "Tier IX Premium ship"
                 ],
                 "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Rochester",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VIII",
+                            "type": "ship"
+                        }
+                    },
                     {
                         "quantity": 1,
                         "name": "Hornet",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
+                            "name": "Free XP",
+                            "id": "free_xp",
                             "compensation": null,
                             "attributes": {
-                                "resource_id": "credits",
+                                "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
@@ -217,11 +197,11 @@
                         "id": "undefined",
                         "compensation": {
                             "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
+                            "name": "Free XP",
+                            "id": "free_xp",
                             "compensation": null,
                             "attributes": {
-                                "resource_id": "credits",
+                                "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
@@ -233,35 +213,15 @@
                     },
                     {
                         "quantity": 1,
-                        "name": "Constellation",
+                        "name": "California",
                         "id": "undefined",
                         "compensation": {
                             "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
+                            "name": "Free XP",
+                            "id": "free_xp",
                             "compensation": null,
                             "attributes": {
-                                "resource_id": "credits",
-                                "type": "resource"
-                            }
-                        },
-                        "attributes": {
-                            "rare": "true",
-                            "tier": "VIII",
-                            "type": "ship"
-                        }
-                    },
-                    {
-                        "quantity": 1,
-                        "name": "Boise",
-                        "id": "undefined",
-                        "compensation": {
-                            "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
-                            "compensation": null,
-                            "attributes": {
-                                "resource_id": "credits",
+                                "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
@@ -277,11 +237,11 @@
                         "id": "undefined",
                         "compensation": {
                             "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
+                            "name": "Free XP",
+                            "id": "free_xp",
                             "compensation": null,
                             "attributes": {
-                                "resource_id": "credits",
+                                "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
@@ -297,11 +257,31 @@
                         "id": "undefined",
                         "compensation": {
                             "quantity": 3000,
-                            "name": "Credits",
-                            "id": "credits",
+                            "name": "Free XP",
+                            "id": "free_xp",
                             "compensation": null,
                             "attributes": {
-                                "resource_id": "credits",
+                                "resource_id": "free_xp",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VIII",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Kidd",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000,
+                            "name": "Free XP",
+                            "id": "free_xp",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "free_xp",
                                 "type": "resource"
                             }
                         },
@@ -318,7 +298,7 @@
     "exchange_rate_dollar": 289.31,
     "exchange_rate_euro": 303.96,
     "id": "wings_of_freedom_container",
-    "img": "/resources/PCL219_US_v2_free_b5476fa215a134fa3c9a14accb491b69102ae54a5ba03ac8ad61078f5656fef4.png",
+    "img": "/resources/PCL170_US_ship_free_b5476fa215a134fa3c9a14accb491b69102ae54a5ba03ac8ad61078f5656fef4.png",
     "name": "Wings of Freedom container",
     "pity": 400,
     "price": 250,

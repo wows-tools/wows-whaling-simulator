@@ -1,0 +1,78 @@
+{
+    "name": "Rogue Wave container",
+    "img": "/resources/PCL078_RogueWave_Free_old_670192903d41b9899619e25c56b1ead34bcf24cd82b82db2a491be18110c8aba.png",
+    "weight": 1100,
+    "id": "rogue_wave_container",
+    "category": "Special Events",
+    "drops": [
+        {
+            "Camouflages": {
+                "name": "Camouflages",
+                "id": "camouflages",
+                "drop_rate": 99.8,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Camouflages",
+                        "id": "4218351536",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 100000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Coal": {
+                "name": "Coal",
+                "id": "coal",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 300,
+                        "name": "Coal",
+                        "id": "coal",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "coal",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 1250,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

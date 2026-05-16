@@ -1,0 +1,171 @@
+{
+    "name": "Operation Dynamo container",
+    "img": "/resources/PCL253_Dynamo_Free_18d0d3f3aeac204acb7ec857f0bda2af7091cf8959de4394de4addc76708b4ba.png",
+    "weight": 1100,
+    "id": "operation_dynamo_container",
+    "category": "Special Events",
+    "drops": [
+        {
+            "Credits": {
+                "name": "Credits",
+                "id": "credits",
+                "drop_rate": 19.55,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 200000,
+                        "name": "Credits",
+                        "id": "credits",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "credits",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4282380208",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4271894448",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4261408688",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 6,
+                        "name": "Economic Bonuses",
+                        "id": "4250922928",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Tier V–VIII ship": {
+                "name": "Tier V–VIII ship",
+                "id": "tier_vviii_ship",
+                "drop_rate": 0.45,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Siroco",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 200000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Gallant",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 200000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Błyskawica",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 200000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VII",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Błyskawica '44",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 200000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VIII",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 600,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

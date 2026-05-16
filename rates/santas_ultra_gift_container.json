@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "santas_ultra_gift_container_pre20260516.json",
+    "name": "Santa's Ultra Gift container",
+    "img": "/resources/PCL267_SantaUltraGift_Prem_7266333a3f8b36a5d6a617971fbc30b346c7e7251a788ed7dfa41e948163a44b.png",
+    "weight": 20,
+    "id": "santas_ultra_gift_container",
     "category": "Santa's Gifts",
-    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -3094,12 +3096,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "santas_ultra_gift_container",
-    "img": "/resources/PCL267_SantaUltraGift_Prem_7266333a3f8b36a5d6a617971fbc30b346c7e7251a788ed7dfa41e948163a44b.png",
-    "name": "Santa's Ultra Gift container",
     "pity": 7,
     "price": 250,
-    "weight": 20
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

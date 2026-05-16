@@ -1,0 +1,565 @@
+{
+    "name": "Tenth Anniversary Gift container",
+    "img": "/resources/PCL234_BDay9_Free_b290e7c8ec17fdc0822822db80b72c11c493c67e20c2b5e1a43aee0ad71e6ce5.png",
+    "weight": 1100,
+    "id": "tenth_anniversary_gift_container",
+    "category": "Anniversaries",
+    "drops": [
+        {
+            "Tier VI Premium ship": {
+                "name": "Tier VI Premium ship",
+                "id": "tier_vi_premium_ship",
+                "drop_rate": 100,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Perth",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Dunkerque",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "De Grasse",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Aigle",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Prinz Eitel Friedrich",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Duca d'Aosta",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Mutsu",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Huanghe",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Anshan",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Warspite",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Gallant",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Arizona",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "W. Virginia '41",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Monaghan",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Molotov",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Ark Royal",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "London",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Mysore",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Ise",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Dido",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Juruá",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Canarias",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Béarn",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Karl von Schönberg",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Novorossiysk",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Xin Zhong Guo 14",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Dupleix",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 25000,
+                            "name": "Coal",
+                            "id": "coal",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "coal",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VI",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

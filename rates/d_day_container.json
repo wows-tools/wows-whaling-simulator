@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "d_day_container_pre20260516.json",
+    "name": "D-Day container",
+    "img": "/resources/PCL198_D_Day_Free_92c77ec896c5946a4ec04323582a23c2a7fe85377a17dfe337bfb5636ff27351.png",
+    "weight": 1100,
+    "id": "d_day_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Economic Bonuses": {
@@ -244,12 +246,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "d_day_container",
-    "img": "/resources/PCL198_D_Day_Free_92c77ec896c5946a4ec04323582a23c2a7fe85377a17dfe337bfb5636ff27351.png",
-    "name": "D-Day container",
     "pity": 500,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

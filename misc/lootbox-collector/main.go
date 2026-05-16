@@ -29,6 +29,7 @@ type ShipEntry struct {
 
 func main() {
 	collect := flag.Bool("collect", false, "scrape WG page and fetch lootbox JSON into input dir")
+	scrollDelay := flag.Int("scroll-delay", 200, "milliseconds to pause between scroll steps during collection (increase if containers are missed)")
 	inputDir := flag.String("input", "raw", "directory with raw WG JSON files")
 	outputDir := flag.String("output", "output", "directory for converted JSON")
 	ratesDir := flag.String("rates", "../../rates", "rates directory to copy all containers into")
@@ -46,7 +47,7 @@ func main() {
 	}
 
 	if *collect {
-		if err := collectRaw(*inputDir); err != nil {
+		if err := collectRaw(*inputDir, *scrollDelay); err != nil {
 			fmt.Println("Collection failed:", err)
 			return
 		}
@@ -341,9 +342,9 @@ var sessionCookies []*http.Cookie
 
 // collectRaw uses Selenium to scrape the WG lootbox page, then fetches each
 // discovered vortex API URL and saves the raw JSON into destDir.
-func collectRaw(destDir string) error {
+func collectRaw(destDir string, scrollDelayMs int) error {
 	fmt.Println("Launching browser to collect lootbox URLs…")
-	urls, cookies := CollectLootboxURLs()
+	urls, cookies := CollectLootboxURLs(scrollDelayMs)
 	sessionCookies = cookies
 	fmt.Printf("Found %d lootbox URL(s), %d session cookies\n", len(urls), len(cookies))
 	for i, u := range urls {

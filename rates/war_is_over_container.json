@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "war_is_over_container_pre20260516.json",
+    "name": "War Is Over container",
+    "img": "/resources/PCL258_EndOfWWII_Free_0a63aed6a52ebe049d68610c6437ac7c17a2f3c5a1b0b31b3bec452100fb470a.png",
+    "weight": 1100,
+    "id": "war_is_over_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -335,12 +337,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "war_is_over_container",
-    "img": "/resources/PCL258_EndOfWWII_Free_0a63aed6a52ebe049d68610c6437ac7c17a2f3c5a1b0b31b3bec452100fb470a.png",
-    "name": "War Is Over container",
     "pity": 400,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

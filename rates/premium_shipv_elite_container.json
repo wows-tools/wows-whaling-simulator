@@ -1,0 +1,365 @@
+{
+    "name": "Premium Ship V Elite container",
+    "img": "/resources/PCL069_EPICprem5_a48198e4fc8112e53c72e31d0591e8287f6475f21ed1e1dff4ff9bfa5095aea0.png",
+    "weight": 1100,
+    "id": "premium_shipv_elite_container",
+    "category": "Special Events",
+    "drops": [
+        {
+            "Tier V Premium ship": {
+                "name": "Tier V Premium ship",
+                "id": "tier_v_premium_ship",
+                "drop_rate": 100,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Exeter",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Texas",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Marblehead",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Marblehead Lima",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Oktyabrskaya Revolutsiya",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Murmansk",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Krasny Krym",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Okhotnik",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Genova",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Yahagi",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Hill",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Siroco",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Viribus Unitis",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Kirov",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Mikoyan",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Agincourt",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Rio de Janeiro",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 4000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "V",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

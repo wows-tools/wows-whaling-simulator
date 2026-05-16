@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "premium_ship_vii_elite_container_pre20260516.json",
+    "name": "Premium Ship VII Elite container",
+    "img": "/resources/PCL073_EPICprem7_e321f8d4304c48fd9f79775c262084111c609d4bbb30c88415f4991294b939fa.png",
+    "weight": 1100,
+    "id": "premium_ship_vii_elite_container",
     "category": "Premium \u0026 Special Ships",
-    "changed_at": "20260516",
     "drops": [
         {
             "Tier VII Premium ship": {
@@ -716,12 +718,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "premium_ship_vii_elite_container",
-    "img": "/resources/PCL073_EPICprem7_e321f8d4304c48fd9f79775c262084111c609d4bbb30c88415f4991294b939fa.png",
-    "name": "Premium Ship VII Elite container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

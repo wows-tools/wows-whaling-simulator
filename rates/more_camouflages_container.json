@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "more_camouflages_container_pre20260516.json",
+    "name": "More Camouflages container",
+    "img": "/resources/PCL150_Camo_Daily_e3bef90845bb3a2ab157942e140da74dde618995e6232f3a92688c91b5e6779b.png",
+    "weight": 1100,
+    "id": "more_camouflages_container",
     "category": "Resources \u0026 Supplies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -937,12 +939,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "more_camouflages_container",
-    "img": "/resources/PCL150_Camo_Daily_e3bef90845bb3a2ab157942e140da74dde618995e6232f3a92688c91b5e6779b.png",
-    "name": "More Camouflages container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -22,7 +22,7 @@ wows-whaling-simulator-cli-static
 
 env.sh
 misc/lootbox-collector/lootbox-collector
-lootbox-collector
+/lootbox-collector
 misc/lootbox-collector/output/
 misc/lootbox-collector/raw/
 

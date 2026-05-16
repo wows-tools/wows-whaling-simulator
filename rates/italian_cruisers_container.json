@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "italian_cruisers_container_pre20260516.json",
+    "name": "Italian Cruisers container",
+    "img": "/resources/PCL089_ITCA_Free_old_1ed71ed2bc842eafa9681bd30ab96a91d734e24c2ef0a12c7ee9199e9866cad9.png",
+    "weight": 1100,
+    "id": "italian_cruisers_container",
     "category": "National Navies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -260,12 +262,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "italian_cruisers_container",
-    "img": "/resources/PCL089_ITCA_Free_old_1ed71ed2bc842eafa9681bd30ab96a91d734e24c2ef0a12c7ee9199e9866cad9.png",
-    "name": "Italian Cruisers container",
     "pity": 150,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

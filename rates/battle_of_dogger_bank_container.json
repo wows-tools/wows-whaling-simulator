@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "battle_of_dogger_bank_container_pre20260516.json",
+    "name": "Battle of Dogger Bank container",
+    "img": "/resources/PCL248_DoggerBank_Free_d5619488692cdd44848d494a88a95092ee7f1bb6c15acb551c115b2df58683bf.png",
+    "weight": 1100,
+    "id": "battle_of_dogger_bank_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -258,12 +260,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "battle_of_dogger_bank_container",
-    "img": "/resources/PCL248_DoggerBank_Free_d5619488692cdd44848d494a88a95092ee7f1bb6c15acb551c115b2df58683bf.png",
-    "name": "Battle of Dogger Bank container",
     "pity": 100,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

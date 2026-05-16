@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "award_container_pre20260516.json",
+    "name": "Award container",
+    "img": "/resources/PCL052_Unbranded_6639e678ee4d234ee716e29e73ca5e0c10630423e2d18b207578e7d7f16d824f.png",
+    "weight": 1100,
+    "id": "award_container",
     "category": "Special Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Doubloons": {
@@ -174,12 +176,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "award_container",
-    "img": "/resources/PCL052_Unbranded_6639e678ee4d234ee716e29e73ca5e0c10630423e2d18b207578e7d7f16d824f.png",
-    "name": "Award container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

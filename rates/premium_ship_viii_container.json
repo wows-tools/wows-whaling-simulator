@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "premium_ship_viii_container_pre20260516.json",
+    "name": "Premium Ship VIII container",
+    "img": "/resources/PCL074_EPICstd8_27a552f58b51f90a5abc3e44b87557e75eea51dc9d94e3666b3fd1cc92d4e6e7.png",
+    "weight": 1100,
+    "id": "premium_ship_viii_container",
     "category": "Premium \u0026 Special Ships",
-    "changed_at": "20260516",
     "drops": [
         {
             "Tier VIII Premium ship": {
@@ -1076,12 +1078,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "premium_ship_viii_container",
-    "img": "/resources/PCL074_EPICstd8_27a552f58b51f90a5abc3e44b87557e75eea51dc9d94e3666b3fd1cc92d4e6e7.png",
-    "name": "Premium Ship VIII container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

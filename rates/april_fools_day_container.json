@@ -1,0 +1,322 @@
+{
+    "name": "April Fools' Day container",
+    "img": "/resources/PCL027_April18_old_7354d441bb7f0492e81246139158393de93c01ec4f16216ab80437b25ff32986.png",
+    "weight": 1100,
+    "id": "april_fools_day_container",
+    "category": "Special Events",
+    "drops": [
+        {
+            "Doubloons": {
+                "name": "Doubloons",
+                "id": "doubloons",
+                "drop_rate": 0.01,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10000,
+                        "name": "Doubloons",
+                        "id": "doubloons",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "doubloons",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 1": {
+                "name": "Economic Bonuses 1",
+                "id": "economic_bonuses_1",
+                "drop_rate": 16,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4280283056",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4269797296",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4259311536",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Economic Bonuses",
+                        "id": "4248825776",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 2": {
+                "name": "Economic Bonuses 2",
+                "id": "economic_bonuses_2",
+                "drop_rate": 32,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 2,
+                        "name": "Economic Bonuses",
+                        "id": "4281331632",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 2,
+                        "name": "Economic Bonuses",
+                        "id": "4270845872",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 2,
+                        "name": "Economic Bonuses",
+                        "id": "4260360112",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 2,
+                        "name": "Economic Bonuses",
+                        "id": "4249874352",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Economic Bonuses 3": {
+                "name": "Economic Bonuses 3",
+                "id": "economic_bonuses_3",
+                "drop_rate": 50,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 9,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 9,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 9,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 9,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Supercontainer": {
+                "name": "Supercontainer",
+                "id": "supercontainer",
+                "drop_rate": 1.98,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Supercontainer",
+                        "id": "4289621936",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "resource"
+                        }
+                    }
+                ]
+            },
+            "Tier VIII–X ship": {
+                "name": "Tier VIII–X ship",
+                "id": "tier_viiix_ship",
+                "drop_rate": 0.01,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Zaō CLR",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "X",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Kléber CLR",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "X",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Roon CLR",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "IX",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "North Carolina CLR",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VIII",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "STAR Kitakaze",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "IX",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "STAR Edinburgh",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10000,
+                            "name": "Doubloons",
+                            "id": "doubloons",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "doubloons",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VIII",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 10000,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

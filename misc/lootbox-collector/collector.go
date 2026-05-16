@@ -104,7 +104,7 @@ type Root struct {
 	WebView string  `json:"webview"`
 }
 
-func CollectLootboxURLs() ([]string, []*http.Cookie) {
+func CollectLootboxURLs(scrollDelayMs int) ([]string, []*http.Cookie) {
 	// Run Chrome browser
 	service, err := selenium.NewChromeDriverService("/usr/bin/chromedriver", 4444)
 	if err != nil {
@@ -140,18 +140,33 @@ func CollectLootboxURLs() ([]string, []*http.Cookie) {
 	gdprAcceptButton.Click()
 	time.Sleep(time.Second * 2) // Give some time for the page to load
 
-	// Scroll down the page
-	scrollStep := 500.0 // Scroll down by 100 pixels
-	for scrollTop := 0.0; scrollTop < 100000.0; scrollTop += scrollStep {
-		scrollScript := fmt.Sprintf("window.scrollTo(0, %f);", scrollTop)
-		_, err := driver.ExecuteScript(scrollScript, nil)
+	// Scroll down the page in steps until we reach the actual bottom.
+	// The page height can grow as lazy-loaded sections are revealed, so we
+	// re-query document.documentElement.scrollHeight on every iteration.
+	scrollStep := 300.0
+	scrollDelay := time.Duration(scrollDelayMs) * time.Millisecond
+	for scrollTop := 0.0; ; scrollTop += scrollStep {
+		// Scroll to current position.
+		_, err := driver.ExecuteScript(fmt.Sprintf("window.scrollTo(0, %f);", scrollTop), nil)
 		if err != nil {
 			panic(err)
 		}
+		time.Sleep(scrollDelay)
 
-		time.Sleep(time.Millisecond * 200) // Give some time for the page to settle
+		// Check actual page height after potential lazy-load.
+		heightRaw, err := driver.ExecuteScript("return document.documentElement.scrollHeight;", nil)
+		if err != nil {
+			panic(err)
+		}
+		pageHeight, ok := heightRaw.(float64)
+		if !ok {
+			break
+		}
+		if scrollTop >= pageHeight {
+			break
+		}
 	}
-	time.Sleep(time.Second * 1) // Give some time for the page to load
+	time.Sleep(time.Second * 3) // Final wait for any trailing requests
 
 	// Get browser logs including network events
 	logs, err := driver.Log(log.Performance)

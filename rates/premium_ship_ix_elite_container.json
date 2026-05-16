@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "premium_ship_ix_elite_container_pre20260516.json",
+    "name": "Premium Ship IX Elite container",
+    "img": "/resources/PCL077_EPICprem9_3938884d0d45b5f7b6929f243111d6db5f4727a5f049fad901b1d9afc7d8d7c7.png",
+    "weight": 1100,
+    "id": "premium_ship_ix_elite_container",
     "category": "Premium \u0026 Special Ships",
-    "changed_at": "20260516",
     "drops": [
         {
             "Tier IX Premium ship": {
@@ -456,12 +458,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "premium_ship_ix_elite_container",
-    "img": "/resources/PCL077_EPICprem9_3938884d0d45b5f7b6929f243111d6db5f4727a5f049fad901b1d9afc7d8d7c7.png",
-    "name": "Premium Ship IX Elite container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

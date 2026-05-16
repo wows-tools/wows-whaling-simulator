@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "japanese_squadron_container_pre20260516.json",
+    "name": "Japanese Squadron container",
+    "img": "/resources/PCL251_Japanese_Free_122903a12348018e360144ee2b4a7865b3e97a048d6f6b0390103f170dbaa573.png",
+    "weight": 1100,
+    "id": "japanese_squadron_container",
     "category": "National Navies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -216,12 +218,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "japanese_squadron_container",
-    "img": "/resources/PCL251_Japanese_Free_122903a12348018e360144ee2b4a7865b3e97a048d6f6b0390103f170dbaa573.png",
-    "name": "Japanese Squadron container",
     "pity": 150,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

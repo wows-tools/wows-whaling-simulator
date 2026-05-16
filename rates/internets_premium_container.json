@@ -1,35 +1,13 @@
 {
-    "name": "Internets Premium container",
-    "img": "/resources/PCL192_Influencers_takeover_370f35d3d905fb9f684e1e77455d2a1d3447fbee5f6d81c4b4bca9b7a045e4e8.png",
-    "weight": 1100,
-    "id": "internets_premium_container",
-    "category": "",
+    "archived_previous_as": "internets_premium_container_pre20260516.json",
+    "category": "Special Events",
+    "changed_at": "20260516",
     "drops": [
         {
-            "Credits": {
-                "name": "Credits",
-                "id": "credits",
-                "drop_rate": 30,
-                "collectable": false,
-                "pitiable": false,
-                "drop_rate_transfers_to": [],
-                "items": [
-                    {
-                        "quantity": 1000000,
-                        "name": "Credits",
-                        "id": "credits",
-                        "compensation": null,
-                        "attributes": {
-                            "resource_id": "credits",
-                            "type": "resource"
-                        }
-                    }
-                ]
-            },
             "Economic Bonuses": {
                 "name": "Economic Bonuses",
                 "id": "economic_bonuses",
-                "drop_rate": 50,
+                "drop_rate": 30,
                 "collectable": false,
                 "pitiable": false,
                 "drop_rate_transfers_to": [],
@@ -71,11 +49,35 @@
                         }
                     }
                 ]
+            },
+            "Recruitment Points": {
+                "name": "Recruitment Points",
+                "id": "recruitment_points",
+                "drop_rate": 10,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 300,
+                        "name": "Recruitment Points",
+                        "id": "recruitment_points",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "recruitment_points",
+                            "type": "resource"
+                        }
+                    }
+                ]
             }
         }
     ],
-    "pity": 25,
-    "price": 250,
+    "exchange_rate_dollar": 289.31,
     "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "id": "internets_premium_container",
+    "img": "/resources/PCL250_Influencers_takeover_new_prem_370f35d3d905fb9f684e1e77455d2a1d3447fbee5f6d81c4b4bca9b7a045e4e8.png",
+    "name": "Internets Premium container",
+    "pity": 6,
+    "price": 250,
+    "weight": 1100
 }

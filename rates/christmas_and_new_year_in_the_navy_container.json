@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "christmas_and_new_year_in_the_navy_container_pre20260516.json",
+    "name": "\"Christmas and New Year in the Navy\" container",
+    "img": "/resources/PCL143_Ny2022collection_f510116c0951657fe8e7a046d575be56274ba2de33bef4ca919cec1cec27898a.png",
+    "weight": 1100,
+    "id": "christmas_and_new_year_in_the_navy_container",
     "category": "Seasonal",
-    "changed_at": "20260516",
     "drops": [
         {
             "Economic Bonuses": {
@@ -162,12 +164,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "christmas_and_new_year_in_the_navy_container",
-    "img": "/resources/PCL143_Ny2022collection_f510116c0951657fe8e7a046d575be56274ba2de33bef4ca919cec1cec27898a.png",
-    "name": "\"Christmas and New Year in the Navy\" container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

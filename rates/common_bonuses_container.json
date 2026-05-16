@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "common_bonuses_container_pre20260516.json",
+    "name": "Common Bonuses container",
+    "img": "/resources/PCL153_gift_tier_One_54d326987ced14e0f05dc9b8b7f9778f78bf1c48273284c6a0270d45bcc24b73.png",
+    "weight": 1100,
+    "id": "common_bonuses_container",
     "category": "Resources \u0026 Supplies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Economic Bonuses": {
@@ -52,12 +54,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "common_bonuses_container",
-    "img": "/resources/PCL153_gift_tier_One_54d326987ced14e0f05dc9b8b7f9778f78bf1c48273284c6a0270d45bcc24b73.png",
-    "name": "Common Bonuses container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

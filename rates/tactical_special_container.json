@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "tactical_special_container_pre20260516.json",
+    "name": "Tactical Special container",
+    "img": "/resources/PCL048_WG_Compensation_9438afa31b6fa3a971f995e4d10960d66d72c6df9d5b50cc36e802cbf7870346.png",
+    "weight": 1100,
+    "id": "tactical_special_container",
     "category": "Resources \u0026 Supplies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Premium Days": {
@@ -68,12 +70,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "tactical_special_container",
-    "img": "/resources/PCL048_WG_Compensation_9438afa31b6fa3a971f995e4d10960d66d72c6df9d5b50cc36e802cbf7870346.png",
-    "name": "Tactical Special container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

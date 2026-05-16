@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "junior_recruiting_station_container_pre20260516.json",
+    "name": "Junior Recruiting Station container",
+    "img": "/resources/PCL176_RecruitSmall_052de9966cbb639eae310b8649e7a45cd70ac7737730383b9aae3b1bc59f5cf9.png",
+    "weight": 1100,
+    "id": "junior_recruiting_station_container",
     "category": "Recruitment",
-    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -262,12 +264,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "junior_recruiting_station_container",
-    "img": "/resources/PCL176_RecruitSmall_052de9966cbb639eae310b8649e7a45cd70ac7737730383b9aae3b1bc59f5cf9.png",
-    "name": "Junior Recruiting Station container",
     "pity": 62,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -17,11 +17,41 @@
         "is_premium": false,
         "is_special": true
     },
+    "3330193200": {
+        "name": "Bremen Golden",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3330193392": {
+        "name": "Hawaii Golden",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3330225872": {
+        "name": "Aki Golden",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
     "3330258640": {
         "name": "AL Shinano",
         "tier": 10,
         "is_premium": false,
         "is_special": true
+    },
+    "3331208656": {
+        "name": "AL Tashkent",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3332289744": {
+        "name": "AL Harbin",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
     },
     "3332323312": {
         "name": "AL Massachusetts",
@@ -59,6 +89,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3341760240": {
+        "name": "AL Marco Polo",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
     "3341760496": {
         "name": "Bird Cry",
         "tier": 9,
@@ -71,8 +107,20 @@
         "is_premium": true,
         "is_special": false
     },
+    "3342808816": {
+        "name": "Roma Aeterna",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
     "3342808880": {
         "name": "Wahnsinn",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3342808912": {
+        "name": "AL Richelieu",
         "tier": 8,
         "is_premium": true,
         "is_special": false
@@ -89,11 +137,89 @@
         "is_premium": true,
         "is_special": false
     },
+    "3352213296": {
+        "name": "AL Ägir",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3353294640": {
+        "name": "AL Bismarck",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3353327600": {
+        "name": "AL Hornet",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3354310384": {
+        "name": "AL Gorizia",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3361617616": {
+        "name": "AL Shimakaze",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3361650384": {
+        "name": "Zaō CLR",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3361650480": {
+        "name": "AL Hindenburg",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3362666192": {
+        "name": "STAR Kitakaze",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3362732016": {
+        "name": "AL Kearsarge",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3363747792": {
+        "name": "STAR Edinburgh",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3363780304": {
+        "name": "Ragnarok",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3374266064": {
+        "name": "Ignis Purgatio",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
     "3425613520": {
         "name": "Azuma B",
         "tier": 9,
         "is_premium": true,
         "is_special": false
+    },
+    "3435083760": {
+        "name": "BA Montana",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
     },
     "3436099280": {
         "name": "BA Takahashi",
@@ -125,6 +251,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3445503824": {
+        "name": "Kléber CLR",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
     "3445536112": {
         "name": "Brisbane B",
         "tier": 10,
@@ -142,6 +274,18 @@
         "tier": 10,
         "is_premium": false,
         "is_special": true
+    },
+    "3446585136": {
+        "name": "Roon CLR",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3447666672": {
+        "name": "North Carolina CLR",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
     },
     "3509499600": {
         "name": "Suzuya Golden",
@@ -173,6 +317,18 @@
         "is_premium": true,
         "is_special": false
     },
+    "3530471120": {
+        "name": "Chikuma II Golden",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3530471152": {
+        "name": "Messina",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
     "3530504176": {
         "name": "Georgia",
         "tier": 9,
@@ -191,8 +347,38 @@
         "is_premium": true,
         "is_special": false
     },
+    "3539875632": {
+        "name": "Georg Hoffmann Golden",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
     "3539907792": {
         "name": "Zhuge Liang",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3539908368": {
+        "name": "Prins van Oranje Golden",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3539908400": {
+        "name": "Bremen",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3539908592": {
+        "name": "Hawaii",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3539941072": {
+        "name": "Aki",
         "tier": 10,
         "is_premium": false,
         "is_special": true
@@ -233,6 +419,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3540956880": {
+        "name": "Chikuma II",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
     "3540956912": {
         "name": "Ferrante Gonzaga",
         "tier": 9,
@@ -247,6 +439,18 @@
     },
     "3540957168": {
         "name": "Cambridge",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540989136": {
+        "name": "Yimeng",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3540989264": {
+        "name": "Valparaíso",
         "tier": 9,
         "is_premium": true,
         "is_special": false
@@ -269,8 +473,20 @@
         "is_premium": true,
         "is_special": false
     },
+    "3541972176": {
+        "name": "Ship Smasha",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
     "3541972432": {
         "name": "Provorny",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3541972688": {
+        "name": "AL Yukikaze",
         "tier": 8,
         "is_premium": true,
         "is_special": false
@@ -293,8 +509,20 @@
         "is_premium": true,
         "is_special": false
     },
+    "3542005552": {
+        "name": "Cross of Dorn",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
     "3542005712": {
         "name": "Érne",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3542005744": {
+        "name": "AL Montpelier",
         "tier": 8,
         "is_premium": true,
         "is_special": false
@@ -365,14 +593,32 @@
         "is_premium": true,
         "is_special": false
     },
+    "3549870032": {
+        "name": "Seal",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
     "3550360912": {
         "name": "La Pampa",
         "tier": 10,
         "is_premium": false,
         "is_special": true
     },
+    "3550361392": {
+        "name": "Georg Hoffmann",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
     "3550393552": {
         "name": "Incheon",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3550394128": {
+        "name": "Prins van Oranje",
         "tier": 10,
         "is_premium": false,
         "is_special": true
@@ -394,6 +640,18 @@
         "tier": 10,
         "is_premium": false,
         "is_special": true
+    },
+    "3550459216": {
+        "name": "Independencia",
+        "tier": 10,
+        "is_premium": false,
+        "is_special": true
+    },
+    "3551409616": {
+        "name": "Neustrashimy",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
     },
     "3551409968": {
         "name": "ZF-6 Golden",
@@ -419,6 +677,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3551475152": {
+        "name": "AL Sov. Rossiya",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
     "3551475440": {
         "name": "Pilus Prior",
         "tier": 9,
@@ -427,6 +691,12 @@
     },
     "3552457936": {
         "name": "Zhu Que",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3552458032": {
+        "name": "Błyskawica '44",
         "tier": 8,
         "is_premium": true,
         "is_special": false
@@ -455,6 +725,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3552524016": {
+        "name": "AL Littorio",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
     "3553539792": {
         "name": "ARP Ashigara",
         "tier": 7,
@@ -463,6 +739,12 @@
     },
     "3553540048": {
         "name": "Bóinn",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3553540080": {
+        "name": "Flint",
         "tier": 7,
         "is_premium": true,
         "is_special": false
@@ -701,6 +983,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3709777872": {
+        "name": "AL Cheshire",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
     "3719247568": {
         "name": "Tsurugi",
         "tier": 9,
@@ -785,6 +1073,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3740153648": {
+        "name": "ZF-6",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
     "3740153840": {
         "name": "Black B",
         "tier": 9,
@@ -793,6 +1087,12 @@
     },
     "3740185808": {
         "name": "Mengchong",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3740186416": {
+        "name": "Admiral Schröder",
         "tier": 9,
         "is_premium": true,
         "is_special": false
@@ -875,6 +1175,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3743332304": {
+        "name": "Dido",
+        "tier": 6,
+        "is_premium": true,
+        "is_special": false
+    },
     "3743364816": {
         "name": "Ise",
         "tier": 6,
@@ -917,6 +1223,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3750672080": {
+        "name": "AL Azuma",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
     "3750672176": {
         "name": "Ägir",
         "tier": 9,
@@ -925,6 +1237,12 @@
     },
     "3750672368": {
         "name": "Tulsa",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3750704336": {
+        "name": "Wujing",
         "tier": 9,
         "is_premium": true,
         "is_special": false
@@ -967,6 +1285,12 @@
     },
     "3751687984": {
         "name": "Z-35",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3751720144": {
+        "name": "Wukong",
         "tier": 8,
         "is_premium": true,
         "is_special": false
@@ -1081,6 +1405,12 @@
     },
     "3752802000": {
         "name": "Hyūga",
+        "tier": 7,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3752802096": {
+        "name": "AL Prinz Heinrich",
         "tier": 7,
         "is_premium": true,
         "is_special": false
@@ -1241,6 +1571,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3761190096": {
+        "name": "Bajie",
+        "tier": 9,
+        "is_premium": true,
+        "is_special": false
+    },
     "3761190192": {
         "name": "Karl XIV Johan",
         "tier": 9,
@@ -1343,6 +1679,12 @@
         "is_premium": true,
         "is_special": false
     },
+    "3762206480": {
+        "name": "De Zeven Provinciën",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
     "3762206512": {
         "name": "Prinz Eugen",
         "tier": 8,
@@ -1363,6 +1705,12 @@
     },
     "3762206704": {
         "name": "Wichita",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762238800": {
+        "name": "Atlântico",
         "tier": 8,
         "is_premium": true,
         "is_special": false
@@ -1405,6 +1753,12 @@
     },
     "3762239472": {
         "name": "Alabama",
+        "tier": 8,
+        "is_premium": true,
+        "is_special": false
+    },
+    "3762271440": {
+        "name": "Sanzang",
         "tier": 8,
         "is_premium": true,
         "is_special": false

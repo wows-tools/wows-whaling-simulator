@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "oktyabrskaya_revolutsiya_container_pre20260516.json",
+    "name": "Oktyabrskaya Revolutsiya container",
+    "img": "/resources/PCL017_OctRevolution_6716ab5fa00459931db600aca6a32896f5776fde061290bcb19347edb999369d.png",
+    "weight": 1100,
+    "id": "oktyabrskaya_revolutsiya_container",
     "category": "National Navies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Doubloons 1": {
@@ -86,12 +88,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "oktyabrskaya_revolutsiya_container",
-    "img": "/resources/PCL017_OctRevolution_6716ab5fa00459931db600aca6a32896f5776fde061290bcb19347edb999369d.png",
-    "name": "Oktyabrskaya Revolutsiya container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

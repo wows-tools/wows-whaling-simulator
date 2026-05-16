@@ -1,0 +1,82 @@
+{
+    "name": "\"Warhammer 40,000 — Imperium\" container",
+    "img": "/resources/PCL101_WH_Imper_a60408bc27de6e6b0e96a47670dd3201d245ed58231c1a7709e869f6b97c1b0c.png",
+    "weight": 1100,
+    "id": "warhammer_40000__imperium_container",
+    "category": "Special Events",
+    "drops": [
+        {
+            "Camouflages 1": {
+                "name": "Camouflages 1",
+                "id": "camouflages_1",
+                "drop_rate": 14.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10,
+                        "name": "Camouflages",
+                        "id": "4197380016",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Camouflages 2": {
+                "name": "Camouflages 2",
+                "id": "camouflages_2",
+                "drop_rate": 85,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Camouflages",
+                        "id": "4197380016",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Premium ship and a special Commander": {
+                "name": "Premium ship and a special Commander",
+                "id": "premium_ship_anda_special_commander",
+                "drop_rate": 0.5,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Ignis Purgatio",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10,
+                            "name": "Camouflages",
+                            "id": "",
+                            "compensation": null,
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VIII",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 500,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

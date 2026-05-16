@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "soviet_container_pre20260516.json",
+    "name": "Soviet container",
+    "img": "/resources/PCL099_SArc094_old_cb32c60ffd6722f0344907f9c932b21c04c950c4f9da6f90b75b1aebbf0483cf.png",
+    "weight": 1100,
+    "id": "soviet_container",
     "category": "National Navies",
-    "changed_at": "20260516",
     "drops": [
         {
             " ": {
@@ -182,12 +184,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "soviet_container",
-    "img": "/resources/PCL099_SArc094_old_cb32c60ffd6722f0344907f9c932b21c04c950c4f9da6f90b75b1aebbf0483cf.png",
-    "name": "Soviet container",
     "pity": 20,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

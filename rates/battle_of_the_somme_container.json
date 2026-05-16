@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "battle_of_the_somme_container_pre20260516.json",
+    "name": "Battle of the Somme container",
+    "img": "/resources/PCL172_Somme_Coll_6367a66f381145d11ec08e01d0f5baf9297ff34604c7b5aabea6e06b23a761e3.png",
+    "weight": 1100,
+    "id": "battle_of_the_somme_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -201,12 +203,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "battle_of_the_somme_container",
-    "img": "/resources/PCL172_Somme_Coll_6367a66f381145d11ec08e01d0f5baf9297ff34604c7b5aabea6e06b23a761e3.png",
-    "name": "Battle of the Somme container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

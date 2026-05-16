@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "unsinkable_sam_container_pre20260516.json",
+    "name": "Unsinkable Sam container",
+    "img": "/resources/PCL087_CatSam_Free_fd42755fb9101edf808e3996e948a906c5c7b6d35f9e715c74512056d6c8a6fb.png",
+    "weight": 1100,
+    "id": "unsinkable_sam_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -252,12 +254,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "unsinkable_sam_container",
-    "img": "/resources/PCL087_CatSam_Free_fd42755fb9101edf808e3996e948a906c5c7b6d35f9e715c74512056d6c8a6fb.png",
-    "name": "Unsinkable Sam container",
     "pity": 100,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

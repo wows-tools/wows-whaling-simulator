@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "allied_heroes_container_pre20260516.json",
+    "name": "Allied Heroes container",
+    "img": "/resources/PCL146_May_Day_collection_a0eec8b6ed28934407d7ae751d31ce31ad8ce7c2c18eebd15c9a5fcbd7972db1.png",
+    "weight": 1100,
+    "id": "allied_heroes_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Signals": {
@@ -232,12 +234,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "allied_heroes_container",
-    "img": "/resources/PCL146_May_Day_collection_a0eec8b6ed28934407d7ae751d31ce31ad8ce7c2c18eebd15c9a5fcbd7972db1.png",
-    "name": "Allied Heroes container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

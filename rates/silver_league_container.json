@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "silver_league_container_pre20260516.json",
+    "name": "Silver League container",
+    "img": "/resources/PCL119_RankedSilver_288dd041eb30aa9b585e002061cfb2e06b204fca61615c68e1a0149026394aa7.png",
+    "weight": 1100,
+    "id": "silver_league_container",
     "category": "Leagues",
-    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -112,12 +114,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "silver_league_container",
-    "img": "/resources/PCL119_RankedSilver_288dd041eb30aa9b585e002061cfb2e06b204fca61615c68e1a0149026394aa7.png",
-    "name": "Silver League container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

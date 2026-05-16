@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "three_kingdoms_container_pre20260516.json",
+    "name": "Three Kingdoms container",
+    "img": "/resources/PCL173_Three_Kingdoms_CN_Free_5d0f0b61c86e6b686f22b6c1448afbf27afc33233b0a751616bd8c7fcda75e30.png",
+    "weight": 1100,
+    "id": "three_kingdoms_container",
     "category": "Historical Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Economic Bonuses": {
@@ -162,12 +164,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "three_kingdoms_container",
-    "img": "/resources/PCL173_Three_Kingdoms_CN_Free_5d0f0b61c86e6b686f22b6c1448afbf27afc33233b0a751616bd8c7fcda75e30.png",
-    "name": "Three Kingdoms container",
     "pity": 500,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,0 +1,125 @@
+{
+    "name": "\"The Hunt for Bismarck\" container",
+    "img": "/resources/PCL009_Bismarck_Coll_Free_625c356583a553c471a8ff2e69cdc084b923990635dec4c1a37b5f035517d121.png",
+    "weight": 1100,
+    "id": "the_hunt_for_bismarck_container",
+    "category": "Historical Events",
+    "drops": [
+        {
+            "Collection Album": {
+                "name": "Collection Album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Collection Album",
+                        "id": "4292844464",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "collection_album",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Economic Bonuses": {
+                "name": "Economic Bonuses",
+                "id": "economic_bonuses",
+                "drop_rate": 80,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4283428784",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4272943024",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4262457264",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    },
+                    {
+                        "quantity": 5,
+                        "name": "Economic Bonuses",
+                        "id": "4251971504",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "economic bonus"
+                        }
+                    }
+                ]
+            },
+            "Free XP": {
+                "name": "Free XP",
+                "id": "free_xp",
+                "drop_rate": 20,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1500,
+                        "name": "Free XP",
+                        "id": "free_xp",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "free_xp",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "Collection Album": {
+                "name": "Collection Album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Collection Album",
+                        "id": "4292844464",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "collection_album",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

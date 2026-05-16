@@ -3,7 +3,7 @@
     "img": "/resources/PCL210_Three_Kingdoms_Prem_f9635dc289beaf4415441b00e490defb659fd4487a025c61960f107a1bda3307.png",
     "weight": 1100,
     "id": "three_kingdoms_premium_container",
-    "category": "",
+    "category": "Historical Events",
     "drops": [
         {
             "Economic Bonuses": {

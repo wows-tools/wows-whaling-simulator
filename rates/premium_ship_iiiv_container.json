@@ -1,0 +1,365 @@
+{
+    "name": "Premium Ship II–IV container",
+    "img": "/resources/PCL129_EPICstd2_4_f2a2d30ed4e6f57533c6d2306d58832ad5a441edf42e6d63756bc5a4e1ebe238.png",
+    "weight": 1100,
+    "id": "premium_ship_iiiv_container",
+    "category": "Premium \u0026 Special Ships",
+    "drops": [
+        {
+            "Tier II–IV Premium ship": {
+                "name": "Tier II–IV Premium ship",
+                "id": "tieriiiv_premium_ship",
+                "drop_rate": 100,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Emden",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Yūbari",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "IV",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Tachibana",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Tachibana Lima",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Katori",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "III",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Ishizuchi",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "IV",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Diana",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Diana Lima",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Oleg",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "III",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Varyag",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "III",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Aurora",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "III",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Charleston",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "III",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Albany",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Smith",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Dreadnought",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "III",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Campbeltown",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "III",
+                            "type": "ship"
+                        }
+                    },
+                    {
+                        "quantity": 1,
+                        "name": "Almirante Abreu",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 3000000,
+                            "name": "Credits",
+                            "id": "credits",
+                            "compensation": null,
+                            "attributes": {
+                                "resource_id": "credits",
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "II",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

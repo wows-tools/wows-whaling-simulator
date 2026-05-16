@@ -1,16 +1,14 @@
 {
-    "archived_previous_as": "festive_finery_container_pre20260516.json",
+    "name": "Festive Finery container",
+    "img": "/resources/PCL159_NY23_permoflages_f24315d145e00497cccf3bec3097feed188d982ec91cee022cc2b60ba92654d6.png",
+    "weight": 1100,
+    "id": "festive_finery_container",
     "category": "Seasonal",
-    "changed_at": "20260516",
     "drops": [
         {}
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "festive_finery_container",
-    "img": "/resources/PCL159_NY23_permoflages_f24315d145e00497cccf3bec3097feed188d982ec91cee022cc2b60ba92654d6.png",
-    "name": "Festive Finery container",
     "pity": 10,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

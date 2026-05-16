@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "high_school_fleet_container_pre20260516.json",
+    "name": "High School Fleet container",
+    "img": "/resources/PCL022_HSF18_Coll_17feb766a0b1f1516a9611a632570c70640b5ea5835f501775ae8ee4904b79fa.png",
+    "weight": 1100,
+    "id": "high_school_fleet_container",
     "category": "Collaborations",
-    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -69,12 +71,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "high_school_fleet_container",
-    "img": "/resources/PCL022_HSF18_Coll_17feb766a0b1f1516a9611a632570c70640b5ea5835f501775ae8ee4904b79fa.png",
-    "name": "High School Fleet container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -3,7 +3,7 @@
     "img": "/resources/PCL169_FlagBox_Prem_0bc515c1f16ca0a25eef7d49643829b8a8c13224251ce96b5f7b609ef5999ef0.png",
     "weight": 1100,
     "id": "flags_premium_container",
-    "category": "",
+    "category": "Special Events",
     "drops": [
         {}
     ],

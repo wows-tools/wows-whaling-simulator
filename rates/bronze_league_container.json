@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "bronze_league_container_pre20260516.json",
+    "name": "Bronze League container",
+    "img": "/resources/PCL118_RankedBronze_5c36bea7197c092f2d356ebfe66d377eedea1b7db1907ca4029f28aa40c89e84.png",
+    "weight": 1100,
+    "id": "bronze_league_container",
     "category": "Leagues",
-    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -112,12 +114,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "bronze_league_container",
-    "img": "/resources/PCL118_RankedBronze_5c36bea7197c092f2d356ebfe66d377eedea1b7db1907ca4029f28aa40c89e84.png",
-    "name": "Bronze League container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

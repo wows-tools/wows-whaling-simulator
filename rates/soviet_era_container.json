@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "soviet_era_container_pre20260516.json",
+    "name": "Soviet Era container",
+    "img": "/resources/PCL061_SArc1_Free_old_01bd7c82a64c608b13d0477114cdc4ace9b192835d01b0ae10892b8c1cdb5b46.png",
+    "weight": 1100,
+    "id": "soviet_era_container",
     "category": "National Navies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Credits": {
@@ -310,12 +312,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "soviet_era_container",
-    "img": "/resources/PCL061_SArc1_Free_old_01bd7c82a64c608b13d0477114cdc4ace9b192835d01b0ae10892b8c1cdb5b46.png",
-    "name": "Soviet Era container",
     "pity": 500,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

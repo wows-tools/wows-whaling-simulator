@@ -1,0 +1,35 @@
+{
+    "name": "\"The Transformers: The Movie 35th Anniversary\" container",
+    "img": "/resources/PCL133_TF108_Free_2e595d97707fe7bb2fc55da99ea6b198cdcdcfcf27849df2055e3b91629a2210.png",
+    "weight": 1100,
+    "id": "the_transformers_the_movie_35th_anniversary_container",
+    "category": "Anniversaries",
+    "drops": [
+        {
+            "Collection Album": {
+                "name": "Collection Album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Collection Album",
+                        "id": "4266630064",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "collection_album",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

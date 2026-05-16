@@ -1,0 +1,82 @@
+{
+    "name": "\"Warhammer 40,000 — Chaos\" container",
+    "img": "/resources/PCL100_WH_Khorne_630538e761852c4987fe35e74ea687af218f6b52f6e5ce233bd2d4596e7821a4.png",
+    "weight": 1100,
+    "id": "warhammer_40000__chaos_container",
+    "category": "Special Events",
+    "drops": [
+        {
+            "Camouflages 1": {
+                "name": "Camouflages 1",
+                "id": "camouflages_1",
+                "drop_rate": 14.5,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 10,
+                        "name": "Camouflages",
+                        "id": "4196331440",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Camouflages 2": {
+                "name": "Camouflages 2",
+                "id": "camouflages_2",
+                "drop_rate": 85,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 5,
+                        "name": "Camouflages",
+                        "id": "4196331440",
+                        "compensation": null,
+                        "attributes": {
+                            "type": "camo"
+                        }
+                    }
+                ]
+            },
+            "Premium ship and a special Commander": {
+                "name": "Premium ship and a special Commander",
+                "id": "premium_ship_anda_special_commander",
+                "drop_rate": 0.5,
+                "collectable": true,
+                "pitiable": true,
+                "drop_rate_transfers_to": null,
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Ragnarok",
+                        "id": "undefined",
+                        "compensation": {
+                            "quantity": 10,
+                            "name": "Camouflages",
+                            "id": "",
+                            "compensation": null,
+                            "attributes": {
+                                "type": "resource"
+                            }
+                        },
+                        "attributes": {
+                            "rare": "true",
+                            "tier": "VIII",
+                            "type": "ship"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 500,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

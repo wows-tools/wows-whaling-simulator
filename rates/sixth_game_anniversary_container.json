@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "sixth_game_anniversary_container_pre20260516.json",
+    "name": "Sixth Game Anniversary container",
+    "img": "/resources/PCL134_BD108_Coll_d9ef87e8fd501578e4e1c7891325fc47b90a9c494276e45e6b9572a110edc427.png",
+    "weight": 1100,
+    "id": "sixth_game_anniversary_container",
     "category": "Anniversaries",
-    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -116,12 +118,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "sixth_game_anniversary_container",
-    "img": "/resources/PCL134_BD108_Coll_d9ef87e8fd501578e4e1c7891325fc47b90a9c494276e45e6b9572a110edc427.png",
-    "name": "Sixth Game Anniversary container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

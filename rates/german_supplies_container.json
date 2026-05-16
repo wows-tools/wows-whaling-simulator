@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "german_supplies_container_pre20260516.json",
+    "name": "German Supplies container",
+    "img": "/resources/PCL103_GArc096_Free_old_102e6654bcafbe66b1f4882ab88ac0e6f243d16a10f150d878da8c53375fa557.png",
+    "weight": 1100,
+    "id": "german_supplies_container",
     "category": "National Navies",
-    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -177,12 +179,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "german_supplies_container",
-    "img": "/resources/PCL103_GArc096_Free_old_102e6654bcafbe66b1f4882ab88ac0e6f243d16a10f150d878da8c53375fa557.png",
-    "name": "German Supplies container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "santas_mega_gift_container_pre20260516.json",
+    "name": "Santa's Mega Gift container",
+    "img": "/resources/PCL236_SantaBig_Prem_1b9d17991e5737e2c788de7990b0e2a57c2aec15baeb385ee207381169e2b379.png",
+    "weight": 40,
+    "id": "santas_mega_gift_container",
     "category": "Santa's Gifts",
-    "changed_at": "20260516",
     "drops": [
         {
             "Coal": {
@@ -3156,12 +3158,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "santas_mega_gift_container",
-    "img": "/resources/PCL236_SantaBig_Prem_1b9d17991e5737e2c788de7990b0e2a57c2aec15baeb385ee207381169e2b379.png",
-    "name": "Santa's Mega Gift container",
     "pity": 15,
     "price": 250,
-    "weight": 40
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

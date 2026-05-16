@@ -1,0 +1,35 @@
+{
+    "name": "Legend of Sabaton container",
+    "img": "/resources/PCL186_Sabaton_Free_e4af5a04197b02a09596238db6ebbe918b5aa07f6c7987893c67584c547b831e.png",
+    "weight": 1100,
+    "id": "legend_of_sabaton_container",
+    "category": "Special Events",
+    "drops": [
+        {
+            "Collection Album": {
+                "name": "Collection Album",
+                "id": "collection_album",
+                "drop_rate": 100,
+                "collectable": false,
+                "pitiable": false,
+                "drop_rate_transfers_to": [],
+                "items": [
+                    {
+                        "quantity": 1,
+                        "name": "Collection Album",
+                        "id": "4248804272",
+                        "compensation": null,
+                        "attributes": {
+                            "resource_id": "collection_album",
+                            "type": "resource"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "pity": 0,
+    "price": 250,
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
+}

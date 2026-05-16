@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "golden_week_container_pre20260516.json",
+    "name": "Golden Week container",
+    "img": "/resources/PCL162_Golden_Week_Free_9a5299e86d2b6121f36c9a032e62b5f896d38aa5b69380f5a52f998f0ee36ce4.png",
+    "weight": 1100,
+    "id": "golden_week_container",
     "category": "Seasonal",
-    "changed_at": "20260516",
     "drops": [
         {
             "Economic Bonuses": {
@@ -300,12 +302,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "golden_week_container",
-    "img": "/resources/PCL162_Golden_Week_Free_9a5299e86d2b6121f36c9a032e62b5f896d38aa5b69380f5a52f998f0ee36ce4.png",
-    "name": "Golden Week container",
     "pity": 250,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }

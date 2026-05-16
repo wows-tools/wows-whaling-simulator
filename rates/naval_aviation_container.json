@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "naval_aviation_container_pre20260516.json",
+    "name": "Naval Aviation container",
+    "img": "/resources/PCL055_UK_CV_Coll_Free_29ce37f9d7511f7b862271b46c7031b2a721ee725d5e08099ca9e6f746a044fd.png",
+    "weight": 1100,
+    "id": "naval_aviation_container",
     "category": "Special Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Collection Album": {
@@ -116,12 +118,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "naval_aviation_container",
-    "img": "/resources/PCL055_UK_CV_Coll_Free_29ce37f9d7511f7b862271b46c7031b2a721ee725d5e08099ca9e6f746a044fd.png",
-    "name": "Naval Aviation container",
     "pity": 0,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 303.96,
+    "exchange_rate_dollar": 289.31
 }
