@@ -154,6 +154,7 @@ func (lb *LootBox) NewWhalingStatsSession(collectables []string) *WhalingStatsSe
 		collectables:       collectables,
 		lootBox:            lb,
 		OpenedEach:         []uint64{},
+		ByAttributeEach:    []map[string]map[string]uint64{},
 		Percentiles:        make(map[string]uint64),
 		AverageByItem:      make(map[string]*ItemShortQuantityFloat),
 		AverageByAttribute: make(map[string]map[string]float64),

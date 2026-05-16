@@ -46,6 +46,8 @@ func (lb *LootBox) NewWhalingSession(collectables []string) (*WhalingSession, er
 	wlSess.pityCounter = 0
 	wlSess.Pities = 0
 	wlSess.otherItems = make(map[string]*ItemShortQuantity)
+	wlSess.CollectableItems = make([]*ItemShort, 0)
+	wlSess.OtherItems = make([]*ItemShortQuantity, 0)
 	wlSess.ByAttribute = make(map[string]map[string]uint64)
 	wlSess.lootBox.Init()
 	for _, collectable := range collectables {
