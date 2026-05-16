@@ -13,7 +13,8 @@ import {
   SearchField,
   Flex,
   Text,
-  ActionButton,
+  ActionGroup,
+  Item,
   Badge,
 } from "@adobe/react-spectrum";
 import { Link as RouterLink } from "react-router-dom";
@@ -45,8 +46,8 @@ const CATEGORY_COLOR = {
   "Collaborations":          "purple",
   "Seasonal":                "green",
   "Anniversaries":           "magenta",
-  "Leagues":                 "yellow",
-  "Recruitment":             "celery",
+  "Leagues":                 "notice",
+  "Recruitment":             "positive",
   "Resources & Supplies":    "gray",
   "Special Events":          "red",
 };
@@ -94,10 +95,6 @@ export default function LootboxList() {
     ...Object.keys(grouped).filter((c) => !CATEGORY_ORDER.includes(c)).sort(),
   ];
 
-  const toggleCategory = (cat) => {
-    setActiveCategory((prev) => (prev === cat ? null : cat));
-  };
-
   return (
     <View margin="size-400">
       <Heading level={1}>World of Warships Lootbox Whaling Simulator</Heading>
@@ -105,13 +102,18 @@ export default function LootboxList() {
       <Heading level={2}>Container List</Heading>
 
       {/* Category filter buttons */}
-      <Flex wrap gap="size-100" marginBottom="size-300">
+      <ActionGroup
+        selectionMode="single"
+        selectedKeys={activeCategory ? [activeCategory] : []}
+        onSelectionChange={(keys) => {
+          const selected = [...keys][0] ?? null;
+          setActiveCategory(selected);
+        }}
+        overflowMode="wrap"
+        marginBottom="size-300"
+      >
         {allCategories.map((cat) => (
-          <ActionButton
-            key={cat}
-            isQuiet={activeCategory !== cat}
-            onPress={() => toggleCategory(cat)}
-          >
+          <Item key={cat}>
             <Badge
               variant={CATEGORY_COLOR[cat] || "neutral"}
               UNSAFE_style={{ marginRight: 6 }}
@@ -119,9 +121,9 @@ export default function LootboxList() {
               {allGrouped[cat].length}
             </Badge>
             <Text>{cat}</Text>
-          </ActionButton>
+          </Item>
         ))}
-      </Flex>
+      </ActionGroup>
 
       {/* Search */}
       <Flex marginBottom="size-400" maxWidth="size-3600">
