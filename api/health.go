@@ -10,5 +10,7 @@ func pingHandler(c echo.Context) error {
 }
 
 func (a *API) getStats(c echo.Context) error {
+	a.stats.mu.Lock()
+	defer a.stats.mu.Unlock()
 	return c.JSON(http.StatusOK, a.stats)
 }

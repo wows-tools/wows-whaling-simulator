@@ -77,8 +77,10 @@ func (a *API) simpleWhalingQuantity(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 
+	a.stats.mu.Lock()
 	a.stats.OpenedContainers += uint64(whaling.Quantity)
 	a.stats.WhalingQuantitySimple++
+	a.stats.mu.Unlock()
 
 	return c.JSON(http.StatusOK, ws)
 }
@@ -128,8 +130,10 @@ func (a *API) statsWhalingQuantity(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 
+	a.stats.mu.Lock()
 	a.stats.OpenedContainers += wss.Opened
 	a.stats.WhalingQuantityStats++
+	a.stats.mu.Unlock()
 
 	return c.JSON(http.StatusOK, wss)
 }
@@ -181,8 +185,10 @@ func (a *API) simpleWhalingTarget(c echo.Context) error {
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
+	a.stats.mu.Lock()
 	a.stats.OpenedContainers += ws.ContainerOpened
 	a.stats.TargetWhalingSimple++
+	a.stats.mu.Unlock()
 
 	return c.JSON(http.StatusOK, ws)
 }
@@ -234,8 +240,10 @@ func (a *API) statsWhalingTarget(c echo.Context) error {
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
+	a.stats.mu.Lock()
 	a.stats.OpenedContainers += wss.Opened
 	a.stats.TargetWhalingStats++
+	a.stats.mu.Unlock()
 
 	return c.JSON(http.StatusOK, wss)
 

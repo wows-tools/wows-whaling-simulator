@@ -1,8 +1,11 @@
 package api
 
 import (
+	"context"
+	"encoding/json"
 	"errors"
 	"io/fs"
+	"sync"
 	"time"
 
 	"github.com/go-redis/cache/v8"
@@ -17,7 +20,10 @@ var (
 	ErrNoLootbox = errors.New("No Lootbox description found")
 )
 
+const statsRedisKey = "wows:stats"
+
 type Stats struct {
+	mu                sync.Mutex
 	WhalingQuantitySimple uint64 `json:"simple_whaling_quantity"`
 	WhalingQuantityStats  uint64 `json:"stats_whaling_quantity"`
 	TargetWhalingSimple   uint64 `json:"simple_whaling_target"`
@@ -34,6 +40,36 @@ type API struct {
 	cache             *cache.Cache
 	wowsAPI           *wows.WowsAPI
 	stats             *Stats
+}
+
+func (a *API) saveStats(ctx context.Context) {
+	a.stats.mu.Lock()
+	data, err := json.Marshal(a.stats)
+	a.stats.mu.Unlock()
+	if err != nil {
+		return
+	}
+	a.redis.Set(ctx, statsRedisKey, data, 0)
+}
+
+func (a *API) loadStats(ctx context.Context) {
+	data, err := a.redis.Get(ctx, statsRedisKey).Bytes()
+	if err != nil {
+		return
+	}
+	a.stats.mu.Lock()
+	defer a.stats.mu.Unlock()
+	json.Unmarshal(data, a.stats)
+}
+
+func (a *API) startStatsPersistence() {
+	go func() {
+		ticker := time.NewTicker(10 * time.Minute)
+		defer ticker.Stop()
+		for range ticker.C {
+			a.saveStats(context.Background())
+		}
+	}()
 }
 
 func NewAPI(echo *echo.Echo, cfg *config.AppConfig, embeddedFS fs.FS) (*API, error) {
@@ -95,5 +131,9 @@ func NewAPI(echo *echo.Echo, cfg *config.AppConfig, embeddedFS fs.FS) (*API, err
 	}
 
 	a.wowsAPI.ShipMapping = shipMapping
+
+	a.loadStats(context.Background())
+	a.startStatsPersistence()
+
 	return &a, nil
 }
