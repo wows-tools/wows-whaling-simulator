@@ -3,7 +3,7 @@
     "img": "/resources/PCL092_ITCA0810_Coll_Prem_778e8c3ffc45597f4d425193acb35251dec3fca12d660810d7c255146920dea8.png",
     "weight": 1100,
     "id": "resolute_and_rapid_premium_container",
-    "category": "Special Events",
+    "category": "National Navies",
     "drops": [
         {
             "Economic Bonuses": {
@@ -165,7 +165,7 @@
         }
     ],
     "pity": 0,
-    "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "price": 1250,
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

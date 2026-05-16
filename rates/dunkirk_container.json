@@ -3,7 +3,7 @@
     "img": "/resources/PCL011_Dunkirk_Coll_Free_c05d391078fba0a84783ba50c92108370746b39967e18d9906fd45ecb86d0c4f.png",
     "weight": 1100,
     "id": "dunkirk_container",
-    "category": "Special Events",
+    "category": "Collection",
     "drops": [
         {
             "Collection Album": {
@@ -120,6 +120,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

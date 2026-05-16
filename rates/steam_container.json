@@ -3,7 +3,7 @@
     "img": "/resources/PCL021_Steam_15ab6c3b23899fe0effde452670d42c548d4a7a4369a997f50efc4a2e5361e21.png",
     "weight": 1100,
     "id": "steam_container",
-    "category": "Special Events",
+    "category": "Resources \u0026 Supplies",
     "drops": [
         {
             "Camouflages": {
@@ -167,6 +167,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "wings_of_freedom_container_pre20260516.json",
+    "name": "Wings of Freedom container",
+    "img": "/resources/PCL170_US_ship_free_b5476fa215a134fa3c9a14accb491b69102ae54a5ba03ac8ad61078f5656fef4.png",
+    "weight": 1100,
+    "id": "wings_of_freedom_container",
     "category": "Collaborations",
-    "changed_at": "20260516",
     "drops": [
         {
             "Camouflages": {
@@ -295,12 +297,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "wings_of_freedom_container",
-    "img": "/resources/PCL170_US_ship_free_b5476fa215a134fa3c9a14accb491b69102ae54a5ba03ac8ad61078f5656fef4.png",
-    "name": "Wings of Freedom container",
     "pity": 400,
     "price": 250,
-    "weight": 1100
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

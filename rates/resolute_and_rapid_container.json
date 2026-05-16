@@ -3,7 +3,7 @@
     "img": "/resources/PCL091_ITCA0810_Coll_Free_cb72e7bb7b53d87fb2967f647ed1e3fcb2d82fe0964839798ba87b51f218cdba.png",
     "weight": 1100,
     "id": "resolute_and_rapid_container",
-    "category": "Special Events",
+    "category": "Collection",
     "drops": [
         {
             "Camouflages": {
@@ -139,6 +139,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

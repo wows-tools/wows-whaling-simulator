@@ -3,7 +3,7 @@
     "img": "/resources/PCL133_TF108_Free_2e595d97707fe7bb2fc55da99ea6b198cdcdcfcf27849df2055e3b91629a2210.png",
     "weight": 1100,
     "id": "the_transformers_the_movie_35th_anniversary_container",
-    "category": "Anniversaries",
+    "category": "Collaborations",
     "drops": [
         {
             "Collection Album": {
@@ -30,6 +30,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

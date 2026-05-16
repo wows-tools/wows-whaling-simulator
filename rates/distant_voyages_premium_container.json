@@ -3,7 +3,7 @@
     "img": "/resources/PCL212_SkinContainer_V2_Prem_4f281126b8cc286c27f4875d424554fb0a14546b23212695c6474a549629d69b.png",
     "weight": 1100,
     "id": "distant_voyages_premium_container",
-    "category": "Special Events",
+    "category": "Seasonal",
     "drops": [
         {
             "Credits": {
@@ -724,7 +724,7 @@
         }
     ],
     "pity": 8,
-    "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "price": 1250,
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

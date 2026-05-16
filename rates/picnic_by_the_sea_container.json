@@ -3,7 +3,7 @@
     "img": "/resources/PCL167_SummerDays_5c21708394366b6f456f39e142f5bfeea526996502df3bad4bf28c62ee9e5621.png",
     "weight": 1100,
     "id": "picnic_by_the_sea_container",
-    "category": "Special Events",
+    "category": "Seasonal",
     "drops": [
         {
             "Coal": {
@@ -217,6 +217,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

@@ -3,7 +3,7 @@
     "img": "/resources/PCL242_NED_Free_6b77c3406adb0ab23950c619f5d34114c0d36f2551ee2393cba4a376c506616b.png",
     "weight": 1100,
     "id": "finest_hour_container",
-    "category": "Historical Events",
+    "category": "Special Events",
     "drops": [
         {
             "Collection Album": {
@@ -30,6 +30,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

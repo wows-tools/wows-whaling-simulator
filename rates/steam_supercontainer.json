@@ -3,7 +3,7 @@
     "img": "/resources/PCL142_Steam_Anniversary_93963865ca0097aa9bd7731975eef064d8b3c1998ce71acaffcf77ad37a066a9.png",
     "weight": 1100,
     "id": "steam_supercontainer",
-    "category": "Special Events",
+    "category": "Resources \u0026 Supplies",
     "drops": [
         {
             "Camouflages": {
@@ -4259,6 +4259,6 @@
     ],
     "pity": 200,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

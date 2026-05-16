@@ -3,7 +3,7 @@
     "img": "/resources/PCL100_WH_Khorne_630538e761852c4987fe35e74ea687af218f6b52f6e5ce233bd2d4596e7821a4.png",
     "weight": 1100,
     "id": "warhammer_40000__chaos_container",
-    "category": "Special Events",
+    "category": "Collaborations",
     "drops": [
         {
             "Camouflages 1": {
@@ -77,6 +77,6 @@
     ],
     "pity": 500,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

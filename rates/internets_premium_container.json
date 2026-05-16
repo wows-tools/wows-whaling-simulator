@@ -1,7 +1,9 @@
 {
-    "archived_previous_as": "internets_premium_container_pre20260516.json",
+    "name": "Internets Premium container",
+    "img": "/resources/PCL250_Influencers_takeover_new_prem_370f35d3d905fb9f684e1e77455d2a1d3447fbee5f6d81c4b4bca9b7a045e4e8.png",
+    "weight": 1100,
+    "id": "internets_premium_container",
     "category": "Special Events",
-    "changed_at": "20260516",
     "drops": [
         {
             "Economic Bonuses": {
@@ -72,12 +74,8 @@
             }
         }
     ],
-    "exchange_rate_dollar": 289.31,
-    "exchange_rate_euro": 303.96,
-    "id": "internets_premium_container",
-    "img": "/resources/PCL250_Influencers_takeover_new_prem_370f35d3d905fb9f684e1e77455d2a1d3447fbee5f6d81c4b4bca9b7a045e4e8.png",
-    "name": "Internets Premium container",
     "pity": 6,
-    "price": 250,
-    "weight": 1100
+    "price": 1250,
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

@@ -3,7 +3,7 @@
     "img": "/resources/PCL124_KongVSGodzilla_Prem_44bd2b16eba37c6f1a141e4039d6dabc1950907bb190a6f57cfc19f08d2e9a80.png",
     "weight": 1100,
     "id": "two_titansone_king_premiumcontainer",
-    "category": "Special Events",
+    "category": "Collaborations",
     "drops": [
         {
             "Camouflages": {
@@ -103,7 +103,7 @@
         }
     ],
     "pity": 20,
-    "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "price": 1250,
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

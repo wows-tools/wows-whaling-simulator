@@ -3,7 +3,7 @@
     "img": "/resources/PCL069_EPICprem5_a48198e4fc8112e53c72e31d0591e8287f6475f21ed1e1dff4ff9bfa5095aea0.png",
     "weight": 1100,
     "id": "premium_shipv_elite_container",
-    "category": "Special Events",
+    "category": "Premium \u0026 Special Ships",
     "drops": [
         {
             "Tier V Premium ship": {
@@ -360,6 +360,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

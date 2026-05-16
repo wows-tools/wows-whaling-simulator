@@ -3,7 +3,7 @@
     "img": "/resources/PCL155_gift_tier_Four_896cfb4b12788b14605389daa063a3083eb7b5ceb375dd8dac7e0aefffcb44c8.png",
     "weight": 1100,
     "id": "epic_bonuses_container",
-    "category": "Special Events",
+    "category": "Resources \u0026 Supplies",
     "drops": [
         {
             "Economic Bonuses": {
@@ -56,6 +56,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

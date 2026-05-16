@@ -3,7 +3,7 @@
     "img": "/resources/PCL116_Journey2021_Free_4e66347f0b92c385bf859d2eb8633e96efe6f634d68bcd6e0ca553a9bc105e21.png",
     "weight": 1100,
     "id": "journey_to_the_west_container",
-    "category": "Special Events",
+    "category": "Seasonal",
     "drops": [
         {
             "Coal": {
@@ -272,6 +272,6 @@
     ],
     "pity": 625,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

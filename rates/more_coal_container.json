@@ -3,7 +3,7 @@
     "img": "/resources/PCL034_Resourses_f9c7f9033689f766e133a2ae7f37b214bbb104070cc1ae3f2ed07c4fcb3d9678.png",
     "weight": 1100,
     "id": "more_coal_container",
-    "category": "Special Events",
+    "category": "Resources \u0026 Supplies",
     "drops": [
         {
             "Coal": {
@@ -180,6 +180,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

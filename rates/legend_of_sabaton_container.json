@@ -3,7 +3,7 @@
     "img": "/resources/PCL186_Sabaton_Free_e4af5a04197b02a09596238db6ebbe918b5aa07f6c7987893c67584c547b831e.png",
     "weight": 1100,
     "id": "legend_of_sabaton_container",
-    "category": "Special Events",
+    "category": "Collaborations",
     "drops": [
         {
             "Collection Album": {
@@ -30,6 +30,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

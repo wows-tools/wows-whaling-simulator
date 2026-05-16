@@ -3,7 +3,7 @@
     "img": "/resources/PCL114_USA_BB0910_Coll_Free_71c93ff9ea9757c852c44c723d0bbf0f4e151514646ea9b172f8dfc1c5456a20.png",
     "weight": 1100,
     "id": "always_courageous_container",
-    "category": "Special Events",
+    "category": "Collection",
     "drops": [
         {
             "Camouflages": {
@@ -139,6 +139,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

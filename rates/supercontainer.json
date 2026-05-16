@@ -3,7 +3,7 @@
     "img": "/resources/PCL005_Epic_ff759cae80769e9496bc6a232b30d1f6c7ddf99f8b8297c4cdb8ccecfa66742a.png",
     "weight": 1100,
     "id": "supercontainer",
-    "category": "Special Events",
+    "category": "Resources \u0026 Supplies",
     "drops": [
         {
             "Coal": {
@@ -4240,6 +4240,6 @@
     ],
     "pity": 200,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

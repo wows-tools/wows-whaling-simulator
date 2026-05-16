@@ -169,13 +169,74 @@ func vortexGetWeight(id string) int {
 	}
 }
 
+// vortexCategoryOverrides maps exact container IDs to categories for containers
+// that cannot be reliably classified by prefix alone.
+var vortexCategoryOverrides = map[string]string{
+	// Resources & Supplies
+	"epic_bonuses_container":   "Resources & Supplies",
+	"flags_premium_container":  "Resources & Supplies",
+	"more_signals_container":   "Resources & Supplies",
+	"more_coal_container":      "Resources & Supplies",
+	"supercontainer":           "Resources & Supplies",
+	"steam_supercontainer":     "Resources & Supplies",
+	"steam_container":          "Resources & Supplies",
+
+	// Collection events (ship-collection themed containers)
+	"always_courageous_container":         "Collection",
+	"always_courageous_premium_container": "Collection",
+	"dunkirk_container":                   "Collection",
+	"resolute_and_rapid_container":        "Collection",
+
+	// Seasonal
+	"journey_to_the_west_container":         "Seasonal",
+	"journey_to_the_west_premium_container": "Seasonal",
+	"distant_voyages_premium_container":     "Seasonal",
+	"black_daruma_premium_container":        "Seasonal",
+	"nians_treasure_premium_container":      "Seasonal",
+	"picnic_by_the_sea_container":           "Seasonal",
+
+	// Historical Events
+	"dunkirk_premium_container":            "Historical Events",
+	"operation_dynamo_container":           "Historical Events",
+	"operation_dynamo_premium_container":   "Historical Events",
+	"finest_hour_premium_container":        "Historical Events",
+
+	// National Navies
+	"in_the_service_of_the_motherland_container":         "National Navies",
+	"in_the_service_of_the_motherland_premium_container": "National Navies",
+	"french_squadron_container":                          "National Navies",
+	"french_squadron_premium_container":                  "National Navies",
+	"resolute_and_rapid_premium_container":               "National Navies",
+	"europe_container":                                   "National Navies",
+
+	// Collaborations
+	"warhammer_40000__imperium_container":                     "Collaborations",
+	"warhammer_40000__chaos_container":                        "Collaborations",
+	"warhammer_40000_premium_container":                       "Collaborations",
+	"two_titansone_king_premiumcontainer":                     "Collaborations",
+	"star_trek_premium_container":                             "Collaborations",
+	"legend_of_sabaton_container":                             "Collaborations",
+	"legend_of_sabaton_premium_container":                     "Collaborations",
+	"the_transformers_the_movie_35th_anniversary_container":         "Collaborations",
+	"the_transformers_the_movie_35th_anniversary_premium_container": "Collaborations",
+
+	// Premium & Special Ships (IDs that start with premium_ but are not premium_ship_*)
+	"premium_shipv_elite_container": "Premium & Special Ships",
+}
+
 func vortexCategory(id string) string {
+	// Check specific overrides first.
+	if cat, ok := vortexCategoryOverrides[id]; ok {
+		return cat
+	}
+
 	switch {
 	case strings.HasPrefix(id, "santas_"):
 		return "Santa's Gifts"
 	case strings.HasPrefix(id, "black_friday_"):
 		return "Black Friday"
-	case strings.HasPrefix(id, "premium_ship_"), strings.HasPrefix(id, "special_ship_"):
+	case strings.HasPrefix(id, "premium_ship_"), strings.HasPrefix(id, "special_ship_"),
+		strings.HasPrefix(id, "premium_shipv_"):
 		return "Premium & Special Ships"
 	case strings.HasPrefix(id, "halloween_"), strings.HasPrefix(id, "jack_o_lantern"):
 		return "Seasonal"
@@ -189,7 +250,7 @@ func vortexCategory(id string) string {
 	case strings.HasPrefix(id, "battle_of_"), strings.HasPrefix(id, "d_day"),
 		strings.HasPrefix(id, "war_is_over"), strings.HasPrefix(id, "five_epochs"),
 		strings.HasPrefix(id, "the_hunt_for_bismarck"), strings.HasPrefix(id, "unsinkable_sam"),
-		strings.HasPrefix(id, "finest_hour"), strings.HasPrefix(id, "allied_heroes"),
+		strings.HasPrefix(id, "allied_heroes"),
 		strings.HasPrefix(id, "heart_of_oak"), strings.HasPrefix(id, "eagles"),
 		strings.HasPrefix(id, "legion_of_honor"), strings.HasPrefix(id, "belle_poque"),
 		strings.HasPrefix(id, "three_kingdoms"), strings.HasPrefix(id, "the_age_of_sa_zhenbing"),
@@ -217,7 +278,8 @@ func vortexCategory(id string) string {
 		strings.HasPrefix(id, "more_camouflages"), strings.HasPrefix(id, "small_"),
 		strings.HasPrefix(id, "common_bonuses"), strings.HasPrefix(id, "uncommon_bonuses"),
 		strings.HasPrefix(id, "rare_bonuses"), strings.HasPrefix(id, "tactical"),
-		strings.HasPrefix(id, "volunteer_skins"), strings.HasPrefix(id, "air_supply"):
+		strings.HasPrefix(id, "volunteer_skins"), strings.HasPrefix(id, "air_supply"),
+		strings.HasPrefix(id, "epic_bonuses"), strings.HasPrefix(id, "flags_"):
 		return "Resources & Supplies"
 	default:
 		return "Special Events"
@@ -278,16 +340,23 @@ func vortexConvert(raw *vortexEnvelope) (*LootBox, error) {
 
 	compensation := vortexFillerItem(d.Filler)
 
+	// "Premium container" variants (id contains "premium" but isn't a Premium Ship
+	// category) cost 1250 doubloons; all others cost 250.
+	price := 250.0
+	if strings.Contains(id, "premium") && !strings.HasPrefix(id, "premium_ship") {
+		price = 1250.0
+	}
+
 	lb := &LootBox{
 		Name:               d.Title,
 		Img:                vortexIconImg(d.Icons),
 		ID:                 id,
 		Category:           vortexCategory(id),
 		Weight:             vortexGetWeight(id),
-		ExchangeRateEuro:   303.96,
-		ExchangeRateDollar: 289.31,
+		ExchangeRateEuro:   308.947108255,
+		ExchangeRateDollar: 252.780586451,
 		Pity:               pity,
-		Price:              250,
+		Price:              price,
 	}
 
 	for _, slot := range d.Slots {

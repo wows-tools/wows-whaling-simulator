@@ -3,7 +3,7 @@
     "img": "/resources/PCL081_FRDD_Free_old_8af80833dae8787fcae5cb16e202543ee687580f77f7d1f395edf62d9987b9f2.png",
     "weight": 1100,
     "id": "french_squadron_container",
-    "category": "Special Events",
+    "category": "National Navies",
     "drops": [
         {
             "Economic Bonuses": {
@@ -296,6 +296,6 @@
     ],
     "pity": 250,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

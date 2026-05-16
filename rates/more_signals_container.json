@@ -3,7 +3,7 @@
     "img": "/resources/PCL002_Signals_44bf163414a11d66735971ffccde4c2716f88823056ed59ee5f4586acfe6705b.png",
     "weight": 1100,
     "id": "more_signals_container",
-    "category": "Special Events",
+    "category": "Resources \u0026 Supplies",
     "drops": [
         {
             "Signals": {
@@ -210,6 +210,6 @@
     ],
     "pity": 0,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

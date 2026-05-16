@@ -3,7 +3,7 @@
     "img": "/resources/PCL101_WH_Imper_a60408bc27de6e6b0e96a47670dd3201d245ed58231c1a7709e869f6b97c1b0c.png",
     "weight": 1100,
     "id": "warhammer_40000__imperium_container",
-    "category": "Special Events",
+    "category": "Collaborations",
     "drops": [
         {
             "Camouflages 1": {
@@ -77,6 +77,6 @@
     ],
     "pity": 500,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }

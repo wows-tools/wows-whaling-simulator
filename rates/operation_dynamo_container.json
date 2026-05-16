@@ -3,7 +3,7 @@
     "img": "/resources/PCL253_Dynamo_Free_18d0d3f3aeac204acb7ec857f0bda2af7091cf8959de4394de4addc76708b4ba.png",
     "weight": 1100,
     "id": "operation_dynamo_container",
-    "category": "Special Events",
+    "category": "Historical Events",
     "drops": [
         {
             "Credits": {
@@ -166,6 +166,6 @@
     ],
     "pity": 600,
     "price": 250,
-    "exchange_rate_euro": 303.96,
-    "exchange_rate_dollar": 289.31
+    "exchange_rate_euro": 308.947108255,
+    "exchange_rate_dollar": 252.780586451
 }
